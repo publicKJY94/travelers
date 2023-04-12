@@ -4,7 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>로그인 JSP</title>
+=======
+<title>login</title>
+>>>>>>> login
 </head>
 <body>
 
