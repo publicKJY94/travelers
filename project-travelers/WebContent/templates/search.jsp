@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Travelers</title>
+<title>Travelers | 검색</title>
 </head>
 <body>
     
