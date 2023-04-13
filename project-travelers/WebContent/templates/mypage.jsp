@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>MyPage</title>
 </head>
 <body>
+	<div id="wrap">
+		<header id="header"></header>
+	</div>
 
 </body>
 </html>
