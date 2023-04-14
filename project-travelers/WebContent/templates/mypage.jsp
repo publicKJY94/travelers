@@ -7,9 +7,6 @@
 <title>MyPage</title>
 </head>
 <body>
-	<div id="wrap">
-		<header id="header"></header>
-	</div>
-
+	
 </body>
 </html>
