@@ -7,6 +7,7 @@
 <title>login</title>
 <style type="text/css"></style>
 </head>
+
 <body>
 	<section class="login_wrap">
 		<div class="in-wrap">
@@ -26,7 +27,7 @@
 						</li>
 						<li class="btn_login">로그인</li>
 					</ul>
-				</form>
+				</form> 
 			</div>
 			<!-- 수정중 -->
 			<div class="link">
