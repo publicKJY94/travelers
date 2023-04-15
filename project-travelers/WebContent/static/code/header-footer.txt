@@ -1,0 +1,447 @@
+//////////////////////////////////////////////////////////////header html code///////////////////////////////////////////////////////////////////////////
+	
+	<app-header _ngcontent-akd-c67 _nghost-akd-c64 class="ng-star-inserted">
+	<app-top-banner _ngcontent-qlk-c65 _nghost-qlk-c52>
+		<div _ngcontent-qlk-c52 class="bandBanner ng-star-inserted">
+			<div _ngcontent-qlk-c52 class="inner ng-star-inserted">
+				<div _ngcontent-qlk-c52 class="text">
+					<a _ngcontent-qlk-c52 class="link" href="/bridge/sign-up-0217">
+					 ✨지금 가입하면 
+					 <span _ngcontent-qlk-c52 class="point">&nbsp;5,OOOP&nbsp;</span>
+					  즉시 적립 
+					  <span _ngcontent-qlk-c52 class="arrow"></span>
+					  </a>
+				</div>
+			</div>
+		</div>
+		</app-top-banner>
+		<header _ngcontent-qlk-c65 id="header" class="mainHeader">
+			<div _ngcontent-qlk-c65 class="in_wrap">
+				<h1 _ngcontent-qlk-c65 class="logo">
+					<a _ngcontent-qlk-c65 title="WishBeen" onclick="closeMainSearchBar()" href="/main">
+						<span _ngcontent-qlk-c65>WishBeen</span>
+					</a>
+				</h1>
+				<nav _ngcontent-qlk-c65 class="gnb_wrap">
+					<ul _ngcontent-qlk-c65>
+						<li _ngcontent-qlk-c65 class="pc">
+							<a _ngcontent-qlk-c65 href="/write-note">
+								<span _ngcontent-qlk-c65>여행기 목록</span>
+							</a>
+						</li>
+						<li _ngcontent-qlk-c65 class="pc">
+							<a _ngcontent-qlk-c65 href="/write-note">
+								<span _ngcontent-qlk-c65>추천루트 목록</span>
+							</a>
+						</li>
+						<li _ngcontent-qlk-c65 class="pc">
+							<a _ngcontent-qlk-c65 href="/write-note">
+								<span _ngcontent-qlk-c65>여행품 교환</span>
+							</a>
+						</li>
+					</ul>
+					<ul _ngcontent-qlk-c65 class="side_wrap">
+						<li _ngcontent-qlk-c65>
+							<button _ngcontent-qlk-c65 type="button" class="btn_sch">
+								<span _ngcontent-qlk-c65>검색</span>
+							</button>
+						</li>
+						<li _ngcontent-qlk-c65 class="pc">
+							<a _ngcontent-qlk-c65 class="btn_login ng-star-inserted" href="/login">
+								<span _ngcontent-qlk-c65></span>
+									로그인
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+</app-header>
+
+////////////////////////////////////////////////////////////headerCss///////////////////////////////////////////////////////////////////////////
+
+.bandBanner {
+    text-align: center;
+    background: #111111;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    height: 40px;
+}
+
+.bandBanner .inner {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.bandBanner .inner .text {
+    color: #fff;
+}
+
+.bandBanner .inner .text .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandBanner .inner .text .link .point {
+    color: #fee000;
+}
+
+.bandBanner .inner .text .link .arrow {
+    margin-left: 5px;
+    width: 7px;
+    height: 12px;
+    background: url(/assets/images/svg/arrow_right_topBanner.svg);
+}
+
+#header.mainHeader {
+    position: relative;
+    top: 40px;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    box-sizing: border-box;
+    box-shadow: 0 0.1rem 0.3rem #0000001a;
+    z-index: 50;
+    transition: all .3s;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header .logo {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    z-index: 1;
+}
+
+#header .logo a span {
+    width: 11.5rem;
+    height: 3.9rem;
+    display: inline-block;
+    overflow: hidden;
+    background: url(logo.86dd47c5979413f8.svg) 0 0 no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+}
+
+#header .gnb_wrap {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#header .gnb_wrap ul {
+    display: inline-block;
+}
+#header .side_wrap {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#header .gnb_wrap li {
+    display: inline-block;
+    position: relative;
+}
+
+#header .gnb_wrap a {
+    padding: 0 1.2rem;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 7rem;
+}
+
+#header .gnb_wrap .btn_login, #header .gnb_wrap .btn_my {
+    padding: 0.6rem 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    border: 0.1rem solid rgba(0,0,0,.2);
+    border-radius: 3rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+#header .gnb_wrap .btn_login span, #header .gnb_wrap .btn_my span {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: -0.5rem 0.5rem 0 0;
+    display: inline-block;
+    overflow: hidden;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+    vertical-align: middle;
+}
+
+#header .btn_login span {
+    background-image: url(person1.795361a55289ba9e.svg);
+}
+	
+	
+	
+
+
+/////////////////////////////////////////////////////////////////footerHTML//////////////////////////////////////////////////////////////////////////////////////////
+
+<app-footer _ngcontent-akd-c67 _nghost-akd-c65 class="ng-star-inserted">
+<footer _ngcontent-xjb-c66 id="footer">
+	<div _ngcontent-xjb-c66 class="in_wrap">
+		<span _ngcontent-xjb-c66 class="btn_top_scroll">
+			
+		</span>
+		<nav _ngcontent-xjb-c66 class="list_link">
+			<dl _ngcontent-xjb-c66>
+				<dt _ngcontent-xjb-c66>회사소개</dt>
+				<dd _ngcontent-xjb-c66>
+					<a _ngcontent-xjb-c66>회사소개</a>
+					<a _ngcontent-xjb-c66>브랜드 미디어</a>
+					<a _ngcontent-xjb-c66>채용공고</a>
+					<a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com"> 제휴문의 </a>
+				</dd>
+			</dl>
+			<dl _ngcontent-xjb-c66>
+				<dt _ngcontent-xjb-c66>고객지원</dt>
+				<dd _ngcontent-xjb-c66>
+					<a _ngcontent-xjb-c66>공지사항</a>
+					<a _ngcontent-xjb-c66>자주묻는질문</a>
+					<a _ngcontent-xjb-c66>문의하기</a>
+					<a _ngcontent-xjb-c66>위시빈 가이드</a>
+				</dd>
+			</dl>
+			<dl _ngcontent-xjb-c66>
+				<dt _ngcontent-xjb-c66>이용약관</dt>						
+				<dd _ngcontent-xjb-c66>
+					<a _ngcontent-xjb-c66>이용약관</a>
+					<a _ngcontent-xjb-c66>개인정보 처리방침</a>
+					<a _ngcontent-xjb-c66>제3자 정보제공</a>
+				</dd>
+			</dl>
+		</nav>
+		<div _ngcontent-xjb-c66 class="info">
+			<div _ngcontent-xjb-c66 class="inner">
+				<span _ngcontent-xjb-c66>
+					상호명 : (주)위시빈
+				</span>
+				<span _ngcontent-xjb-c66>
+					대표 : 정진원·최명선
+				</span>
+				<span _ngcontent-xjb-c66 class="br">
+					개인정보책임자 : 정병근
+				</span>
+				<span _ngcontent-xjb-c66>
+					사업자등록번호 : 599-88-01021
+				</span>
+				<span _ngcontent-xjb-c66>
+					통신판매업신고번호 : 제2021-서울중구-2344호
+				</span>
+				<span _ngcontent-xjb-c66 class="br">
+					<a _ngcontent-xjb-c66 href="https://www.ftc.go.kr/www/bizCommList.do?key=3765" target="_blank"> 사업자정보확인 </a>
+				</span>
+				<span _ngcontent-xjb-c66>
+					 광고 및 제휴 : 
+					 <a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com">support@wishbeen.com</a>
+				</span>
+				<span _ngcontent-xjb-c66 class="br">
+					<a _ngcontent-xjb-c66 href="mailto:cs@wishbeen.com">고객센터 : cs@wishbeen.com</a>
+				</span>
+				<span _ngcontent-xjb-c66 class="br noti">
+					 위시빈은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 위시빈은 상품·거래정보에 대하여 책임을 지지 않습니다. 
+				</span>
+				<span _ngcontent-xjb-c66 class="br">
+					 위시빈 서비스의 모든 콘텐츠는 저작자에게 저작권이 있으므로 무단 업로드 혹은 사용 시 법적 책임이 발생할 수 있습니다. 
+				</span>
+			</div>
+			<div _ngcontent-xjb-c66 class="mark_area">
+				<span _ngcontent-xjb-c66>
+					<img _ngcontent-xjb-c66 src="./assets/images/mark_01.png" alt="iso 9001">
+					<em _ngcontent-xjb-c66>KS Q ISO 9001</em>
+				</span>
+				<span _ngcontent-xjb-c66>
+					<img _ngcontent-xjb-c66 src="./assets/images/mark_02.png" alt="iso 14001">
+					<em _ngcontent-xjb-c66>KS I ISO 14001</em>
+				</span>
+				<span _ngcontent-xjb-c66>
+					<img _ngcontent-xjb-c66 src="./assets/images/mark_03.png" alt="venture enterprise">
+					<em _ngcontent-xjb-c66>Venture Enterprise</em>
+				</span>
+			</div>
+			<div _ngcontent-xjb-c66>
+				<span _ngcontent-xjb-c66 class="copy">2022 ⓒ Better Than WishBeen.</span>
+			</div>
+		</div>
+	</div>
+</footer>
+</app-footer>
+
+
+
+///////////////////////////////////////////////////////////////footerCSS////////////////////////////////////////////////////////
+
+#footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: #242424;
+    box-sizing: border-box;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#footer .btn_top_scroll.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+#footer .btn_top_scroll {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 5rem;
+    bottom: 10rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+
+
+#footer .btn_top_scroll:before {
+    content: "";
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+#footer .list_link {
+    margin: 0 0 2rem;
+}
+
+#footer .list_link dt {
+    padding: 0 5rem 2rem 0;
+    display: inline-block;
+    position: relative;
+    color: #ffffffb3;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+#footer .list_link dd {
+    display: inline-block;
+}
+
+#footer .list_link a {
+    padding: 0 1.5rem;
+    display: inline-block;
+    position: relative;
+    color: #ffffff80;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#footer .list_link a+a {
+    border-left: 0.1rem solid rgba(255,255,255,.1);
+}
+
+#footer .info {
+    margin: 2rem 0 0;
+    color: #fff6;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+#footer .info .inner span:after {
+    content: "";
+    width: 1.5rem;
+    margin-right: 1rem;
+    height: 1.2rem;
+    position: relative;
+    display: inline-block;
+    border-right: 0.1rem solid rgba(255,255,255,.2);
+}
+
+#footer .info span.br:after {
+    content: "";
+    display: block;
+    height: 0;
+    border: none;
+}
+
+#footer .info span.noti:before {
+    content: "";
+    display: block;
+    height: 1.5rem;
+    border: none;
+}
+
+#footer .mark_area {
+    margin: 2rem 0 0;
+}
+#footer .mark_area span {
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    display: inline-block;
+    border: 0.1rem solid rgba(255,255,255,.3);
+}
+
+#footer .mark_area span img {
+    height: 4rem;
+    margin-right: 1rem;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+em, address {
+    font-style: normal;
+}
+
+#footer .info .copy {
+    display: block;
+    margin-top: 2rem;
+}
