@@ -186,6 +186,7 @@ li {
     -webkit-tap-highlight-color: transparent!important;
 }
 
+
 #content {
     padding: 7rem 0 0;
     background: #fff;
@@ -437,7 +438,7 @@ a.btn_go img {
     color: #ff5800;
 }
 
-.trip_list[_ngcontent-rep-c82] .inner[_ngcontent-rep-c82] .tit[_ngcontent-rep-c82] {
+.trip_list .inner .tit {
     height: 45px;
     margin-bottom: 10px;
     display: -webkit-box;
@@ -760,6 +761,315 @@ a.btn_go img {
     background-size: 50%;
     opacity: .5;
 }
+
+
+
+
+/*header CSS*/
+
+
+.bandBanner {
+    text-align: center;
+    background: #111111;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    height: 40px;
+}
+
+.bandBanner .inner {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.bandBanner .inner .text {
+    color: #fff;
+}
+
+.bandBanner .inner .text .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandBanner .inner .text .link .point {
+    color: #fee000;
+}
+
+.bandBanner .inner .text .link .arrow {
+    margin-left: 5px;
+    width: 7px;
+    height: 12px;
+    background: url(/assets/images/svg/arrow_right_topBanner.svg);
+}
+
+#header.mainHeader {
+    position: relative;
+    top: 40px;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    box-sizing: border-box;
+    box-shadow: 0 0.1rem 0.3rem #0000001a;
+    z-index: 50;
+    transition: all .3s;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header .logo {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    z-index: 1;
+}
+
+#header .logo a span {
+    width: 11.5rem;
+    height: 3.9rem;
+    display: inline-block;
+    overflow: hidden;
+    background: url(logo.86dd47c5979413f8.svg) 0 0 no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+}
+
+#header .gnb_wrap {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#header .gnb_wrap ul {
+    display: inline-block;
+}
+#header .side_wrap {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#header .gnb_wrap li {
+    display: inline-block;
+    position: relative;
+}
+
+#header .gnb_wrap a {
+    padding: 0 1.2rem;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 7rem;
+}
+
+#header .gnb_wrap .btn_login, #header .gnb_wrap .btn_my {
+    padding: 0.6rem 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    border: 0.1rem solid rgba(0,0,0,.2);
+    border-radius: 3rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+#header .gnb_wrap .btn_login span, #header .gnb_wrap .btn_my span {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: -0.5rem 0.5rem 0 0;
+    display: inline-block;
+    overflow: hidden;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+    vertical-align: middle;
+}
+
+#header .btn_login span {
+    background-image: url(person1.795361a55289ba9e.svg);
+}
+
+
+
+/*footer CSS*/
+
+#footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: #242424;
+    box-sizing: border-box;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#footer .btn_top_scroll.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+#footer .btn_top_scroll {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 5rem;
+    bottom: 10rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+
+
+#footer .btn_top_scroll:before {
+    content: "";
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+#footer .list_link {
+    margin: 0 0 2rem;
+}
+
+#footer .list_link dt {
+    padding: 0 5rem 2rem 0;
+    display: inline-block;
+    position: relative;
+    color: #ffffffb3;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+#footer .list_link dd {
+    display: inline-block;
+}
+
+#footer .list_link a {
+    padding: 0 1.5rem;
+    display: inline-block;
+    position: relative;
+    color: #ffffff80;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#footer .list_link a+a {
+    border-left: 0.1rem solid rgba(255,255,255,.1);
+}
+
+#footer .info {
+    margin: 2rem 0 0;
+    color: #fff6;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+#footer .info .inner span:after {
+    content: "";
+    width: 1.5rem;
+    margin-right: 1rem;
+    height: 1.2rem;
+    position: relative;
+    display: inline-block;
+    border-right: 0.1rem solid rgba(255,255,255,.2);
+}
+
+#footer .info span.br:after {
+    content: "";
+    display: block;
+    height: 0;
+    border: none;
+}
+
+#footer .info span.noti:before {
+    content: "";
+    display: block;
+    height: 1.5rem;
+    border: none;
+}
+
+#footer .mark_area {
+    margin: 2rem 0 0;
+}
+#footer .mark_area span {
+    margin: 1rem 1rem 0 0;
+    padding: 1rem;
+    display: inline-block;
+    border: 0.1rem solid rgba(255,255,255,.3);
+}
+
+#footer .mark_area span img {
+    height: 4rem;
+    margin-right: 1rem;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+em, address {
+    font-style: normal;
+}
+
+#footer .info .copy {
+    display: block;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
