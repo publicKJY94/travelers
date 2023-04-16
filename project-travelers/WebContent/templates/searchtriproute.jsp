@@ -93,7 +93,7 @@
 									<div _nghost-gch-c84 class="search_form">
 										<input _nghost-gch-c84 placeholder="검색어를 입력하세요" type="search" class="txtbox ng-untouched ng-pristine ng-valid">
 										<button _nghost-gch-c84 type="button">
-											<img _nghost-gch-c84 src="./assets/images/svg/search.svg" alt="검색">
+											<img _nghost-gch-c84 src="https://www.wishbeen.co.kr/assets/images/svg/search.svg" alt="검색">
 										</button>
 									</div>
 								</div>
@@ -135,7 +135,7 @@
 														</ul>
 														<div _ngcontent-vnv-c93 class="user_wrap">
 															<span _ngcontent-vnv-c93 class="img">
-																<img _ngcontent-vnv-c93 alt="userimg" src="./assets/images/svg/wbsymbol.svg">
+																<img _ngcontent-vnv-c93 alt="userimg" src="https://test-resize-image.wishbeen.co.kr/62a75b26138254268a86488a6ce82340.jpg?w=50&h=50">
 															</span>
 															<span _ngcontent-vnv-c93 class="nick"> 작성자 이름 </span>
 														</div>
