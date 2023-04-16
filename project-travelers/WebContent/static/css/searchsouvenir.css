@@ -1,72 +1,16 @@
 @charset "UTF-8";
 
-*, :after, :before {
-    box-sizing: border-box;
-}
 
-.sub_header.st5 {
-    margin: 0 0 4rem;
-}
 
-.sub_header {
-    height: 24rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-}
 
-.sub_header:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.4);
-    z-index: 1;
-}
 
-.in_wrap {
-    width: 100%;
-    max-width: 79rem;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
-}
 
-.sub_header .dth2 {
-    position: relative;
-    color: #fff;
-    font-weight: 700;
-    font-size: 4.4rem;
-    line-height: 1.2;
-    z-index: 5;
-    display: block;
-    padding-top: 36px;
-}
 
-.sub_header .dth_desc {
-    width: 50%;
-    margin: 1.5rem auto 0;
-    position: relative;
-    color: #fff;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    opacity: .9;
-    z-index: 5;
-}
 
-.sub_header.st5:after {
-    background-image: url(bg_st5.560e399758673536.jpg);
-}
 
-.sub_header:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+
+
 
 .board_wrap .more {
     width: 30%;
@@ -303,42 +247,34 @@ input.txtbox {
     opacity: .5
 }
 
-
-
 .trip_list2 .inner .info_wrap .geo:before {
-    background-image: url(https://www.wishbeen.co.kr/geo.922951f5cf1908d9.svg);
+    background-image: url(geo.922951f5cf1908d9.svg);
     left: -.2rem
 }
 
 .trip_list2 .inner .info_wrap .attr:before {
-    background-image: url(https://www.wishbeen.co.kr/map.cd2b69925934f97b.svg)
+    background-image: url(map.cd2b69925934f97b.svg)
 }
 
 .trip_list2 .inner .info_wrap .down:before {
-    background-image: url(https://www.wishbeen.co.kr/download.ed23b0af8bbdf45d.svg)
+    background-image: url(download.ed23b0af8bbdf45d.svg)
 }
 
 .trip_list2 .inner .info_wrap .cmt:before {
-    background-image: url(https://www.wishbeen.co.kr/chat_dots.4000db42c3634f37.svg)
+    background-image: url(chat_dots.4000db42c3634f37.svg)
 }
 
 .trip_list2 .inner .info_wrap .like:before {
-    background-image: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg)
+    background-image: url(heart.576b28cd5d31a1cd.svg)
 }
 
 .trip_list2 .inner .info_wrap .hit:before {
-    background-image: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg)
+    background-image: url(eye.903d20db7e9b8614.svg)
 }
-
-
 
 .list_btn {
     padding: 2.5rem 0;
     text-align: center;
-}
-
-.ta_right {
-    text-align: right!important;
 }
 
 .list_btn a, .list_btn button {
@@ -369,33 +305,15 @@ input.txtbox {
     transition: all .2s;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    list-style: none;
+.banner_wrap {
+    padding: 5rem 0;
+    background: #fafafa;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
+.banner_wrap img {
+    width: 100%;
 }
 
-.pagination a {
-    width: 3rem;
-    margin: 0 0.2rem;
-    display: inline-block;
-    border: 0.1rem solid #999;
-    border-radius: 0.3rem;
-    overflow: hidden;
-    text-align: center;
-    line-height: 3rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    opacity: .5;
+.mo {
+    display: none!important;
 }
-
-.pagination a img {
-    margin-top: -0.2rem;
-}
-
