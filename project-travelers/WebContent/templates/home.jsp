@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
+<link href="../static/css/header.css" rel="stylesheet">
+<link href="../static/css/footer.css" rel="stylesheet">
 <link href="../static/css/home.css" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +21,7 @@
 								<a _ngcontent-qlk-c52 class="link" href="/bridge/sign-up-0217">
 								 ✨지금 가입하면 
 								 <span _ngcontent-qlk-c52 class="point">&nbsp;5,OOOP&nbsp;</span>
-								  즉시 적립 
+								  로또 당첨!
 								  <span _ngcontent-qlk-c52 class="arrow"></span>
 								  </a>
 							</div>
@@ -52,11 +54,7 @@
 									</li>
 								</ul>
 								<ul _ngcontent-qlk-c65 class="side_wrap">
-									<li _ngcontent-qlk-c65>
-										<button _ngcontent-qlk-c65 type="button" class="btn_sch">
-											<span _ngcontent-qlk-c65>검색</span>
-										</button>
-									</li>
+									
 									<li _ngcontent-qlk-c65 class="pc">
 										<a _ngcontent-qlk-c65 class="btn_login ng-star-inserted" href="/login">
 											<span _ngcontent-qlk-c65></span>
@@ -116,8 +114,8 @@
 									<p _ngcontent-akd-c124 class="tit">여행기</p>
 									<p _ngcontent-akd-c124 class="desc">여행을 공유 받고 여행에 대한 설렘을 느껴보세요.</p>
 									<a _ngcontent-akd-c124 class="btn_go">
-										"더보기"
-										<img _ngcontent-akd-c124 src="./assets/images/svg/arrow_right.svg" alt="go">
+										더보기
+										<img _ngcontent-akd-c124 src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go">
 									</a>
 								</header>
 								<div _ngcontent-akd-c124 class="sl_list ng-star-inserted">
@@ -125,7 +123,7 @@
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124>
 												<p _ngcontent-akd-c124 class="img">
-													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eba4b82….jpg?w=300&h=300">
+													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eba4b8263e2757b698dbb006ad3c82a5.jpg?w=300&h=300">
 												</p>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
 													<li _ngcontent-akd-c124 class="date">
@@ -139,15 +137,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -155,7 +153,7 @@
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124>
 												<p _ngcontent-akd-c124 class="img">
-													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eba4b82….jpg?w=300&h=300">
+													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/e610fa06eaf45e89ba83b22635a0efa7.jpg?w=300&h=300">
 												</p>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
 													<li _ngcontent-akd-c124 class="date">
@@ -169,15 +167,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -185,7 +183,7 @@
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124>
 												<p _ngcontent-akd-c124 class="img">
-													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eba4b82….jpg?w=300&h=300">
+													<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/6060d180780e58c1b4317642bcb0185f.jpg?w=300&h=300">
 												</p>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
 													<li _ngcontent-akd-c124 class="date">
@@ -199,15 +197,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -219,7 +217,7 @@
 							<section _ngcontent-akd-c124 class="banner_wrap ng-star-inserted">
 								<div _ngcontent-akd-c124 class="in_wrap">
 									<div _ngcontent-akd-c124 class="img pc" style="cursor: pointer;">
-										<img _ngcontent-akd-c124 src="https://test-resize-image.wishbeen.co.kr/3492c78….png" alt="노랑풍선 - 북유럽">
+										<img _ngcontent-akd-c124 src="https://test-resize-image.wishbeen.co.kr/3492c78225055badb4d41427678bae9f.png" alt="노랑풍선 - 북유럽">
 									</div>
 									<div _ngcontent-akd-c124 class="img mo" style="cursor: pointer;">
 										<img _ngcontent-akd-c124 src="https://test-resize-image.wishbeen.co.kr/6b06058….png" alt="노랑풍선 - 북유럽">
@@ -231,21 +229,23 @@
 									<h2 _ngcontent-akd-c124 class="tit">추천루트</h2>
 									<p _ngcontent-akd-c124 class="desc">다양한 장소와 리뷰로 만들어진 여행일정을 확인해보세요.</p>
 									<a _ngcontent-akd-c124 class="btn_go">
-										" 더보기 "
-										<img _ngcontent-akd-c124 src="./assets/images/svg/arrow_right.svg" alt="go">
+										 더보기
+										<img _ngcontent-akd-c124 src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go">
 									</a>
 								</div>
 								<div _ngcontent-akd-c124 class="sl_list ng-star-inserted">
 									<div _ngcontent-akd-c124 class="trip_list clear_v2">
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124 href="/schedules/456413">
-												<span _ngcontent-akd-c124 class="ico_geo_w"></span>
-												놀러간곳
+												<span _ngcontent-cbq-c82 class="geo">
+													<span _ngcontent-akd-c124 class="ico_geo_w"></span>
+													놀러간곳
+													</span>
 												<div _ngcontent-akd-c124 class="img_wrap">
 													<p _ngcontent-akd-c124 class="schedule">
 													</p>
 													<p _ngcontent-akd-c124 class="img st1">
-														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=r…964786730622,145.6936019153443&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
+														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:0x0D6FFC%7Clabel:1%7C15.119026,145.72821199999998&markers=color:0x0D6FFC%7Clabel:2%7C15.128197819827236,145.69353754232793&markers=color:0x0D6FFC%7Clabel:3%7C15.205952675189694,145.7174413651228&markers=color:0x0D6FFC%7Clabel:4%7C15.209357,145.72021199999995&markers=color:0x0D6FFC%7Clabel:5%7C15.214294,145.71656200000007&markers=color:0x0D6FFC%7Clabel:6%7C15.210155351111428,145.71719139881134&markers=color:0x0D6FFC%7Clabel:7%7C15.127964786730622,145.6936019153443&path=color:0x0D6FFC%7Cweight:5%7C15.119026,145.72821199999998%7C15.128197819827236,145.69353754232793%7C15.205952675189694,145.7174413651228%7C15.209357,145.72021199999995%7C15.214294,145.71656200000007%7C15.210155351111428,145.71719139881134%7C15.127964786730622,145.6936019153443&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
 													</p>
 												</div>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
@@ -270,13 +270,15 @@
 										</div>
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124 href="/schedules/456413">
-												<span _ngcontent-akd-c124 class="ico_geo_w"></span>
-												놀러간곳
+												<span _ngcontent-cbq-c82 class="geo">
+													<span _ngcontent-akd-c124 class="ico_geo_w"></span>
+													놀러간곳
+													</span>
 												<div _ngcontent-akd-c124 class="img_wrap">
 													<p _ngcontent-akd-c124 class="schedule">
 													</p>
 													<p _ngcontent-akd-c124 class="img st1">
-														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=r…964786730622,145.6936019153443&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
+														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:0x0D6FFC%7Clabel:1%7C15.2162,145.71806&markers=color:0x0D6FFC%7Clabel:2%7C15.2107677427135,145.7183648804261&markers=color:0x0D6FFC%7Clabel:3%7C15.2095187,145.7179525&markers=color:0x0D6FFC%7Clabel:4%7C15.21420984664743,145.71976717561483&markers=color:0x0D6FFC%7Clabel:5%7C15.213986,145.7156476&path=color:0x0D6FFC%7Cweight:5%7C15.2162,145.71806%7C15.2107677427135,145.7183648804261%7C15.2095187,145.7179525%7C15.21420984664743,145.71976717561483%7C15.213986,145.7156476&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
 													</p>
 												</div>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
@@ -301,13 +303,15 @@
 										</div>
 										<div _ngcontent-akd-c124 class="inner st1 ng-star-inserted">
 											<a _ngcontent-akd-c124 href="/schedules/456413">
-												<span _ngcontent-akd-c124 class="ico_geo_w"></span>
-												놀러간곳
+												<span _ngcontent-cbq-c82 class="geo">
+													<span _ngcontent-akd-c124 class="ico_geo_w"></span>
+													놀러간곳
+													</span>
 												<div _ngcontent-akd-c124 class="img_wrap">
 													<p _ngcontent-akd-c124 class="schedule">
 													</p>
 													<p _ngcontent-akd-c124 class="img st1">
-														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=r…964786730622,145.6936019153443&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
+														<img _ngcontent-akd-c124 alt="img" src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:0x0D6FFC%7Clabel:1%7C37.451541,127.15982099999997&markers=color:0x0D6FFC%7Clabel:2%7C37.446235,126.45602400000008&markers=color:0x0D6FFC%7Clabel:3%7C37.44834333138907,126.4510317815674&markers=color:0x0D6FFC%7Clabel:4%7C15.119026,145.72821199999998&markers=color:0x0D6FFC%7Clabel:5%7C15.147080841346805,145.70070814723817&markers=color:0x0D6FFC%7Clabel:6%7C15.115824,145.705938&path=color:0x0D6FFC%7Cweight:5%7C37.451541,127.15982099999997%7C37.446235,126.45602400000008%7C37.44834333138907,126.4510317815674%7C15.119026,145.72821199999998%7C15.147080841346805,145.70070814723817%7C15.115824,145.705938&key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
 													</p>
 												</div>
 												<ul _ngcontent-akd-c124 class="txt_wrap">
@@ -336,11 +340,11 @@
 							<div _ngcontent-akd-c124 class="blank_area"></div>
 							<section _ngcontent-akd-c124 class="city_wrap">
 									<header _ngcontent-akd-c124 class="header">
-									<p _ngcontent-akd-c124 class="tit">여행기</p>
-									<p _ngcontent-akd-c124 class="desc">여행을 공유 받고 여행에 대한 설렘을 느껴보세요.</p>
+									<p _ngcontent-akd-c124 class="tit">여행기념품</p>
+									<p _ngcontent-akd-c124 class="desc">여행기념품을 다른 여행기념품과 교환해보세요! 행복이두배!</p>
 									<a _ngcontent-akd-c124 class="btn_go">
-										"더보기"
-										<img _ngcontent-akd-c124 src="./assets/images/svg/arrow_right.svg" alt="go">
+										더보기
+										<img _ngcontent-akd-c124 src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go">
 									</a>
 								</header>
 								<div _ngcontent-akd-c124 class="sl_list ng-star-inserted">
@@ -362,15 +366,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -392,15 +396,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -422,15 +426,15 @@
 												<ul _ngcontent-akd-c124 class="ico_wrap">
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_cmt"></span>
-														댓글갯수
+														댓글수
 													</li>
 													<li _ngcontent-akd-c124>
 													<span _ngcontent-akd-c124 class="ico_like"></span>
-														좋아요 수
+														따봉 수
 													</li>
 													<li _ngcontent-akd-c124>
 														<span _ngcontent-akd-c124 class="ico_spot"></span>
-														뷰카운트
+														뷰수
 													</li>
 												</ul>
 											</a>
@@ -454,7 +458,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -470,7 +474,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eacec8484d7c574d813396303705a0a1.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -486,7 +490,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/b62b186af60653298a87eca302c23925.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -502,7 +506,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/1b86817b65cc5a5b86a2fea082b2da5b.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -518,7 +522,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -534,7 +538,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/eacec8484d7c574d813396303705a0a1.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -550,7 +554,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/b62b186af60653298a87eca302c23925.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -566,7 +570,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/1b86817b65cc5a5b86a2fea082b2da5b.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -582,7 +586,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -598,7 +602,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -614,7 +618,7 @@
 													<li _ngcontent-akd-c124 class="inner ng-star-inserted" style="width: 100%; display: inline-block;">
 														<a _ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 															<div _ngcontent-akd-c124 class="img">
-																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b8….jpg?w=300&h=300">
+																<img _ngcontent-akd-c124 alt="img" src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
 															</div>
 															<div _ngcontent-akd-c124>
 																<p _ngcontent-akd-c124 class="cate"> 랜드마크 카테고리</p>
@@ -647,6 +651,7 @@
 								<dd _ngcontent-xjb-c66>
 									<a _ngcontent-xjb-c66>회사소개</a>
 									<a _ngcontent-xjb-c66>브랜드 미디어</a>
+									
 									<a _ngcontent-xjb-c66>채용공고</a>
 									<a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com"> 제휴문의 </a>
 								</dd>
@@ -702,18 +707,18 @@
 								<span _ngcontent-xjb-c66 class="br">
 									 위시빈 서비스의 모든 콘텐츠는 저작자에게 저작권이 있으므로 무단 업로드 혹은 사용 시 법적 책임이 발생할 수 있습니다. 
 								</span>
-							</div>
+							</div>	
 							<div _ngcontent-xjb-c66 class="mark_area">
 								<span _ngcontent-xjb-c66>
-									<img _ngcontent-xjb-c66 src="./assets/images/mark_01.png" alt="iso 9001">
+									<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_01.png" alt="iso 9001">
 									<em _ngcontent-xjb-c66>KS Q ISO 9001</em>
 								</span>
 								<span _ngcontent-xjb-c66>
-									<img _ngcontent-xjb-c66 src="./assets/images/mark_02.png" alt="iso 14001">
+									<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_02.png" alt="iso 14001">
 									<em _ngcontent-xjb-c66>KS I ISO 14001</em>
 								</span>
 								<span _ngcontent-xjb-c66>
-									<img _ngcontent-xjb-c66 src="./assets/images/mark_03.png" alt="venture enterprise">
+									<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_03.png" alt="venture enterprise">
 									<em _ngcontent-xjb-c66>Venture Enterprise</em>
 								</span>
 							</div>
