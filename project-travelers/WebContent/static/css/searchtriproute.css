@@ -419,7 +419,7 @@ select.selbox {
     height: 3.1rem;
     margin: 0;
     padding: 0 0 0.8rem 0.2rem;
-    background: url() 100% 30% no-repeat;
+    background: url(https://www.wishbeen.co.kr/) 100% 30% no-repeat;
     background-size: 1.5rem auto;
     border: 0;
     border-bottom: 0.1rem solid #d7d7d7;
@@ -594,17 +594,17 @@ input.txtbox {
 }
 
 .ico_attr {
-    background: url(map.cd2b69925934f97b.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/map.cd2b69925934f97b.svg) center no-repeat;
     background-size: cover;
 }
 
 .ico_vote {
-    background: url(download.ed23b0af8bbdf45d.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/download.ed23b0af8bbdf45d.svg) center no-repeat;
     background-size: cover;
 }
 
 .ico_spot {
-    background: url(eye.903d20db7e9b8614.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg) center no-repeat;
     background-size: cover;
 }
 
