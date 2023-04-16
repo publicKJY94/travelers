@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+
+
+
+
+
+.board_wrap .more {
+    width: 30%;
+    max-width: 20rem;
+}
+
+
+.board_header.di_flex>div {
+    width: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.board_header.di_flex {
+    padding: 2rem 0 3rem;
+    display: flex;
+    border-top: 0.1rem solid #242424;
+    text-align: left;
+}
+
+.board_header.di_flex .sel_wrap {
+    width: 100%;
+    display: flex;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 300;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+.board_header.di_flex .sel_wrap .selbox {
+    width: 12rem;
+    margin: 0 1.5rem 0 0;
+}
+
+select.selbox {
+    width: 100%;
+    height: 3.1rem;
+    margin: 0;
+    padding: 0 0 0.8rem 0.2rem;
+    background: url() 100% 30% no-repeat;
+    background-size: 1.5rem auto;
+    border: 0;
+    border-bottom: 0.1rem solid #d7d7d7;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.board_header.di_flex .search_form {
+    width: 100%;
+    max-width: 237px;
+}
+
+.board_header .search_form {
+    position: relative;
+}
+
+.board_header.di_flex .search_form .txtbox {
+    width: 100%;
+}
+
+.board_header .search_form .txtbox {
+    width: 30%;
+    padding-right: 3rem;
+}
+
+.board_header.di_flex .search_form .txtbox {
+    width: 100%;
+}
+
+input.txtbox {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0.8rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 0.1rem solid #d7d7d7;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+.board_header .search_form button {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: -0.3rem 0 0;
+    position: absolute;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+
+.trip_list2 .inner>a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative
+}
+
+.trip_list2 .inner.st1 {
+    align-items: center
+}
+
+.trip_list2 .inner+.inner {
+    margin: 2.5rem 0 0;
+    padding: 2.5rem 0 0;
+    border-top: .1rem solid #e7e7e7
+}
+
+.trip_list2 .inner .img_wrap {
+    position: relative
+}
+
+.trip_list2 .inner .img_wrap .img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+.trip_list2 .inner .txt_wrap {
+    flex-grow: 1
+}
+
+.trip_list2 .inner .img_wrap+.txt_wrap ul {
+    width: 95%
+}
+
+.trip_list2 .inner .txt_wrap li {
+    margin: 1.5rem 0 0;
+    position: relative;
+    font-size: 1.5rem
+}
+
+.trip_list2 .inner .txt_wrap .schedule {
+    margin: 0;
+    color: #666
+}
+
+.trip_list2 .inner .txt_wrap .schedule span {
+    color: #ff5800;
+    font-weight: 400
+}
+
+.trip_list2 .inner .txt_wrap .schedule .noti {
+    padding: .4rem .6rem;
+    display: inline-block;
+    border: .1rem solid #ff5800;
+    border-radius: 3rem;
+    font-size: 1.3rem
+}
+
+.trip_list2 .inner .txt_wrap .tit {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.4
+}
+
+.trip_list2 .txt_wrap .txt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    color: #333;
+    line-height: 1.5
+}
+
+.trip_list2 .inner .txt_wrap .info_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+    font-size: 1.4rem
+}
+
+.trip_list2 .inner .txt_wrap .info_wrap>span {
+    padding: 0 1.5rem .8rem 0;
+    position: relative;
+    line-height: 1.3
+}
+
+.trip_list2 .inner .txt_wrap .nick,.trip_list2 .inner .txt_wrap .date {
+    color: #999
+}
+
+.trip_list2 .inner .info_wrap {
+    color: #333
+}
+
+.trip_list2 .inner .info_wrap .ico {
+    padding-left: 1.5em
+}
+
+.trip_list2 .inner .info_wrap .ico:before {
+    content: "";
+    width: 1.3em;
+    height: 1.3em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: .5
+}
+
+.trip_list2 .inner .info_wrap .geo:before {
+    background-image: url(geo.922951f5cf1908d9.svg);
+    left: -.2rem
+}
+
+.trip_list2 .inner .info_wrap .attr:before {
+    background-image: url(map.cd2b69925934f97b.svg)
+}
+
+.trip_list2 .inner .info_wrap .down:before {
+    background-image: url(download.ed23b0af8bbdf45d.svg)
+}
+
+.trip_list2 .inner .info_wrap .cmt:before {
+    background-image: url(chat_dots.4000db42c3634f37.svg)
+}
+
+.trip_list2 .inner .info_wrap .like:before {
+    background-image: url(heart.576b28cd5d31a1cd.svg)
+}
+
+.trip_list2 .inner .info_wrap .hit:before {
+    background-image: url(eye.903d20db7e9b8614.svg)
+}
+
+.list_btn {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.list_btn a, .list_btn button {
+    margin: 0.3rem;
+    background: transparent;
+    border-radius: 0.6rem;
+    outline: 0;
+    border: 0;
+    font-weight: 400;
+}
+
+.btn_st1 {
+    min-width: 10rem;
+    height: 4.5rem;
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 0.1rem solid #242424!important;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    outline: 0;
+    color: #242424;
+    font-size: 1.5rem;
+    line-height: 4.3rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s;
+}
+
+.banner_wrap {
+    padding: 5rem 0;
+    background: #fafafa;
+}
+
+.banner_wrap img {
+    width: 100%;
+}
+
+.mo {
+    display: none!important;
+}
