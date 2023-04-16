@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .position_r {
     position: relative!important;
+    margin-top : 5rem;
 }
 
 #content {
@@ -364,7 +365,7 @@ select.selbox {
     height: 3.1rem;
     margin: 0;
     padding: 0 0 0.8rem 0.2rem;
-    background: url(chevron_down.f4570c3145b4e241.svg) 100% 30% no-repeat;
+    background: url(https://www.wishbeen.co.kr/chevron_down.f4570c3145b4e241.svg) 100% 30% no-repeat;
     background-size: 1.5rem auto;
     border: 0;
     border-bottom: 0.1rem solid #d7d7d7;
@@ -478,7 +479,7 @@ fieldset, img {
 }
 
 .ico_geo {
-    background: url(geo.922951f5cf1908d9.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/geo.922951f5cf1908d9.svg) center no-repeat;
     background-size: cover;
 }
 
@@ -561,7 +562,7 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .ico_spot {
-    background: url(eye.903d20db7e9b8614.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg) center no-repeat;
     background-size: cover;
 }
 
@@ -582,12 +583,17 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .ico_cmt {
-    background: url(chat_dots.4000db42c3634f37.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/chat_dots.4000db42c3634f37.svg) center no-repeat;
     background-size: cover;
 }
 
 .ico_like {
-    background: url(heart.576b28cd5d31a1cd.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_share {
+    background: url(https://www.wishbeen.co.kr/share.0dc03223b486080e.svg) center no-repeat;
     background-size: cover;
 }
 
@@ -619,6 +625,17 @@ fieldset, img {
     border: 0;
 }
 
+.sub_header.st1:after {
+    background-image: url(https://www.wishbeen.co.kr/bg_st1.6a2f5896da8523ee.jpg);
+}
 
+.sub_header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
