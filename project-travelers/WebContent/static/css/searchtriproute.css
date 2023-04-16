@@ -593,6 +593,27 @@ input.txtbox {
     opacity: .6;
 }
 
+.trip_list1 .ico_wrap li {
+    margin: 0 1rem 0 0;
+    display: inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+
+.trip_list1 .user_wrap .img {
+    width: 2rem!important;
+    height: 2rem!important;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .ico_attr {
     background: url(https://www.wishbeen.co.kr/map.cd2b69925934f97b.svg) center no-repeat;
     background-size: cover;
@@ -612,13 +633,9 @@ input.txtbox {
     margin: 0 0 0 1rem;
 }
 
-.trip_list1 .user_wrap .img {
-    width: 2rem!important;
-    height: 2rem!important;
-    position: relative;
-    border-radius: 100%;
-    overflow: hidden;
-}
+
+
+
 
 .trip_list1 .inner .img {
     width: 16rem;
@@ -627,7 +644,13 @@ input.txtbox {
     top: 0;
     bottom: 0;
 }
-
+.trip_list1 .user_wrap .img {
+    width: 2rem!important;
+    height: 2rem!important;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
 .trip_list1 .user_wrap span {
     display: inline-block;
     position: relative;
@@ -639,6 +662,8 @@ input.txtbox {
     color: #999;
     font-size: 1.4rem;
 }
+
+
  
 .list_btn {
     padding: 2.5rem 0;
