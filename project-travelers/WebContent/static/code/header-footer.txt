@@ -39,6 +39,11 @@
 											<span _ngcontent-qlk-c65>여행품 교환</span>
 										</a>
 									</li>
+									<li _ngcontent-qlk-c65 class="pc">
+										<a _ngcontent-qlk-c65 href="/write-note">
+											<span _ngcontent-qlk-c65>공지사항</span>
+										</a>
+									</li>
 								</ul>
 								<ul _ngcontent-qlk-c65 class="side_wrap">
 									
