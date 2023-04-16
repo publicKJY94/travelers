@@ -38,13 +38,13 @@
 							href="/city/35778/home"> 홈 </a></li>
 						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
 							routerlink="travelogues" routerlinkactive="active"
-							href="/city/35778/travelogues" class> 여행기 </a></li>
+							href="/city/35778/travelogues"class="active"> 여행기 </a></li>
 						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
 							routerlink="schedules" routerlinkactive="active"
 							href="/city/35778/schedules"> 추천루트 </a></li>
 						<li _ngcontent-akd-c123><a _ngcontent-akd-c123 routerlink="places"
 							routerlinkactive="active" href="/city/35778/places"
-							class="active"> 기념품 목록 </a></li>
+							> 기념품 목록 </a></li>
 					</ul>
 				</nav>
 

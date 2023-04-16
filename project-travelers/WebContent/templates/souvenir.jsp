@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../static/css/souvenir.css" type="text/css" rel="stylesheet">
 <link href="../static/css/home.css" type="text/css" rel="stylesheet">
+<link href="../static/css/souvenir.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<app-root>
@@ -52,7 +52,7 @@
 							<input _ngcontent-ckc-c73="" placeholder="검색어를 입력하세요"
 								type="search" class="txtbox ng-untouched ng-pristine ng-valid">
 							<button _ngcontent-ckc-c73="" type="button">
-								<img _ngcontent-ckc-c73="" src="./assets/images/svg/search.svg"
+								<img _ngcontent-ckc-c73="" src="https://www.wishbeen.co.kr/assets/images/svg/search.svg"
 									alt="검색">
 							</button>
 						</div>
