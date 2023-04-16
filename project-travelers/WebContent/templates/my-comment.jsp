@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MyPage</title>
+<title>MyPage-comment</title>
 <link href="../static/css/header.css" rel="stylesheet">
 <link href="../static/css/footer.css" rel="stylesheet">
 <link href="../static/css/my-trip-board-page.css" rel="stylesheet">
