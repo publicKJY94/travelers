@@ -7,7 +7,7 @@
 <title>MyPage-comment</title>
 <link href="../static/css/header.css" rel="stylesheet">
 <link href="../static/css/footer.css" rel="stylesheet">
-<link href="../static/css/my-comment.css" rel="stylesheet">
+<link href="../static/css/my-registered-comment.css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <app-header
@@ -55,7 +55,8 @@
 				</ul>
 			</nav>
 		</div>
-	</header> </app-header> 
+	</header> 
+	</app-header> 
 	<app-reply-management _nghost-kyu-c94="" class="ng-star-inserted">
 	<div _ngcontent-kyu-c94="" id="content">
 		<header _ngcontent-kyu-c94="" class="sub_header st1">
@@ -75,56 +76,63 @@
 				</button>
 				<ul _ngcontent-kyu-c94="" class="tab_nav st01">
 					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
-						routerlink="my" routerlinkactive="active" href="/my/reply/my"
-						class="active"> 내가 등록한 댓글 </a></li>
+						routerlink="my" routerlinkactive="active" href="/my/reply/my">
+							내가 등록한 댓글 </a></li>
 					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
 						routerlink="content" routerlinkactive="active"
-						href="/my/reply/content"> 내글에 등록된 댓글 </a></li>
+						href="/my/reply/content" class="active"> 내글에 등록된 댓글 </a></li>
 				</ul>
 			</nav>
 			<router-outlet _ngcontent-kyu-c94=""></router-outlet>
-			<app-my-reply _nghost-kyu-c95="" class="ng-star-inserted">
-			<section _ngcontent-kyu-c95="" class="my_wrap">
-				<div _ngcontent-kyu-c95="" class="cmt_list clear_v2">
-					<div _ngcontent-kyu-c95="" class="inner ng-star-inserted">
-						<ul _ngcontent-kyu-c95="" class="tit_bar">
-							<li _ngcontent-kyu-c95="" class="txt_hide"><span
-								_ngcontent-kyu-c95="" class="cate">여행기</span><span
-								_ngcontent-kyu-c95="" class="tit">2ND 결혼기념일 여행, SAIPAN</span></li>
-							<li _ngcontent-kyu-c95=""><a _ngcontent-kyu-c95=""
-								class="btn_go"> 원글보기 <img _ngcontent-kyu-c95=""
+			<app-my-content-reply _nghost-kyu-c96="" class="ng-star-inserted">
+			<section _ngcontent-kyu-c96="" class="my_wrap">
+				<div _ngcontent-kyu-c96="" class="cmt_list clear_v2">
+					<div _ngcontent-kyu-c96="" class="inner ng-star-inserted">
+						<ul _ngcontent-kyu-c96="" class="tit_bar ng-star-inserted">
+							<li _ngcontent-kyu-c96="" class="txt_hide"><span
+								_ngcontent-kyu-c96="" class="cate"> 커뮤니티 </span><span
+								_ngcontent-kyu-c96="" class="tit">즐거운 오사카 여행</span></li>
+							<li _ngcontent-kyu-c96=""><a _ngcontent-kyu-c96=""
+								class="btn_go"> 원글보기 <img _ngcontent-kyu-c96=""
 									src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go"></a></li>
 						</ul>
-						<div _ngcontent-kyu-c95="" class="cont di_flex">
-							<div _ngcontent-kyu-c95="">
-								<ul _ngcontent-kyu-c95="">
-									<li _ngcontent-kyu-c95="" class="txt_wrap">와 정말 가보고 싶어요!!
-									</li>
-									<li _ngcontent-kyu-c95="" class="ta_right ng-star-inserted"><a
-										_ngcontent-kyu-c95="" class="btn_fold ng-star-inserted">
+						<!---->
+						<div _ngcontent-kyu-c96="" class="cont di_flex">
+							<div _ngcontent-kyu-c96="">
+								<ul _ngcontent-kyu-c96="">
+									<li _ngcontent-kyu-c96="" class="user_wrap"><span
+										_ngcontent-kyu-c96="" class="img"><img
+											_ngcontent-kyu-c96="" alt="userimg"
+											src="https://www.wishbeen.co.kr/assets/images/svg/wb_symbol.svg"></span><span
+										_ngcontent-kyu-c96="" class="nick ng-star-inserted"> 정
+											많은 고양이 </span>
+									<!----></li>
+									<li _ngcontent-kyu-c96="" class="txt_wrap">ㅋ</li>
+									<li _ngcontent-kyu-c96="" class="ta_right ng-star-inserted"><a
+										_ngcontent-kyu-c96="" class="btn_fold ng-star-inserted">
 											더보기 </a>
 									<!----></li>
 									<!---->
 								</ul>
 							</div>
-							<div _ngcontent-kyu-c95="">
-								<ul _ngcontent-kyu-c95="">
-									<li _ngcontent-kyu-c95=""><a _ngcontent-kyu-c95=""
-										class="btn_set"><img _ngcontent-kyu-c95=""
+							<div _ngcontent-kyu-c96="" class="ng-star-inserted">
+								<ul _ngcontent-kyu-c96="">
+									<li _ngcontent-kyu-c96=""><a _ngcontent-kyu-c96=""
+										class="btn_set"><img _ngcontent-kyu-c96=""
 											src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
 									<!----></li>
-									<li _ngcontent-kyu-c95="" class="date ng-star-inserted">
-										2023.04.17 02:25:52</li>
-									<!---->
+									<li _ngcontent-kyu-c96="" class="date">2023.04.17 02:24:30
+									</li>
 								</ul>
 							</div>
+							<!---->
 						</div>
 					</div>
 					<!---->
 				</div>
 				<!---->
 			</section>
-			</app-my-reply>
+			</app-my-content-reply>
 			<!---->
 		</div>
 	</div>
