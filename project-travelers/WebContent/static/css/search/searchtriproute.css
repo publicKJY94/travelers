@@ -1,0 +1,717 @@
+@charset "UTF-8";
+
+
+html {
+	display: block;
+	font-size: 10px;
+   	padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+:root{
+ 	view-transition-name: root;
+	--bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    --key-color: #ff8000;
+    --key-color-disabled: #dfe1e6;
+    --kakao-background-color: #fee500;
+    --naver-background-color: #03c75a;
+    --facebook-background-color: #1877f2;
+    --apple-background-color: #000000;
+}
+
+/*
+html[Attributes Style] {
+    -webkit-locale: "ko";
+}
+*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl, li, dt, dd, div, p, pre, form, fieldset {
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 300;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, address {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 300;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, input[type=file], button {
+    cursor: pointer;
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img {
+    vertical-align: middle;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+button, select {
+    text-transform: none;
+}
+
+body{
+	display: block;
+ 	box-sizing: border-box;
+ 	background-color: #fff;
+ 	-webkit-text-size-adjust: none;
+ 	-webkit-tap-highlight-color: transparent!important;
+ 	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 300;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}*/
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+    min-width: 28rem;
+    position: relative;
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+#content {
+    padding: 7rem 0 0;
+    background: #fff;
+    display: block;
+    margin: 0;
+}
+
+.sub_header.st7 {
+    height: 18rem;
+    padding: 0 0 1rem;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.sub_header {
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sub_header.st7 .dth2 {
+    color: #111;
+}
+
+.sub_header .dth2 {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    z-index: 5;
+    display: block;
+    padding-top: 36px;
+}
+
+
+
+
+
+.hide {
+    position: absolute!important;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.sub_header.st7 .dth1 {
+    color: #111;
+    left: 0;
+    top: 3px;
+}
+
+.sub_header .dth1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.2;
+    z-index: 5;
+    display: block;
+}
+
+.sub_header .dth1 span {
+    padding-right: 2rem;
+    display: inline-block;
+    position: relative;
+}
+
+
+.in_wrap.reposition {
+    position: static;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tab_sub_wrap {
+    width: 100%;
+    position: relative;
+}
+
+.tab_sub_wrap .tab_nav {
+    margin: 3rem auto;
+}
+
+.tab_nav {
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.tab_nav>li {
+    flex: 1;
+}
+
+.tab_sub_wrap .tab_nav a.active {
+    background: #242424;
+    color: #fff;
+}
+
+.tab_nav li a.active {
+    color: #242424;
+    font-weight: 500;
+    border: 0.1rem solid #242424;
+    border-bottom-color: transparent;
+}
+
+.tab_nav li:first-child a {
+    border-left-color: #ddd;
+}
+
+.tab_nav a {
+    display: block;
+    margin-left: -0.1rem;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #ddd;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s ease;
+}
+
+.tab_nav li+li a {
+    border-left-color: transparent;
+}
+
+.trip_list1 .inner {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #d7d7d7;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.trip_list1 .inner>a {
+    display: block;
+}
+
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.board_header.di_flex>div {
+    width: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.board_header.di_flex {
+    padding: 2rem 0 3rem;
+    display: flex;
+    border-top: 0.1rem solid #242424;
+    text-align: left;
+}
+
+.board_header.di_flex .sel_wrap {
+    width: 100%;
+    display: flex;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 300;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+.board_header.di_flex .sel_wrap .selbox {
+    width: 12rem;
+    margin: 0 1.5rem 0 0;
+}
+
+select.selbox {
+    width: 100%;
+    height: 3.1rem;
+    margin: 0;
+    padding: 0 0 0.8rem 0.2rem;
+    background: url(https://www.wishbeen.co.kr/) 100% 30% no-repeat;
+    background-size: 1.5rem auto;
+    border: 0;
+    border-bottom: 0.1rem solid #d7d7d7;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.board_header.di_flex .search_form {
+    width: 100%;
+    max-width: 237px;
+}
+
+.board_header .search_form {
+    position: relative;
+}
+
+.board_header.di_flex .search_form .txtbox {
+    width: 100%;
+}
+
+.board_header .search_form .txtbox {
+    width: 30%;
+    padding-right: 3rem;
+}
+
+.board_header.di_flex .search_form .txtbox {
+    width: 100%;
+}
+
+input.txtbox {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0.8rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 0.1rem solid #d7d7d7;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+.board_header .search_form button {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: -0.3rem 0 0;
+    position: absolute;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+.trip_list1 .inner .txt_wrap {
+    min-height: 13.5rem;
+    padding: 2rem 2rem 2rem 17.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.trip_list1 .geo {
+    font-size: 1.5rem;
+}
+
+.trip_list1 .ico_geo, .trip_list1 .ico_cal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.3rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .tit {
+    max-height: 6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.trip_list1 .inner .schedule {
+    max-height: 7rem;
+    margin: 1.2rem 0 1.8rem!important;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    box-shadow: 0.1rem 0.1rem 0.8rem #0000001a;
+    border: 0.1rem solid #ddd;
+}
+
+.trip_list1 .inner .schedule span {
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 0.5rem;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .date {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.trip_list1 .inner .di_flex {
+    display: flex;
+    align-items: center;
+}
+
+.trip_list1 .ico_wrap span {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.1rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .6;
+}
+
+.trip_list1 .inner {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #d7d7d7;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.trip_list1 .ico_wrap span {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.1rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .6;
+}
+
+.trip_list1 .ico_wrap li {
+    margin: 0 1rem 0 0;
+    display: inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+
+.trip_list1 .user_wrap .img {
+    width: 2rem!important;
+    height: 2rem!important;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ico_attr {
+    background: url(https://www.wishbeen.co.kr/map.cd2b69925934f97b.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_vote {
+    background: url(https://www.wishbeen.co.kr/download.ed23b0af8bbdf45d.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_spot {
+    background: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trip_list1 .inner .di_flex .user_wrap {
+    margin: 0 0 0 1rem;
+}
+
+
+
+
+
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.trip_list1 .user_wrap .img {
+    width: 2rem!important;
+    height: 2rem!important;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.trip_list1 .user_wrap span {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.trip_list1 .user_wrap .nick {
+    margin: 0 0 0 0.5rem;
+    color: #999;
+    font-size: 1.4rem;
+}
+
+
+ 
+.list_btn {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.board_wrap .more {
+    width: 30%;
+    max-width: 20rem;
+}
+
+.list_btn a, .list_btn button {
+    margin: 0.3rem;
+    background: transparent;
+    border-radius: 0.6rem;
+    outline: 0;
+    border: 0;
+    font-weight: 400;
+}
+
+.btn_st1 {
+    min-width: 10rem;
+    height: 4.5rem;
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 0.1rem solid #242424!important;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    outline: 0;
+    color: #242424;
+    font-size: 1.5rem;
+    line-height: 4.3rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s;
+}
+
+.banner_wrap {
+    padding: 5rem 0;
+    background: #fafafa;
+}
+
+.banner_wrap img {
+    width: 100%;
+}
+
+.mo {
+    display: none!important;
+}

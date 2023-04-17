@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>추천루트 게시판작성폼</title>
+<title>추천루트 작성폼</title>
+
+<link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/home.css" rel="stylesheet">
-<link href="../../static/css/trip-route-board-form.css" rel="stylesheet">
+<link href="../../static/css/board-form/trip-route-board-form.css"
+	rel="stylesheet">
+
+
 </head>
 <body>
+
 	<app-root _nghost-rcc-c68 ng-version="13.3.12">
 	<div _ngcontent-rcc-c68 id="wrap">
 		<app-header _ngcontent-akd-c67 _nghost-akd-c64
@@ -80,17 +86,17 @@
 								<div cdkmonitorsubtreefocus=""
 									class="mat-date-range-input-container">
 									<div class="mat-date-range-input-start-wrapper">
-										<input _ngcontent-rcc-c114="" type="text" 
-											matstartdate="" formcontrolname="during_start" placeholder="최소 일 수"
+										<input _ngcontent-rcc-c114="" type="text" disabled=""
+											matstartdate="" formcontrolname="during_start" placeholder=""
 											class="mat-start-date mat-date-range-input-inner ng-untouched ng-pristine ng-valid"
 											id="mat-date-range-input-4" aria-haspopup="dialog"><span
 											aria-class="hidden"
 											="true" class="mat-date-range-input-mirror">2023-04-16</span>
 									</div>
-									<span class="mat-date-range-input-separator">~</span>
+									<span class="mat-date-range-input-separator">–</span>
 									<div class="mat-date-range-input-end-wrapper">
-										<input _ngcontent-rcc-c114="" type="text" 
-											matenddate="" formcontrolname="during_end" placeholder="최대 일 수"
+										<input _ngcontent-rcc-c114="" type="text" disabled=""
+											matenddate="" formcontrolname="during_end" placeholder=""
 											class="mat-end-date mat-date-range-input-inner ng-untouched ng-pristine ng-valid"
 											aria-haspopup="dialog">
 									</div>
@@ -126,16 +132,7 @@
 										<div class="ce-block">
 											<div class="ce-block__content">
 												<div class="ce-paragraph cdx-block" contenteditable="true"
-													data-placeholder="자신만의 추천루트를 작성해 보세요! 왼쪽 버튼을 클릭해 DAY를 추가할 수 있습니다!">
-														<fieldset>
-															<legend>DAY01</legend>
-															<div><input type="text"placeholder ="지역"><button>추가</button></div>
-															<div class="locations">
-																<div class="add-location">경포대<button class="delete-location">x</button></div>
-																<div class="add-location">->해운대<button class="delete-location">x</button></div>
-															</div>
-														</fieldset>
-													</div>
+													data-placeholder="멋진 여행을 기록해 보세요!"></div>
 											</div>
 										</div>
 									</div>
@@ -154,8 +151,7 @@
 														<path stroke="currentColor" stroke-linecap="round"
 															stroke-width="2" d="M12 7V12M12 17V12M17 12H12M12 12H7"></path></svg>
 												</div>
-												<span
-													class="ce-toolbar__settings-btn ce-toolbar__settings-btn--hidden"><svg
+												<span class="ce-toolbar__settings-btn"><svg
 														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 														fill="none" viewBox="0 0 24 24">
 														<path stroke="currentColor" stroke-linecap="round"
@@ -190,7 +186,9 @@
 																<div class="ce-popover__item-icon">
 																	<svg xmlns="http://www.w3.org/2000/svg"
 																		viewBox="0.2 -0.3 9 11.4" width="12" height="14">
-																		<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 7V12M12 17V12M17 12H12M12 12H7"></path>
+																		<path stroke="currentColor" stroke-linecap="round"
+																			stroke-width="2"
+																			d="M0 2.77V.92A1 1 0 01.2.28C.35.1.56 0 .83 0h7.66c.28.01.48.1.63.28.14.17.21.38.21.64v1.85c0 .26-.08.48-.23.66-.15.17-.37.26-.66.26-.28 0-.5-.09-.64-.26a1 1 0 01-.21-.66V1.69H5.6v7.58h.5c.25 0 .45.08.6.23.17.16.25.35.25.6s-.08.45-.24.6a.87.87 0 01-.62.22H3.21a.87.87 0 01-.61-.22.78.78 0 01-.24-.6c0-.25.08-.44.24-.6a.85.85 0 01.61-.23h.5V1.7H1.73v1.08c0 .26-.08.48-.23.66-.15.17-.37.26-.66.26-.28 0-.5-.09-.64-.26A1 1 0 010 2.77z"></path>
 </svg>
 																</div>
 																<div class="ce-popover__item-label">텍스트</div>
@@ -290,7 +288,60 @@
 													<div
 														class="ce-popover__overlay ce-popover__overlay--hidden"></div>
 												</div>
-												<div></div>
+												<div>
+													<div class="ce-settings">
+														<div class="ce-popover">
+															<div class="cdx-search-field">
+																<div class="cdx-search-field__icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																		height="24" fill="none" viewBox="0 0 24 24">
+																		<circle cx="10.5" cy="10.5" r="5.5"
+																			stroke="currentColor" stroke-width="2"></circle>
+																		<line x1="15.4142" x2="19" y1="15" y2="18.5858"
+																			stroke="currentColor" stroke-linecap="round"
+																			stroke-width="2"></line></svg>
+																</div>
+																<input class="cdx-search-field__input"
+																	placeholder="Filter">
+															</div>
+															<div class="ce-popover__custom-content"></div>
+															<div class="ce-popover__items">
+																<div class="ce-popover__item" data-item-name="move-up">
+																	<div class="ce-popover__item-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																			height="24" fill="none" viewBox="0 0 24 24">
+																			<path stroke="currentColor" stroke-linecap="round"
+																				stroke-width="2"
+																				d="M7 15L11.8586 10.1414C11.9367 10.0633 12.0633 10.0633 12.1414 10.1414L17 15"></path></svg>
+																	</div>
+																	<div class="ce-popover__item-label">Move up</div>
+																</div>
+																<div class="ce-popover__item" data-item-name="delete">
+																	<div class="ce-popover__item-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																			height="24" fill="none" viewBox="0 0 24 24">
+																			<path stroke="currentColor" stroke-linecap="round"
+																				stroke-width="2"
+																				d="M8 8L12 12M12 12L16 16M12 12L16 8M12 12L8 16"></path></svg>
+																	</div>
+																	<div class="ce-popover__item-label">Delete</div>
+																</div>
+																<div class="ce-popover__item" data-item-name="move-down">
+																	<div class="ce-popover__item-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																			height="24" fill="none" viewBox="0 0 24 24">
+																			<path stroke="currentColor" stroke-linecap="round"
+																				stroke-width="2"
+																				d="M7 10L11.8586 14.8586C11.9367 14.9367 12.0633 14.9367 12.1414 14.8586L17 10"></path></svg>
+																	</div>
+																	<div class="ce-popover__item-label">Move down</div>
+																</div>
+															</div>
+															<div class="ce-popover__no-found">Nothing found</div>
+														</div>
+														<div class="ce-popover__overlay"></div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -406,4 +457,6 @@
 	</div>
 	</app-write-travel-note> </app-root>
 </body>
+<script src="../../static/js/board-form/trip-board-form.js"></script>
+
 </html>

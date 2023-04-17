@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>내 여행기 작성 폼</title>
-	
+
+<link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/home.css" rel="stylesheet">
 <link href="../../static/css/board-form/trip-board-form.css"
