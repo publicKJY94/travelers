@@ -1,0 +1,795 @@
+/**
+ * 
+ */
+"use strict";
+(self.webpackChunkwishbeen_frontend = self.webpackChunkwishbeen_frontend || []).push([[3192], {
+    43192: (Y,x,s)=>{
+        s.r(x),
+        s.d(x, {
+            CommunityModule: ()=>yt
+        });
+        var f = s(69808)
+          , h = s(1402)
+          , B = s(88032)
+          , r = s(65620)
+          , c = s(17489)
+          , L = s(77579)
+          , v = s(95698)
+          , j = s(82722)
+          , o = s(92340)
+          , u = s(33922);
+        const g = "community"
+          , $ = {
+            community: {
+                data: [],
+                pagination: null
+            },
+            scrollTop: 0
+        }
+          , M = (0,
+        r.Lq)($, (0,
+        r.on)(u.m.saveCommunityData, (i,{data: l})=>Object.assign(Object.assign({}, i), {
+            community: l
+        })), (0,
+        r.on)(u.m.resetCommunityData, i=>Object.assign(Object.assign({}, i), {
+            community: $.community
+        })), (0,
+        r.on)(u.m.saveScrollTop, (i,{value: l})=>Object.assign(Object.assign({}, i), {
+            scrollTop: l
+        })), (0,
+        r.on)(u.m.resetScrollTop, i=>Object.assign(Object.assign({}, i), {
+            scrollTop: 0
+        })))
+          , P = g;
+        function I(i, l) {
+            return (0,
+            r.UY)({
+                [g]: M
+            })(i, l)
+        }
+        const b = (0,
+        r.ZF)(P)
+          , U = (0,
+        r.P1)(b, i=>i[g])
+          , Q = (0,
+        r.P1)(U, i=>i.community)
+          , z = (0,
+        r.P1)(U, i=>i.scrollTop);
+        var t = s(5e3)
+          , S = s(11024)
+          , R = s(92423)
+          , W = s(96689)
+          , K = s(85298)
+          , G = s(37556)
+          , H = s(73794)
+          , _ = s(93075)
+          , V = s(6260);
+        function X(i, l) {
+            if (1 & i && (t.TgZ(0, "option", 32),
+            t._uU(1),
+            t.qZA()),
+            2 & i) {
+                const e = l.$implicit;
+                t.Q6J("value", e.idx),
+                t.xp6(1),
+                t.hij(" ", null == e ? null : e.major_continent.name, " ")
+            }
+        }
+        function k(i, l) {
+            if (1 & i && (t.TgZ(0, "option", 32),
+            t._uU(1),
+            t.qZA()),
+            2 & i) {
+                const e = l.$implicit;
+                t.Q6J("value", null == e ? null : e.idx),
+                t.xp6(1),
+                t.hij(" ", null == e ? null : e.major_country_ref_country.name, " ")
+            }
+        }
+        function w(i, l) {
+            if (1 & i && (t.TgZ(0, "option", 32),
+            t._uU(1),
+            t.qZA()),
+            2 & i) {
+                const e = l.$implicit;
+                t.Q6J("value", null == e ? null : e.major_city_ref_city.idx),
+                t.xp6(1),
+                t.hij(" ", null == e ? null : e.major_city_ref_city.name, " ")
+            }
+        }
+        function q(i, l) {
+            1 & i && (t.TgZ(0, "li", 33)(1, "p"),
+            t._uU(2, "\ub4f1\ub85d\ub41c \ucf58\ud150\uce20\uac00 \uc5c6\uc2b5\ub2c8\ub2e4,."),
+            t.qZA()())
+        }
+        function tt(i, l) {
+            if (1 & i && (t.TgZ(0, "p", 48),
+            t._UZ(1, "img", 49),
+            t.qZA()),
+            2 & i) {
+                const e = t.oxw(2).$implicit;
+                t.xp6(1),
+                t.s9C("src", e.imgSrc, t.LSH)
+            }
+        }
+        function et(i, l) {
+            if (1 & i && (t.TgZ(0, "div", 46),
+            t.YNc(1, tt, 2, 1, "p", 47),
+            t.qZA()),
+            2 & i) {
+                const e = t.oxw().$implicit;
+                t.xp6(1),
+                t.Q6J("ngIf", e.imgSrc)
+            }
+        }
+        function it(i, l) {
+            1 & i && (t.TgZ(0, "span", 50),
+            t._uU(1, "\uacf5\uc9c0"),
+            t.qZA())
+        }
+        function nt(i, l) {
+            1 & i && (t.TgZ(0, "em"),
+            t._uU(1, "\xb7"),
+            t.qZA())
+        }
+        const st = function(i) {
+            return ["/community", i]
+        }
+          , J = function(i, l) {
+            return {
+                city_idx: i,
+                city_name: l
+            }
+        };
+        function ot(i, l) {
+            if (1 & i) {
+                const e = t.EpF();
+                t.TgZ(0, "li", 34)(1, "a", 35),
+                t.NdJ("click", function() {
+                    return t.CHM(e),
+                    t.oxw().saveScroll()
+                }),
+                t.YNc(2, et, 2, 1, "div", 36),
+                t.TgZ(3, "div", 37)(4, "ul")(5, "li", 38),
+                t.YNc(6, it, 2, 0, "span", 39),
+                t.YNc(7, nt, 2, 0, "em", 40),
+                t._uU(8),
+                t.ALo(9, "timeAgo"),
+                t.qZA(),
+                t.TgZ(10, "li", 41),
+                t._uU(11),
+                t.qZA(),
+                t.TgZ(12, "li", 42)(13, "span"),
+                t._uU(14),
+                t.qZA(),
+                t.TgZ(15, "span"),
+                t._UZ(16, "span", 43),
+                t._uU(17),
+                t.ALo(18, "number"),
+                t.qZA(),
+                t.TgZ(19, "span"),
+                t._UZ(20, "span", 44),
+                t._uU(21),
+                t.ALo(22, "number"),
+                t.qZA(),
+                t.TgZ(23, "span"),
+                t._UZ(24, "span", 45),
+                t._uU(25),
+                t.ALo(26, "number"),
+                t.qZA()()()()()()
+            }
+            if (2 & i) {
+                const e = l.$implicit
+                  , n = t.oxw();
+                t.xp6(1),
+                t.Q6J("routerLink", t.VKq(19, st, null == e ? null : e.idx))("queryParams", t.WLB(21, J, n.city_idx, n.city_name)),
+                t.xp6(1),
+                t.Q6J("ngIf", e.main_thumbnail_filekey),
+                t.xp6(4),
+                t.Q6J("ngIf", null == e ? null : e.top_fixed_at),
+                t.xp6(1),
+                t.Q6J("ngIf", null == e ? null : e.top_fixed_at),
+                t.xp6(1),
+                t.hij(" ", t.lcZ(9, 11, null == e ? null : e.created_at), " "),
+                t.xp6(3),
+                t.Oqu(null == e ? null : e.community_title),
+                t.xp6(3),
+                t.hij("by ", null == e || null == e.community_creator ? null : e.community_creator.user_nick, ""),
+                t.xp6(3),
+                t.hij(" ", t.lcZ(18, 13, null == e ? null : e.reply_cnt), " "),
+                t.xp6(4),
+                t.hij(" ", t.lcZ(22, 15, null == e ? null : e.like_cnt), " "),
+                t.xp6(4),
+                t.hij(" ", t.lcZ(26, 17, null == e ? null : e.view_cnt), " ")
+            }
+        }
+        const at = function(i) {
+            return {
+                active: i
+            }
+        };
+        function rt(i, l) {
+            if (1 & i) {
+                const e = t.EpF();
+                t.TgZ(0, "a", 51),
+                t.NdJ("click", function() {
+                    const m = t.CHM(e).$implicit;
+                    return t.oxw().setPage(m)
+                }),
+                t._uU(1),
+                t.qZA()
+            }
+            if (2 & i) {
+                const e = l.$implicit
+                  , n = t.oxw();
+                t.Q6J("ngClass", t.VKq(2, at, n.pager.currentPage === e)),
+                t.xp6(1),
+                t.hij(" ", e, " ")
+            }
+        }
+        function ut(i, l) {
+            if (1 & i) {
+                const e = t.EpF();
+                t.TgZ(0, "div", 52)(1, "a", 53),
+                t.NdJ("click", function() {
+                    return t.CHM(e),
+                    t.oxw().moreList()
+                }),
+                t._uU(2, "\ub354\ubcf4\uae30"),
+                t.qZA()()
+            }
+        }
+        const N = function() {
+            return ["/community", "write"]
+        }
+          , {IMAGE_DOWNLOAD_API: lt} = o.N
+          , ct = [{
+            path: "",
+            component: (()=>{
+                class i {
+                    constructor(e, n, a, m, T, Z, C, d, D, A) {
+                        var E;
+                        this.api = e,
+                        this.dialog = n,
+                        this.route = a,
+                        this.pagerService = m,
+                        this.localService = T,
+                        this.authService = Z,
+                        this.seo = C,
+                        this.document = d,
+                        this.router = D,
+                        this.store = A,
+                        this.city_idx = "",
+                        this.city_name = "",
+                        this.country_idx = "",
+                        this.search_keyword = "",
+                        this.sort = "created_at__desc",
+                        this.community_category = "",
+                        this.page = 1,
+                        this.size = 10,
+                        this.isMobileSize = !1,
+                        this.endOfList = !1,
+                        this.pager = {},
+                        this.selectedContinentIdx = "",
+                        this.communities = [],
+                        this.continents = [],
+                        this.countries = [],
+                        this.cities = [],
+                        this.unsubscribe$ = new L.x,
+                        this.city_idx = null !== (E = a.snapshot.queryParams.city_idx) && void 0 !== E ? E : "",
+                        this.city_name = a.snapshot.queryParams.city_name,
+                        this.currentCityName = this.city_name,
+                        this.router.routeReuseStrategy.shouldReuseRoute = function() {
+                            return !1
+                        }
+                        ,
+                        this.community$ = A.pipe((0,
+                        r.Ys)(Q)),
+                        this.scrollTop$ = A.pipe((0,
+                        r.Ys)(z))
+                    }
+                    ngOnInit() {
+                        this.seo.updateOgTitle(this.city_name + " \uc5ec\ud589 \ucee4\ubba4\ub2c8\ud2f0"),
+                        this.seo.updateOgKeyword("\uc5ec\ud589\ucee4\ubba4\ub2c8\ud2f0, \uc5ec\ud589\uc815\ubcf4, \uc704\ud5d8\ud55c\uc5ec\ud589, \uc548\uc804\ud55c\uc5ec\ud589, \uc990\uac70\uc6b4\uc5ec\ud589, \uc5ec\ud589\uc900\ube44\ubb3c, \uc5ec\ud589 \ud544\uc218\ud488, \ud574\uc678\uc5ec\ud589, \uad6d\ub0b4\uc5ec\ud589"),
+                        this.seo.updateOgDescription("\ub3c4\uc2dc\ubcc4 \uc5ec\ud589\uc5d0 \uad00\ub828\ub41c \uc790\uc720\ub85c\uc6b4 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158\uc744 \ud574\ubcf4\uc138\uc694, \ub2e4\uc591\ud55c \uc5ec\ud589\ud301\uc744 \uc5bb\uc73c\uc2e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4"),
+                        this.seo.updateOgImage(`https://${this.document.location.hostname}/assets/images/meta_image.png`),
+                        window.innerWidth < 790 && (this.isMobileSize = !0,
+                        this.size = 10),
+                        this.getMajorContinents(),
+                        this.community$.pipe((0,
+                        v.q)(1)).subscribe(({city_idx: e, continent: n})=>{
+                            var a;
+                            (Number(e) !== Number(this.city_idx) || (null == n ? void 0 : n.major_continent.code) !== (null === (a = this.continent) || void 0 === a ? void 0 : a.major_continent.code)) && (this.store.dispatch(u.m.resetCommunityData()),
+                            this.store.dispatch(u.m.resetScrollTop()))
+                        }
+                        ),
+                        this.community$.pipe((0,
+                        j.R)(this.unsubscribe$)).subscribe(e=>{
+                            const {data: n, pagination: a, search_keyword: m, city_idx: T, continent: Z, sort: C} = c.cloneDeep(e);
+                            if ((null == n ? void 0 : n.length) || a && !a.total_cnt) {
+                                globalThis.scrollY > 0 && (this.scrollTop = globalThis.scrollY),
+                                this.totalCount = a.total_cnt,
+                                this.communities = null != n ? n : [],
+                                this.city_idx = null != T ? T : "",
+                                this.search_keyword = null != m ? m : "",
+                                Z && (this.continent = Z),
+                                this.sort = null != C ? C : "created_at__desc",
+                                this.setPage(a.current_page, !0),
+                                this.isMobileSize && (this.endOfList = a.size * this.page >= this.totalCount);
+                                for (const d of this.communities)
+                                    d.imgSrc = this.getImageSrc(null == d ? void 0 : d.main_thumbnail_filekey, 160);
+                                setTimeout(()=>{
+                                    var d;
+                                    globalThis.scrollTo({
+                                        top: null !== (d = this.scrollTop) && void 0 !== d ? d : 0
+                                    }),
+                                    this.store.dispatch(u.m.saveScrollTop({
+                                        value: 0
+                                    }))
+                                }
+                                , 0)
+                            } else
+                                this.getCommunities()
+                        }
+                        ),
+                        this.scrollTop$.pipe((0,
+                        j.R)(this.unsubscribe$)).subscribe(e=>{
+                            this.scrollTop = e
+                        }
+                        )
+                    }
+                    ngOnDestroy() {
+                        this.unsubscribe$.next(),
+                        this.unsubscribe$.complete(),
+                        this.seo.resetOgTags()
+                    }
+                    saveScroll() {
+                        this.store.dispatch(u.m.saveScrollTop({
+                            value: globalThis.scrollY
+                        }))
+                    }
+                    getCommunities() {
+                        this.store.dispatch(u.m.loadCommunityData({
+                            page: this.page,
+                            size: this.size,
+                            city_idx: this.city_idx,
+                            continent: this.continent,
+                            sort: this.sort,
+                            search_keyword: this.search_keyword
+                        }))
+                    }
+                    getMajorContinents() {
+                        this.api.getMajorContinents().subscribe(e=>{
+                            this.continents = e
+                        }
+                        )
+                    }
+                    setPage(e, n=!1) {
+                        var a;
+                        e == this.pager.currentPage || 0 == e || e > this.pager.endPage || e < this.pager.startPage || (this.pager = this.pagerService.getPager(this.totalCount, e, this.size),
+                        this.page = e,
+                        globalThis.scrollTo({
+                            top: null !== (a = this.scrollTop) && void 0 !== a ? a : 0
+                        }),
+                        this.store.dispatch(u.m.saveScrollTop({
+                            value: 0
+                        })),
+                        n || this.getCommunities())
+                    }
+                    moreList() {
+                        this.getCommunities()
+                    }
+                    refreshList() {
+                        this.communities = [],
+                        this.page = 1,
+                        this.endOfList = !1,
+                        this.pager = {},
+                        this.store.dispatch(u.m.resetCommunityData())
+                    }
+                    selContinent(e) {
+                        this.continent = c.find(this.continents, n=>n.idx === Number(e)),
+                        this.selectedContinentIdx = e,
+                        this.countries = [],
+                        this.cities = [],
+                        this.api.getMajorCountries(e).subscribe(n=>{
+                            this.countries = n
+                        }
+                        )
+                    }
+                    selCountry(e) {
+                        this.country_idx = e,
+                        this.cities = [],
+                        this.api.getMajorCities(this.selectedContinentIdx, e).subscribe(n=>{
+                            this.cities = n
+                        }
+                        )
+                    }
+                    selCity(e) {
+                        const n = c.find(this.cities, a=>a.major_city_ref_city.idx == e);
+                        n && this.router.navigate(["/community"], {
+                            queryParams: {
+                                city_idx: e,
+                                city_name: n.major_city_ref_city.name
+                            }
+                        })
+                    }
+                    selCategory(e) {
+                        this.community_category = e.target.value,
+                        this.refreshList()
+                    }
+                    selSort(e) {
+                        this.sort = e.target.value,
+                        this.refreshList()
+                    }
+                    search() {
+                        this.refreshList()
+                    }
+                    getImageSrc(e, n) {
+                        if (null == e ? void 0 : e.startsWith("data:image"))
+                            return null;
+                        if (e) {
+                            const a = e.replace(/(\?.*)|(#.*)/g, "");
+                            return `${lt}/${a}?w=${n}&h=${n}`
+                        }
+                        return ""
+                    }
+                }
+                return i.\u0275fac = function(e) {
+                    return new (e || i)(t.Y36(S.s),t.Y36(R.FF),t.Y36(h.gz),t.Y36(W.e),t.Y36(K.C),t.Y36(G.e),t.Y36(H.v),t.Y36(f.K0),t.Y36(h.F0),t.Y36(r.yh))
+                }
+                ,
+                i.\u0275cmp = t.Xpm({
+                    type: i,
+                    selectors: [["app-community"]],
+                    decls: 57,
+                    vars: 23,
+                    consts: [["id", "content"], [1, "sub_header", "st5"], [1, "in_wrap"], [1, "dth2"], [1, "dth_desc"], [1, "board_wrap"], [1, "board_header", "di_flex"], [1, "sel_wrap"], ["value", "", 1, "selbox", 3, "value", "change"], ["value", ""], [3, "value", 4, "ngFor", "ngForOf"], [1, "selbox", 3, "value", "change"], [1, "selbox", 3, "change"], [1, "search_form", "commu"], ["placeholder", "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "type", "search", 1, "txtbox", 3, "ngModel", "ngModelChange", "keyup.enter"], ["type", "button", 3, "click"], ["src", "./assets/images/svg/search.svg", "alt", "\uac80\uc0c9"], [1, "mo"], [1, "btn_st1", 3, "routerLink", "queryParams"], [1, "trip_list2"], ["class", "nodata map", 4, "ngIf"], ["class", "inner st1", 4, "ngFor", "ngForOf"], [1, "list_btn", "bdt_line", "mat25", "pc"], [1, "ta_right"], [1, "pagination", "pc"], [3, "click"], ["src", "./assets/images/svg/chevron_double_left.svg", "alt", "\ucc98\uc74c"], ["src", "./assets/images/svg/chevron_left.svg", "alt", "\uc774\uc804"], [3, "ngClass", "click", 4, "ngFor", "ngForOf"], ["src", "./assets/images/svg/chevron_right.svg", "alt", "\ub2e4\uc74c"], ["src", "./assets/images/svg/chevron_double_right.svg", "alt", "\ub9c8\uc9c0\ub9c9"], ["class", "list_btn mo", 4, "ngIf"], [3, "value"], [1, "nodata", "map"], [1, "inner", "st1"], [3, "routerLink", "queryParams", "click"], ["class", "img_wrap", 4, "ngIf"], [1, "txt_wrap"], [1, "schedule"], ["class", "noti", 4, "ngIf"], [4, "ngIf"], [1, "tit"], [1, "info_wrap"], [1, "ico", "cmt"], [1, "ico", "like"], [1, "ico", "hit"], [1, "img_wrap"], ["class", "img", 4, "ngIf"], [1, "img"], ["alt", "img", 3, "src"], [1, "noti"], [3, "ngClass", "click"], [1, "list_btn", "mo"], [1, "btn_st0", "more", 3, "click"]],
+                    template: function(e, n) {
+                        1 & e && (t.TgZ(0, "section", 0)(1, "div", 1)(2, "div", 2)(3, "h2", 3),
+                        t._uU(4),
+                        t.qZA(),
+                        t.TgZ(5, "p", 4),
+                        t._uU(6, " \ub3c4\uc2dc\ubcc4 \uc5ec\ud589\uc5d0 \uad00\ub828\ub41c \uc790\uc720\ub85c\uc6b4 \ucee4\ubba4\ub2c8\ucf00\uc774\uc158\uc744 \ud574\ubcf4\uc138\uc694, \ub2e4\uc591\ud55c \uc5ec\ud589\ud301\uc744 \uc5bb\uc73c\uc2e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4. "),
+                        t.qZA()()(),
+                        t.TgZ(7, "div", 2)(8, "div", 5)(9, "div", 6)(10, "div")(11, "ul", 7)(12, "li")(13, "select", 8),
+                        t.NdJ("change", function(m) {
+                            return n.selContinent(m.target.value)
+                        }),
+                        t.TgZ(14, "option", 9),
+                        t._uU(15, "\ub300\ub959"),
+                        t.qZA(),
+                        t.YNc(16, X, 2, 2, "option", 10),
+                        t.qZA()(),
+                        t.TgZ(17, "li")(18, "select", 11),
+                        t.NdJ("change", function(m) {
+                            return n.selCountry(m.target.value)
+                        }),
+                        t.TgZ(19, "option", 9),
+                        t._uU(20, "\ub098\ub77c"),
+                        t.qZA(),
+                        t.YNc(21, k, 2, 2, "option", 10),
+                        t.qZA()(),
+                        t.TgZ(22, "li")(23, "select", 12),
+                        t.NdJ("change", function(m) {
+                            return n.selCity(m.target.value)
+                        }),
+                        t.TgZ(24, "option", 9),
+                        t._uU(25, "\ub3c4\uc2dc"),
+                        t.qZA(),
+                        t.YNc(26, w, 2, 2, "option", 10),
+                        t.qZA()()()(),
+                        t.TgZ(27, "div", 13)(28, "input", 14),
+                        t.NdJ("ngModelChange", function(m) {
+                            return n.search_keyword = m
+                        })("keyup.enter", function() {
+                            return n.search()
+                        }),
+                        t.qZA(),
+                        t.TgZ(29, "button", 15),
+                        t.NdJ("click", function() {
+                            return n.search()
+                        }),
+                        t._UZ(30, "img", 16),
+                        t.qZA()(),
+                        t.TgZ(31, "div", 17)(32, "a", 18),
+                        t._uU(33, " \uae00\uc4f0\uae30 "),
+                        t.qZA()()(),
+                        t.TgZ(34, "ul", 19),
+                        t.YNc(35, q, 3, 0, "li", 20),
+                        t.YNc(36, ot, 27, 24, "li", 21),
+                        t.qZA(),
+                        t.TgZ(37, "div", 22)(38, "div", 23)(39, "a", 18),
+                        t._uU(40, " \uae00\uc4f0\uae30 "),
+                        t.qZA()()(),
+                        t.TgZ(41, "ul", 24)(42, "li")(43, "a", 25),
+                        t.NdJ("click", function() {
+                            return n.setPage(1)
+                        }),
+                        t._UZ(44, "img", 26),
+                        t.qZA()(),
+                        t.TgZ(45, "li")(46, "a", 25),
+                        t.NdJ("click", function() {
+                            return n.setPage(n.pager.currentPage - 1)
+                        }),
+                        t._UZ(47, "img", 27),
+                        t.qZA()(),
+                        t.TgZ(48, "li"),
+                        t.YNc(49, rt, 2, 4, "a", 28),
+                        t.qZA(),
+                        t.TgZ(50, "li")(51, "a", 25),
+                        t.NdJ("click", function() {
+                            return n.setPage(n.pager.currentPage + 1)
+                        }),
+                        t._UZ(52, "img", 29),
+                        t.qZA()(),
+                        t.TgZ(53, "li")(54, "a", 25),
+                        t.NdJ("click", function() {
+                            return n.setPage(n.pager.totalPages)
+                        }),
+                        t._UZ(55, "img", 30),
+                        t.qZA()()(),
+                        t.YNc(56, ut, 3, 0, "div", 31),
+                        t.qZA()()()),
+                        2 & e && (t.xp6(4),
+                        t.hij("", n.currentCityName, " \ucee4\ubba4\ub2c8\ud2f0"),
+                        t.xp6(9),
+                        t.Q6J("value", n.selectedContinentIdx),
+                        t.xp6(3),
+                        t.Q6J("ngForOf", n.continents),
+                        t.xp6(2),
+                        t.Q6J("value", n.country_idx),
+                        t.xp6(3),
+                        t.Q6J("ngForOf", n.countries),
+                        t.xp6(5),
+                        t.Q6J("ngForOf", n.cities),
+                        t.xp6(2),
+                        t.Q6J("ngModel", n.search_keyword),
+                        t.xp6(4),
+                        t.Q6J("routerLink", t.DdM(15, N))("queryParams", t.WLB(16, J, n.city_idx, n.city_name)),
+                        t.xp6(3),
+                        t.Q6J("ngIf", 0 === n.communities.length),
+                        t.xp6(1),
+                        t.Q6J("ngForOf", n.communities),
+                        t.xp6(3),
+                        t.Q6J("routerLink", t.DdM(19, N))("queryParams", t.WLB(20, J, n.city_idx, n.city_name)),
+                        t.xp6(10),
+                        t.Q6J("ngForOf", n.pager.pages),
+                        t.xp6(7),
+                        t.Q6J("ngIf", !n.endOfList))
+                    },
+                    directives: [_.YN, _.Kr, f.sg, _.Fj, _.JJ, _.On, h.yS, f.O5, f.mk],
+                    pipes: [V.b, f.JJ],
+                    styles: [""]
+                }),
+                i
+            }
+            )()
+        }, {
+            path: "write",
+            loadChildren: ()=>Promise.all([s.e(6649), s.e(9235), s.e(9642), s.e(6069), s.e(2308), s.e(4028), s.e(1589), s.e(6115), s.e(2343), s.e(5245), s.e(3865), s.e(8592), s.e(8563)]).then(s.bind(s, 98563)).then(i=>i.WriteCommunityModule),
+            canActivate: [B.P]
+        }, {
+            path: ":id",
+            loadChildren: ()=>Promise.all([s.e(6649), s.e(9235), s.e(9642), s.e(6069), s.e(2308), s.e(8592), s.e(1051)]).then(s.bind(s, 61051)).then(i=>i.CommunityDetailModule)
+        }];
+        let mt = (()=>{
+            class i {
+            }
+            return i.\u0275fac = function(e) {
+                return new (e || i)
+            }
+            ,
+            i.\u0275mod = t.oAB({
+                type: i
+            }),
+            i.\u0275inj = t.cJS({
+                imports: [[h.Bz.forChild(ct)], h.Bz]
+            }),
+            i
+        }
+        )();
+        var ht = s(83774)
+          , O = s(36642)
+          , pt = s(63900)
+          , dt = s(54004)
+          , gt = s(70262);
+        let Ct = (()=>{
+            class i {
+                constructor(e, n, a) {
+                    this.actions$ = e,
+                    this.api = n,
+                    this.store = a,
+                    this.loadCommunityData$ = (0,
+                    O.GW)(()=>this.actions$.pipe((0,
+                    O.l4)(u.m.loadCommunityData), (0,
+                    pt.w)(({page: m, size: T, city_idx: Z, continent: C, sort: d, search_keyword: D})=>this.api.getCommunities(m, T, Z, null == C ? void 0 : C.major_continent.code, null, d, D).pipe((0,
+                    dt.U)(A=>u.m.saveCommunityData({
+                        data: Object.assign(Object.assign({}, A), {
+                            city_idx: Z,
+                            continent: C,
+                            sort: d,
+                            search_keyword: D
+                        })
+                    })), (0,
+                    gt.K)(A=>[])))))
+                }
+            }
+            return i.\u0275fac = function(e) {
+                return new (e || i)(t.LFG(O.eX),t.LFG(S.s),t.LFG(r.yh))
+            }
+            ,
+            i.\u0275prov = t.Yz7({
+                token: i,
+                factory: i.\u0275fac
+            }),
+            i
+        }
+        )()
+          , yt = (()=>{
+            class i {
+            }
+            return i.\u0275fac = function(e) {
+                return new (e || i)
+            }
+            ,
+            i.\u0275mod = t.oAB({
+                type: i
+            }),
+            i.\u0275inj = t.cJS({
+                imports: [[f.ez, mt, ht.l, _.u5, r.Aw.forFeature(P, I), O.sQ.forFeature([Ct])]]
+            }),
+            i
+        }
+        )()
+    }
+    ,
+    11024: (Y,x,s)=>{
+        s.d(x, {
+            s: ()=>L
+        });
+        var f = s(92340)
+          , h = s(40520)
+          , B = s(5e3);
+        const {API_URL: r} = f.N
+          , c = {
+            headers: new h.WM({
+                "Content-Type": "application/json"
+            })
+        };
+        let L = (()=>{
+            class v {
+                constructor(o) {
+                    this.http = o
+                }
+                getCitiesRealTime(o) {
+                    const u = (new h.LE).set("keyword", o);
+                    return this.http.get(`${r}/city-realtime-search`, {
+                        headers: c.headers,
+                        params: u
+                    })
+                }
+                uploadFile(o) {
+                    const u = new FormData;
+                    return u.append("name", o.name),
+                    u.append("file", o),
+                    this.http.post(`${r}/files`, u)
+                }
+                saveCommunity(o) {
+                    return this.http.post(`${r}/communities`, o, {
+                        headers: c.headers
+                    })
+                }
+                getCommunities(o, u, g, y, $, M, F) {
+                    let p = (new h.LE).set("page", o);
+                    return p = p.append("size", u),
+                    g && (p = p.append("city_idx", g)),
+                    y && (p = p.append("continent_code", y)),
+                    $ && (p = p.append("community_category", $)),
+                    M && (p = p.append("sort", M)),
+                    F && (p = p.append("search_keyword", F)),
+                    this.http.get(`${r}/communities`, {
+                        headers: c.headers,
+                        params: p
+                    })
+                }
+                getCommunity(o) {
+                    return this.http.get(`${r}/communities/${o}`, {
+                        headers: c.headers
+                    })
+                }
+                putCommunity(o, u) {
+                    return this.http.put(`${r}/communities/${o}`, u, {
+                        headers: c.headers
+                    })
+                }
+                delCommunity(o) {
+                    return this.http.delete(`${r}/communities/${o}`, {
+                        headers: c.headers
+                    })
+                }
+                getContinents(o) {
+                    return this.http.get(`${r}/continents`, {
+                        headers: new h.WM({
+                            "Accept-Language": o
+                        })
+                    })
+                }
+                like(o) {
+                    return this.http.post(`${r}/communities/${o}/likes`, null, {
+                        headers: new h.WM({
+                            "Content-Type": "application/octet-stream"
+                        })
+                    })
+                }
+                unLike(o) {
+                    return this.http.delete(`${r}/communities/${o}/likes`, {
+                        headers: c.headers
+                    })
+                }
+                getSights(o) {
+                    return this.http.get(`${r}/sights/${o}`, {
+                        headers: c.headers
+                    })
+                }
+                getReplies(o, u, g) {
+                    let y = (new h.LE).set("page", u);
+                    return y = y.append("size", g),
+                    this.http.get(`${r}/communities/${o}/replys`, {
+                        headers: c.headers,
+                        params: y
+                    })
+                }
+                writeReply(o, u) {
+                    return this.http.post(`${r}/communities/${o}/replys`, u, {
+                        headers: c.headers
+                    })
+                }
+                removeReply(o, u) {
+                    return this.http.delete(`${r}/communities/${o}/replys/${u}`, {
+                        headers: c.headers
+                    })
+                }
+                modifyReply(o, u, g) {
+                    return this.http.put(`${r}/communities/${o}/replys/${u}`, g, {
+                        headers: c.headers
+                    })
+                }
+                setTop(o, u, g) {
+                    const y = (new h.LE).set("is_top_fix", g);
+                    return this.http.put(`${r}/communities/${o}/replys/${u}/top_fixed`, null, {
+                        headers: new h.WM({
+                            "Content-Type": "application/octet-stream"
+                        }),
+                        params: y
+                    })
+                }
+                getMajorContinents() {
+                    return this.http.get(`${r}/major-continents`, {
+                        headers: c.headers
+                    })
+                }
+                getMajorCountries(o) {
+                    return this.http.get(`${r}/major-continents/${o}/major-countries`, {
+                        headers: c.headers
+                    })
+                }
+                getMajorCities(o, u) {
+                    return this.http.get(`${r}/major-continents/${o}/major-countries/${u}/major-cities`, {
+                        headers: c.headers
+                    })
+                }
+            }
+            return v.\u0275fac = function(o) {
+                return new (o || v)(B.LFG(h.eN))
+            }
+            ,
+            v.\u0275prov = B.Yz7({
+                token: v,
+                factory: v.\u0275fac,
+                providedIn: "root"
+            }),
+            v
+        }
+        )()
+    }
+}]);
