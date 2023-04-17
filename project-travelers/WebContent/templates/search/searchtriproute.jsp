@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Travelers | 검색</title>
-<link href="../../static/css/searchtriproute.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/search/searchtriproute.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
 </head>
