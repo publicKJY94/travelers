@@ -5,10 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>여행기 상세 페이지</title>
-<link href="../static/css/header.css" rel="stylesheet">
-<link href="../static/css/footer.css" rel="stylesheet">
-<link href="../static/css/home.css" rel="stylesheet">
-<link href="../static/css/trip-board-detail.css" rel="stylesheet">
+<link href="../../static/css/header.css" rel="stylesheet">
+<link href="../../static/css/footer.css" rel="stylesheet">
+<link href="../../static/css/home.css" rel="stylesheet">
+<link href="../../static/css/trip-board-detail.css" rel="stylesheet">
 
 </head>
 <body>

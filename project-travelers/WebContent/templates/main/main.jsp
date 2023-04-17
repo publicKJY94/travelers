@@ -3,455 +3,9 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PB68CSZ");
-    </script>
-    <!-- End Google Tag Manager -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-100968783-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-100968783-3");
-    </script>
-
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../static/css/main/main.css" type="text/css"/>
-    <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-
-    <link
-      rel="preload"
-      as="font"
-      href="assets/common/fonts/woff/NotoSans-Regular.woff"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <style type="text/css">
-      @font-face {
-        font-family: "Material Icons";
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
-          format("woff2");
-      }
-      .material-icons {
-        font-family: "Material Icons";
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -webkit-font-smoothing: antialiased;
-      }
-    </style>
-    <script>
-      // for googlemap javascript api load callback
-      function initMap() {
-        console.log("google map load done");
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM&amp;callback=initMap&amp;libraries=places"></script>
-    <!-- google sns login -->
-    <script
-      src="https://accounts.google.com/gsi/client"
-      async=""
-      defer
-    ></script>
-    <!-- apple sns login -->
-    <script
-      type="text/javascript"
-      src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
-    ></script>
-    <!-- facebook sdk -->
-    <script
-      async=""
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js"
-    ></script>
-    <script>
-      //facebook init
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: "1422306324649276",
-          xfbml: true,
-          version: "v16.0",
-        });
-        // FB.AppEvents.logPageView();
-      };
-    </script>
-    <!-- AceCounter Gathering Script -->
-    <script language="javascript">
-      const ua = navigator.userAgent;
-      const isMobile =
-        /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-          ua
-        );
-      if (isMobile) {
-        /** AceCounter Mobile WebSite Gathering Script V.8.0.2019080601 **/
-        var _AceGID = (function () {
-          var Inf = [
-            "wishbeen.co.kr",
-            "www.wishbeen.co.kr,wishbeen.co.kr",
-            "AX1A94687",
-            "AM",
-            "0",
-            "NaPm,Ncisy",
-            "ALL",
-            "0",
-          ];
-          var _CI = !_AceGID ? [] : _AceGID.val;
-          var _N = 0;
-          if (_CI.join(".").indexOf(Inf[3]) < 0) {
-            _CI.push(Inf);
-            _N = _CI.length;
-          }
-          return { o: _N, val: _CI };
-        })();
-        var _AceCounter = (function () {
-          var G = _AceGID;
-          var _sc = document.createElement("script");
-          var _sm = document.getElementsByTagName("script")[0];
-          if (G.o != 0) {
-            var _A = G.val[G.o - 1];
-            var _G = _A[0].substr(0, _A[0].indexOf("."));
-            var _C = _A[7] != "0" ? _A[2] : _A[3];
-            var _U = _A[5].replace(/\,/g, "_");
-            _sc.src =
-              "https:" +
-              "//cr.acecounter.com/Mobile/AceCounter_" +
-              _C +
-              ".js?gc=" +
-              _A[2] +
-              "&py=" +
-              _A[1] +
-              "&up=" +
-              _U +
-              "&rd=" +
-              new Date().getTime();
-            _sm.parentNode.insertBefore(_sc, _sm);
-            return _sc.src;
-          }
-        })();
-        /** AceCounter Mobile Gathering Script End **/
-      } else {
-        /** AceCounter Log Gathering Script V.8.0.AMZ2019080601 **/
-        var _AceGID = (function () {
-          var Inf = [
-            "gtp13.acecounter.com",
-            "8080",
-            "AH6A46214994332",
-            "AW",
-            "0",
-            "NaPm,Ncisy",
-            "ALL",
-            "0",
-          ];
-          var _CI = !_AceGID ? [] : _AceGID.val;
-          var _N = 0;
-          var _T = new Image(0, 0);
-          if (_CI.join(".").indexOf(Inf[3]) < 0) {
-            _T.src = "https://" + Inf[0] + "/?cookie";
-            _CI.push(Inf);
-            _N = _CI.length;
-          }
-          return { o: _N, val: _CI };
-        })();
-        var _AceCounter = (function () {
-          var G = _AceGID;
-          var _sc = document.createElement("script");
-          var _sm = document.getElementsByTagName("script")[0];
-          if (G.o != 0) {
-            var _A = G.val[G.o - 1];
-            var _G = _A[0].substr(0, _A[0].indexOf("."));
-            var _C = _A[7] != "0" ? _A[2] : _A[3];
-            var _U = _A[5].replace(/\,/g, "_");
-            _sc.src =
-              "https:" +
-              "//cr.acecounter.com/Web/AceCounter_" +
-              _C +
-              ".js?gc=" +
-              _A[2] +
-              "&py=" +
-              _A[4] +
-              "&gd=" +
-              _G +
-              "&gp=" +
-              _A[1] +
-              "&up=" +
-              _U +
-              "&rd=" +
-              new Date().getTime();
-            _sm.parentNode.insertBefore(_sc, _sm);
-            return _sc.src;
-          }
-        })();
-        /** AceCounter Log Gathering Script End **/
-      }
-    </script>
-    <!-- AceCounter Gathering Script End -->
-
-    <!-- 네이버 사이트 연관채널 등록 -->
+    <link rel="stylesheet" href=".\..\..\static\css\main\main.css">
   </head>
   <body>
-    <span itemscope="" itemtype="http://schema.org/Organization">
-      <link itemprop="url" href="https://www.wishbeen.co.kr/" />
-      <a
-        itemprop="sameAs"
-        href="https://play.google.com/store/apps/details?id=com.wishbeen.app"
-      ></a>
-      <a itemprop="sameAs" href="https://itunes.apple.com/app/id1658230491"></a>
-      <a itemprop="sameAs" href="https://www.instagram.com/wishbeen/"></a>
-      <a itemprop="sameAs" href="https://www.facebook.com/wishbeen.co.kr"></a>
-      <a itemprop="sameAs" href="https://blog.naver.com/travelwishbeen"></a>
-      <a itemprop="sameAs" href="https://v.daum.net/channel/2129/home"></a>
-    </span>
-    <style>
-      :root {
-        --bs-blue: #0d6efd;
-        --bs-indigo: #6610f2;
-        --bs-purple: #6f42c1;
-        --bs-pink: #d63384;
-        --bs-red: #dc3545;
-        --bs-orange: #fd7e14;
-        --bs-yellow: #ffc107;
-        --bs-green: #198754;
-        --bs-teal: #20c997;
-        --bs-cyan: #0dcaf0;
-        --bs-white: #fff;
-        --bs-gray: #6c757d;
-        --bs-gray-dark: #343a40;
-        --bs-primary: #0d6efd;
-        --bs-secondary: #6c757d;
-        --bs-success: #198754;
-        --bs-info: #0dcaf0;
-        --bs-warning: #ffc107;
-        --bs-danger: #dc3545;
-        --bs-light: #f8f9fa;
-        --bs-dark: #212529;
-        --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
-        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
-        --bs-gradient: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.15),
-          rgba(255, 255, 255, 0)
-        );
-      }
-      *,
-      :after,
-      :before {
-        box-sizing: border-box;
-      }
-      @media (prefers-reduced-motion: no-preference) {
-        :root {
-          scroll-behavior: smooth;
-        }
-      }
-      body {
-        margin: 0;
-        font-family: var(--bs-font-sans-serif);
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        background-color: #fff;
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
-      }
-      a {
-        color: #0d6efd;
-        text-decoration: underline;
-      }
-      a:hover {
-        color: #0a58ca;
-      }
-      html {
-        font-size: 10px;
-      }
-      html,
-      body {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        -webkit-text-size-adjust: none;
-      }
-      body,
-      a,
-      div {
-        -webkit-tap-highlight-color: transparent !important;
-      }
-      body {
-        font-family: Noto Sans KR, Malgun Gothic, dotum, sans-serif;
-        font-weight: 300;
-        color: #111;
-        line-height: 1;
-        letter-spacing: 0;
-        word-break: keep-all;
-      }
-      body,
-      div {
-        margin: 0;
-        padding: 0;
-      }
-      a:link,
-      a:active,
-      a:visited,
-      a:hover {
-        color: inherit;
-        text-decoration: none;
-      }
-      a {
-        cursor: pointer;
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 100;
-        font-display: swap;
-        src: local("Noto Sans KR Thin"), local("NotoSans-Thin"),
-          url(NotoSans-Thin.0206f36e67fdb730.eot),
-          url(NotoSans-Thin.0206f36e67fdb730.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-Thin.1da046bbe64519cf.woff) format("woff"),
-          url(NotoSans-Thin.4aa099d0670b20c6.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 200;
-        font-display: swap;
-        src: local("Noto Sans KR Light"), local("NotoSans-Light"),
-          url(NotoSans-Light.3d8c42adb6eaf686.eot),
-          url(NotoSans-Light.3d8c42adb6eaf686.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-Light.c2d3f8b81742f5d3.woff) format("woff"),
-          url(NotoSans-Light.3d6ff6e02c057144.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: local("Noto Sans KR DemiLight"), local("NotoSans-DemiLight"),
-          url(NotoSans-DemiLight.9a895f2ad1ac1093.eot),
-          url(NotoSans-DemiLight.9a895f2ad1ac1093.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-DemiLight.bd8f3bfd13c4a263.woff) format("woff"),
-          url(NotoSans-DemiLight.e344d367b3edca4a.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: local("Noto Sans KR Regular"), local("NotoSans-Regular"),
-          url(NotoSans-Regular.01fb8ff2a67d6784.eot),
-          url(NotoSans-Regular.01fb8ff2a67d6784.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-Regular.2328c0c0ef7ff22b.woff) format("woff"),
-          url(NotoSans-Regular.2e8b8e82784c0d70.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: local("Noto Sans KR Medium"), local("NotoSans-Medium"),
-          url(NotoSans-Medium.d2e0bd3b3fa3f688.eot),
-          url(NotoSans-Medium.d2e0bd3b3fa3f688.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-Medium.bb516945801e8068.woff) format("woff"),
-          url(NotoSans-Medium.cca6e1bab562a6b9.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: local("Noto Sans KR Bold"), local("NotoSans-Bold"),
-          url(NotoSans-Bold.f5a16803e556c886.eot),
-          url(NotoSans-Bold.f5a16803e556c886.eot?#iefix)
-            format("embedded-opentype"),
-          url(NotoSans-Bold.5a27efe02f725fdf.woff) format("woff"),
-          url(NotoSans-Bold.1b2fae999f55eef6.otf) format("opentype");
-      }
-      @font-face {
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: 900;
-        font-display: swap;
-        src: local("Noto Sans KR Black"), local("NotoSans-Black"),
-          url(NotoSans-Black.51ff7039e65c1123.eot),
-          url(NotoSans-Black.c00f8c045c45a9b5.woff) format("woff"),
-          url(NotoSans-Black.db47a96c932c5dab.otf) format("opentype");
-      }
-      :root {
-        --key-color: #ff8000;
-        --key-color-disabled: #dfe1e6;
-        --kakao-background-color: #fee500;
-        --naver-background-color: #03c75a;
-        --facebook-background-color: #1877f2;
-        --apple-background-color: #000000;
-      }
-      html,
-      body {
-        height: 100%;
-      }
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-    </style>
-
-
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PB68CSZ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div
-      id="first-load"
-      style="
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-      <!-- <img src="/assets/images/svg/logo.svg"  style="width:20vh;"/> -->
-    </div>
     <app-root _nghost-fmk-c68="" ng-version="13.3.12">
       <div _ngcontent-fmk-c68="" id="wrap">
         <app-header
@@ -481,67 +35,41 @@
             </div>
             <!---->
           </app-top-banner>
-          <header _ngcontent-fmk-c65="" id="header" class="mainHeader">
-            <div _ngcontent-fmk-c65="" class="in_wrap">
-              <h1 _ngcontent-fmk-c65="" class="logo">
-                <a
-                  _ngcontent-fmk-c65=""
-                  title="WishBeen"
-                  onclick="closeMainSearchBar()"
-                  href="/main"
-                >
-                  <span _ngcontent-fmk-c65=""> WishBeen</span>
-                </a>
-              </h1>
-              <nav _ngcontent-fmk-c65="" class="gnb_wrap">
-                <ul _ngcontent-fmk-c65="">
-                  <li _ngcontent-fmk-c65="" class="pc">
-                    <a
-                      _ngcontent-fmk-c65=""
-                      onclick="setZindex()"
-                      class="btn_sch_city"
-                    >
-                      <span _ngcontent-fmk-c65=""> 여행지 찾기</span>
-                    </a>
-                  </li>
-                  <li _ngcontent-fmk-c65="" class="pc">
-                    <a _ngcontent-fmk-c65="" href="/write-schedule">
-                      <span _ngcontent-fmk-c65=""> 여행일정 만들기</span>
-                    </a>
-                  </li>
-                  <li _ngcontent-fmk-c65="" class="pc">
-                    <a _ngcontent-fmk-c65="" href="/write-note">
-                      <span _ngcontent-fmk-c65=""> 여행기 쓰기</span>
-                    </a>
-                  </li>
-                  <li _ngcontent-fmk-c65="" class="pc">
-                    <a _ngcontent-fmk-c65="" onclick="setZindex()">
-                      <span _ngcontent-fmk-c65=""> 커뮤니티</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul _ngcontent-fmk-c65="" class="side_wrap">
-                  <li _ngcontent-fmk-c65="">
-                    <button _ngcontent-fmk-c65="" type="button" class="btn_sch">
-                      <span _ngcontent-fmk-c65=""> 검색</span>
-                    </button>
-                  </li>
-                  <li _ngcontent-fmk-c65="" class="pc">
-                    <a
-                      _ngcontent-fmk-c65=""
-                      class="btn_login ng-star-inserted"
-                      href="/login"
-                    >
-                      <span _ngcontent-fmk-c65=""> </span>
-                      로그인
-                    </a>
-                    <!---->
-                    <!---->
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </header>
+          <header _ngcontent-qlk-c65 id="header" class="mainHeader">
+			<div _ngcontent-qlk-c65 class="in_wrap">
+				<h1 _ngcontent-qlk-c65 class="logo">
+					<a _ngcontent-qlk-c65 title="WishBeen"
+						onclick="closeMainSearchBar()" href="/main"> <span
+						_ngcontent-qlk-c65>WishBeen</span>
+					</a>
+				</h1>
+				<nav _ngcontent-qlk-c65 class="gnb_wrap">
+					<ul _ngcontent-qlk-c65>
+						<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
+							href="/write-note"> <span _ngcontent-qlk-c65>여행기 목록</span>
+						</a></li>
+						<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
+							href="/write-note"> <span _ngcontent-qlk-c65>추천루트 목록</span>
+						</a></li>
+						<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
+							href="/write-note"> <span _ngcontent-qlk-c65>여행품 교환</span>
+						</a></li>
+						<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
+							href="/write-note"> <span _ngcontent-qlk-c65>공지사항</span>
+						</a></li>
+					</ul>
+					<ul _ngcontent-qlk-c65 class="side_wrap">
+
+						<li _ngcontent-qlk-c65 class="pc">
+							<a _ngcontent-qlk-c65
+								class="btn_login ng-star-inserted" href="/login"> <span
+									_ngcontent-qlk-c65></span> 로그인
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
           <app-top-search _ngcontent-fmk-c65="" _nghost-fmk-c53="">
             <div
               _ngcontent-fmk-c53=""
@@ -3754,25 +3282,8 @@
             </ul>
           </div>
         </aside>
-        
-        
       </div>
       <div _ngcontent-fmk-c68="" class="dim" style="display: none"></div>
-      <ngx-spinner
-        _ngcontent-fmk-c68=""
-        bdcolor="rgba(51,51,51,0.8)"
-        size="medium"
-        color="#ff5800"
-        type="ball-scale-multiple"
-        _nghost-fmk-c67=""
-        class="ng-tns-c67-0"
-      >
-        <!---->
-      </ngx-spinner>
     </app-root>
-    <script src="../../../static/js/main/runtime.eb3e13fc5ec71907.js" type="module"></script>
-    <script src="../../../static/js/main/polyfills.0b6a0057d3af34c7.js" type="module"></script>
-    <script src="../../../static/js/main/scripts.5e68a7d2d447c4f8.js" defer></script>
-    <script src="../../../static/js/main/main.13781fd563b1ffd1.js" type="module"></script>
   </body>
 </html>
