@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,  input, p, blockquote, th, td, textarea {
     margin: 0;
     padding: 0;
@@ -140,10 +138,7 @@ input.txtbox {
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center;
 }
-
-
 
 .mat-date-range-input-inner {
     font-size: 1.9rem;
@@ -156,9 +151,9 @@ input.txtbox {
     border: none;
     outline: none;
     padding: 0;
-    margin: 0 ;
+    margin: 0;
     vertical-align: bottom;
-    text-align: center;
+    text-align: inherit;
     -webkit-appearance: none;
     width: 100%;
 }
@@ -183,7 +178,7 @@ input.txtbox {
 
 .mat-date-range-input-separator {
     transition: opacity 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);
-        margin: 0 10px 0 30px;
+    margin: 0 4px;
 }
 
 .mat-date-range-input-end-wrapper {
@@ -540,6 +535,10 @@ img, svg {
 
 .ce-toolbox {
     --gap: 8px;
+        position: absolute;
+    top: calc(26px + var(--gap));
+    left: 0
+    
 }
 
 .ce-popover {
@@ -575,6 +574,24 @@ img, svg {
     box-shadow: 0 3px 15px -3px rgba(13,20,33,.13);
     border-radius: 6px;
     z-index: 2;
+        top: 15px;
+    left: -145px;
+}
+
+.ce-popover--opened {
+    opacity: 1;
+    max-height: 270px;
+    pointer-events: auto;
+    -webkit-animation: panelShowing .1s ease;
+    animation: panelShowing .1s ease;
+}
+
+.ce-settings {
+    position: absolute;
+    top: calc(26px + var(--gap));
+    left: 0;
+        z-index: 2;
+    --gap: 8px;
 }
 
 .cdx-search-field {
@@ -960,16 +977,43 @@ b, strong {
 }
 
 
-/* 내가 추가한 CSS*/
 
-fieldset {
-  border: 1px dashed violet;
-  
+@media (hover: hover){
+.ce-popover__item:hover:not(.ce-popover__item--no-visible-hover) {
+    background-color: #eff2f5;
+}
 }
 
-.locations{
-	display : flex;
+.ce-popover__item-icon svg path {
+    stroke: unset;
 }
+
+
+.ce-popover__no-found {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    white-space: nowrap;
+    padding: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.ce-popover__no-found {
+    color: #707684;
+    display: none;
+    cursor: default;
+}
+
 
 
 
