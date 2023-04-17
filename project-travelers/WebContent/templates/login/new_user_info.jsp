@@ -5,7 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-<link rel="stylesheet" href="../static/css/new_user_info.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../static/css/login/new_user_info.css">
 </head>
 <body>
 	<app-root _nghost-rrf-c68="" ng-version="13.3.12">

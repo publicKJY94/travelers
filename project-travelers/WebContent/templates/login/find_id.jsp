@@ -5,6 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../static/css/login/find_id-reset_pw.css">
 </head>
 <body>
 	<app-root _nghost-iey-c68="" ng-version="13.3.12">
@@ -16,7 +20,7 @@
 			<div _ngcontent-iey-c85="" class="in_wrap">
 				<h1 _ngcontent-iey-c85="" class="logo">
 					<a _ngcontent-iey-c85="" href="/"><img _ngcontent-iey-c85=""
-						src="./assets/images/svg/logo.svg" alt="WishBeen"></a>
+						src="https://www.wishbeen.co.kr/assets/images/svg/logo.svg" alt="WishBeen"></a>
 				</h1>
 				<h2 _ngcontent-iey-c85="" class="tit">계정 찾기</h2>
 				<nav _ngcontent-iey-c85="">

@@ -152,7 +152,7 @@ a {
     text-decoration: inherit;
 }
 
-a, input, button {
+a, input[type=file], button {
     cursor: pointer;
 }
 
