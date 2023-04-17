@@ -5,10 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>여행기 상세 페이지</title>
+
+
+<link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/home.css" rel="stylesheet">
-<link href="../../static/css/trip-board-detail.css" rel="stylesheet">
+<link href="../../static/css/board-detail/trip-board-detail.css" rel="stylesheet">
 
 </head>
 <body>
@@ -169,8 +172,7 @@
 																	<li><button type="button" class="btn_img_right">우측정렬</button></li>
 																	<li><button type="button" class="btn_trash">삭제</button></li>
 																</ul></li>
-															<li><figcaption>사이판 바다 색깔. 세상에서 처음 보는
-																	새파란 Blue.</figcaption></li>
+															<li><figcaption>사이판 바다 색깔. 세상에서 처음 보는 새파란 Blue.</figcaption></li>
 														</ul>
 													</figure>
 												</div>

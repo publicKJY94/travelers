@@ -617,6 +617,91 @@ dt {
     background-size: cover;
 }
 
+.trip_view .schedule_wrap {
+    margin: 2rem 0 0;
+}
+
+.schedule_wrap {
+    width: 100%;
+    min-height: 7rem;
+    display: table;
+    table-layout: fixed;
+}
+
+
+.schedule_wrap dt {
+    width: 15%;
+    padding: 1rem 0;
+    display: table-cell;
+    box-sizing: border-box;
+    border-top: 0.1rem solid #e7e7e7;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.schedule_wrap dt div {
+    display: inline-block;
+    position: relative;
+}
+
+.schedule_wrap dt span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+
+.schedule_wrap dt div:after {
+    content: "";
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    background: #a4ffeb;
+}
+
+
+
+.schedule_wrap dd {
+    padding: 1rem 1.5rem;
+    display: table-cell;
+    box-sizing: border-box;
+    border-top: 0.1rem solid #e7e7e7;
+    vertical-align: middle;
+}
+
+.trip_view .schedule_wrap .btn_detail, .trip_view .attraction_wrap .tit {
+    cursor: pointer;
+}
+
+.schedule_wrap dd a:after {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: -0.5rem 0 0;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    background: url(https://www.wishbeen.co.kr/chevron_right.d4c5324d6a12e962.svg) 0 0 no-repeat;
+    background-size: cover;
+    opacity: .7;
+}
+.schedule_wrap dd a {
+    padding: 0.3rem 2rem 0.3rem 0.8rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 0.5rem;
+    color: #999;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none!important;
+}
+
+
 
 
 
