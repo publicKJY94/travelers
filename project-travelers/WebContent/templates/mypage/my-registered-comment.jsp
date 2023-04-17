@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Member information</title>
-<link href="../static/css/header.css" rel="stylesheet">
-<link href="../static/css/footer.css" rel="stylesheet">
-<link href="../static/css/password-amend.css" rel="stylesheet">
+<title>MyPage-comment</title>
+<link href="../../static/css/header.css" rel="stylesheet">
+<link href="../../static/css/footer.css" rel="stylesheet">
+<link href="../../static/css/mypage/my-registered-comment.css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <app-header
@@ -55,85 +55,89 @@
 				</ul>
 			</nav>
 		</div>
-	</header> </app-header> 
-	<app-account-management _nghost-kyu-c85="" class="ng-star-inserted">
-	<div _ngcontent-kyu-c85="" id="content">
-		<header _ngcontent-kyu-c85="" class="sub_header st1">
-			<div _ngcontent-kyu-c85="" class="in_wrap">
-				<h2 _ngcontent-kyu-c85="">
-					<p _ngcontent-kyu-c85="" class="dth2">계정 관리</p>
+	</header> 
+	</app-header> 
+	<app-reply-management _nghost-kyu-c94="" class="ng-star-inserted">
+	<div _ngcontent-kyu-c94="" id="content">
+		<header _ngcontent-kyu-c94="" class="sub_header st1">
+			<div _ngcontent-kyu-c94="" class="in_wrap">
+				<h2 _ngcontent-kyu-c94="">
+					<p _ngcontent-kyu-c94="" class="dth2">댓글 관리</p>
 				</h2>
 			</div>
 		</header>
-		<div _ngcontent-kyu-c85="" class="in_wrap">
-			<nav _ngcontent-kyu-c85="" value="false" class="position_r">
-				<button _ngcontent-kyu-c85="" type="button" class="tab_nav_btn mo">
-					<span _ngcontent-kyu-c85="">회원 정보</span><i _ngcontent-kyu-c85=""
-						class="ico"><img _ngcontent-kyu-c85=""
+		<div _ngcontent-kyu-c94="" class="in_wrap">
+			<nav _ngcontent-kyu-c94="" value="false" class="position_r">
+				<button _ngcontent-kyu-c94="" type="button" class="tab_nav_btn mo">
+					<span _ngcontent-kyu-c94="">내가 등록한 댓글</span><i
+						_ngcontent-kyu-c94="" class="ico"><img _ngcontent-kyu-c94=""
 						data-brackets-id="27106"
 						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></i>
 				</button>
-				<ul _ngcontent-kyu-c85="" class="tab_nav st01">
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="info" routerlinkactive="active"
-						href="/my/account/info"> 회원 정보 </a></li>
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify" class="active"> 비밀번호 수정 </a></li>
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="withdrawal" routerlinkactive="active"
-						href="/my/account/withdrawal"> 회원탈퇴 </a></li>
+				<ul _ngcontent-kyu-c94="" class="tab_nav st01">
+					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
+						routerlink="my" routerlinkactive="active" href="/my/reply/my">
+							내가 등록한 댓글 </a></li>
+					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
+						routerlink="content" routerlinkactive="active"
+						href="/my/reply/content" class="active"> 내글에 등록된 댓글 </a></li>
 				</ul>
 			</nav>
-			<router-outlet _ngcontent-kyu-c85=""></router-outlet>
-			<app-my-password-modify _nghost-kyu-c90="" class="ng-star-inserted">
-			<section _ngcontent-kyu-c90="" class="my_wrap">
-				<dl _ngcontent-kyu-c90="" class="inner">
-					<form _ngcontent-kyu-c90="" novalidate=""
-						class="ng-untouched ng-pristine ng-invalid">
-						<dt _ngcontent-kyu-c90="" class="tit">비밀번호 수정</dt>
-						<dd _ngcontent-kyu-c90="">
-							<ul _ngcontent-kyu-c90="" class="box_wrap">
-								<li _ngcontent-kyu-c90=""><div _ngcontent-kyu-c90=""
-										class="th">현재 비밀번호</div>
-									<div _ngcontent-kyu-c90="">
-										<input _ngcontent-kyu-c90="" formcontrolname="original_pw"
-											placeholder="현재 비밀번호" type="password"
-											class="txtbox ng-untouched ng-pristine ng-invalid">
-										<!---->
-									</div></li>
-								<li _ngcontent-kyu-c90=""><div _ngcontent-kyu-c90=""
-										class="th">새 비밀번호</div>
-									<div _ngcontent-kyu-c90="">
-										<input _ngcontent-kyu-c90="" formcontrolname="new_pw"
-											placeholder="새 비밀번호" type="password"
-											class="txtbox ng-untouched ng-pristine ng-invalid">
-										<!---->
-										<!---->
-										<!---->
-									</div></li>
-								<li _ngcontent-kyu-c90=""><div _ngcontent-kyu-c90=""
-										class="th">새 비밀번호 확인</div>
-									<div _ngcontent-kyu-c90="">
-										<input _ngcontent-kyu-c90="" formcontrolname="new_pw2"
-											placeholder="새 비밀번호 재입력" type="password"
-											class="txtbox ng-untouched ng-pristine ng-invalid">
-										<!---->
-										<!---->
-									</div></li>
-							</ul>
-						</dd>
-					</form>
-				</dl>
-				<div _ngcontent-kyu-c90="" class="list_btn wid02">
-					<a _ngcontent-kyu-c90="" class="btn_st0 active">수정 완료</a>
+			<router-outlet _ngcontent-kyu-c94=""></router-outlet>
+			<app-my-content-reply _nghost-kyu-c96="" class="ng-star-inserted">
+			<section _ngcontent-kyu-c96="" class="my_wrap">
+				<div _ngcontent-kyu-c96="" class="cmt_list clear_v2">
+					<div _ngcontent-kyu-c96="" class="inner ng-star-inserted">
+						<ul _ngcontent-kyu-c96="" class="tit_bar ng-star-inserted">
+							<li _ngcontent-kyu-c96="" class="txt_hide"><span
+								_ngcontent-kyu-c96="" class="cate"> 커뮤니티 </span><span
+								_ngcontent-kyu-c96="" class="tit">즐거운 오사카 여행</span></li>
+							<li _ngcontent-kyu-c96=""><a _ngcontent-kyu-c96=""
+								class="btn_go"> 원글보기 <img _ngcontent-kyu-c96=""
+									src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go"></a></li>
+						</ul>
+						<!---->
+						<div _ngcontent-kyu-c96="" class="cont di_flex">
+							<div _ngcontent-kyu-c96="">
+								<ul _ngcontent-kyu-c96="">
+									<li _ngcontent-kyu-c96="" class="user_wrap"><span
+										_ngcontent-kyu-c96="" class="img"><img
+											_ngcontent-kyu-c96="" alt="userimg"
+											src="https://www.wishbeen.co.kr/assets/images/svg/wb_symbol.svg"></span><span
+										_ngcontent-kyu-c96="" class="nick ng-star-inserted"> 정
+											많은 고양이 </span>
+									<!----></li>
+									<li _ngcontent-kyu-c96="" class="txt_wrap">ㅋ</li>
+									<li _ngcontent-kyu-c96="" class="ta_right ng-star-inserted"><a
+										_ngcontent-kyu-c96="" class="btn_fold ng-star-inserted">
+											더보기 </a>
+									<!----></li>
+									<!---->
+								</ul>
+							</div>
+							<div _ngcontent-kyu-c96="" class="ng-star-inserted">
+								<ul _ngcontent-kyu-c96="">
+									<li _ngcontent-kyu-c96=""><a _ngcontent-kyu-c96=""
+										class="btn_set"><img _ngcontent-kyu-c96=""
+											src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
+									<!----></li>
+									<li _ngcontent-kyu-c96="" class="date">2023.04.17 02:24:30
+									</li>
+								</ul>
+							</div>
+							<!---->
+						</div>
+					</div>
+					<!---->
 				</div>
+				<!---->
 			</section>
-			</app-my-password-modify>
+			</app-my-content-reply>
 			<!---->
 		</div>
 	</div>
-	</app-account-management> <app-footer _ngcontent-akd-c67 _nghost-akd-c65
+	</app-reply-management> 
+	<app-footer _ngcontent-akd-c67 _nghost-akd-c65
 		class="ng-star-inserted"> <footer _ngcontent-xjb-c66
 		id="footer">
 		<div _ngcontent-xjb-c66 class="in_wrap">
