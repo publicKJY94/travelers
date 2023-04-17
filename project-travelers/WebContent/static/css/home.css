@@ -50,7 +50,7 @@ html[Attributes Style] {
 }
 */
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, textarea {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,  input, p, blockquote, th, td, textarea {
     margin: 0;
     padding: 0;
 }
@@ -102,7 +102,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     text-decoration: none;
 }
 
-fieldset, img {
+img {
     border: 0;
 }
 
