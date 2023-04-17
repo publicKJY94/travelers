@@ -152,7 +152,7 @@ a {
     text-decoration: inherit;
 }
 
-a, input[type=file], button {
+a, input, button {
     cursor: pointer;
 }
 
@@ -259,9 +259,6 @@ label {
     display: inline-block;
 }
 
-a, input[type=file], button {
-    cursor: pointer;
-}
 .login_wrap .inner {
     max-width: 36rem;
     margin: 0 auto;
