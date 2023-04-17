@@ -2,10 +2,6 @@
  * 
  */
 
-/**
- * 
- */
-
 (self.webpackChunkwishbeen_frontend = self.webpackChunkwishbeen_frontend || []).push([[8592], {
     65082: (E,v,n)=>{
         "use strict";

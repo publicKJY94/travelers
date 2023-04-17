@@ -5,7 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<link rel="stylesheet" href="../static/css/login.css">
+<link rel="stylesheet" href="../../static/css/login/login_main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <app-root _nghost-iey-c68="" ng-version="13.3.12">
 <div _ngcontent-iey-c68="" id="wrap">
