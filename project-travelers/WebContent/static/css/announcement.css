@@ -9,6 +9,12 @@ body, table, th, td, button, select, input, textarea {
     word-break: keep-all;
 }
 
+#content {
+    padding: 7rem 0 0;
+    background: #fff;
+    display: block;
+    margin: 0;
+}
 
 .tab_sub_wrap {
     width: 100%;
