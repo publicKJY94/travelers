@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+@font-face{
+	font-family: "Noto Sans KR";
+	src: url("./../font/robotofonts/font.css")
+}
+
 *, :after, :before {
     box-sizing: border-box;
+    font-family: "Noto Sans KR,Malgun Gothic,dotum,sans-serif;";
 }
 :root {
     --key-color: #ff8000;
@@ -60,18 +66,13 @@ dl, ol, ul {
 }
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
     word-break: keep-all;
 }
-element.style {
-    height: 100vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
+
 #wrap {
     overflow: hidden;
     width: 100%;
@@ -93,7 +94,7 @@ element.style {
     text-align: center;
     line-height: 40px;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     width: -moz-fit-content;
     width: fit-content;
 }
@@ -270,7 +271,7 @@ button, select {
     display: inline-block;
     border: 0.1rem solid rgba(0,0,0,.2);
     border-radius: 3rem;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1;
 }
@@ -305,10 +306,6 @@ button, select {
 #header .btn_login span {
     background-image: url(https://www.wishbeen.co.kr/person1.795361a55289ba9e.svg);
 }
-element.style {
-    z-index: 40;
-    display: none;
-}
 
 .dim {
     display: none;
@@ -316,10 +313,6 @@ element.style {
     inset: 0;
     background: rgba(0,0,0,.5);
     z-index: 500;
-}
-
-element.style {
-    display: none;
 }
 
 .top_sch_wrap.withTopBanner {
@@ -527,14 +520,14 @@ button {
 }
 .top_sch_wrap .post_area dt {
     margin: 0 0 3rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 dt {
-    font-weight: 300;
+    font-weight: 400;
 }
 dt {
-    font-weight: 700;
+    font-weight: 400;
 }
 dl, ol, ul {
     margin-top: 0;
@@ -557,10 +550,7 @@ dl, ol, ul {
     line-height: 1;
     text-align: center;
 }
-a {
-    color: #0d6efd;
-    text-decoration: underline;
-}
+
 .top_sch_wrap .post_area dl {
     width: 48%;
     box-sizing: border-box;
@@ -568,7 +558,7 @@ a {
 
 .top_sch_wrap .post_area dt {
     margin: 0 0 3rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -612,7 +602,7 @@ dd {
     z-index: 1;
 }
 .city_sch_header .tit {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -681,7 +671,7 @@ mat-autocomplete {
 .city_sch_wrap .continent li a.active {
     background-color: #f3f3f3;
     color: #111;
-    font-weight: 500;
+    font-weight: 400;
 }
 .city_sch_wrap .continent li a {
     padding: 1.2rem 2.5rem;
@@ -727,15 +717,13 @@ mat-autocomplete {
 }
 
 dt {
-    font-weight: 300;
+    font-weight: 400;
 }
 .city_sch_wrap .list_city dt img {
     transform: rotate(0);
     transition: all .3s;
 }
-img {
-    vertical-align: middle;
-}
+
 .city_sch_wrap .city_open_wrap {
     width: 100%;
     position: absolute;
@@ -858,7 +846,7 @@ button, select {
 
 
 .city_sch_header .tit {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -1066,7 +1054,7 @@ rem
     background-repeat: no-repeat;
     background-size: 2.2rem;
     box-sizing: border-box;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.2;
     opacity: .7;
@@ -1153,7 +1141,7 @@ rem
 
 .btm_pop_menu .tit {
     padding: 0 0 2rem;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 2rem;
     text-align: center;
 }
@@ -1187,7 +1175,7 @@ rem
 }
 
 .m_visual .txt .st1 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.6rem;
 }
 
@@ -1197,7 +1185,7 @@ rem
 
 .m_visual .txt .st2 {
     margin: 0.8rem 0 0;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 6.2rem;
     letter-spacing: .2rem;
 }
@@ -1205,7 +1193,7 @@ rem
 .m_visual .txt .st2 span {
     display: inline-block;
     position: relative;
-    font-weight: 700;
+    font-weight: 400;
     z-index: 1;
 }
 .m_visual .txt .st2 span:after {
@@ -1273,7 +1261,7 @@ rem
 }
 .hot_wrap h2 {
     margin: 0 0 1rem;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.8rem;
     line-height: 4.1rem;
 }
@@ -1312,7 +1300,7 @@ rem
 }
 
 .section01 .title{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
@@ -1362,7 +1350,7 @@ rem
 .badge[_ngcontent-tmr-c79] {
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2.5rem;
     border-radius: 2.4rem;
     margin-bottom: 0.8rem;
@@ -1377,26 +1365,29 @@ rem
 
 .badge {
     display: inline-block;
-    padding: 0.35em 0.65em;
-    font-size: .75em;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    border-radius: 2.4rem;	
+    margin-bottom: 0.8rem;
+    padding: 0 1rem 0 2.3rem;
+    text-overflow: ellipsis;
     white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
+    overflow: hidden;
+    background-position: 1rem 0.75rem;
+    background-size: auto 1rem;
+    background-repeat: no-repeat;
 }
 .section01 .mainThumb .detail .subject {
     display: block;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3rem;
     line-height: 3.6rem;
     margin-bottom: 1rem;
     color: #fff;
 }
 b, strong {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 b, strong {
@@ -1405,7 +1396,7 @@ b, strong {
 
 .section01 .mainThumb .detail .txt {
     display: block;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: #fff;
@@ -1477,7 +1468,7 @@ b, strong {
 
 .section01 .mainList li a .detail .subject {
     display: block;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 0.4rem;
@@ -1669,16 +1660,14 @@ b, strong {
 
 .section02 {
     margin-bottom: 8rem;
-    max-width: 98rem
-rem
-;
+    max-width: 98rem;
     margin: 0 auto;
     position: relative;
 }
 
 
 .section02 .title {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
@@ -1731,13 +1720,13 @@ rem
     position: relative;
     padding: 2rem;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -.08em;
 }
 
 .section02 .thumbList ul li a .detail .subject {
     display: block;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 0.4rem;
@@ -1749,7 +1738,7 @@ rem
 
 .section02 .thumbList ul li a .detail .txt {
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.6rem;
     margin-bottom: 1.6rem;
@@ -1773,7 +1762,7 @@ rem
 
 
 .section02 .title {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
@@ -1839,7 +1828,7 @@ rem
     display: inline-block;
     position: relative;
     color: #ffffffb3;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.4rem;
 }
 
@@ -1853,7 +1842,7 @@ rem
     display: inline-block;
     position: relative;
     color: #ffffff80;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.4rem;
 }
 
@@ -1866,7 +1855,7 @@ rem
     color: #fff6;
     font-size: 1.3rem;
     line-height: 1.6;
-    font-weight: 200;
+    font-weight: 400;
 }
 #footer .info span.br:after {
     content: "";
@@ -2009,7 +1998,7 @@ rem
 }
 .my_menu_header .user_info .name {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.4rem;
     vertical-align: middle;
     text-overflow: ellipsis;
@@ -2076,7 +2065,58 @@ hr {
 .my_menu_wrap .list li+li {
     margin-top: 2.4rem;
 }
+.section03 {
+    padding: 0 1.8rem 10rem;
+    max-width: 98rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
 
+@media (hover: hover){
+.hot_wrap .city a:hover:before {
+    background-image: url(https://www.wishbeen.co.kr/geo_o.f7376f19d3864de0.svg);
+    transition: all .3s;
+	}
+}
+@media (hover: hover){
+#header .gnb_wrap .btn_login:hover span, #header .gnb_wrap .btn_my:hover span {
+    border: none;
+	}
+}
+@media (hover: hover){
+#header .gnb_wrap a:hover span {
+    border-bottom: 0.1rem solid #ff5800;
+    color: #ff5800;
+	}
+}
+@media (hover: hover){
+#header .gnb_wrap .btn_login:hover, #header .gnb_wrap .btn_my:hover {
+    background: #fafafa;
+    color: #111;
+	}
+}
 
+.section03 .inner img {
+    width: 100%;
+    height: auto;
+}
 
+.section03 .inner .android {
+    position: absolute;
+    left: 25%;
+    top: 58.125%;
+    width: 14.9364%;
+    height: 26.25%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+.section03 .inner .apple {
+    position: absolute;
+    left: 8.47457%;
+    top: 58.125%;
+    width: 14.9364%;
+    height: 26.25%;
+    overflow: hidden;
+    text-indent: -999px;
+}
