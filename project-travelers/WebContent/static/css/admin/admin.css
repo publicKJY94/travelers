@@ -6,28 +6,33 @@
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-div wrap {
-	min-width:1500px;
-	height:100%;
-	margin: 0px auto;
+html{
+	width:100%;
 }
 
+
 div.header {
-	width:100%;
+	min-width:1500px;
 	height:60px;
 	display:flex;
-	/*background-color: pink;*/
 }
 
 
 div.logoImage {
 	width:15%;
 	height:100%;
-	/*background-color: blue;*/
+	background-color:bule;
+}
+
+
+div.logoImage a {
+	position: absolute;
+	top: 7px;
+    left: 51px;
 }
 
 div.title {
-	width:500px;
+	width:85%;
 	height:60px;
 	/*background-color: aqua;*/
 }
@@ -41,20 +46,17 @@ div.title div {
 
 span.ChangeTitle {
 	font-size:20px;
-	font-weight: 600;
+	font-weight: 800;
 	letter-spacing: 8px;
+	color:#6e6e6e;
 }
 
-section.main {
-	width:1500px;
-	height:100%;
-	display:flex;
-}
+
 
 nav {
 	width:15%;
 	height:700px;
-	background-color: #323232;
+	background-color: #474747;
 	display:inline-block;
 }
 
@@ -70,10 +72,10 @@ nav ul {
 
 nav ul li {
 	width: 100%;
-	height:60px;
+	height:50px;
 	border-bottom: 0.3px solid #6e6e6e;
 	text-align:left;
-	line-height:60px;
+	line-height:50px;
 	padding-left:20px;
 	list-style:none;
 	font-weight: 600;
@@ -93,21 +95,8 @@ nav ul li a {
 
 
 nav ul li a::after {
-	content:'▶';
+	content:'+';
 	display:block;
 	position:absolute;
 	right:20px;
-}
-
-div.mainContatiner {
-	width:85%;
-	height:700px;
-	background-color: hwb(0 95% 5%);
-}
-
-div.mainContent {
-	width:1000px;
-	height:600px;
-	margin:50px auto;
-	background-color:white;
 }
