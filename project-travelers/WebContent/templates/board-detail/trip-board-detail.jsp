@@ -13,6 +13,7 @@
 <link href="../../static/css/home.css" rel="stylesheet">
 <link href="../../static/css/board-detail/trip-board-detail.css"
 	rel="stylesheet">
+	
 
 </head>
 <body>
@@ -100,9 +101,13 @@
 						</div>
 						<div _ngcontent-phe-c90="" class="cont_wrap">
 							<aside class="side_bar">
-								<span _ngcontent-oma-c66="" class="btn_top_scroll active"></span>
-								<span _ngcontent-oma-c66="" class="btn_write_board active"></span>
-								<span _ngcontent-oma-c66="" class="btn_heart active"></span>
+								<span _ngcontent-oma-c66="" class="btn_top_scroll"></span>
+								<span _ngcontent-oma-c66="" class="btn_write_board"></span>
+								<span _ngcontent-oma-c66="" class="btn_heart">
+										<span>
+											
+										</span>
+								</span>
 							</aside>
 							<div _ngcontent-phe-c90="" id="editorjs"
 								style="margin-top: 4rem;">
@@ -363,12 +368,9 @@
 								class="tag ng-star-inserted"> #사이판좋아요 </span>
 							<!---->
 						</div>
-						<div _ngcontent-phe-c90="" class="like_wrap">
-							<a _ngcontent-phe-c90=""><span _ngcontent-phe-c90=""
-								class="ico_like"></span></a>
-						</div>
+		
 						<div _ngcontent-phe-c90="" class="attr_wrap">
-							<a _ngcontent-phe-c90="" class="attr_tag ng-star-inserted">
+							<a _ngcontent-phe-c90="" class="attr_tag ng-star-inserted btn_location">
 								사이판 </a>
 							<!---->
 						</div>
@@ -648,4 +650,6 @@
 	</div>
 	</app-root>
 </body>
+
+<script src="../../static/js/aside/aside-icons.js"></script>
 </html>

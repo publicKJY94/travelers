@@ -13,6 +13,12 @@
 	rel="stylesheet">
 
 
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
 </head>
 <body>
 
@@ -131,8 +137,11 @@
 										style="padding-bottom: 300px;">
 										<div class="ce-block">
 											<div class="ce-block__content">
-												<div class="ce-paragraph cdx-block" contenteditable="true"
-													data-placeholder="멋진 여행을 기록해 보세요!"></div>
+												<div class="ce-paragraph cdx-block">
+												
+													<textarea id="summernote"></textarea>
+												
+												</div>
 											</div>
 										</div>
 									</div>
@@ -142,209 +151,7 @@
 												style="display: none;"></div>
 										</div>
 									</div>
-									<div class="ce-toolbar ce-toolbar--opened" style="top: 0px;">
-										<div class="ce-toolbar__content">
-											<div class="ce-toolbar__actions ce-toolbar__actions--opened">
-												<div class="ce-toolbar__plus">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24"
-														height="24" fill="none" viewBox="0 0 24 24">
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2" d="M12 7V12M12 17V12M17 12H12M12 12H7"></path></svg>
-												</div>
-												<span class="ce-toolbar__settings-btn"><svg
-														xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-														fill="none" viewBox="0 0 24 24">
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M9.40999 7.29999H9.4"></path>
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M14.6 7.29999H14.59"></path>
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M9.30999 12H9.3"></path>
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M14.6 12H14.59"></path>
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M9.40999 16.7H9.4"></path>
-														<path stroke="currentColor" stroke-linecap="round"
-															stroke-width="2.6" d="M14.6 16.7H14.59"></path></svg></span>
-												<div class="ce-toolbox">
-													<div class="ce-popover">
-														<div class="cdx-search-field">
-															<div class="cdx-search-field__icon">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																	height="24" fill="none" viewBox="0 0 24 24">
-																	<circle cx="10.5" cy="10.5" r="5.5"
-																		stroke="currentColor" stroke-width="2"></circle>
-																	<line x1="15.4142" x2="19" y1="15" y2="18.5858"
-																		stroke="currentColor" stroke-linecap="round"
-																		stroke-width="2"></line></svg>
-															</div>
-															<input class="cdx-search-field__input"
-																placeholder="Filter">
-														</div>
-														<div class="ce-popover__items">
-															<div class="ce-popover__item" data-item-name="paragraph">
-																<div class="ce-popover__item-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg"
-																		viewBox="0.2 -0.3 9 11.4" width="12" height="14">
-																		<path stroke="currentColor" stroke-linecap="round"
-																			stroke-width="2"
-																			d="M0 2.77V.92A1 1 0 01.2.28C.35.1.56 0 .83 0h7.66c.28.01.48.1.63.28.14.17.21.38.21.64v1.85c0 .26-.08.48-.23.66-.15.17-.37.26-.66.26-.28 0-.5-.09-.64-.26a1 1 0 01-.21-.66V1.69H5.6v7.58h.5c.25 0 .45.08.6.23.17.16.25.35.25.6s-.08.45-.24.6a.87.87 0 01-.62.22H3.21a.87.87 0 01-.61-.22.78.78 0 01-.24-.6c0-.25.08-.44.24-.6a.85.85 0 01.61-.23h.5V1.7H1.73v1.08c0 .26-.08.48-.23.66-.15.17-.37.26-.66.26-.28 0-.5-.09-.64-.26A1 1 0 010 2.77z"></path>
-</svg>
-																</div>
-																<div class="ce-popover__item-label">텍스트</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="header">
-																<div class="ce-popover__item-icon">
-																	<svg width="10" height="14"
-																		xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14">
-          <path
-																			d="M7.6 8.15H2.25v4.525a1.125 1.125 0 0 1-2.25 0V1.125a1.125 1.125 0 1 1 2.25 0V5.9H7.6V1.125a1.125 1.125 0 0 1 2.25 0v11.55a1.125 1.125 0 0 1-2.25 0V8.15z"></path>
-        </svg>
-																</div>
-																<div class="ce-popover__item-label">헤더</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="image">
-																<div class="ce-popover__item-icon">
-																	<svg width="17" height="15" viewBox="0 0 336 276"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M291 150V79c0-19-15-34-34-34H79c-19 0-34 15-34 34v42l67-44 81 72 56-29 42 30zm0 52l-43-30-56 30-81-67-66 39v23c0 19 15 34 34 34h178c17 0 31-13 34-29zM79 0h178c44 0 79 35 79 79v118c0 44-35 79-79 79H79c-44 0-79-35-79-79V79C0 35 35 0 79 0z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">이미지</div>
-															</div>
-															<div class="ce-popover__item"
-																data-item-name="scrollImage">
-																<div class="ce-popover__item-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="16"
-																		height="16" fill="currentColor" viewBox="0 0 16 16">
-																		<path
-																			d="M13.7,3.4v9.2H2.3V3.4H13.7z M16,1.1H0v13.8h16V1.1L16,1.1z"></path>
-																		<polygon
-																			points="7.3,6.1 6.3,5 3.3,7.9 3.4,8 3.4,8 6.2,11 7.3,9.9 5.4,8 "></polygon>
-																		<polygon
-																			points="12.6,8 9.8,5 8.7,6.1 10.6,8 8.7,9.9 9.7,11 12.7,8.1 "></polygon></svg>
-																</div>
-																<div class="ce-popover__item-label">슬라이드 이미지</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="collage">
-																<div class="ce-popover__item-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="16"
-																		height="16" fill="currentColor" viewBox="0 0 16 16">
-																		<path
-																			d="M0,1v14h16V1H0z M7.7,12.7H2.3V3.3h5.4V12.7z M10,3.3h3.7v3.1H10V3.3z M13.7,12.7H10v-4h3.7V12.7z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">콜라주</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="place">
-																<div class="ce-popover__item-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="16"
-																		height="16" fill="currentColor" viewBox="0 0 16 16">
-																		<path
-																			d="M8,0C4.4,0,1.5,2.7,1.5,6c0,4.2,5.9,9.4,6.2,9.6L8,16l0.3-0.3c0.3-0.2,6.2-5.5,6.2-9.6C14.5,2.7,11.6,0,8,0z M3.5,6c0-2.3,2-4.1,4.5-4.1s4.5,1.9,4.5,4.1c0,0.7-0.3,1.5-0.8,2.5c-0.5,0.8-1.1,1.8-1.9,2.8c-0.6,0.7-1.2,1.4-1.8,2c0.6-0.6-1.2-1.3-1.8-2c-0.8-1-1.5-1.9-1.9-2.8C3.8,7.6,3.5,6.7,3.5,6z"></path>
-																		<path
-																			d="M8,3.8c-1.4,0-2.5,1.1-2.5,2.5S6.6,8.8,8,8.8c1.4,0,2.5-1.1,2.5-2.5S9.4,3.8,8,3.8z M8,5.5c0.5,0,0.8,0.4,0.8,0.8S8.5,7.1,8,7.1S7.2,6.8,7.2,6.3S7.5,5.5,8,5.5z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">장소</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="schedule">
-																<div class="ce-popover__item-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="16"
-																		height="16" fill="currentColor" viewBox="0 0 16 16">
-																		<path
-																			d="M14,2h-0.3V1.3c0-0.7-0.6-1.3-1.3-1.3s-1.3,0.6-1.3,1.3V2H4.8V1.3C4.8,0.6,4.2,0,3.5,0S2.3,0.6,2.3,1.3V2H2C0.9,2,0,2.9,0,4v10c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C16,2.9,15.1,2,14,2z M13.7,12.7c0,0.6-0.4,1-1,1H3.3c-0.6,0-1-0.4-1-1V7h11.4V12.7z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">여행일정</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="table">
-																<div class="ce-popover__item-icon">
-																	<svg width="17" height="15" viewBox="0 0 336 276"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M291 150V79c0-19-15-34-34-34H79c-19 0-34 15-34 34v42l67-44 81 72 56-29 42 30zm0 52l-43-30-56 30-81-67-66 39v23c0 19 15 34 34 34h178c17 0 31-13 34-29zM79 0h178c44 0 79 35 79 79v118c0 44-35 79-79 79H79c-44 0-79-35-79-79V79C0 35 35 0 79 0z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">테이블</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="list">
-																<div class="ce-popover__item-icon">
-																	<svg width="17" height="13" viewBox="0 0 17 13"
-																		xmlns="http://www.w3.org/2000/svg"> <path
-																			d="M5.625 4.85h9.25a1.125 1.125 0 0 1 0 2.25h-9.25a1.125 1.125 0 0 1 0-2.25zm0-4.85h9.25a1.125 1.125 0 0 1 0 2.25h-9.25a1.125 1.125 0 0 1 0-2.25zm0 9.85h9.25a1.125 1.125 0 0 1 0 2.25h-9.25a1.125 1.125 0 0 1 0-2.25zm-4.5-5a1.125 1.125 0 1 1 0 2.25 1.125 1.125 0 0 1 0-2.25zm0-4.85a1.125 1.125 0 1 1 0 2.25 1.125 1.125 0 0 1 0-2.25zm0 9.85a1.125 1.125 0 1 1 0 2.25 1.125 1.125 0 0 1 0-2.25z"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">리스트</div>
-															</div>
-															<div class="ce-popover__item" data-item-name="linkTool">
-																<div class="ce-popover__item-icon">
-																	<svg width="13" height="14" viewBox="0 0 13 14"
-																		xmlns="http://www.w3.org/2000/svg">
-																		<path
-																			d="M8.567 13.629c.728.464 1.581.65 2.41.558l-.873.873A3.722 3.722 0 1 1 4.84 9.794L6.694 7.94a3.722 3.722 0 0 1 5.256-.008L10.484 9.4a5.209 5.209 0 0 1-.017.016 1.625 1.625 0 0 0-2.29.009l-1.854 1.854a1.626 1.626 0 0 0 2.244 2.35zm2.766-7.358a3.722 3.722 0 0 0-2.41-.558l.873-.873a3.722 3.722 0 1 1 5.264 5.266l-1.854 1.854a3.722 3.722 0 0 1-5.256.008L9.416 10.5a5.2 5.2 0 0 1 .017-.016 1.625 1.625 0 0 0 2.29-.009l1.854-1.854a1.626 1.626 0 0 0-2.244-2.35z"
-																			transform="translate(-3.667 -2.7)"></path></svg>
-																</div>
-																<div class="ce-popover__item-label">링크</div>
-															</div>
-														</div>
-														<div class="ce-popover__no-found">Nothing found</div>
-													</div>
-													<div
-														class="ce-popover__overlay ce-popover__overlay--hidden"></div>
-												</div>
-												<div>
-													<div class="ce-settings">
-														<div class="ce-popover">
-															<div class="cdx-search-field">
-																<div class="cdx-search-field__icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																		height="24" fill="none" viewBox="0 0 24 24">
-																		<circle cx="10.5" cy="10.5" r="5.5"
-																			stroke="currentColor" stroke-width="2"></circle>
-																		<line x1="15.4142" x2="19" y1="15" y2="18.5858"
-																			stroke="currentColor" stroke-linecap="round"
-																			stroke-width="2"></line></svg>
-																</div>
-																<input class="cdx-search-field__input"
-																	placeholder="Filter">
-															</div>
-															<div class="ce-popover__custom-content"></div>
-															<div class="ce-popover__items">
-																<div class="ce-popover__item" data-item-name="move-up">
-																	<div class="ce-popover__item-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																			height="24" fill="none" viewBox="0 0 24 24">
-																			<path stroke="currentColor" stroke-linecap="round"
-																				stroke-width="2"
-																				d="M7 15L11.8586 10.1414C11.9367 10.0633 12.0633 10.0633 12.1414 10.1414L17 15"></path></svg>
-																	</div>
-																	<div class="ce-popover__item-label">Move up</div>
-																</div>
-																<div class="ce-popover__item" data-item-name="delete">
-																	<div class="ce-popover__item-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																			height="24" fill="none" viewBox="0 0 24 24">
-																			<path stroke="currentColor" stroke-linecap="round"
-																				stroke-width="2"
-																				d="M8 8L12 12M12 12L16 16M12 12L16 8M12 12L8 16"></path></svg>
-																	</div>
-																	<div class="ce-popover__item-label">Delete</div>
-																</div>
-																<div class="ce-popover__item" data-item-name="move-down">
-																	<div class="ce-popover__item-icon">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																			height="24" fill="none" viewBox="0 0 24 24">
-																			<path stroke="currentColor" stroke-linecap="round"
-																				stroke-width="2"
-																				d="M7 10L11.8586 14.8586C11.9367 14.9367 12.0633 14.9367 12.1414 14.8586L17 10"></path></svg>
-																	</div>
-																	<div class="ce-popover__item-label">Move down</div>
-																</div>
-															</div>
-															<div class="ce-popover__no-found">Nothing found</div>
-														</div>
-														<div class="ce-popover__overlay"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								
 									<div class="ce-inline-toolbar">
 										<div class="ce-inline-toolbar__toggler-and-button-wrapper">
 											<div class="ce-inline-toolbar__dropdown">
@@ -457,6 +264,11 @@
 	</div>
 	</app-write-travel-note> </app-root>
 </body>
-<script src="../../static/js/board-form/trip-board-form.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+  </script>
 
 </html>
