@@ -8,7 +8,7 @@
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/home.css" rel="stylesheet">
-<link href="../../static/css/board-form/trip-board-form.css"
+<link href="../../static/css/board-form/trip-item-board-form.css"
 	rel="stylesheet">
 
 

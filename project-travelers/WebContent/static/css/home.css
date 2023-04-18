@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -127,7 +127,7 @@ body{
  	-webkit-text-size-adjust: none;
  	-webkit-tap-highlight-color: transparent!important;
  	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -179,7 +179,7 @@ li {
 }
 
 .sub_header.st7 {
-    height: 18rem;
+    height: 17rem;
     padding: 0 0 1rem;
     align-items: flex-end;
     text-align: left;
@@ -363,7 +363,7 @@ li {
     margin: 1rem 0 0;
     display: inline-block;
     color: #888;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.3;
 }
@@ -784,28 +784,221 @@ a.btn_go img {
 }
 
 
+.m_visual {
+    padding: 13rem 0 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.m_visual .txt {
+    width: 100%;
+    margin: 0 auto 7rem;
+    position: relative;
+    line-height: 1.3;
+    letter-spacing: -.1rem;
+    text-align: center;
+}
+.m_visual .txt .st1 {
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+.d_block {
+    display: block!important;
+}
+.m_visual .txt .st2 {
+    margin: 0.8rem 0 0;
+    font-weight: 700;
+    font-size: 6.2rem;
+    letter-spacing: .2rem;
+}
+.m_visual .txt .st2 span {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    z-index: 1;
+}
+.m_visual .txt .st2 span:after {
+    content: "";
+    height: 1rem;
+    position: absolute;
+    left: -0.2rem;
+    right: -0.2rem;
+    bottom: 0.4rem;
+    background: #ffac81;
+    z-index: -1;
+}
+
+.sch {
+    position: relative;
+}
+
+.m_visual .sch input {
+    width: 100%;
+    padding: 2rem 0 2rem 3.5rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #666;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem #00000026;
+}
+
+.m_visual .sch button {
+    width: 9.4rem;
+    height: 5rem;
+    margin-left: -10.6rem;
+    position: absolute;
+    top: 50%;
+    background: #242424;
+    border: 0;
+    border-radius: 8rem;
+    outline: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.m_visual .sch button img {
+    width: 2rem;
+    margin-right: 0.8rem;
+}
+
+@media (hover: hover){
+.tab_nav a:hover {
+    box-shadow: inset 0 -10em #242424;
+    border-color: #242424;
+    color: #fff;
+}
+}
 
 
-/*header CSS*/
+@media (hover: hover){
+.trip_list .inner:hover .img.st1:before {
+    background: rgba(0,0,0,.3);
+}
+}
 
 
+@media (hover: hover){
+a.btn_go:hover:after {
+    content: "";
+    height: 0.1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #242424;
+}
+
+}
+
+@media (hover: hover){
+#map_slide .inner:hover {
+    margin-top: -0.5rem;
+}
+
+}
 
 
+.side_bar .btn_top_scroll{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 35rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_write_board{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 30rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_heart{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 25rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
 
 
+.side_bar .btn_top_scroll.active, .side_bar .btn_write_board.active, .side_bar .btn_heart.active{
+    opacity: 1;
+    transform: translate(0);
+}
 
+.side_bar .btn_top_scroll:before {
+    content: "";
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(https://www.wishbeen.co.kr/chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
 
+.side_bar .btn_write_board:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("../../image/write_board.png") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
 
-
-
-
-
-
-
-
-
-
-
+.side_bar .btn_heart:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
 
 
 
