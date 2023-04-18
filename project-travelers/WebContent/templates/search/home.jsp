@@ -101,7 +101,7 @@
 
 			<div _ngcontent-akd-c123 class="in_wrap reposition">
 				<aside class="side_bar">
-								<span _ngcontent-oma-c66="" class="btn_top_scroll active"></span>
+								<span _ngcontent-oma-c66="" class="btn_top_scroll"></span>
 							</aside>
 				<nav _ngcontent-akd-c123 class="tab_sub_wrap withTopBanner">
 					<ul _ngcontent-akd-c123 class="tab_nav">
@@ -413,28 +413,13 @@
 					<ul _ngcontent-akd-c124 id="map_slide"
 						class="ng-star-inserted slick-initialized slick-slider">
 						<button class="slick-prev slick-arrow" aria-label="Previous"
-							type="button" style="display: block;"></button>
+							type="button" style="display: block;">
+								<span class="btn_arrow btn_prev"></span>
+							</button>
 						<div class="slick-list draggable">
 							<div class="slick-track"
-								style="opacity: 1; width: 3564px; transform: translate3d(-792px, 0px, 0px);">
-								<div class="slick-slide slick-cloned" data-slick-index="-4"
-									aria-hidden="true" style="width: 198px;" tabindex="-1">
-									<div>
-										<li _ngcontent-akd-c124 class="inner ng-star-inserted"
-											style="width: 100%; display: inline-block;"><a
-											_ngcontent-akd-c124 href="/places/36270" tabindex="-1">
-												<div _ngcontent-akd-c124 class="img">
-													<img _ngcontent-akd-c124 alt="img"
-														src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
-												</div>
-												<div _ngcontent-akd-c124>
-													<p _ngcontent-akd-c124 class="cate">랜드마크 카테고리</p>
-													<p _ngcontent-akd-c124 class="tit">랜드마크 이름</p>
-													<p _ngcontent-akd-c124 class="txt">랜드마크 한줄 설명</p>
-												</div>
-										</a></li>
-									</div>
-								</div>
+								style="opacity: 1; width: 1188px">
+								
 								<div class="slick-slide slick-cloned" data-slick-index="-4"
 									aria-hidden="true" style="width: 198px;" tabindex="-1">
 									<div>
@@ -587,7 +572,43 @@
 											_ngcontent-akd-c124 href="/places/36270" tabindex="-1">
 												<div _ngcontent-akd-c124 class="img">
 													<img _ngcontent-akd-c124 alt="img"
-														src="https://test-resize-image.wishbeen.co.kr/516b7b89a3875d60b843648945c10e65.jpg?w=300&h=300">
+														src="https://test-resize-image.wishbeen.co.kr/eacec8484d7c574d813396303705a0a1.jpg?w=300&h=300">
+												</div>
+												<div _ngcontent-akd-c124>
+													<p _ngcontent-akd-c124 class="cate">랜드마크 카테고리</p>
+													<p _ngcontent-akd-c124 class="tit">랜드마크 이름</p>
+													<p _ngcontent-akd-c124 class="txt">랜드마크 한줄 설명</p>
+												</div>
+										</a></li>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-4"
+									aria-hidden="true" style="width: 198px;" tabindex="-1">
+									<div>
+										<li _ngcontent-akd-c124 class="inner ng-star-inserted"
+											style="width: 100%; display: inline-block;"><a
+											_ngcontent-akd-c124 href="/places/36270" tabindex="-1">
+												<div _ngcontent-akd-c124 class="img">
+													<img _ngcontent-akd-c124 alt="img"
+														src="https://test-resize-image.wishbeen.co.kr/b62b186af60653298a87eca302c23925.jpg?w=300&h=300">
+												</div>
+												<div _ngcontent-akd-c124>
+													<p _ngcontent-akd-c124 class="cate">랜드마크 카테고리</p>
+													<p _ngcontent-akd-c124 class="tit">랜드마크 이름</p>
+													<p _ngcontent-akd-c124 class="txt">랜드마크 한줄 설명</p>
+												</div>
+										</a></li>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-4"
+									aria-hidden="true" style="width: 198px;" tabindex="-1">
+									<div>
+										<li _ngcontent-akd-c124 class="inner ng-star-inserted"
+											style="width: 100%; display: inline-block;"><a
+											_ngcontent-akd-c124 href="/places/36270" tabindex="-1">
+												<div _ngcontent-akd-c124 class="img">
+													<img _ngcontent-akd-c124 alt="img"
+														src="https://test-resize-image.wishbeen.co.kr/1b86817b65cc5a5b86a2fea082b2da5b.jpg?w=300&h=300">
 												</div>
 												<div _ngcontent-akd-c124>
 													<p _ngcontent-akd-c124 class="cate">랜드마크 카테고리</p>
@@ -619,6 +640,8 @@
 						</div>
 						<button class="slick-next slick-arrow" aria-label="Next"
 							type="button" style="display: block;">
+							<span class="btn_arrow btn_next"></span>
+							</button>
 					</ul>
 				</section>
 				</app-city-home>
@@ -701,4 +724,6 @@
 
 
 </body>
+
+<script src="../../static/js/search/home.js"></script>
 </html>
