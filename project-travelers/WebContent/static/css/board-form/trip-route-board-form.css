@@ -1,47 +1,6 @@
 @charset "UTF-8";
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,  input, p, blockquote, th, td, textarea {
-    margin: 0;
-    padding: 0;
-}
 
-body, table, th, td, button, select, input, textarea {
-    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
-    color: #111;
-    line-height: 1;
-    letter-spacing: 0;
-    word-break: keep-all;
-}
-
-.mat-datepicker-toggle, .mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button {
-    color: #0000008a;
-}
-
-#content {
-    padding: 7rem 0 0;
-    background: #fff;
-}
-
-.in_wrap {
-    width: 100%;
-    max-width: 79rem;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
-}
-
-
-.editor_wrap {
-    padding: 0 0 10rem;
-    overflow: unset;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, address {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 
 .mat-button .mat-button-wrapper>*, .mat-flat-button .mat-button-wrapper>*, .mat-stroked-button .mat-button-wrapper>*, .mat-raised-button .mat-button-wrapper>*, .mat-icon-button .mat-button-wrapper>*, .mat-fab .mat-button-wrapper>*, .mat-mini-fab .mat-button-wrapper>* {
     vertical-align: middle;
@@ -65,7 +24,7 @@ input {
 }
 
 .pdt50 {
-    padding-top: 50px!important;
+    padding-top: 120px!important;
 }
 
 
@@ -888,7 +847,7 @@ input.mat-input-element {
     margin: 1rem 0 0;
     display: inline-block;
     color: #888;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.3;
 }
