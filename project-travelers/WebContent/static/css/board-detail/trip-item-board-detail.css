@@ -17,7 +17,7 @@
 }
 
 .pdt50 {
-    padding-top: 50px!important;
+    padding-top: 120px!important;
 }
 
 .board_view .tit_wrap {
@@ -253,7 +253,7 @@
 }
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;

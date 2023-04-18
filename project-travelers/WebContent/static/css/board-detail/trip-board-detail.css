@@ -17,7 +17,7 @@
 }
 
 .pdt50 {
-    padding-top: 50px!important;
+    padding-top: 120px!important;
 }
 
 .board_view .tit_wrap {
@@ -253,7 +253,7 @@
 }
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -700,6 +700,279 @@ dt {
     font-size: 1.4rem;
     text-decoration: none!important;
 }
+
+
+
+
+/*게시물 옆에 툴바*/
+
+.side_bar .btn_top_scroll{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 35rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_write_board{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 30rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_heart{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 25rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+
+.side_bar .btn_top_scroll.active, .side_bar .btn_write_board.active, .side_bar .btn_heart.active{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.side_bar .btn_top_scroll:before {
+    content: "";
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(https://www.wishbeen.co.kr/chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.side_bar .btn_write_board:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("../../image/write_board.png") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.side_bar .btn_heart:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*댓글 css */
+
+.comment_list .inner {
+    position: relative;
+    box-sizing: border-box;
+}
+.comment_list .inner>ul {
+    padding: 2.5rem 1.5rem 2.5rem 0;
+}
+
+.comment_list .di_flex {
+    display: flex;
+    justify-content: space-between;
+}
+.comment_list .left_wrap {
+    display: flex;
+}
+.comment_list .left_wrap .img {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 0 1rem 0 0;
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.comment_list .left_wrap .nick {
+    display: inline-block;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+.comment_list .left_wrap .txt {
+    margin: 0.7rem 0 0;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.comment_list .right_wrap {
+    width: 20%;
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.comment_list .right_wrap .date {
+    margin: 0 2.5rem 0 0;
+    display: inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+.comment_list .right_wrap .btn_set {
+    top: 1rem;
+}
+	
+.comment_list .right_wrap .btn_reply {
+    font-size: 1.3rem;
+}
+
+
+.comment_list .inner.reply {
+    background: #fafafa;
+}
+
+.comment_list .inner {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.comment_list .inner.reply>ul {
+    padding: 2.5rem 1.5rem 2.5rem 3rem;
+}
+
+.comment_list .di_flex {
+    display: flex;
+    justify-content: space-between;
+}
+.comment_list .left_wrap {
+    display: flex;
+}
+
+.comment_list .inner.reply .img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.comment_list .left_wrap .nick {
+    display: inline-block;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+.comment_list .left_wrap .txt {
+    margin: 0.7rem 0 0;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.comment_list .left_wrap .txt .c_st05 {
+    padding-right: 0.5rem;
+    display: inline-block;
+}
+
+.comment_list .right_wrap {
+    width: 20%;
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.comment_list .right_wrap .date {
+    margin: 0 2.5rem 0 0;
+    display: inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+
+
+.comment_list .right_wrap .btn_reply {
+    font-size: 1.3rem;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    padding-top : 50px;
+}
+.pagination a {
+    width: 3rem;
+    margin: 0 0.2rem;
+    display: inline-block;
+    border: 0.1rem solid #999;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    opacity: .5;
+}
+
+.pagination a img {
+    margin-top: -0.2rem;
+}
+.pagination a.active {
+    opacity: 1;
+    border-color: #242424;
+}
+
+
+
+
+
+
+
+
+
 
 
 

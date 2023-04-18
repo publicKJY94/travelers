@@ -72,7 +72,7 @@
 						<div _ngcontent-phe-c90="" class="tit_wrap">
 							<div _ngcontent-phe-c90="">
 								<span _ngcontent-phe-c90="" class="schedule_date"><span
-									_ngcontent-phe-c90="">TRIPITEM</span> 아이템이름 </span><span
+									_ngcontent-phe-c90="">TRIPITEM</span>아이템이름 </span><span
 									_ngcontent-phe-c90="" class="city">여행도시</span>
 							</div>
 							<div _ngcontent-phe-c90="">
