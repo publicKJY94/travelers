@@ -150,6 +150,10 @@ body{
     height: 100%;
 }
 
+body {
+    -webkit-text-size-adjust: none;
+}
+
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -265,10 +269,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
 }
 
-.my_header {
-    margin: 5rem 0;
-}
-
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -351,90 +351,60 @@ img {
     color: #fff;
 }
 
-.my_wrap header {
-    margin: 2rem 0;
-}
-
-.my_wrap .header.ta_right {
-    margin-bottom: 3rem;
-}
-
-.ta_right {
-    text-align: right!important;
-}
-
-.cmt_list .inner {
+.trip_list1 .inner {
+    width: 100%;
+    margin: 0;
+    background: #fff;
     position: relative;
-    transition: all .3s;
     box-sizing: border-box;
-    background-color: #fff;
     border: 0.1rem solid #d7d7d7;
     border-radius: 1rem;
-}
-
-.cmt_list .tit_bar {
-    height: 5rem;
-    padding: 0 1.5rem;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fafafa;
-    border-bottom: 0.1rem solid #d7d7d7;
-    box-sizing: border-box;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.txt_hide {
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
-.cmt_list .tit_bar .tit, .cmt_list .tit_bar .city, .cmt_list .tit_bar .name {
-    font-weight: 500;
-    font-size: 1.7rem;
+.my_wrap .trip_list1 .inner>a {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
 }
 
-.cmt_list .tit_bar .date {
-    display: inline-block;
-    margin-left: 1rem;
-    color: #999;
-    font-weight: 300;
-    font-size: 1.5rem;
-    white-space: nowrap;
+.trip_list1 .inner>a {
+    display: block;
 }
 
-.my_wrap .cmt_list .tit_bar .date {
-    margin: 0;
-    position: relative;
-    left: inherit;
-    bottom: inherit;
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
-.cmt_list .cont {
-    position: relative;
-    overflow: visible!important;
+.trip_list1 .inner .txt_wrap {
+    min-height: 13.5rem;
+    padding: 2rem 2rem 2rem 17.5rem;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-.cmt_list .cont>div {
-    padding: 2rem;
-    box-sizing: border-box;
+.trip_list1 .geo {
+    font-size: 1.5rem;
 }
 
-.my_wrap .cmt_list .cont>div>a {
-    position: absolute;
-    inset: 0;
+.trip_list1 .ico_geo, .trip_list1 .ico_cal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.3rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .7;
 }
 
-a:link, a:active, a:visited, a:hover {
-    color: inherit;
-    text-decoration: none;
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
 }
 
-.cmt_list .cont .tit {
-    width: calc(100% - 10rem);
+.trip_list1 .inner .tit {
     max-height: 6rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -444,29 +414,62 @@ a:link, a:active, a:visited, a:hover {
     text-overflow: ellipsis;
     line-height: 1.3;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
-.cmt_list .cont>div>ul li+li {
-    margin: 1.2rem 0 0;
+.trip_list1 .inner .schedule {
+    max-height: 7rem;
+    margin: 1.2rem 0 1.8rem!important;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    box-shadow: 0.1rem 0.1rem 0.8rem #0000001a;
+    border: 0.1rem solid #ddd;
 }
 
-.pdt05 {
-    padding-top: 5px!important;
+.trip_list1 .inner .schedule span {
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 0.5rem;
+    color: #333;
+    font-size: 1.3rem;
 }
 
-ol ol, ol ul, ul ol, ul ul {
-    margin-bottom: 0;
+.trip_list1 .inner .schedule span:after {
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: -0.5rem 0 0;
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    background: url(https://www.wishbeen.co.kr/chevron_right.d4c5324d6a12e962.svg) 0 0 no-repeat;
+    background-size: cover;
+    opacity: .7;
 }
 
-.cmt_list .ico_wrap li {
-    margin: 0 1rem 0 0!important;
+.trip_list1 .inner .date {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.trip_list1 .ico_wrap li {
+    margin: 0 1rem 0 0;
     display: inline-block;
     color: #999;
     font-size: 1.3rem;
 }
 
-.cmt_list .ico_wrap span {
+.trip_list1 .ico_wrap span {
     width: 1.4rem;
     height: 1.4rem;
     margin: -0.1rem 0.5rem 0 0;
@@ -475,19 +478,48 @@ ol ol, ol ul, ul ol, ul ul {
     opacity: .6;
 }
 
+.ico_attr {
+    background: url(https://www.wishbeen.co.kr/map.cd2b69925934f97b.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_down {
+    background: url(https://www.wishbeen.co.kr/download.ed23b0af8bbdf45d.svg) center no-repeat;
+    background-size: cover;
+}
+
 .ico_spot {
     background: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg) center no-repeat;
     background-size: cover;
 }
 
-.ico_cmt {
-    background: url(https://www.wishbeen.co.kr/chat_dots.4000db42c3634f37.svg) center no-repeat;
+.ico_geo {
+    background: url(https://www.wishbeen.co.kr/geo.922951f5cf1908d9.svg) center no-repeat;
     background-size: cover;
 }
 
-.ico_like {
-    background: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg) center no-repeat;
-    background-size: cover;
+em, address {
+    font-style: normal;
+}
+
+.trip_list1 .state {
+    min-width: 5rem;
+    padding: 0.6rem 0.8rem;
+    display: inline-block;
+    position: absolute;
+    top: 1.8rem;
+    right: 4rem;
+    background: rgba(0,0,0,.6);
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+.trip_list1 .state.st01 {
+    background: #f2f6ff;
+    color: #111;
 }
 
 .btn_set {
@@ -501,13 +533,8 @@ ol ol, ol ul, ul ol, ul ul {
     z-index: 15;
 }
 
-.cmt_list .cont .btn_set {
+.trip_list1 .btn_set {
     top: 1rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .btn_set img {
@@ -519,4 +546,3 @@ a {
     display: block;
     clear: both;
 }
-

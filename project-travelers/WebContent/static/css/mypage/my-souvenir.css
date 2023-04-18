@@ -83,7 +83,7 @@ body, table, th, td, button, select, input, textarea {
     word-break: keep-all;
 }
 
-dl, ol, ul {
+ol, ul {
     list-style: none;
 }
 
@@ -113,20 +113,6 @@ fieldset, img {
 
 *, :after, :before {
     box-sizing: border-box;
-}
-
-button {
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: center;
-    cursor: default;
 }
 
 button, select {
@@ -242,19 +228,6 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
-.sub_header.st1:after {
-    background-image: url(https://www.wishbeen.co.kr/bg_st1.6a2f5896da8523ee.jpg);
-}
-
-.sub_header:after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .position_r {
     position: relative!important;
     margin-top : 5rem;
@@ -269,6 +242,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5rem 0;
 }
 
+.position_r {
+    position: relative!important;
+}
+
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -279,6 +256,10 @@ h1, h2, h3, h4, h5, h6 {
 
 [type=button], [type=reset], [type=submit], button {
     -webkit-appearance: button;
+}
+
+i {
+    font-style: italic;
 }
 
 img {
@@ -299,8 +280,12 @@ img {
     overflow: clip;
 }
 
-.my_wrap {
-    padding: 0 0 10rem;
+.tab_nav.st01 {
+    width: 100%;
+    margin: 0 auto 2rem;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
 }
 
 .tab_nav {
@@ -312,17 +297,14 @@ img {
     position: relative;
 }
 
-.tab_nav.st01 {
-    width: 100%;
-    margin: 0 auto 2rem;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-}
-
 .tab_nav.st01 li {
     display: inline-block;
     transition: all .3s;
+}
+
+.tab_nav.st01 li a.active {
+    background: #242424;
+    color: #fff;
 }
 
 .tab_nav.st01 li a {
@@ -339,50 +321,132 @@ img {
     box-shadow: 0 1px 2px #00000026;
 }
 
-.tab_nav li a.active {
-    color: #242424;
-    font-weight: 500;
-    border: 0.1rem solid #242424;
-    border-bottom-color: transparent;
+.tab_nav a {
+    display: block;
+    margin-left: -0.1rem;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #ddd;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s ease;
 }
 
-.tab_nav.st01 li a.active {
-    background: #242424;
-    color: #fff;
+a:link, a:active, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
 }
 
-.my_wrap header {
-    margin: 2rem 0;
+.my_wrap {
+    padding: 0 0 10rem;
 }
 
 .my_wrap .header.ta_right {
     margin-bottom: 3rem;
 }
 
+.my_wrap header {
+    margin: 2rem 0;
+}
+
 .ta_right {
     text-align: right!important;
 }
 
-.cmt_list .inner {
-    position: relative;
-    transition: all .3s;
-    box-sizing: border-box;
-    background-color: #fff;
-    border: 0.1rem solid #d7d7d7;
-    border-radius: 1rem;
+.my_wrap header .selbox {
+    width: 20rem;
 }
 
-.cmt_list .tit_bar {
-    height: 5rem;
-    padding: 0 1.5rem;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fafafa;
+select.selbox {
+    width: 100%;
+    height: 3.1rem;
+    margin: 0;
+    padding: 0 0 0.8rem 0.2rem;
+    background: url(https://www.wishbeen.co.kr/chevron_down.f4570c3145b4e241.svg) 100% 30% no-repeat;
+    background-size: 1.5rem auto;
+    border: 0;
     border-bottom: 0.1rem solid #d7d7d7;
     box-sizing: border-box;
-    border-radius: 1rem 1rem 0 0;
+    font-size: 1.6rem;
+    outline: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select {
+    font-size: 1em;
+    vertical-align: middle;
+    -webkit-border-radius: 0;
+}
+
+select {
+    word-wrap: normal;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.trip_list1 .inner {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #d7d7d7;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.my_wrap .trip_list1 .inner>a {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+
+.trip_list1 .inner>a {
+    display: block;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.trip_list1 .inner .txt_wrap {
+    min-height: 13.5rem;
+    padding: 2rem 2rem 2rem 17.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.trip_list1 .geo {
+    font-size: 1.5rem;
 }
 
 .txt_hide {
@@ -391,50 +455,49 @@ img {
     text-overflow: ellipsis;
 }
 
-.cmt_list .tit_bar .tit, .cmt_list .tit_bar .city, .cmt_list .tit_bar .name {
-    font-weight: 500;
-    font-size: 1.7rem;
-}
-
-.cmt_list .tit_bar .date {
+.trip_list1 .ico_geo, .trip_list1 .ico_cal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.3rem 0.5rem 0 0;
     display: inline-block;
-    margin-left: 1rem;
-    color: #999;
-    font-weight: 300;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.ico_geo {
+    background: url(geo.922951f5cf1908d9.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trip_list1 .ico_geo, .trip_list1 .ico_cal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.3rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.ico_geo {
+    background: url(https://www.wishbeen.co.kr/geo.922951f5cf1908d9.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trip_list1 .geo {
     font-size: 1.5rem;
+}
+
+.txt_hide {
+    overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.my_wrap .cmt_list .tit_bar .date {
-    margin: 0;
-    position: relative;
-    left: inherit;
-    bottom: inherit;
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
 }
 
-.cmt_list .cont {
-    position: relative;
-    overflow: visible!important;
-    cursor: pointer;
-}
-
-.cmt_list .cont>div {
-    padding: 2rem;
-    box-sizing: border-box;
-}
-
-.my_wrap .cmt_list .cont>div>a {
-    position: absolute;
-    inset: 0;
-}
-
-a:link, a:active, a:visited, a:hover {
-    color: inherit;
-    text-decoration: none;
-}
-
-.cmt_list .cont .tit {
-    width: calc(100% - 10rem);
+.trip_list1 .inner .tit {
     max-height: 6rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -444,29 +507,52 @@ a:link, a:active, a:visited, a:hover {
     text-overflow: ellipsis;
     line-height: 1.3;
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
-.cmt_list .cont>div>ul li+li {
+.trip_list1 .inner .txt_wrap>ul>li+li {
     margin: 1.2rem 0 0;
 }
 
-.pdt05 {
-    padding-top: 5px!important;
+.txt_hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trip_list1 .tag {
+    margin: 0.2rem 0.8rem 0.2rem 0;
+}
+
+.tag {
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    background: #f7f9ff;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    color: #242424;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .date {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: #333;
+    font-size: 1.4rem;
 }
 
 ol ol, ol ul, ul ol, ul ul {
     margin-bottom: 0;
 }
 
-.cmt_list .ico_wrap li {
-    margin: 0 1rem 0 0!important;
-    display: inline-block;
-    color: #999;
-    font-size: 1.3rem;
-}
-
-.cmt_list .ico_wrap span {
+.trip_list1 .ico_wrap span {
     width: 1.4rem;
     height: 1.4rem;
     margin: -0.1rem 0.5rem 0 0;
@@ -480,6 +566,22 @@ ol ol, ol ul, ul ol, ul ul {
     background-size: cover;
 }
 
+.trip_list1 .ico_wrap li {
+    margin: 0 1rem 0 0;
+    display: inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+
+.trip_list1 .ico_wrap span {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.1rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .6;
+}
+
 .ico_cmt {
     background: url(https://www.wishbeen.co.kr/chat_dots.4000db42c3634f37.svg) center no-repeat;
     background-size: cover;
@@ -488,6 +590,15 @@ ol ol, ol ul, ul ol, ul ul {
 .ico_like {
     background: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg) center no-repeat;
     background-size: cover;
+}
+
+.ico_share {
+    background: url(https://www.wishbeen.co.kr/share.0dc03223b486080e.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trip_list1 .btn_set {
+    top: 1rem;
 }
 
 .btn_set {
@@ -501,10 +612,6 @@ ol ol, ol ul, ul ol, ul ul {
     z-index: 15;
 }
 
-.cmt_list .cont .btn_set {
-    top: 1rem;
-}
-
 a {
     color: inherit;
     text-decoration: inherit;
@@ -514,9 +621,21 @@ a {
     width: 2rem;
 }
 
-.clear_v2:after {
-    content: "";
-    display: block;
-    clear: both;
+fieldset, img {
+    border: 0;
 }
+
+.sub_header.st1:after {
+    background-image: url(https://www.wishbeen.co.kr/bg_st1.6a2f5896da8523ee.jpg);
+}
+
+.sub_header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 

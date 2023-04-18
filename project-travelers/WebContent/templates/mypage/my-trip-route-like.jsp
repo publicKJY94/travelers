@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>문의하기</title>
+<title>내가 찜한 추천루트</title>
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">
-<link href="../../static/css/mypage/my-question.css" rel="stylesheet">
+<link href="../../static/css/mypage/my-trip-route-like.css"
+	rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <app-header
@@ -56,64 +57,79 @@
 			</nav>
 		</div>
 	</header> </app-header> 
-	<app-community-management _nghost-tbh-c83="" class="ng-star-inserted">
-	<div _ngcontent-tbh-c83="" id="content">
-		<header _ngcontent-tbh-c83="" class="sub_header st1">
-			<div _ngcontent-tbh-c83="" class="in_wrap">
-				<h2 _ngcontent-tbh-c83="">
-					<p _ngcontent-tbh-c83="" class="dth2">문의 관리</p>
+	<app-travel-plan-management _nghost-edm-c89=""
+		class="ng-star-inserted">
+	<div _ngcontent-edm-c89="" id="content">
+		<header _ngcontent-edm-c89="" class="sub_header st1">
+			<div _ngcontent-edm-c89="" class="in_wrap">
+				<h2 _ngcontent-edm-c89="">
+					<p _ngcontent-edm-c89="" class="dth2">추천루트 관리</p>
 				</h2>
 			</div>
 		</header>
-		<div _ngcontent-tbh-c83="" class="in_wrap">
-			<nav _ngcontent-tbh-c83="" value="false" class="position_r">
-				<button _ngcontent-tbh-c83="" type="button" class="tab_nav_btn mo">
-					<span _ngcontent-tbh-c83="">나의 문의하기</span><i _ngcontent-tbh-c83=""
-						class="ico"><img _ngcontent-tbh-c83=""
+		<div _ngcontent-edm-c89="" class="in_wrap">
+			<nav _ngcontent-edm-c89="" value="false" class="position_r">
+				<button _ngcontent-edm-c89="" type="button" class="tab_nav_btn mo">
+					<span _ngcontent-edm-c89="">내가 찜한 추천루트</span><i _ngcontent-edm-c89=""
+						class="ico"><img _ngcontent-edm-c89=""
 						data-brackets-id="27106"
 						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></i>
 				</button>
-				<ul _ngcontent-tbh-c83="" class="tab_nav st01">
-					<li _ngcontent-tbh-c83=""><a _ngcontent-tbh-c83=""
-						routerlink="my" routerlinkactive="active" href="/my/community/my"
-						class="active"> 나의 문의하기 </a></li>
+				<ul _ngcontent-edm-c89="" class="tab_nav st01">
+					<li _ngcontent-edm-c89=""><a _ngcontent-edm-c89=""
+						routerlink="my" routerlinkactive="active" href="/my/schedules/my"
+						class=""> 나의 추천루트 </a></li>
+					<li _ngcontent-edm-c89=""></li>
+					<li _ngcontent-edm-c89=""><a _ngcontent-edm-c89=""
+						routerlink="scrap" routerlinkactive="active"
+						href="/my/schedules/scrap" class="active"> 내가 찜한 추천루트 </a></li>
 				</ul>
 			</nav>
-			<router-outlet _ngcontent-tbh-c83=""></router-outlet>
-			<app-my-community _nghost-tbh-c84="" class="ng-star-inserted">
-			<section _ngcontent-tbh-c84="" class="my_wrap">
-				<header _ngcontent-tbh-c84="" class="header ta_right">
-				</header>
-				<div _ngcontent-tbh-c84="" class="cmt_list clear_v2">
-					<div _ngcontent-tbh-c84="" class="inner ng-star-inserted">
-						<ul _ngcontent-tbh-c84="" class="tit_bar">
-							<li _ngcontent-tbh-c84="" class="txt_hide"><span
-								_ngcontent-tbh-c84="" class="city"> 문의 제목 </span></li>
-							<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
-								class="date"> 2023.04.17 </span></li>
-						</ul>
-						<div _ngcontent-tbh-c84="" class="cont">
-							<div _ngcontent-tbh-c84="">
-								<a _ngcontent-tbh-c84="" href="/community/636"></a>
-								<ul _ngcontent-tbh-c84="">
-									<li _ngcontent-tbh-c84="" class="tit"> 문의 내용 </li>
-									<li _ngcontent-tbh-c84="" class="pdt05"><ul
-											_ngcontent-tbh-c84="" class="ico_wrap">
-											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
-												class="ico_spot"></span> 0</li>
-											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
-												class="ico_cmt"></span> 0</li>
-											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
-												class="ico_like"></span> 0</li>
-										</ul></li>
-								</ul>
-							</div>
-							<!---->
-							<a _ngcontent-tbh-c84="" class="btn_set"><img
-								_ngcontent-tbh-c84=""
-								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"
-								class="ng-star-inserted">
-							<!----></a>
+			<router-outlet _ngcontent-edm-c89=""></router-outlet>
+			<app-my-travel-plan-scrap _nghost-edm-c92="" class="ng-star-inserted">
+			<section _ngcontent-edm-c92="" class="my_wrap">
+				<div _ngcontent-edm-c92="" class="trip_list1 clear_v2">
+					<div _ngcontent-edm-c92="" class="inner ng-star-inserted">
+						<a _ngcontent-edm-c92=""></a>
+						<div _ngcontent-edm-c92="" class="img">
+							<img _ngcontent-edm-c92="" alt="img"
+								src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&amp;maptype=roadmap&amp;markers=color:0x0D6FFC%7Clabel:1%7C37.59260613941287,127.0164990232788&amp;markers=color:0x0D6FFC%7Clabel:2%7C37.44937219999999,126.4513555&amp;markers=color:0x0D6FFC%7Clabel:3%7C37.4848155,126.4396163&amp;markers=color:0x0D6FFC%7Clabel:4%7C37.481648415134586,126.4526196493042&amp;markers=color:0x0D6FFC%7Clabel:5%7C37.44937219999999,126.4513555&amp;markers=color:0x0D6FFC%7Clabel:6%7C16.055350959946445,108.20126646165464&amp;markers=color:0x0D6FFC%7Clabel:7%7C16.0674129,108.2244233&amp;path=color:0x0D6FFC%7Cweight:5%7C37.59260613941287,127.0164990232788%7C37.44937219999999,126.4513555%7C37.4848155,126.4396163%7C37.481648415134586,126.4526196493042%7C37.44937219999999,126.4513555%7C16.055350959946445,108.20126646165464%7C16.0674129,108.2244233&amp;key=AIzaSyA-46nCXGZeKVzH8MCMMWWRSjKVGfixSvM">
+						</div>
+						<div _ngcontent-edm-c92="" class="txt_wrap">
+							<ul _ngcontent-edm-c92="">
+								<li _ngcontent-edm-c92="" class="geo txt_hide"><span
+									_ngcontent-edm-c92="" class="ico_geo"></span> 서울특별시·인천광역시·다낭·꽝남
+								</li>
+								<li _ngcontent-edm-c92="" class="tit">베트남 첫 여행! 부지런한 여행~
+									(다낭, 호이안)</li>
+								<li _ngcontent-edm-c92="" class="schedule pc"><span
+									_ngcontent-edm-c92="" class="ng-star-inserted"> 성신여대입구역
+								</span><span _ngcontent-edm-c92="" class="ng-star-inserted">
+										인천국제공항 (Incheon International Airport) </span><span
+									_ngcontent-edm-c92="" class="ng-star-inserted"> 마티나 라운지
+								</span><span _ngcontent-edm-c92="" class="ng-star-inserted">
+										인천공항 탑승동 </span><span _ngcontent-edm-c92="" class="ng-star-inserted">
+										인천국제공항 (Incheon International Airport) </span><span
+									_ngcontent-edm-c92="" class="ng-star-inserted"> 다낭 국제공항
+								</span><span _ngcontent-edm-c92="" class="ng-star-inserted"> 센터
+										호텔 Centre Hotel </span><span _ngcontent-edm-c92=""
+									class="ng-star-inserted"> 센터 호텔 Centre Hotel </span><span
+									_ngcontent-edm-c92="" class="ng-star-inserted"> Hiệu
+										vàng Soạn Hà </span><span _ngcontent-edm-c92=""
+									class="ng-star-inserted"> 냐벱 한시장 베트남 가정식 </span>
+								<!----></li>
+								<li _ngcontent-edm-c92="" class="date">
+									PLAN·2023.03.07~2023.03.12</li>
+								<li _ngcontent-edm-c92=""><ul _ngcontent-edm-c92=""
+										class="ico_wrap">
+										<li _ngcontent-edm-c92=""><span _ngcontent-edm-c92=""
+											class="ico_attr"></span><em _ngcontent-edm-c92="" class="pc">전체</em>
+											52개 장소</li>
+									</ul></li>
+							</ul>
+							<a _ngcontent-edm-c92="" class="btn_set"><img
+								_ngcontent-edm-c92=""
+								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
 							<!---->
 						</div>
 					</div>
@@ -121,11 +137,12 @@
 				</div>
 				<!---->
 			</section>
-			</app-my-community>
+			</app-my-travel-plan-scrap>
 			<!---->
 		</div>
 	</div>
-	</app-community-management> <app-footer _ngcontent-akd-c67 _nghost-akd-c65
+	</app-travel-plan-management> 
+	<app-footer _ngcontent-akd-c67 _nghost-akd-c65
 		class="ng-star-inserted"> <footer _ngcontent-xjb-c66
 		id="footer">
 		<div _ngcontent-xjb-c66 class="in_wrap">
