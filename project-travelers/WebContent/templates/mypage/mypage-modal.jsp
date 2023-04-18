@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>MyPage-modal</title>
-<link href="../../static/css/MyPage/mypage-modal.css" rel="stylesheet">
+<link href="../../static/css/mypage/mypage-modal.css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-nsf-c68 ng-version="13.3.12">
