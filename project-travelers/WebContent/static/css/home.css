@@ -661,14 +661,10 @@ a.btn_go img {
     -webkit-appearance: button;
 } */
 
-#map_slide .slick-prev:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('https://www.wishbeen.co.kr/chevron_left.76272da9cae0c809.svg') 40% center no-repeat;
-    background-size: 50%;
-    opacity: .5;
-}
+
+
+
+
 
 #map_slide .slick-list {
     padding: 0.5rem 0 0;
@@ -774,14 +770,41 @@ a.btn_go img {
     right: 0;
 }
 
-#map_slide .slick-next:before {
+#map_slide .slick-next>.btn_next {
     content: "";
     position: absolute;
     inset: 0;
     background: url('https://www.wishbeen.co.kr/chevron_right.d4c5324d6a12e962.svg') 60% center no-repeat;
     background-size: 50%;
-    opacity: .5;
+    opacity: 0.5;
+    transition: all .3s;
 }
+
+#map_slide .slick-next>.btn_next:hover {
+    
+    opacity: 1;
+}
+#map_slide .slick-prev>.btn_prev{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('https://www.wishbeen.co.kr/chevron_left.76272da9cae0c809.svg') 40% center no-repeat;
+    background-size: 50%;
+    opacity: 0.5;
+    transition: all .3s;
+}
+#map_slide .slick-prev>.btn_prev:hover{
+ 
+    opacity: 1;
+}
+
+
+#map_slide .slick-arrow:hover{
+	background: rgba(255,255,255,.95);
+}
+
+
+
 
 
 .m_visual {
@@ -988,18 +1011,10 @@ a.btn_go:hover:after {
     transform: translate(-50%,-50%);
 }
 
-.side_bar .btn_heart:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: url("https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg") 0 0 no-repeat;
-    background-size: 100%;
-    transform: translate(-50%,-50%);
+.side_bar .btn_top_scroll.active:hover, .side_bar .btn_write_board.active:hover,
+	.btn_heart.active:hover {
+	background-color: #e9e9e9;
 }
-
 
 
 
