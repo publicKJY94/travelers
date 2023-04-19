@@ -120,7 +120,7 @@
 						<dl class="inner ng-star-inserted">
 							<dt class="active">
 								<span>탈퇴 후 재가입 할 수 있나요?</span><span><img
-									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_up.svg"
+									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
 									alt="더보기"></span>
 							</dt>
 							<dd>
