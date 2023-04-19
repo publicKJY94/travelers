@@ -1,57 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="ko">
-  <head>
-	  <style class="vjs-styles-defaults">
-	      .video-js {
-	        width: 300px;
-	        height: 150px;
-	      }
-	
-	      .vjs-fluid:not(.vjs-audio-only-mode) {
-	        padding-top: 56.25%
-	      }
-	    </style>
-	    <style type="text/css">
-		    @font-face{
-		        font-family:'Material Icons';
-		        font-style:normal;
-		        font-weight:400;
-		        src:url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
-		    }
-		    @font-face{
-				font-family: "Noto Sans KR";
-				src: url("./../../static/css/font/robotofonts/font.css");
-			}
-		    .material-icons{
-		        font-family:'Material Icons';
-		        font-weight:normal;
-		        font-style:normal;
-		        font-size:24px;
-		        line-height:1;
-		        letter-spacing:normal;
-		        text-transform:none;
-		        display:inline-block;
-		        white-space:nowrap;
-		        word-wrap:normal;
-		        direction:ltr;
-		        -webkit-font-feature-settings:'liga';
-		        -webkit-font-smoothing:antialiased;
-	        }
-	        a {
-			    color: inherit;
-			    text-decoration: inherit;
-			}
-		</style>
-	   	<link rel="stylesheet" href="./../../static/css/main/main.css">
-	   	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="../../static/css/font/font.css" rel="stylesheet">
+<link href="./../../static/css/main/main.css" rel="stylesheet">
+  	<style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style>
+    <style type="text/css">
+        a {
+		    color: inherit;
+		    text-decoration: inherit;
+		}
+	</style>
+   	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
   <body>
     <app-root _nghost-fmk-c68="" ng-version="13.3.12">
-      <div _ngcontent-fmk-c68="" id="wrap">
-        <app-header _ngcontent-akd-c67 _nghost-akd-c64 class="ng-star-inserted">
+       <app-header _ngcontent-akd-c67 _nghost-akd-c64 class="ng-star-inserted">
 			<app-top-banner _ngcontent-qlk-c65 _nghost-qlk-c52>
 				<div _ngcontent-qlk-c52 class="bandBanner ng-star-inserted">
 					<div _ngcontent-qlk-c52 class="inner ng-star-inserted">
@@ -99,7 +75,7 @@
 							<ul _ngcontent-qlk-c65 class="side_wrap">
 								
 								<li _ngcontent-qlk-c65 class="pc">
-									<a _ngcontent-qlk-c65 class="btn_login ng-star-inserted" href="./../login/login_main.jsp">
+									<a _ngcontent-qlk-c65 class="btn_login ng-star-inserted" href="/login">
 										<span _ngcontent-qlk-c65></span>
 											로그인
 									</a>
@@ -2780,283 +2756,58 @@
                       </a>
                     </li>
                     <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/465988">
+                      <a _ngcontent-fmk-c79="" href="/note/594546">
                         <span _ngcontent-fmk-c79="" class="thumb">
                           <img
                             _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_07.png"
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_06.png"
                             width="100%"
                             alt=""
                           />
                         </span>
                         <p _ngcontent-fmk-c79="" class="detail">
                           <span _ngcontent-fmk-c79="" class="badge location">
-                            베를린, 독일</span
+                            하노이, 베트남</span
                           >
                           <strong _ngcontent-fmk-c79="" class="subject">
-                            베를린 3일 여행 일정</strong
+                            3박 4일 하노이 OO 둘러보기</strong
                           >
                           <span _ngcontent-fmk-c79="" class="txt">
-                            3분 카레? 베를린 3일 여행!</span
+                            명물, 유럽 감성, 맛집 PIck!</span
                           >
                           <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 레몬 님의 여행</span>
+                            <span _ngcontent-fmk-c79=""> 효서니 님의 여행</span>
                           </span>
                         </p>
                       </a>
                     </li>
                     <li _ngcontent-fmk-c79="">
-                      <a
-                        _ngcontent-fmk-c79=""
-                        routerlink="/note/594545"
-                        href="/note/594545"
-                      >
+                      <a _ngcontent-fmk-c79="" href="/note/594546">
                         <span _ngcontent-fmk-c79="" class="thumb">
                           <img
                             _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_08.png"
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_06.png"
                             width="100%"
                             alt=""
                           />
                         </span>
                         <p _ngcontent-fmk-c79="" class="detail">
                           <span _ngcontent-fmk-c79="" class="badge location">
-                            도쿄, 일본</span
+                            하노이, 베트남</span
                           >
                           <strong _ngcontent-fmk-c79="" class="subject">
-                            감성 가득했던 도쿄 여행기 🇯🇵</strong
+                            3박 4일 하노이 OO 둘러보기</strong
                           >
                           <span _ngcontent-fmk-c79="" class="txt">
-                            슬램덩크의 그곳, 가마쿠라까지!</span
+                            명물, 유럽 감성, 맛집 PIck!</span
                           >
                           <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79="">
-                              유잼일기 님의 여행</span
-                            >
+                            <span _ngcontent-fmk-c79=""> 효서니 님의 여행</span>
                           </span>
                         </p>
                       </a>
                     </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/community/573">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_09.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            서울, 대한민국</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            2023 서울 벚꽃 개화 시기 및 명소 Pick 4
-                          </strong>
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            흔들리는 꽃들 속에서</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> Wishpicker</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/466031">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_10.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            싱가포르</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            2월에 떠나는 싱가포르 자유여행</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            겨울에 떠나는 여름여행</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 원쓰</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/466028">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_11.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            오사카, 일본</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            일본 오사카 3박 4일 여행</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            쇼핑, 교토, USJ까지</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> LifenLeave</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/466017">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_12.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            멜버른, 호주</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            혼자 호주 멜버른 5박 6일 여행</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            워홀의 마무리</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 뚜리안</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/community/567">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_13.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            대한민국</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            약켓팅 부르는 마약 약과 Pick 4</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            달달하게</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> Wishpicker</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/465924">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_14.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            LA, 미국</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            대중교통과 우버로 다니는 로스앤젤레스 4일 코스
-                          </strong>
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            LA 샅샅이 둘러보기</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 레몬</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a _ngcontent-fmk-c79="" href="/note/466045">
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_15.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            바르셀로나, 스페인</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            1월의 바르셀로나, 3박 여행기!</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            따끈따근한 바르셀로나</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 무나</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
-                    <li _ngcontent-fmk-c79="">
-                      <a
-                        _ngcontent-fmk-c79=""
-                        routerlink="/note/466038"
-                        href="/note/466038"
-                      >
-                        <span _ngcontent-fmk-c79="" class="thumb">
-                          <img
-                            _ngcontent-fmk-c79=""
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_16.png"
-                            width="100%"
-                            alt=""
-                          />
-                        </span>
-                        <p _ngcontent-fmk-c79="" class="detail">
-                          <span _ngcontent-fmk-c79="" class="badge location">
-                            오사카, 일본</span
-                          >
-                          <strong _ngcontent-fmk-c79="" class="subject">
-                            7년지기 친구와 여행하기!</strong
-                          >
-                          <span _ngcontent-fmk-c79="" class="txt">
-                            신나는 첫 해외여행</span
-                          >
-                          <span _ngcontent-fmk-c79="" class="writer">
-                            <span _ngcontent-fmk-c79=""> 밍차</span>
-                            님의 여행
-                          </span>
-                        </p>
-                      </a>
-                    </li>
+                    
                   </ul>
                 </div>
               </section>
@@ -3111,95 +2862,95 @@
        </app-main>
        <!---->
        <app-footer _ngcontent-akd-c67 _nghost-akd-c65 class="ng-star-inserted">
-		<footer _ngcontent-xjb-c66 id="footer">
-			<div _ngcontent-xjb-c66 class="in_wrap">
-				<span _ngcontent-xjb-c66 class="btn_top_scroll">
-					
-				</span>
-				<nav _ngcontent-xjb-c66 class="list_link">
-					<dl _ngcontent-xjb-c66>
-						<dt _ngcontent-xjb-c66>회사소개</dt>
-						<dd _ngcontent-xjb-c66>
-							<a _ngcontent-xjb-c66>회사소개</a>
-							<a _ngcontent-xjb-c66>브랜드 미디어</a>
-							
-							<a _ngcontent-xjb-c66>채용공고</a>
-							<a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com"> 제휴문의 </a>
-						</dd>
-					</dl>
-					<dl _ngcontent-xjb-c66>
-						<dt _ngcontent-xjb-c66>고객지원</dt>
-						<dd _ngcontent-xjb-c66>
-							<a _ngcontent-xjb-c66>공지사항</a>
-							<a _ngcontent-xjb-c66>자주묻는질문</a>
-							<a _ngcontent-xjb-c66>문의하기</a>
-							<a _ngcontent-xjb-c66>위시빈 가이드</a>
-						</dd>
-					</dl>
-					<dl _ngcontent-xjb-c66>
-						<dt _ngcontent-xjb-c66>이용약관</dt>						
-						<dd _ngcontent-xjb-c66>
-							<a _ngcontent-xjb-c66>이용약관</a>
-							<a _ngcontent-xjb-c66>개인정보 처리방침</a>
-							<a _ngcontent-xjb-c66>제3자 정보제공</a>
-						</dd>
-					</dl>
-				</nav>
-				<div _ngcontent-xjb-c66 class="info">
-					<div _ngcontent-xjb-c66 class="inner">
-						<span _ngcontent-xjb-c66>
-							상호명 : (주)위시빈
-						</span>
-						<span _ngcontent-xjb-c66>
-							대표 : 정진원·최명선
-						</span>
-						<span _ngcontent-xjb-c66 class="br">
-							개인정보책임자 : 정병근
-						</span>
-						<span _ngcontent-xjb-c66>
-							사업자등록번호 : 599-88-01021
-						</span>
-						<span _ngcontent-xjb-c66>
-							통신판매업신고번호 : 제2021-서울중구-2344호
-						</span>
-						<span _ngcontent-xjb-c66 class="br">
-							<a _ngcontent-xjb-c66 href="https://www.ftc.go.kr/www/bizCommList.do?key=3765" target="_blank"> 사업자정보확인 </a>
-						</span>
-						<span _ngcontent-xjb-c66>
-							 광고 및 제휴 : 
-							 <a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com">support@wishbeen.com</a>
-						</span>
-						<span _ngcontent-xjb-c66 class="br">
-							<a _ngcontent-xjb-c66 href="mailto:cs@wishbeen.com">고객센터 : cs@wishbeen.com</a>
-						</span>
-						<span _ngcontent-xjb-c66 class="br noti">
-							 위시빈은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 위시빈은 상품·거래정보에 대하여 책임을 지지 않습니다. 
-						</span>
-						<span _ngcontent-xjb-c66 class="br">
-							 위시빈 서비스의 모든 콘텐츠는 저작자에게 저작권이 있으므로 무단 업로드 혹은 사용 시 법적 책임이 발생할 수 있습니다. 
-						</span>
-					</div>	
-					<div _ngcontent-xjb-c66 class="mark_area">
-						<span _ngcontent-xjb-c66>
-							<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_01.png" alt="iso 9001">
-							<em _ngcontent-xjb-c66>KS Q ISO 9001</em>
-						</span>
-						<span _ngcontent-xjb-c66>
-							<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_02.png" alt="iso 14001">
-							<em _ngcontent-xjb-c66>KS I ISO 14001</em>
-						</span>
-						<span _ngcontent-xjb-c66>
-							<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_03.png" alt="venture enterprise">
-							<em _ngcontent-xjb-c66>Venture Enterprise</em>
-						</span>
-					</div>
-					<div _ngcontent-xjb-c66>
-						<span _ngcontent-xjb-c66 class="copy">2022 ⓒ Better Than WishBeen.</span>
+			<footer _ngcontent-xjb-c66 id="footer">
+				<div _ngcontent-xjb-c66 class="in_wrap">
+					<span _ngcontent-xjb-c66 class="btn_top_scroll">
+						
+					</span>
+					<nav _ngcontent-xjb-c66 class="list_link">
+						<dl _ngcontent-xjb-c66>
+							<dt _ngcontent-xjb-c66>회사소개</dt>
+							<dd _ngcontent-xjb-c66>
+								<a _ngcontent-xjb-c66>회사소개</a>
+								<a _ngcontent-xjb-c66>브랜드 미디어</a>
+								
+								<a _ngcontent-xjb-c66>채용공고</a>
+								<a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com"> 제휴문의 </a>
+							</dd>
+						</dl>
+						<dl _ngcontent-xjb-c66>
+							<dt _ngcontent-xjb-c66>고객지원</dt>
+							<dd _ngcontent-xjb-c66>
+								<a _ngcontent-xjb-c66>공지사항</a>
+								<a _ngcontent-xjb-c66>자주묻는질문</a>
+								<a _ngcontent-xjb-c66>문의하기</a>
+								<a _ngcontent-xjb-c66>위시빈 가이드</a>
+							</dd>
+						</dl>
+						<dl _ngcontent-xjb-c66>
+							<dt _ngcontent-xjb-c66>이용약관</dt>						
+							<dd _ngcontent-xjb-c66>
+								<a _ngcontent-xjb-c66>이용약관</a>
+								<a _ngcontent-xjb-c66>개인정보 처리방침</a>
+								<a _ngcontent-xjb-c66>제3자 정보제공</a>
+							</dd>
+						</dl>
+					</nav>
+					<div _ngcontent-xjb-c66 class="info">
+						<div _ngcontent-xjb-c66 class="inner">
+							<span _ngcontent-xjb-c66>
+								상호명 : (주)위시빈
+							</span>
+							<span _ngcontent-xjb-c66>
+								대표 : 정진원·최명선
+							</span>
+							<span _ngcontent-xjb-c66 class="br">
+								개인정보책임자 : 정병근
+							</span>
+							<span _ngcontent-xjb-c66>
+								사업자등록번호 : 599-88-01021
+							</span>
+							<span _ngcontent-xjb-c66>
+								통신판매업신고번호 : 제2021-서울중구-2344호
+							</span>
+							<span _ngcontent-xjb-c66 class="br">
+								<a _ngcontent-xjb-c66 href="https://www.ftc.go.kr/www/bizCommList.do?key=3765" target="_blank"> 사업자정보확인 </a>
+							</span>
+							<span _ngcontent-xjb-c66>
+								 광고 및 제휴 : 
+								 <a _ngcontent-xjb-c66 href="mailto:support@wishbeen.com">support@wishbeen.com</a>
+							</span>
+							<span _ngcontent-xjb-c66 class="br">
+								<a _ngcontent-xjb-c66 href="mailto:cs@wishbeen.com">고객센터 : cs@wishbeen.com</a>
+							</span>
+							<span _ngcontent-xjb-c66 class="br noti">
+								 위시빈은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 위시빈은 상품·거래정보에 대하여 책임을 지지 않습니다. 
+							</span>
+							<span _ngcontent-xjb-c66 class="br">
+								 위시빈 서비스의 모든 콘텐츠는 저작자에게 저작권이 있으므로 무단 업로드 혹은 사용 시 법적 책임이 발생할 수 있습니다. 
+							</span>
+						</div>	
+						<div _ngcontent-xjb-c66 class="mark_area">
+							<span _ngcontent-xjb-c66>
+								<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_01.png" alt="iso 9001">
+								<em _ngcontent-xjb-c66>KS Q ISO 9001</em>
+							</span>
+							<span _ngcontent-xjb-c66>
+								<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_02.png" alt="iso 14001">
+								<em _ngcontent-xjb-c66>KS I ISO 14001</em>
+							</span>
+							<span _ngcontent-xjb-c66>
+								<img _ngcontent-xjb-c66 src="https://www.wishbeen.co.kr/assets/images/mark_03.png" alt="venture enterprise">
+								<em _ngcontent-xjb-c66>Venture Enterprise</em>
+							</span>
+						</div>
+						<div _ngcontent-xjb-c66>
+							<span _ngcontent-xjb-c66 class="copy">2022 ⓒ Better Than WishBeen.</span>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</app-footer>
+			</footer>
+		</app-footer>
        <!---->
        <aside
          _ngcontent-fmk-c68=""
