@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>login</title>
+<title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
 <link rel="stylesheet" href="../../static/css/login/login_main.css">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
