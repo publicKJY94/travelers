@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="./../../static/css/main/main.css" rel="stylesheet">
+
   	<style class="vjs-styles-defaults">
       .video-js {
         width: 300px;
@@ -16,12 +17,14 @@
         padding-top: 56.25%
       }
     </style>
+    
     <style type="text/css">
         a {
 		    color: inherit;
 		    text-decoration: inherit;
 		}
 	</style>
+	
    	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>

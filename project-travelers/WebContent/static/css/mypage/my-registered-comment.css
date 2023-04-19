@@ -60,7 +60,7 @@ body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl,
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -126,7 +126,7 @@ body{
  	-webkit-text-size-adjust: none;
  	-webkit-tap-highlight-color: transparent!important;
  	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -255,6 +255,11 @@ img {
     overflow: clip;
 }
 
+.tab_nav.st01 li a:hover {
+    background: #242424;
+    color: #fff;
+}
+
 .tab_nav.st01 {
     width: 100%;
     margin: 0 auto 2rem;
@@ -319,6 +324,10 @@ a:link, a:active, a:visited, a:hover {
     padding: 0 0 10rem;
 }
 
+.cmt_list:not(.skeleton_wrap) .inner:hover {
+    border-color: #ff5800;
+}
+
 .cmt_list .inner {
     position: relative;
     transition: all .3s;
@@ -351,12 +360,12 @@ a:link, a:active, a:visited, a:hover {
     display: inline-block;
     margin-right: 0.8rem;
     color: #ff5800;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.6rem;
 }
 
 .cmt_list .tit_bar .tit, .cmt_list .tit_bar .city, .cmt_list .tit_bar .name {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.7rem;
 }
 
