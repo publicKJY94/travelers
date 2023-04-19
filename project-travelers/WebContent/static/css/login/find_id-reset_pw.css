@@ -118,15 +118,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     font-weight: 700;
     font-size: 3rem;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: 400;
+
+.h1, h1 {
+    font-size: calc(1.375rem + 1.5vw);
 }
 a:link, a:active, a:visited, a:hover {
     color: inherit;
