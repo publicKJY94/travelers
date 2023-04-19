@@ -60,7 +60,7 @@ body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl,
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -96,7 +96,7 @@ a:link, a:active, a:visited, a:hover {
     text-decoration: none;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]), a:not([href]):not([class]) {
     color: inherit;
     text-decoration: none;
 }
@@ -126,7 +126,7 @@ body{
  	-webkit-text-size-adjust: none;
  	-webkit-tap-highlight-color: transparent!important;
  	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -307,6 +307,12 @@ img {
     color: #fff;
 }
 
+.tab_nav.st01 li a:hover {
+    background: #242424;
+    color: #fff;
+}
+
+
 .tab_nav.st01 li a {
     min-width: 10rem;
     height: 4rem;
@@ -390,6 +396,10 @@ button, select {
     text-transform: none;
 }
 
+.trip_list1 .inner:hover {
+    border-color: #ff5800;
+}
+
 .trip_list1 .inner {
     width: 100%;
     margin: 0;
@@ -409,11 +419,6 @@ button, select {
 
 .trip_list1 .inner>a {
     display: block;
-}
-
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
 }
 
 .trip_list1 .inner .img {
@@ -506,7 +511,7 @@ fieldset, img {
     white-space: normal;
     text-overflow: ellipsis;
     line-height: 1.3;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -637,5 +642,3 @@ fieldset, img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
