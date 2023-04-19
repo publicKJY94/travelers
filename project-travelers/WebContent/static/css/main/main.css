@@ -1750,7 +1750,7 @@ b, strong {
     letter-spacing: -.08em;
 }
 
-.section02 .thumbList ul li a .detail .subject {
+.section02 .thumbList ul li a .detail .subject {	
     display: block;
     font-weight: 700;
     font-size: 1.6rem;

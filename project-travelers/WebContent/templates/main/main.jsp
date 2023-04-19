@@ -2820,12 +2820,7 @@
                       src="https://www.wishbeen.co.kr/assets/images/main/img_tablet_banner_01.png"
                       alt=""
                     />
-                    <a _ngcontent-fmk-c79="" target="_blank" class="android">
-                      안드로이드 다운
-                    </a>
-                    <a _ngcontent-fmk-c79="" target="_blank" class="apple">
-                      애플스토어 다운
-                    </a>
+                  
                   </div>
                   <div _ngcontent-fmk-c79="" class="app_table">
                     <a
