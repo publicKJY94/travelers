@@ -32,6 +32,8 @@ body, table, th, td, button, select, input, textarea {
     flex: 1;
 }
 
+
+
 .tab_sub_wrap .tab_nav a.active {
     background: #242424;
     color: #fff;
@@ -502,6 +504,10 @@ input {
     color: #ff5800;
     font-weight: 500;
     font-size: 2rem;
+}
+
+.faq_list .inner dt.active img {
+    transform: rotate(180deg);
 }
 
 .faq_list .inner dt img {

@@ -147,7 +147,7 @@
 							<dt _ngcontent-lrx-c146=""	>
 								<span _ngcontent-lrx-c146="">탈퇴 후 재가입 할 수 있나요?</span><span
 									_ngcontent-lrx-c146=""><img _ngcontent-lrx-c146=""
-									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_up.svg" alt="더보기"></span>
+									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></span>
 							</dt>
 							<dd _ngcontent-lrx-c146="">
 								<p>탈퇴 후 30일 이후 재가입이 가능합니다.</p>
