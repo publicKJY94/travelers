@@ -77,7 +77,7 @@
 							routerlink="notice" routerlinkactive="active"
 							href="/customer-center/notice">공지사항</a></li>
 						<li _ngcontent-vlk-c141=""><a _ngcontent-vlk-c141=""
-							routerlink="faq" routerlinkactive="active" class="active"
+							routerlink="faq" routerlinkactive="active"
 							href="/customer-center/faq">자주묻는질문</a></li>
 						<li _ngcontent-vlk-c141=""><a _ngcontent-vlk-c141=""
 							routerlink="qna" routerlinkactive="active"
@@ -92,12 +92,11 @@
 					<div _ngcontent-lrx-c145="" class="cate_box">
 						<button _ngcontent-lrx-c145="" routerlink="join"
 							routerlinkactive="active" type="button" tabindex="0">회원가입</button>
-						<button _ngcontent-lrx-c145="" routerlink="travelogue"
+						<button _ngcontent-lrx-c145="" routerlink="travelogue" class="active"
 							routerlinkactive="active" type="button" tabindex="0">
 							여행기 작성</button>
 						<button _ngcontent-lrx-c145="" routerlink="schedule"
-							routerlinkactive="active" type="button" tabindex="0"
-							class="active">여행일정 작성</button>
+							routerlinkactive="active" type="button" tabindex="0">여행일정 작성</button>
 						<button _ngcontent-lrx-c145="" routerlink="point_save"
 							routerlinkactive="active" type="button" tabindex="0">
 							포인트</button>
@@ -132,7 +131,7 @@
 							</dd>
 						</dl>
 						<dl _ngcontent-lrx-c146="" class="inner ng-star-inserted">
-							<dt _ngcontent-lrx-c146="" class="active">
+							<dt _ngcontent-lrx-c146="">
 								<span _ngcontent-lrx-c146="">탈퇴 후 재가입 할 수 있나요?</span><span
 									_ngcontent-lrx-c146=""><img _ngcontent-lrx-c146=""
 									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"

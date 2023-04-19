@@ -6,11 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="../../static/css/font/font.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/costomer-center/announcement.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
-<link href="../../static/css/header.css" type="text/css"
-	rel="stylesheet">
-<link href="../../static/css/footer.css" type="text/css"
-	rel="stylesheet">
+<link href="../../static/css/header.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<app-root>

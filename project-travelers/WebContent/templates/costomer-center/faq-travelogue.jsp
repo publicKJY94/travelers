@@ -84,8 +84,8 @@
 						<button routerlink="join" routerlinkactive="active" type="button"
 							tabindex="0">회원가입</button>
 						<button routerlink="travelogue" routerlinkactive="active"
-							type="button" tabindex="0" class="active">여행기 작성</button>
-						<button routerlink="schedule" routerlinkactive="active"
+							type="button" tabindex="0">여행기 작성</button>
+						<button routerlink="schedule" routerlinkactive="active" class="active"
 							type="button" tabindex="0">여행일정 작성</button>
 						<button routerlink="point_save" routerlinkactive="active"
 							type="button" tabindex="0">포인트</button>
