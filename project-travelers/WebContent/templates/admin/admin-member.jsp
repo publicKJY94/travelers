@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>회원관리</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
@@ -17,11 +17,11 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a><img src="../../static/image/logo.svg" alt="travelers"></a>
+				<a href="./admin-main.jsp"><img src="../../static/image/logo.svg" alt="travelers"></a>
 			</div>
 			<div class="title">
 				<div>
-					<span class="ChangeTitle">사용자</span>
+					<span class="ChangeTitle">회원관리</span>
 				</div>
 				<span><small>관리자모드</small></span>
 			</div>
@@ -32,9 +32,9 @@
 		 	<section class="mainContainer">
 				<nav>
 					<ul class="mainNav">
-						<li><a>사이트 바로가기</a></li>
-						<li><a>사용자</a></li>
-						<li><a>회원관리</a></li>
+						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
+						<li><a href="./admin.jsp" target="_self">사용자</a></li>
+						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
 						<li id="listShow"><a>게시글관리</a></li>
 							<!-- <ul id="listHide">
 								<li><a>여행기 게시글</a></li>
@@ -42,10 +42,11 @@
 								<li><a>기념품 게시글</a></li>
 							</ul>
 							 -->
-						<li><a>고객응대</a></li>
-						<li><a>공지사항</a></li>
+						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
+						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
 					</ul>
 				</nav>
+			<!-- 여기까지 복사 -->
 			
 			<!--mainScreen 회원관리-->
 				<div class="mainContent">
@@ -61,11 +62,12 @@
 							</div>
 						</div>
 					</div>
-				
+					
+					
 					<div class="memberLists">
-						<div>총6건</div>
+						<div>총 6건</div>
 						<table>
-							<tr>
+							<tr class="tableTh">
 								<td>번호</td>
 								<td>닉네임</td>
 								<td>구분</td>
