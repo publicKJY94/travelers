@@ -125,7 +125,6 @@ nav ul li a {
 div.mainContent {
 	width: 74%;
 	height: 600px;
-	margin:0 auto;
 	margin:50px auto;
 	position:relative;
 
@@ -202,7 +201,16 @@ div.memberLists {
 	height:100%;
 	background-color:white;
 	box-shadow:1px 1px 5px #c4c4c4;
-	
+	position:realtive;
+	padding-top: 50px;
+}
+
+div.memberLists div {
+	position: absolute;
+	right: 31px;
+    top: 103px;
+	font-size:13px;
+	color: #6e6e6e;
 }
 
 table {
@@ -213,6 +221,7 @@ table {
 	font-size:13px;
 
 }
+
 
 
 table tr td {
