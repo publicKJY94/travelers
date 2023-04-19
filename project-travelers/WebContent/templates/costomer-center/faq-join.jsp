@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../../static/css/font/font.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/costomer-center/faq.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
@@ -128,7 +129,7 @@
 									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
 									alt="더보기"></span>
 							</dt>
-							<dd _ngcontent-lrx-c146="" style="display: none;">
+							<dd _ngcontent-lrx-c146="">
 								<p>휴면 해제를 원하시는 회원ID 로 로그인을 시도하시면 인증 과정 완료 후 휴면 해제 가능합니다.</p>
 							</dd>
 						</dl>
@@ -139,7 +140,7 @@
 									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_up.svg"
 									alt="더보기"></span>
 							</dt>
-							<dd _ngcontent-lrx-c146="" style="display: block;">
+							<dd _ngcontent-lrx-c146="">
 								<p>탈퇴 후 30일 이후 재가입이 가능합니다.</p>
 								<p>단, 회원 탈퇴 시에는 적립된 포인트와 콘텐츠기록이 모두 삭제되니 신중하게 결정해 주세요.</p>
 								<p>감사합니다.</p>
@@ -251,4 +252,6 @@
 	</div>
 	</app-root>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="../../static/js/costomer-center/faq.js"></script>
 </html>

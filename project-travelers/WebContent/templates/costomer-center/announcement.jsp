@@ -5,15 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 <link href="../../static/css/costomer-center/announcement.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/font/font.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<app-root>
-	<div>
+	<div id="wrap" style="word-break: break-all;">
 		
 	<app-header _ngcontent-akd-c67 _nghost-akd-c64 class="ng-star-inserted">
 				<app-top-banner _ngcontent-qlk-c65 _nghost-qlk-c52>

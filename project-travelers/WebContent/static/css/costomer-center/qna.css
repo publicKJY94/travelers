@@ -419,3 +419,13 @@ input {
     opacity: 1;
     border-color: #242424;
 }
+
+.board_list .board_tr .tit a:hover {
+    text-decoration: underline;
+}
+
+
+.pagination a:hover {
+    opacity: 1;
+    transition: all .3;
+}
