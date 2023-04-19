@@ -10,7 +10,10 @@
 
 
 
-
+.btn_st1:hover {
+    box-shadow: inset 0 -10em #242424;
+    color: #fff;
+}
 
 .board_wrap .more {
     width: 30%;

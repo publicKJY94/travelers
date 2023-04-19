@@ -2,7 +2,7 @@
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -172,7 +172,7 @@ ol, ul {
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -327,7 +327,7 @@ a:link, a:active, a:visited, a:hover {
 
 .board_list .board_tr .date {
     color: #999;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.2;
 }
@@ -479,8 +479,15 @@ input {
     left: 1.5rem;
     font-family: SB aggro,sans-serif;
     color: #999;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 2rem;
+}
+
+@font-face {
+    font-family: 'SB aggro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .faq_list .inner dt.active span:first-child:before {
@@ -513,4 +520,16 @@ input {
     line-height: 1.8;
 }
 
+.faq_list .inner dt span:first-child:hover {
+    text-decoration: underline;
+}
 
+.cate_box button:hover {
+    color: #ff5800;
+}
+
+
+.pagination a:hover {
+    opacity: 1;
+    transition: all .3;
+}

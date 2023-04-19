@@ -9,7 +9,7 @@
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+<link href="../../static/css/font/font.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-gch-c68 ng-version="13.3.12">
@@ -63,7 +63,27 @@
 		</header> </app-header>
 
 		<app-city-main _nghost-akd-c123 class="ng-star-inserted">
-		<main _ngcontent-akd-c123 id="content" style="padding: 15rem 0 0">
+		<main _ngcontent-akd-c123 id="content">
+			<section _ngcontent-ktr-c79="" class="m_visual">
+				<div _ngcontent-ktr-c79="" class="in_wrap">
+					<div _ngcontent-ktr-c79="" class="txt_wrap">
+						<p _ngcontent-ktr-c79="" class="txt">
+							<span _ngcontent-ktr-c79="" class="d_block st1">세상의 모든 여행</span><span
+								_ngcontent-ktr-c79="" class="d_block st2"><span
+								_ngcontent-ktr-c79="">위시빈</span></span>
+						</p>
+						<p _ngcontent-ktr-c79="" class="sch">
+							<input _ngcontent-ktr-c79="" type="text"
+								placeholder="도시나 키워드를 검색해보세요.">
+							<button _ngcontent-ktr-c79="" type="button">
+								<img _ngcontent-ktr-c79=""
+									src="https://www.wishbeen.co.kr/assets/images/svg/search_w.svg" alt="검색"><span
+									_ngcontent-ktr-c79="" class="pc">검색</span>
+							</button>
+						</p>
+					</div>
+				</div>
+			</section>
 			<div _ngcontent-akd-c123 class="sub_header st7">
 				<div _ngcontent-akd-c123 class="in_wrap">
 					<div _ngcontent-akd-c123 class="ng-star-inserted">
