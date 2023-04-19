@@ -73,7 +73,7 @@
 			</app-header>
 	
 		<app-customer-center  class="ng-star-inserted">
-		<section id="content" class="withTopBanner" style="padding : 4rem 0 0">
+		<section id="content" class="withTopBanner" style="padding: 11rem 0 0">
 			<div class="sub_header st3">
 				<div class="in_wrap">
 					<h2 class="dth1" style="position: relative">고객지원</h2>

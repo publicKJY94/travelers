@@ -6,8 +6,10 @@
 <meta charset="UTF-8">
 <title>Travelers | 검색</title>
 <link href="../../static/css/search/searchtriproute.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-gch-c68 ng-version="13.3.12">
@@ -61,7 +63,7 @@
 		</header> </app-header>
 
 		<app-city-main _nghost-akd-c123 class="ng-star-inserted">
-		<main _ngcontent-akd-c123 id="content">
+		<main _ngcontent-akd-c123 id="content" style="padding: 15rem 0 0">
 			<div _ngcontent-akd-c123 class="sub_header st7">
 				<div _ngcontent-akd-c123 class="in_wrap">
 					<div _ngcontent-akd-c123 class="ng-star-inserted">

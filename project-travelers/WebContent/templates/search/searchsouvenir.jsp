@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../../static/css/searchsouvenir.css" type="text/css"
+<link href="../../static/css/search/searchsouvenir.css" type="text/css"
 	rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
@@ -62,7 +62,7 @@
 			</div>
 		</header> </app-header>
 		<app-city-main _nghost-akd-c123 class="ng-star-inserted">
-		<main _ngcontent-akd-c123 id="content">
+		<main _ngcontent-akd-c123 id="content" style="padding: 15rem 0 0">
 			<div _ngcontent-akd-c123 class="sub_header st7">
 				<div _ngcontent-akd-c123 class="in_wrap">
 					<div _ngcontent-akd-c123 class="ng-star-inserted">

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 <link href="../../static/css/costomer-center/announcement.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
@@ -74,7 +75,7 @@
 			</app-header>
 	
 		<app-customer-center _nghost-vlk-c141="" class="ng-star-inserted">
-		<section _ngcontent-vlk-c141="" id="content" class="withTopBanner" style="padding: 4rem 0 0">
+		<section _ngcontent-vlk-c141="" id="content" class="withTopBanner" style="padding: 11rem 0 0">
 			<div _ngcontent-vlk-c141="" class="sub_header st3">
 				<div _ngcontent-vlk-c141="" class="in_wrap">
 					<h2 _ngcontent-vlk-c141="" class="dth1" style="position: relative">고객지원</h2>
