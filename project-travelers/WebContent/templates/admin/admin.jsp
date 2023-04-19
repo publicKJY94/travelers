@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../../static/css/admin/admin.css">
 </head>
 <body>
-
+	<div class="wrap">
 		<!-- header -->
 		<div class="header">
 			<div class="logoImage">
@@ -21,26 +21,64 @@
 				<div>
 					<span class="ChangeTitle">사용자</span>
 				</div>
+				<span><small>관리자모드</small></span>
 			</div>
 		 </div>
 		 
 		 
 		 <!--mainSidebar -->
+		 	<section class="mainContainer">
 				<nav>
 					<ul class="mainNav">
 						<li><a>사이트 바로가기</a></li>
 						<li><a>사용자</a></li>
 						<li><a>회원관리</a></li>
-						<li><a>게시글관리</a></li>
-							<!-- <ul class="hide">
+						<li id="listShow"><a>게시글관리</a></li>
+							<ul id="listHide">
 								<li><a>여행기 게시글</a></li>
 								<li><a>추천루트 게시글</a></li>
 								<li><a>기념품 게시글</a></li>
-							</ul> -->
+							</ul>
 						<li><a>고객응대</a></li>
 						<li><a>공지사항</a></li>
 					</ul>
 				</nav>
+				
+				
+				<!--mainScreen 계정관리-->
+				
+						
+					<div class="mainContent">
+						<div>
+							<h3>기본정보</h3>
+							<hr>
+						</div>
+						<table class="adminInfo">
+							<tr class="siteName">
+								<td>사이트명</td>
+								<td>travelers</td>
+							</tr>
+							<tr class="adminName">
+								<td>관리자이름</td>
+								<td>관리자</td>
+							</tr>
+							<tr class="adminEmail">
+								<td>관리자 이메일 주소</td>
+								<td><input type="text" placeholder="00000@naver.com"></td>
+							</tr>
+							<tr class="adminPassword">
+								<td>관리자 비밀번호</td>
+								<td><input type="text" placeholder="변경 할 비밀번호 입력">
+									<button class="passwordBtn">변경</button>
+								</td>
+							</tr>
+						</table>
+						<button>저장하기</button>
+					</div>
+				</section>
+		</div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="../../static/js/admin.js"></script>
 </html>
