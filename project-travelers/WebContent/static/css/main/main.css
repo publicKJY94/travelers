@@ -1287,7 +1287,7 @@ rem
 }
 .hot_wrap h2 {
     margin: 0 0 1rem;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.8rem;
     line-height: 4.1rem;
 }
@@ -1326,7 +1326,7 @@ rem
 }
 
 .section01 .title{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
@@ -1693,7 +1693,7 @@ b, strong {
 
 
 .section02 .title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
@@ -1752,7 +1752,7 @@ b, strong {
 
 .section02 .thumbList ul li a .detail .subject {
     display: block;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.9rem;
     margin-bottom: 0.4rem;
@@ -1788,7 +1788,7 @@ b, strong {
 
 
 .section02 .title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.8rem;
     padding: 0 1rem 1.5rem;
     line-height: 4.1rem;
