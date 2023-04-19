@@ -134,7 +134,7 @@
 							</dd>
 						</dl>
 						<dl _ngcontent-lrx-c146="" class="inner ng-star-inserted">
-							<dt _ngcontent-lrx-c146="" class="active">
+							<dt _ngcontent-lrx-c146="">
 								<span _ngcontent-lrx-c146="">탈퇴 후 재가입 할 수 있나요?</span><span
 									_ngcontent-lrx-c146=""><img _ngcontent-lrx-c146=""
 									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"

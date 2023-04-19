@@ -92,7 +92,7 @@
 
 					<div _ngcontent-lrx-c145="" class="cate_box">
 						<button _ngcontent-lrx-c145="" routerlink="join"
-							routerlinkactive="active" type="button" tabindex="0"
+							routerlinkactive="active" type="button" tabindex="0" class="active"
 							>회원가입</button>
 						<button _ngcontent-lrx-c145="" routerlink="travelogue"
 							routerlinkactive="active" type="button" tabindex="0">
