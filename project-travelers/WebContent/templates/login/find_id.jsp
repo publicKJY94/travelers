@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
+<link rel="stylesheet" href="../../static/css/login/login_main.css">
 <link rel="stylesheet" href="../../static/css/login/find_id-reset_pw.css">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
@@ -66,7 +67,7 @@
 							class="ng-untouched ng-pristine ng-invalid">
 							<dt _ngcontent-iey-c85="">
 								<span _ngcontent-iey-c85="" class="tit">등록된 휴대전화번호를
-									입력해주세요.</span><span _ngcontent-iey-c85="" class="desc"> (개인정보를
+									입력해주세요.</span><br><span _ngcontent-iey-c85="" class="desc"> (개인정보를
 									변경하신 경우 변경된 휴대전화번호를 입력해주세요.) </span>
 							</dt>
 							<dd _ngcontent-iey-c85="">
