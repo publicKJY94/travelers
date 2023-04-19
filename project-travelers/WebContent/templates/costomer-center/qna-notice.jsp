@@ -5,10 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../../static/css/costomer-center/faq.css" type="text/css" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+	rel="stylesheet">
+<link href="../../static/css/costomer-center/announcement.css"
+	type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
-<link href="../../static/css/header.css" type="text/css" rel="stylesheet">
-<link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/header.css" type="text/css"
+	rel="stylesheet">
+<link href="../../static/css/footer.css" type="text/css"
+	rel="stylesheet">
 </head>
 <body>
 	<app-root>
@@ -67,117 +73,105 @@
 			<div _ngcontent-vlk-c141="" class="sub_header st3">
 				<div _ngcontent-vlk-c141="" class="in_wrap">
 					<h2 _ngcontent-vlk-c141="" class="dth1" style="position: relative">고객지원</h2>
-					<h3 _ngcontent-vlk-c141="" class="dth2" style="padding-top: 0px">자주묻는질문</h3>
+					<h3 _ngcontent-vlk-c141="" class="dth2" style="padding-top: 0px">문의하기</h3>
 				</div>
 			</div>
-			<div _ngcontent-vlk-c141="" class="in_wrap">
-				<div _ngcontent-vlk-c141="" class="tab_sub_wrap withTopBanner">
-					<ul _ngcontent-vlk-c141="" class="tab_nav">
-						<li _ngcontent-vlk-c141=""><a _ngcontent-vlk-c141=""
+
+			<div _ngcontent-mko-c82="" class="in_wrap">
+				<div _ngcontent-mko-c82="" class="tab_sub_wrap withTopBanner">
+					<ul _ngcontent-mko-c82="" class="tab_nav">
+						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
 							routerlink="notice" routerlinkactive="active"
 							href="/customer-center/notice">공지사항</a></li>
-						<li _ngcontent-vlk-c141=""><a _ngcontent-vlk-c141=""
-							routerlink="faq" routerlinkactive="active" class="active"
+						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
+							routerlink="faq" routerlinkactive="active"
 							href="/customer-center/faq">자주묻는질문</a></li>
-						<li _ngcontent-vlk-c141=""><a _ngcontent-vlk-c141=""
+						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
 							routerlink="qna" routerlinkactive="active"
-							href="/customer-center/qna">문의하기</a></li>
+							href="/customer-center/qna" class="active">문의하기</a></li>
+						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
+							routerlink="guide" routerlinkactive="active"
+							href="/customer-center/guide">위시빈 가이드</a></li>
 					</ul>
 				</div>
-				<router-outlet _ngcontent-vlk-c141=""></router-outlet>
-				<app-customer-center-notice-list _nghost-vlk-c142=""
+				<router-outlet _ngcontent-mko-c82=""></router-outlet>
+				<app-customer-center-qna-detail _nghost-mko-c84=""
 					class="ng-star-inserted">
-				<section _ngcontent-vlk-c142="" class="board_wrap">
-
-					<div _ngcontent-lrx-c145="" class="cate_box">
-						<button _ngcontent-lrx-c145="" routerlink="join"
-							routerlinkactive="active" type="button" tabindex="0"
-							class="active">회원가입</button>
-						<button _ngcontent-lrx-c145="" routerlink="travelogue"
-							routerlinkactive="active" type="button" tabindex="0">
-							여행기 작성</button>
-						<button _ngcontent-lrx-c145="" routerlink="schedule"
-							routerlinkactive="active" type="button" tabindex="0">
-							여행일정 작성</button>
-						<button _ngcontent-lrx-c145="" routerlink="point_save"
-							routerlinkactive="active" type="button" tabindex="0">
-							포인트</button>
-						<button _ngcontent-lrx-c145="" routerlink="etc"
-							routerlinkactive="active" type="button" tabindex="0">기타
-						</button>
-					</div>
-
-					<header _ngcontent-vlk-c142="" class="board_header">
-						<div _ngcontent-vlk-c142="" class="search_form">
-							<input _ngcontent-vlk-c142="" placeholder="검색어를 입력하세요"
-								type="search" class="txtbox ng-untouched ng-pristine ng-valid">
-							<button _ngcontent-vlk-c142="" type="button">
-								<img _ngcontent-vlk-c142=""
-									src="https://www.wishbeen.co.kr/assets/images/svg/search.svg"
-									alt="검색">
-							</button>
+				<section _ngcontent-mko-c84="" class="board_wrap">
+					<div _ngcontent-mko-c84="" class="board_view">
+						<div _ngcontent-mko-c84="" class="tit_wrap di_flex">
+							<div _ngcontent-mko-c84="">
+								<p _ngcontent-mko-c84="" class="tit">문의 왜 하나도 없죠?</p>
+								<p _ngcontent-mko-c84="" class="date">2023.04.16 17:29:29</p>
+							</div>
+							<div _ngcontent-mko-c84="">
+								<span _ngcontent-mko-c84="" class="bdg"> 답변완료 </span>
+							</div>
+						</div>
+						<div _ngcontent-mko-c84="" class="cont_wrap">
+							<div _ngcontent-mko-c84="" id="editorjs_qna_detail">
+								<div class="codex-editor">
+									<div class="codex-editor__redactor"
+										style="padding-bottom: 300px;">
+										<div class="ce-block">
+											<div class="ce-block__content">
+												<div class="ce-paragraph cdx-block" contenteditable="false"
+													data-placeholder="">ㅈㄱㄴ</div>
+											</div>
+										</div>
+									</div>
+									<div class="codex-editor-overlay">
+										<div class="codex-editor-overlay__container">
+											<div class="codex-editor-overlay__rectangle"
+												style="display: none; inset: 741px calc(100% - 938px) calc(100% - 741px) 938px;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div _ngcontent-mko-c84=""
+							class="tit_wrap di_flex ng-star-inserted" style="border-bottom:none">
+							<div _ngcontent-mko-c84="">
+								<p _ngcontent-mko-c84="" class="tit">답변</p>
+							</div>
+							<div _ngcontent-mko-c84="">
+								<span _ngcontent-mko-c84="" class="date"> 2023.04.17
+									13:13:34 </span>
+							</div>
 						</div>
 						<!---->
-					</header>
-
-					<div _ngcontent-lrx-c146="" class="faq_list">
-						<dl _ngcontent-lrx-c146="" class="inner ng-star-inserted">
-							<dt _ngcontent-lrx-c146="">
-								<span _ngcontent-lrx-c146="">휴면 회원을 해제하고 싶어요.</span><span
-									_ngcontent-lrx-c146=""><img _ngcontent-lrx-c146=""
-									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
-									alt="더보기"></span>
-							</dt>
-							<dd _ngcontent-lrx-c146="" style="display: none;">
-								<p>휴면 해제를 원하시는 회원ID 로 로그인을 시도하시면 인증 과정 완료 후 휴면 해제 가능합니다.</p>
-							</dd>
-						</dl>
-						<dl _ngcontent-lrx-c146="" class="inner ng-star-inserted">
-							<dt _ngcontent-lrx-c146="" class="active">
-								<span _ngcontent-lrx-c146="">탈퇴 후 재가입 할 수 있나요?</span><span
-									_ngcontent-lrx-c146=""><img _ngcontent-lrx-c146=""
-									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_up.svg"
-									alt="더보기"></span>
-							</dt>
-							<dd _ngcontent-lrx-c146="" style="display: block;">
-								<p>탈퇴 후 30일 이후 재가입이 가능합니다.</p>
-								<p>단, 회원 탈퇴 시에는 적립된 포인트와 콘텐츠기록이 모두 삭제되니 신중하게 결정해 주세요.</p>
-								<p>감사합니다.</p>
-							</dd>
-						</dl>
-					</div>
-
-					<div _ngcontent-lrx-c146="" class="list_btn pc">
+						<div _ngcontent-mko-c84="" class="cont_wrap ng-star-inserted">
+							<p _ngcontent-mko-c84="">
+								안녕하세요. 세상의 모든 여행 위시빈입니다. <br>본 게시판은 1:1 문의하기 형식으로 문의자와
+								관리자에게만 보이도록 운영되고 있습니다. <br>추가 문의 사항은 언제든지 연락 주세요. 감사합니다.
+							</p>
+							<!---->
+						</div>
+						<!---->
 						<!---->
 					</div>
-
-					<ul _ngcontent-vlk-c142="" class="pagination pc">
-						<li _ngcontent-vlk-c142=""><a _ngcontent-vlk-c142=""><img
-								_ngcontent-vlk-c142=""
-								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_left.svg"
-								alt="처음"></a></li>
-						<li _ngcontent-vlk-c142=""><a _ngcontent-vlk-c142=""><img
-								_ngcontent-vlk-c142=""
-								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_left.svg"
-								alt="이전"></a></li>
-						<li _ngcontent-vlk-c142=""><a _ngcontent-vlk-c142=""
-							class="active ng-star-inserted"> 1 </a> <!----></li>
-						<li _ngcontent-vlk-c142=""><a _ngcontent-vlk-c142=""><img
-								_ngcontent-vlk-c142=""
-								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_right.svg"
-								alt="다음"></a></li>
-						<li _ngcontent-vlk-c142=""><a _ngcontent-vlk-c142=""><img
-								_ngcontent-vlk-c142=""
-								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_right.svg"
-								alt="마지막"></a></li>
-					</ul>
-					<!---->
+					<div _ngcontent-mko-c84="" class="list_btn di_flex">
+						<div _ngcontent-mko-c84="" class="ta_left">
+							<a _ngcontent-mko-c84="" class="btn_st0 ng-star-inserted"> 삭제
+							</a>
+							<!---->
+							<a _ngcontent-mko-c84="" class="btn_st0 ng-star-inserted"> 수정
+							</a>
+							<!---->
+						</div>
+						<div _ngcontent-mko-c84="" class="ta_right">
+							<a _ngcontent-mko-c84="" class="btn_st0"
+								href="/customer-center/qna">목록</a><a _ngcontent-mko-c84=""
+								class="btn_st0 active" href="/customer-center/qna/write">
+								글쓰기 </a>
+						</div>
+					</div>
 				</section>
-				</app-customer-center-notice-list>
-
+				</app-customer-center-qna-detail>
 				<!---->
 			</div>
 		</section>
+		</app-customer-center>
 
 		<app-footer _ngcontent-akd-c67 _nghost-akd-c65
 			class="ng-star-inserted"> <footer _ngcontent-xjb-c66
@@ -247,7 +241,8 @@
 					</div>
 				</div>
 			</div>
-		</footer> </app-footer> </app-customer-center>
+		</footer> </app-footer>
+
 	</div>
 	</app-root>
 </body>

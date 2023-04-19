@@ -64,7 +64,7 @@
 
 		<app-customer-center _nghost-vlk-c141="" class="ng-star-inserted">
 		<section _ngcontent-vlk-c141="" id="content" class="withTopBanner"
-			style="padding: 4rem 0 0">
+			style="padding: 11rem 0 0">
 			<div _ngcontent-vlk-c141="" class="sub_header st3">
 				<div _ngcontent-vlk-c141="" class="in_wrap">
 					<h2 _ngcontent-vlk-c141="" class="dth1" style="position: relative">고객지원</h2>
