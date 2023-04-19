@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원탈퇴</title>
-<link href="../static/css/header.css" rel="stylesheet">
-<link href="../static/css/footer.css" rel="stylesheet">
-<link href="../static/css/member-quit.css" rel="stylesheet">
+<title>문의하기</title>
+<link href="../../static/css/header.css" rel="stylesheet">
+<link href="../../static/css/footer.css" rel="stylesheet">
+<link href="../../static/css/mypage/my-question.css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <app-header
@@ -56,123 +56,76 @@
 			</nav>
 		</div>
 	</header> </app-header> 
-	<app-account-management _nghost-kyu-c85="" class="ng-star-inserted">
-	<div _ngcontent-kyu-c85="" id="content">
-		<header _ngcontent-kyu-c85="" class="sub_header st1">
-			<div _ngcontent-kyu-c85="" class="in_wrap">
-				<h2 _ngcontent-kyu-c85="">
-					<p _ngcontent-kyu-c85="" class="dth2">계정 관리</p>
+	<app-community-management _nghost-tbh-c83="" class="ng-star-inserted">
+	<div _ngcontent-tbh-c83="" id="content">
+		<header _ngcontent-tbh-c83="" class="sub_header st1">
+			<div _ngcontent-tbh-c83="" class="in_wrap">
+				<h2 _ngcontent-tbh-c83="">
+					<p _ngcontent-tbh-c83="" class="dth2">문의 관리</p>
 				</h2>
 			</div>
 		</header>
-		<div _ngcontent-kyu-c85="" class="in_wrap">
-			<nav _ngcontent-kyu-c85="" value="false" class="position_r">
-				<button _ngcontent-kyu-c85="" type="button" class="tab_nav_btn mo">
-					<span _ngcontent-kyu-c85="">회원 정보</span><i _ngcontent-kyu-c85=""
-						class="ico"><img _ngcontent-kyu-c85=""
+		<div _ngcontent-tbh-c83="" class="in_wrap">
+			<nav _ngcontent-tbh-c83="" value="false" class="position_r">
+				<button _ngcontent-tbh-c83="" type="button" class="tab_nav_btn mo">
+					<span _ngcontent-tbh-c83="">나의 문의하기</span><i _ngcontent-tbh-c83=""
+						class="ico"><img _ngcontent-tbh-c83=""
 						data-brackets-id="27106"
 						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></i>
 				</button>
-				<ul _ngcontent-kyu-c85="" class="tab_nav st01">
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="info" routerlinkactive="active"
-						href="/my/account/info"> 회원 정보 </a></li>
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify"> 비밀번호 수정 </a></li>
-					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
-						routerlink="withdrawal" routerlinkactive="active"
-						href="/my/account/withdrawal" class="active"> 회원탈퇴 </a></li>
+				<ul _ngcontent-tbh-c83="" class="tab_nav st01">
+					<li _ngcontent-tbh-c83=""><a _ngcontent-tbh-c83=""
+						routerlink="my" routerlinkactive="active" href="/my/community/my"
+						class="active"> 나의 문의하기 </a></li>
 				</ul>
 			</nav>
-			<router-outlet _ngcontent-kyu-c85=""></router-outlet>
-			<app-membership-withdrawal _nghost-kyu-c91=""
-				class="ng-star-inserted">
-			<form _ngcontent-kyu-c91="" novalidate=""
-				class="ng-untouched ng-pristine ng-invalid">
-				<section _ngcontent-kyu-c91="" class="my_wrap">
-					<div _ngcontent-kyu-c91="" class="noti_box">
-						<span _ngcontent-kyu-c91="" class="d_block"> 회원님이 별도로 지정한
-							프로필 이미지는 탈퇴 후에 삭제되지 않습니다. </span><span _ngcontent-kyu-c91=""
-							class="d_block"> 프로필 이미지 노출을 원치 않는 회원님은 <a
-							_ngcontent-kyu-c91="" href="/my/account/info">회원정보</a> 에서 프로필
-							이미지를 수정한 후 탈퇴를 진행해 주세요.
-						</span>
+			<router-outlet _ngcontent-tbh-c83=""></router-outlet>
+			<app-my-community _nghost-tbh-c84="" class="ng-star-inserted">
+			<section _ngcontent-tbh-c84="" class="my_wrap">
+				<header _ngcontent-tbh-c84="" class="header ta_right">
+				</header>
+				<div _ngcontent-tbh-c84="" class="cmt_list clear_v2">
+					<div _ngcontent-tbh-c84="" class="inner ng-star-inserted">
+						<ul _ngcontent-tbh-c84="" class="tit_bar">
+							<li _ngcontent-tbh-c84="" class="txt_hide"><span
+								_ngcontent-tbh-c84="" class="city"> 문의 제목 </span></li>
+							<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
+								class="date"> 2023.04.17 </span></li>
+						</ul>
+						<div _ngcontent-tbh-c84="" class="cont">
+							<div _ngcontent-tbh-c84="">
+								<a _ngcontent-tbh-c84="" href="/community/636"></a>
+								<ul _ngcontent-tbh-c84="">
+									<li _ngcontent-tbh-c84="" class="tit"> 문의 내용 </li>
+									<li _ngcontent-tbh-c84="" class="pdt05"><ul
+											_ngcontent-tbh-c84="" class="ico_wrap">
+											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
+												class="ico_spot"></span> 0</li>
+											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
+												class="ico_cmt"></span> 0</li>
+											<li _ngcontent-tbh-c84=""><span _ngcontent-tbh-c84=""
+												class="ico_like"></span> 0</li>
+										</ul></li>
+								</ul>
+							</div>
+							<!---->
+							<a _ngcontent-tbh-c84="" class="btn_set"><img
+								_ngcontent-tbh-c84=""
+								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"
+								class="ng-star-inserted">
+							<!----></a>
+							<!---->
+						</div>
 					</div>
-					<dl _ngcontent-kyu-c91="" class="inner">
-						<dt _ngcontent-kyu-c91="" class="tit">회원탈퇴 신청 정보</dt>
-						<dd _ngcontent-kyu-c91="">
-							<ul _ngcontent-kyu-c91="" class="box_wrap">
-								<li _ngcontent-kyu-c91=""><div _ngcontent-kyu-c91=""
-										class="th">아이디</div>
-									<div _ngcontent-kyu-c91="">max021159@naver.com</div></li>
-								<li _ngcontent-kyu-c91=""><div _ngcontent-kyu-c91=""
-										class="th">이름</div>
-									<div _ngcontent-kyu-c91="">이민형</div></li>
-								<li _ngcontent-kyu-c91=""><div _ngcontent-kyu-c91=""
-										class="th">비밀번호</div>
-									<div _ngcontent-kyu-c91="">
-										<input _ngcontent-kyu-c91="" formcontrolname="password"
-											placeholder="비밀번호입력" type="password"
-											class="txtbox ng-untouched ng-pristine ng-invalid">
-										<!---->
-									</div></li>
-							</ul>
-						</dd>
-					</dl>
-					<dl _ngcontent-kyu-c91="" class="inner">
-						<dt _ngcontent-kyu-c91="" class="tit">탈퇴 사유</dt>
-						<dd _ngcontent-kyu-c91="">
-							<ul _ngcontent-kyu-c91="" class="box_wrap">
-								<li _ngcontent-kyu-c91="" class="ng-star-inserted"><div
-										_ngcontent-kyu-c91="">
-										<input _ngcontent-kyu-c91=""
-											formcontrolname="secession_reason_idx" type="radio"
-											class="chradio ng-untouched ng-pristine ng-invalid"
-											id="reason1"><label _ngcontent-kyu-c91=""
-											for="reason1"> 불편한 프로세스 </label>
-									</div></li>
-								<li _ngcontent-kyu-c91="" class="ng-star-inserted"><div
-										_ngcontent-kyu-c91="">
-										<input _ngcontent-kyu-c91=""
-											formcontrolname="secession_reason_idx" type="radio"
-											class="chradio ng-untouched ng-pristine ng-invalid"
-											id="reason2"><label _ngcontent-kyu-c91=""
-											for="reason2"> 포인트 적립량 부족 </label>
-									</div></li>
-								<li _ngcontent-kyu-c91="" class="ng-star-inserted"><div
-										_ngcontent-kyu-c91="">
-										<input _ngcontent-kyu-c91=""
-											formcontrolname="secession_reason_idx" type="radio"
-											class="chradio ng-untouched ng-pristine ng-invalid"
-											id="reason3"><label _ngcontent-kyu-c91=""
-											for="reason3"> 청소년에게 유해한 내용입니다. </label>
-									</div></li>
-								<li _ngcontent-kyu-c91="" class="ng-star-inserted"><div
-										_ngcontent-kyu-c91="">
-										<input _ngcontent-kyu-c91=""
-											formcontrolname="secession_reason_idx" type="radio"
-											class="chradio ng-untouched ng-pristine ng-invalid"
-											id="reason8"><label _ngcontent-kyu-c91=""
-											for="reason8"> 기타 </label>
-									</div></li>
-								<!---->
-								<!---->
-							</ul>
-						</dd>
-					</dl>
-					<div _ngcontent-kyu-c91="" class="list_btn wid02">
-						<a _ngcontent-kyu-c91="" href="javascript:history.back();"
-							class="btn_st0">취소</a><a _ngcontent-kyu-c91=""
-							class="btn_st0 active">회원 탈퇴 신청</a>
-					</div>
-				</section>
-			</form>
-			</app-membership-withdrawal>
+					<!---->
+				</div>
+				<!---->
+			</section>
+			</app-my-community>
 			<!---->
 		</div>
 	</div>
-	</app-account-management> <app-footer _ngcontent-akd-c67 _nghost-akd-c65
+	</app-community-management> <app-footer _ngcontent-akd-c67 _nghost-akd-c65
 		class="ng-star-inserted"> <footer _ngcontent-xjb-c66
 		id="footer">
 		<div _ngcontent-xjb-c66 class="in_wrap">
