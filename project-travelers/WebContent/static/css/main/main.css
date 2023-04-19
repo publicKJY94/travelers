@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-@font-face{
-	font-family: "Noto Sans KR";
-	src: url("./../font/robotofonts/font.css")
-}
-
 *, :after, :before {
     box-sizing: border-box;
-    font-family: "Noto Sans KR,Malgun Gothic,dotum,sans-serif;";
 }
 :root {
     --key-color: #ff8000;
@@ -60,6 +54,23 @@ body {
     -webkit-text-size-adjust: none;
     font-size: 1rem;
 }
+body{
+	display: block;
+ 	box-sizing: border-box;
+ 	background-color: #fff;
+ 	-webkit-text-size-adjust: none;
+ 	-webkit-tap-highlight-color: transparent!important;
+ 	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 400;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 dl, ol, ul {
     margin-top: 0;
     /* margin-bottom: 1rem; */
@@ -88,13 +99,13 @@ body, table, th, td, button, select, input, textarea {
     z-index: 50;
     height: 40px;
 }
-.bandBanner .inner{
+.bandBanner .inner {
     display: block;
     margin: 0 auto;
     text-align: center;
     line-height: 40px;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     width: -moz-fit-content;
     width: fit-content;
 }
@@ -102,7 +113,7 @@ body, table, th, td, button, select, input, textarea {
     color: #fff;
 }
 
-.bandBanner .inner .text .link{
+.bandBanner .inner .text .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,14 +132,14 @@ a, input[type=file], button {
     margin-left: 5px;
     width: 7px;
     height: 12px;
-    background: url(https://www.wishbeen.co.kr/assets/images/svg/arrow_right_topBanner.svg);
+    background: url(/assets/images/svg/arrow_right_topBanner.svg);
 }
 /*
 app-top-search 부분 부터 시작 그 위 header 부분은 은상님이 도와주기로 함.
 */
 
 #header.mainHeader {
-    position: relative;
+    position: fixed;
     top: 40px;
 }
 
@@ -157,6 +168,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     position: relative;
     box-sizing: border-box;
 }
+
 #header .logo {
     position: absolute;
     left: 0;
@@ -178,7 +190,7 @@ a:link, a:active, a:visited, a:hover {
     height: 3.9rem;
     display: inline-block;
     overflow: hidden;
-    background: url(https://www.wishbeen.co.kr/logo.86dd47c5979413f8.svg) 0 0 no-repeat;
+    background: url('https://www.wishbeen.co.kr/logo.86dd47c5979413f8.svg') 0 0 no-repeat;
     background-size: cover;
     font-size: 0;
     color: transparent;
@@ -199,6 +211,7 @@ ol, ul {
     display: inline-block;
     position: relative;
 }
+
 #header .gnb_wrap a {
     padding: 0 1.2rem;
     display: block;
@@ -206,6 +219,7 @@ ol, ul {
     font-size: 1.5em;
     line-height: 7rem;
 }
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -304,9 +318,14 @@ button, select {
     vertical-align: middle;
 }
 #header .btn_login span {
-    background-image: url(https://www.wishbeen.co.kr/person1.795361a55289ba9e.svg);
+    background-image: url('https://www.wishbeen.co.kr/person1.795361a55289ba9e.svg');
 }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 .dim {
     display: none;
     position: fixed;
@@ -1175,7 +1194,7 @@ rem
 }
 
 .m_visual .txt .st1 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.6rem;
 }
 
@@ -1193,7 +1212,7 @@ rem
 .m_visual .txt .st2 span {
     display: inline-block;
     position: relative;
-    font-weight: 400;
+    font-weight: 700;
     z-index: 1;
 }
 .m_visual .txt .st2 span:after {
@@ -1270,7 +1289,7 @@ rem
 }
 .hot_wrap p a {
     padding: 1.5rem;
-    margin: 1.5rem 1.5rem 0 0;
+    margin: 1.5rem 1rem 0 0;
     display: inline-block;
     position: relative;
     background: #fff;
@@ -1789,6 +1808,19 @@ b, strong {
     box-sizing: border-box;
 }
 
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#footer .btn_top_scroll.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
 #footer .btn_top_scroll {
     width: 4rem;
     height: 4rem;
@@ -1809,6 +1841,8 @@ b, strong {
     box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
 }
 
+
+
 #footer .btn_top_scroll:before {
     content: "";
     width: 1.8rem;
@@ -1816,26 +1850,29 @@ b, strong {
     position: absolute;
     top: 50%;
     left: 50%;
-    background: url(https://www.wishbeen.co.kr/chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background: url(chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
     background-size: 100%;
     transform: translate(-50%,-50%);
 }
+
+
+
 #footer .list_link {
     margin: 0 0 2rem;
 }
+
 #footer .list_link dt {
     padding: 0 5rem 2rem 0;
     display: inline-block;
     position: relative;
     color: #ffffffb3;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.4rem;
 }
 
 #footer .list_link dd {
     display: inline-block;
 }
-
 
 #footer .list_link a {
     padding: 0 1.5rem;
@@ -1855,13 +1892,7 @@ b, strong {
     color: #fff6;
     font-size: 1.3rem;
     line-height: 1.6;
-    font-weight: 400;
-}
-#footer .info span.br:after {
-    content: "";
-    display: block;
-    height: 0;
-    border: none;
+    font-weight: 200;
 }
 #footer .info .inner span:after {
     content: "";
@@ -1872,16 +1903,24 @@ b, strong {
     display: inline-block;
     border-right: 0.1rem solid rgba(255,255,255,.2);
 }
+
+#footer .info span.br:after {
+    content: "";
+    display: block;
+    height: 0;
+    border: none;
+}
+
 #footer .info span.noti:before {
     content: "";
     display: block;
     height: 1.5rem;
     border: none;
 }
+
 #footer .mark_area {
     margin: 2rem 0 0;
 }
-
 #footer .mark_area span {
     margin: 1rem 1rem 0 0;
     padding: 1rem;
