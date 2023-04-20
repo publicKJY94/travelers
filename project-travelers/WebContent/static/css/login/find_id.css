@@ -56,20 +56,6 @@ ol, ul {
 .tab_nav>li {
     flex: 1;
 }
-
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, textarea {
-    margin: 0;
-    padding: 0;
-}
-body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl, li, dt, dd, div, p, pre, form, fieldset {
-    -webkit-tap-highlight-color: transparent!important;
-}
-<<<<<<< HEAD
-
-=======
-*, :after, :before {
-    box-sizing: border-box;
-}
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
     font-weight: 400;
@@ -226,7 +212,6 @@ ol, ul {
     border: 1px solid #242424;
     border-bottom-color: transparent;
 }
->>>>>>> 45886e6765b8b037e20ef3db6612ab4ddedeeb28
 .tab_nav li:first-child a {
     border-left-color: #ddd;
 }
