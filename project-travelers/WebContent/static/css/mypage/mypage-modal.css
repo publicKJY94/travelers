@@ -378,3 +378,11 @@ hr {
 .menu_wrap .inner li a:hover, .menu_wrap .inner li span:hover, .my_menu_wrap .list li a:hover, .city_sch_wrap .list_city dd a:hover, .city_sch_wrap .city_open button:hover, .city_sch_wrap2 .list_city dd a:hover, .city_sch_wrap2 .city_open button:hover {
     text-decoration: underline;
 }
+
+.dim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 500;
+}

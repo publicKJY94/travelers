@@ -112,6 +112,10 @@
 								_ngcontent-dcs-c86=""
 								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg"
 								alt="menu"></a>
+								<ul _ngcontent-dtp-c76="" class="set_menu ng-star-inserted">
+								<li _ngcontent-dtp-c76=""><a _ngcontent-dtp-c76=""> 좋아요
+										취소 </a></li>
+							</ul>
 							<!---->
 						</div>
 					</div>
