@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원관리</title>
+<title>여행기게시물 수정/삭제</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/admin/admin-member.css">
+<link rel="stylesheet" href="../../static/css/admin/admin-trip-board.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -21,7 +21,7 @@
 			</div>
 			<div class="title">
 				<div>
-					<span class="ChangeTitle">회원관리</span>
+					<span class="ChangeTitle">여행기 게시물 관리</span>
 				</div>
 				<span><small>관리자모드</small></span>
 			</div>
@@ -64,41 +64,28 @@
 					
 					
 					<div class="memberLists">
-						<div>탈퇴회원 수 총 6건<button>삭제</button></div>
+						<div>총 6건<button>수정</button><button>삭제</button></div>
 						<table>
 							<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
 								<td></td>
 								<td>번호</td>
-								<td>닉네임</td>
-								<td>구분</td>
-								<td>연락처</td>
-								<td>이름</td>
-								<td>생년월일</td>
-								<td>지역</td>
+								<td>제목</td>
+								<td>내용</td>
+								<td>작성자</td>
+								<td>작성날짜</td>
+								<td>조회수</td>
 							</tr>
 							<tr>
 								<td><input type="checkbox"></td>
 								<td>432</td>
-								<td>구글민혁</td>
-								<td>USER</td>
-								<td>010-0000-0000</td>
+								<td>이번 여행해서 느꼈던점</td>
+								<td>클릭해주세요</td>
 								<td>민혁</td>
 								<td>1990-02-19</td>
-								<td>서울</td>
+								<td>50</td>
 							</tr>
 							<tr>
 								<td><input type="checkbox"></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -114,21 +101,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td></td>
 							</tr>
 							<tr>
 								<td><input type="checkbox"></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td><input type="checkbox"></td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -144,6 +119,14 @@
 								<td></td>
 								<td></td>
 								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 							</tr>
 							<tr>
@@ -154,11 +137,18 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td></td>
 							</tr>
 							<tr>
 								<td><input type="checkbox"></td>
 								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>

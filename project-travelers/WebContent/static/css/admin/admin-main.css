@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 * {
 	margin: 0;
 	padding:0;
@@ -27,12 +25,14 @@ div.header {
 	display:flex;
 	box-shadow:1px 1px 5px #c4c4c4;
 	background:white;
+	position:relative;
 }
 
 
 div.logoImage {
 	width:15%;
 	height:100%;
+	background-color:bule;
 }
 
 
@@ -58,15 +58,16 @@ div.title div {
 div.title div span.ChangeTitle {
 	font-size:20px;
 	font-weight: 800;
-	letter-spacing: 8px;
-	color:#6e6e6e;
+	letter-spacing: 2px;
+	color:#272727;
 }
 
 div.title span small {
 	color:#6e6e6e;
-	padding-left: 10px;
+	position:absolute;
+	right: 10px;
+    top: 31px;
 }
-
 
 section.mainContainer {
 	width:100%;
@@ -76,10 +77,11 @@ section.mainContainer {
 
 nav {
 	width:15%;
-	height:100%;
-	background-color: #474747;
+	height:100%;;
+	background-color: white;
 	display:inline-block;
 	position:relative;
+	top:1px;
 }
 
 
@@ -103,17 +105,16 @@ nav ul li {
 	font-size:12px;
 }
 
-nav ul li:hover {
+nav ul li:active{
 	background-color:#ff7f00;
 }
 
 
 nav ul li a {
-	color:white;
+	color:#272727;
 	text-decoration: none;
 	cursor:pointer;
 }
-
 
 /*nav ul li a::after {
 	content:'+';
@@ -140,19 +141,65 @@ div.mainContent div.mainBox {
 
 
 div.mainContent div.mainBox div.mainBoxList {
-	width:585px;
-	height:380px;
-	background-color:white;
+	width: 564px;
+    height: 358px;
+    background-color: white;
+    padding: 17px;
+    box-shadow:1px 1px 5px #c4c4c4;
+}
+
+
+
+table {
+	width:90%;
+	margin:0 auto;
+	border-collapse: collapse;
+	font-size:15px;
+	position: relative;
+
 }
 
 
 table tr th::after {
-	content:' 더보기 → ';
-	width:70px;
-	border:1px solid #6e6e6e;
-	border-radius: 30px;
-	font-size:5px;
-	font-weight:300;
-	color: #6e6e6e;
-	padding:3px;
+    content: ' 더보기 → ';
+    width: 45px;
+    border: 1px solid #6e6e6e;
+    border-radius: 30px;
+    font-size: 3px;
+    font-weight: 300;
+    color: #6e6e6e;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
 }
+
+
+
+table tr td {
+		border: 1px solid #bcbcbc;
+		padding:15px;	
+		font-weight:600;
+		color:#6e6e6e;
+		font-size:10px;
+		height:8px;
+}
+
+table tr,table td {
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+
+
+table tr:first-child,
+table td:first-child {
+	border-left: 0;
+}
+table tr:last-child,
+table td:last-child {
+	border-right: 0;
+}
+
+
+
