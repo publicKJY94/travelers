@@ -54,7 +54,7 @@
 							<hr>
 						</div>
 						<table class="adminInfo">
-							<tr class="siteName">
+							<tr class="siteName" style="border-top:3px solid #6e6e6e;">
 								<td>사이트명</td>
 								<td>travelers</td>
 							</tr>
@@ -69,7 +69,6 @@
 							<tr class="adminPassword">
 								<td>관리자 비밀번호</td>
 								<td><input type="text" placeholder="변경 할 비밀번호 입력">
-									<button class="passwordBtn">변경</button>
 								</td>
 							</tr>
 						</table>
