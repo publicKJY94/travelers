@@ -60,7 +60,7 @@ body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl,
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -96,7 +96,7 @@ a:link, a:active, a:visited, a:hover {
     text-decoration: none;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]), a:not([href]):not([class]) {
     color: inherit;
     text-decoration: none;
 }
@@ -126,7 +126,7 @@ body{
  	-webkit-text-size-adjust: none;
  	-webkit-tap-highlight-color: transparent!important;
  	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -307,6 +307,12 @@ img {
     color: #fff;
 }
 
+.tab_nav.st01 li a:hover {
+    background: #242424;
+    color: #fff;
+}
+
+
 .tab_nav.st01 li a {
     min-width: 10rem;
     height: 4rem;
@@ -390,6 +396,10 @@ button, select {
     text-transform: none;
 }
 
+.trip_list1 .inner:hover {
+    border-color: #ff5800;
+}
+
 .trip_list1 .inner {
     width: 100%;
     margin: 0;
@@ -409,11 +419,6 @@ button, select {
 
 .trip_list1 .inner>a {
     display: block;
-}
-
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
 }
 
 .trip_list1 .inner .img {
@@ -506,7 +511,7 @@ fieldset, img {
     white-space: normal;
     text-overflow: ellipsis;
     line-height: 1.3;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
 }
 
@@ -597,6 +602,10 @@ ol ol, ol ul, ul ol, ul ul {
     background-size: cover;
 }
 
+.btn_set:hover {
+    background: #edeaea;
+}
+
 .trip_list1 .btn_set {
     top: 1rem;
 }
@@ -638,4 +647,39 @@ fieldset, img {
     background-size: cover;
 }
 
+.set_menu {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border: 0.1rem solid #242424;
+    box-shadow: 0.3rem 0.3rem 0.5rem #0000004d;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    z-index: 20;
+}
 
+.trip_list1 .set_menu {
+    top: 5rem;
+}
+
+.set_menu li {
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.set_menu li+li {
+    margin: 0!important;
+    border-top: 0.1rem solid #e7e7e7;
+}
+
+.set_menu a:hover {
+    background: #f5f5f5;
+}
+
+.set_menu a {
+    padding: 1rem 0;
+    display: block;
+}

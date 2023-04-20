@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../../static/css/font/font.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/font/font.css" type="text/css"
+	rel="stylesheet">
 <link href="../../static/css/costomer-center/faq.css" type="text/css"
 	rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
@@ -70,8 +71,8 @@
 					<ul class="tab_nav">
 						<li><a routerlink="notice" routerlinkactive="active"
 							href="/customer-center/notice">공지사항</a></li>
-						<li><a routerlink="faq" routerlinkactive="active"
-							class="active" href="/customer-center/faq">자주묻는질문</a></li>
+						<li><a class="active" routerlink="faq"
+							routerlinkactive="active" href="/customer-center/faq">자주묻는질문</a></li>
 						<li><a routerlink="qna" routerlinkactive="active"
 							href="/customer-center/qna">문의하기</a></li>
 					</ul>
@@ -84,8 +85,8 @@
 						<button routerlink="join" routerlinkactive="active" type="button"
 							tabindex="0">회원가입</button>
 						<button routerlink="travelogue" routerlinkactive="active"
-							type="button" tabindex="0" class="active">여행기 작성</button>
-						<button routerlink="schedule" routerlinkactive="active"
+							type="button" tabindex="0">여행기 작성</button>
+						<button routerlink="schedule" routerlinkactive="active" class="active"
 							type="button" tabindex="0">여행일정 작성</button>
 						<button routerlink="point_save" routerlinkactive="active"
 							type="button" tabindex="0">포인트</button>
@@ -113,14 +114,14 @@
 									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
 									alt="더보기"></span>
 							</dt>
-							<dd >
+							<dd>
 								<p>휴면 해제를 원하시는 회원ID 로 로그인을 시도하시면 인증 과정 완료 후 휴면 해제 가능합니다.</p>
 							</dd>
 						</dl>
 						<dl class="inner ng-star-inserted">
-							<dt class="active">
+							<dt>
 								<span>탈퇴 후 재가입 할 수 있나요?</span><span><img
-									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_up.svg"
+									src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
 									alt="더보기"></span>
 							</dt>
 							<dd>
@@ -136,11 +137,19 @@
 					</div>
 
 					<ul class="pagination pc">
-						<li><a><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_left.svg" alt="처음"></a></li>
-						<li><a><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_left.svg" alt="이전"></a></li>
+						<li><a><img
+								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_left.svg"
+								alt="처음"></a></li>
+						<li><a><img
+								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_left.svg"
+								alt="이전"></a></li>
 						<li><a class="active ng-star-inserted"> 1 </a> <!----></li>
-						<li><a><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_right.svg" alt="다음"></a></li>
-						<li><a><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_right.svg" alt="마지막"></a></li>
+						<li><a><img
+								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_right.svg"
+								alt="다음"></a></li>
+						<li><a><img
+								src="https://www.wishbeen.co.kr/assets/images/svg/chevron_double_right.svg"
+								alt="마지막"></a></li>
 					</ul>
 					<!---->
 				</section>
@@ -208,11 +217,10 @@
 			</div>
 		</footer> </app-footer>
 
-
-
 	</div>
 	</app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script type="text/javascript" src="../../static/js/costomer-center/faq.js"></script>
+<script type="text/javascript"
+	src="../../static/js/costomer-center/faq.js"></script>
 </html>

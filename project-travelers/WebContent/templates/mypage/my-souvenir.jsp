@@ -8,6 +8,7 @@
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/mypage/my-souvenir.css" rel="stylesheet">
+<link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
 <app-root _nghost-dcs-c68 ng-version="13.3.12">
@@ -142,6 +143,10 @@
 								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"
 								class="ng-star-inserted">
 							<!----></a>
+							<ul _ngcontent-lwr-c75="" class="set_menu ng-star-inserted">
+								<li _ngcontent-lwr-c75=""><a _ngcontent-lwr-c75="">수정하기</a></li>
+								<li _ngcontent-lwr-c75=""><a _ngcontent-lwr-c75="">삭제하기</a></li>
+							</ul>
 							<!---->
 						</div>
 					</div>

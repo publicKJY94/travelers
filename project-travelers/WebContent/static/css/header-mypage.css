@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.bandBanner {
+    text-align: center;
+    background: #111111;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    height: 40px;
+}
+
+.bandBanner .inner {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.bandBanner .inner .text {
+    color: #fff;
+}
+
+.bandBanner .inner .text .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandBanner .inner .text .link .point {
+    color: #fee000;
+}
+
+.bandBanner .inner .text .link .arrow {
+    margin-left: 5px;
+    width: 7px;
+    height: 12px;
+    background: url(/assets/images/svg/arrow_right_topBanner.svg);
+}
+
+#header.mainHeader {
+    position: fixed;
+    top: 40px;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    box-sizing: border-box;
+    box-shadow: 0 0.1rem 0.3rem #0000001a;
+    z-index: 50;
+    transition: all .3s;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#header .logo {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    z-index: 1;
+}
+
+#header .logo a span {
+    width: 11.5rem;
+    height: 3.9rem;
+    display: inline-block;
+    overflow: hidden;
+    background: url('https://www.wishbeen.co.kr/logo.86dd47c5979413f8.svg') 0 0 no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+}
+
+#header .gnb_wrap {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#header .gnb_wrap ul {
+    display: inline-block;
+}
+#header .side_wrap {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#header .gnb_wrap li {
+    display: inline-block;
+    position: relative;
+}
+
+#header .gnb_wrap a {
+    padding: 0 1.2rem;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 7rem;
+}
+
+#header .gnb_wrap .btn_login, #header .gnb_wrap .btn_my {
+    padding: 0.6rem 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    border: 0.1rem solid rgba(0,0,0,.2);
+    border-radius: 3rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+#header .gnb_wrap .btn_login span, #header .gnb_wrap .btn_my span {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: -0.5rem 0.5rem 0 0;
+    display: inline-block;
+    overflow: hidden;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    color: transparent;
+    vertical-align: middle;
+}
+
+#header .btn_my span {
+    background-image: url(https://www.wishbeen.co.kr/person_on.ea4494bc65b5053d.svg);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+#header .gnb_wrap a:hover span {
+    border-bottom: 0.1rem solid #ff5800;
+    color: #ff5800;
+}
+
+#header .gnb_wrap .btn_login:hover, #header .gnb_wrap .btn_my:hover {
+    background: #fafafa;
+    color: #111;
+}
+
+
+
