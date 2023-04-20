@@ -43,7 +43,17 @@
 				</nav>
 				<!--mainScreen Q&A-->
 				<div class="mainContent">
-					<div class="">
+					<div class="memberSearch">
+						<div class="memberSearchInput">
+							<div>닉네임</div>
+							<div>
+								<input type="text" placeholder="검색어를 입력하세요">
+							</div>
+							<div>
+								<img src="../../static/image/search.png">
+								<i class="fa-regular fa-magnifying-glass" style="color: #bfbfbf;"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
