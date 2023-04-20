@@ -143,6 +143,10 @@
 								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"
 								class="ng-star-inserted">
 							<!----></a>
+							<ul _ngcontent-lwr-c75="" class="set_menu ng-star-inserted">
+								<li _ngcontent-lwr-c75=""><a _ngcontent-lwr-c75="">수정하기</a></li>
+								<li _ngcontent-lwr-c75=""><a _ngcontent-lwr-c75="">삭제하기</a></li>
+							</ul>
 							<!---->
 						</div>
 					</div>
