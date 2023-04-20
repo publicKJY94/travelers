@@ -231,3 +231,16 @@ input.chbox+label:before {
     font-size: 14px;
     text-align: center;
 }
+.error-message {
+    color: red;
+    font-size: 11px;
+  }
+  
+input[type=checkbox].ischecked + label:before {
+  background: #ff8000 0 0 no-repeat;
+  background-size: cover;
+  background-image: url(https://www.wishbeen.co.kr/check_w.a459242292628c52.svg);
+  border: none;
+}
+  
+  

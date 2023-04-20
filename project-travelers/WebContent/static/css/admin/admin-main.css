@@ -33,7 +33,10 @@ div.logoImage {
 	width:15%;
 	height:100%;
 	background-color:bule;
+<<<<<<< HEAD
+=======
 	position:relative;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
 
 
@@ -118,11 +121,14 @@ nav ul li a {
 	cursor:pointer;
 }
 
+<<<<<<< HEAD
+=======
 
 #listHide {
 	display:none;
 }
 
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 /*nav ul li a::after {
 	content:'+';
 	position:absolute;

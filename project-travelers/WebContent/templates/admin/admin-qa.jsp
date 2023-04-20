@@ -51,16 +51,24 @@
 				<div class="mainContent">
 					<div class="memberSearch">
 						<div class="memberSearchInput">
+<<<<<<< HEAD
+							<div>닉네임</div>
+=======
 							<select>
 								<option value="nickName">작성자</option>
 								<option value="nickName">제목</option>
 								<option value="nickName">내용</option>
 							</select>
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 							<div>
 								<input type="text" placeholder="검색어를 입력하세요">
 							</div>
 							<div>
 								<img src="../../static/image/search.png">
+<<<<<<< HEAD
+								<i class="fa-regular fa-magnifying-glass" style="color: #bfbfbf;"></i>
+=======
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 							</div>
 						</div>
 					</div>
