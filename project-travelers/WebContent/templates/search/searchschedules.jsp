@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../../static/css/search/searchtriproute.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/search/searchsouvenir.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
@@ -180,6 +181,16 @@
 											_ngcontent-kfv-c128="">TRAVEL</span> ·여행 시작일 ~ 여행 종료일</li>
 										<li _ngcontent-kfv-c128="" class="tit">제목</li>
 										<li _ngcontent-kfv-c128="" class="nick">by 유저명</li>
+										<li class="di_flex">
+											<ul _ngcontent-vnv-c93 class="ico_wrap">
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_vote"></span> 5</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_spot"></span> 15</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_cmt"></span> 2</li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 							</a>
@@ -197,6 +208,16 @@
 											_ngcontent-kfv-c128="">TRAVEL</span> ·여행 시작일 ~ 여행 종료일</li>
 										<li _ngcontent-kfv-c128="" class="tit">제목</li>
 										<li _ngcontent-kfv-c128="" class="nick">by 유저명</li>
+										<li class="di_flex">
+											<ul _ngcontent-vnv-c93 class="ico_wrap">
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_vote"></span> 5</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_spot"></span> 15</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_cmt"></span> 2</li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 							</a>

@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Travelers | 검색</title>
 <link href="../../static/css/search/searchtriproute.css" type="text/css" rel="stylesheet">
+<link href="../../static/css/search/searchsouvenir.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/home.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/header.css" type="text/css" rel="stylesheet">
 <link href="../../static/css/footer.css" type="text/css" rel="stylesheet">
@@ -160,46 +161,71 @@
 							</button>
 						</div>
 					</div>
-					<div _ngcontent-vnv-c93 class="trip_list1 clear_v2">
-						<div _ngcontent-vnv-c93 class="inner ng-star-inserted">
-							<a _ngcontent-vnv-c93
-								href="/schedules/458997?keyword=%EC%A0%9C%EC%A3%BC%EB%8F%84">
-								<div _ngcontent-vnv-c93 class="img">
-									<img _ngcontent-vnv-c93 alt="img" src="">
+					
+					<ul _ngcontent-kfv-c128="" class="trip_list2">
+						<li _ngcontent-kfv-c128="" class="inner ng-star-inserted"><a
+							_ngcontent-kfv-c128="">
+								<div _ngcontent-kfv-c128="" class="img_wrap">
+									<p _ngcontent-kfv-c128="" class="img">
+										<img _ngcontent-kfv-c128="" alt="img" src="">
+									</p>
 								</div>
-								<div _ngcontent-vnv-c93 class="txt_wrap">
-									<ul _ngcontent-vnv-c93>
-										<li _ngcontent-vnv-c93 class="geo txt_hide"><span
-											_ngcontent-vnv-c93 class="ico_geo"></span> 지역1·지역2 <!-- 지역이 많을경우 · 로 구분하며 추가 -->
+								<div _ngcontent-kfv-c128="" class="txt_wrap">
+									<ul _ngcontent-kfv-c128="">
+										<li _ngcontent-vnv-c93 class="geo txt_hide schedule"><span
+											_ngcontent-kfv-c128="">TRIP ROUT </span> ·지역1·지역2
 										</li>
-										<li _ngcontent-vnv-c93 class="tit">추천루트 제목</li>
-										<li _ngcontent-vnv-c93 class="schedule pc"><span
-											_ngcontent-vnv-c93 class="ng-star-inserted"> 장소1 </span> <span
-											_ngcontent-vnv-c93 class="ng-star-inserted"> 장소2 </span> <!-- 복붙 -->
-										</li>
-										<li _ngcontent-vnv-c93 class="date">PLAN·추천일수 <!-- (예시)2023.05.04~2023.05.06 --></li>
-										<li _ngcontent-vnv-c93 class="di_flex">
+										<li _ngcontent-kfv-c128="" class="tit">제목</li>
+										<li _ngcontent-kfv-c128="" class="nick">by 유저명</li>
+										<li class="di_flex">
 											<ul _ngcontent-vnv-c93 class="ico_wrap">
 												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
 													class="ico_attr"></span> <em _ngcontent-vnv-c93 class="pc">전체</em>
-													N개 장소 <!-- 장소 개수 --></li>
+													N개 장소</li>
 												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
-													class="ico_vote"></span> N회 <!-- 추천 수 --></li>
+													class="ico_vote"></span> 7</li>
 												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
-													class="ico_spot"></span> 15 <!-- 조회 수 --></li>
+													class="ico_spot"></span> 23</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_cmt"></span> 3</li>
 											</ul>
-											<div _ngcontent-vnv-c93 class="user_wrap">
-												<span _ngcontent-vnv-c93 class="img"> <img
-													_ngcontent-vnv-c93 alt="userimg"
-													src="https://test-resize-image.wishbeen.co.kr/62a75b26138254268a86488a6ce82340.jpg?w=50&h=50">
-												</span> <span _ngcontent-vnv-c93 class="nick"> 작성자 이름 </span>
-											</div>
 										</li>
 									</ul>
 								</div>
-							</a>
-						</div>
-					</div>
+						</a></li>
+						<li _ngcontent-kfv-c128="" class="inner ng-star-inserted"><a
+							_ngcontent-kfv-c128="">
+								<div _ngcontent-kfv-c128="" class="img_wrap">
+									<p _ngcontent-kfv-c128="" class="img">
+										<img _ngcontent-kfv-c128="" alt="img" src="">
+									</p>
+								</div>
+								<div _ngcontent-kfv-c128="" class="txt_wrap">
+									<ul _ngcontent-kfv-c128="">
+										<li _ngcontent-vnv-c93 class="geo txt_hide schedule"><span
+											_ngcontent-kfv-c128="">TRIP ROUT </span> ·지역1·지역2
+										</li>
+										<li _ngcontent-kfv-c128="" class="tit">제목</li>
+										<li _ngcontent-kfv-c128="" class="nick">by 유저명</li>
+										<li class="di_flex">
+											<ul _ngcontent-vnv-c93 class="ico_wrap">
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_attr"></span> <em _ngcontent-vnv-c93 class="pc">전체</em>
+													N개 장소</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_vote"></span> 5</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_spot"></span> 15</li>
+												<li _ngcontent-vnv-c93><span _ngcontent-vnv-c93
+													class="ico_cmt"></span> 2</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+						</a></li>
+					</ul>
+					
+					
 					<div _nghost-gch-c84 class="list_btn ng-star-inserted">
 						<a _nghost-gch-c84 class="btn_st1 more">더보기</a>
 					</div>
