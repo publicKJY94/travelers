@@ -564,7 +564,7 @@ input.txtbox {
     align-items: center;
 }
 
-.trip_list1 .ico_wrap span {
+.ico_wrap span {
     width: 1.4rem;
     height: 1.4rem;
     margin: -0.1rem 0.5rem 0 0;
@@ -584,7 +584,7 @@ input.txtbox {
     overflow: hidden;
 }
 
-.trip_list1 .ico_wrap span {
+.ico_wrap span {
     width: 1.4rem;
     height: 1.4rem;
     margin: -0.1rem 0.5rem 0 0;
@@ -593,11 +593,12 @@ input.txtbox {
     opacity: .6;
 }
 
-.trip_list1 .ico_wrap li {
+.ico_wrap li {
     margin: 0 1rem 0 0;
     display: inline-block;
     color: #999;
     font-size: 1.3rem;
+    padding-right: 0.7em;
 }
 
 .trip_list1 .user_wrap .img {
@@ -620,12 +621,17 @@ input.txtbox {
 }
 
 .ico_vote {
-    background: url(https://www.wishbeen.co.kr/download.ed23b0af8bbdf45d.svg) center no-repeat;
+    background: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg) center no-repeat;
     background-size: cover;
 }
 
 .ico_spot {
     background: url(https://www.wishbeen.co.kr/eye.903d20db7e9b8614.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_cmt {
+    background: url(https://www.wishbeen.co.kr/chat_dots.4000db42c3634f37.svg) center no-repeat;
     background-size: cover;
 }
 

@@ -87,9 +87,6 @@
 						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
 							routerlink="qna" routerlinkactive="active"
 							href="/customer-center/qna" class="active">문의하기</a></li>
-						<li _ngcontent-mko-c82=""><a _ngcontent-mko-c82=""
-							routerlink="guide" routerlinkactive="active"
-							href="/customer-center/guide">위시빈 가이드</a></li>
 					</ul>
 				</div>
 				<router-outlet _ngcontent-mko-c82=""></router-outlet>
