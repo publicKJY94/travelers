@@ -15,108 +15,52 @@ div.wrap {
 	min-width:1500px;
 	height:100%;
 }
-
-
-div.header {
-	min-width:100%;
-	height:60px;
-	display:flex;
-	box-shadow:1px 1px 5px #c4c4c4;
-	background:white;
-	position:relative;
+.table-wrap, .content-wrap {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px #c4c4c4;
 }
-
-
-div.logoImage {
-	width:15%;
-	height:100%;
-	background-color:bule;
-	position:relative;
+.qna-info-wrap, .con-write-wrap {
+    border-top: 2px solid #6e6e6e;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6e6e6e;
 }
-
-
-div.logoImage a>img {
-    position: absolute;
-    top: -5px;
-    left: 25px;
+.con-write-wrap {
+    border-bottom: 2px solid #6e6e6e;
 }
-
-div.title {
-	width:85%;
-	height:60px;
-	/*background-color: aqua;*/
+.qna-info-list .qna-list, .notice-write {
+    display: flex;
+    border-bottom: 1px solid #c4c4c4;
 }
-
-div.title div {
-	display:inline-block;
-	line-height: 70px;
-	padding-left:30px;
+.qna-info-list .qna-list .qna-list-title, .con-write-wrap .con-write .write-title, .con-write-wrap .notice-write .write-title {
+    display: block;
+    padding: 0px 0px 0px 7px;
+    width: 25%;
 }
-
-
-div.title div span.ChangeTitle {
-	font-size:20px;
-	font-weight: 800;
-	letter-spacing: 2px;
-	color:#272727;
+.con-write-wrap .write-title {
+    vertical-align: top;
 }
-
-div.title span small {
-	color:#6e6e6e;
-	position:absolute;
-	right: 10px;
-    top: 31px;
-}
-
-section.mainContainer {
-	width:100%;
-	height:800px;
-	display:flex;
-}
-
-nav {
-	width:15%;
-	height:800px;
-	background-color: white;
-	display:inline-block;
-	position:relative;
-	top:1px;
-}
-
-
-nav ul {
-	width:100%;
-	height:100%;
-	overflow:hidden;
-	list-style:none;
-}
-
-
-nav ul li {
+.write-text write-notice{
 	width: 100%;
-	height:50px;
-	border-bottom: 0.3px solid #6e6e6e24;
-	text-align:left;
-	line-height:50px;
-	padding-left:20px;
-	list-style:none;
-	font-weight: 600;
-	font-size:12px;
 }
 
-nav ul li:active{
-	background-color:#ff7f00;
+.con-write-wrap .notice-write .write-sec .write-notice {
+    height: 20px;
 }
 
-
-nav ul li a {
-	color:#272727;
-	text-decoration: none;
-	cursor:pointer;
-}
-
-#listHide {
-	display:none;
+.con-write-wrap .write-sec .write-text {
+    display: block;
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    word-break: break-all;
+    overflow: auto;
 }
 
 div.mainContent {

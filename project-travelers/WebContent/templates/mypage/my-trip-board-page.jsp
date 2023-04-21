@@ -106,11 +106,11 @@
 						<div _ngcontent-dcs-c84="" class="txt_wrap">
 							<ul _ngcontent-dcs-c84="">
 								<li _ngcontent-dcs-c84="" class="geo txt_hide"><span
-									_ngcontent-dcs-c84="" class="ico_geo"></span> 오사카</li>
-								<li _ngcontent-dcs-c84="" class="tit">즐거운 오사카 여행</li>
+									_ngcontent-dcs-c84="" class="ico_geo"></span> 여행지역 </li>
+								<li _ngcontent-dcs-c84="" class="tit">여행기 제목</li>
 								<li _ngcontent-dcs-c84="" class="txt_hide"><span
 									_ngcontent-dcs-c84="" class="tag ng-star-inserted">
-										#도톤보리 </span> <!----></li>
+										#여행 관련 태그 </span> <!----></li>
 								<li _ngcontent-dcs-c84="" class="date">
 									TRAVEL·2022.12.22~2022.12.27</li>
 								<li _ngcontent-dcs-c84=""><ul _ngcontent-dcs-c84=""
@@ -211,5 +211,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
-<script type="text/javascript" src="../../static/js/mypage/my-trip-board-page.js"></script>
+<script type="text/javascript" src="../../static/js/mypage/fix-delete.js"></script>
 </html>

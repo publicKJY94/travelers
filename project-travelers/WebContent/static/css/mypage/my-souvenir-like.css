@@ -555,7 +555,7 @@ fieldset, img {
 }
 
 .btn_set:hover {
-    background: #fcaf86;
+    background: #edeaea;
 }
 
 .trip_list1 .btn_set {
@@ -622,6 +622,11 @@ a, input[type=file], button {
     text-align: center;
 }
 
+.set_menu li+li {
+    margin: 0!important;
+    border-top: 0.1rem solid #e7e7e7;
+}
+
 .set_menu a:hover {
     background: #f5f5f5;
 }
@@ -630,7 +635,3 @@ a, input[type=file], button {
     padding: 1rem 0;
     display: block;
 }
-
-
-
-

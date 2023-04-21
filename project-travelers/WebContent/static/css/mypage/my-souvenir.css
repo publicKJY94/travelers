@@ -603,8 +603,9 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .btn_set:hover {
-    background: #fcaf86;
+    background: #edeaea;
 }
+
 
 .ico_share {
     background: url(https://www.wishbeen.co.kr/share.0dc03223b486080e.svg) center no-repeat;
