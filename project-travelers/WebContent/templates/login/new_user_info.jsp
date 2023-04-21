@@ -19,7 +19,7 @@
 			<div class="in_wrap">
 				<h1 class="logo">
 					<a href="https://www.wishbeen.co.kr/"><img
-						src="https://www.wishbeen.co.kr/assets/images/svg/logo.svg"></a>
+						src="../../static/image/logo.png"></a>
 				</h1>
 				<h2 class="tit">회원정보 입력</h2>
 				<form novalidate="" class="">
