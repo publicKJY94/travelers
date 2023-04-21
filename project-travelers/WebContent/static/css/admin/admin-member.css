@@ -31,10 +31,10 @@ div.logoImage {
 	width:15%;
 	height:100%;
 	background-color:bule;
-<<<<<<< HEAD
-=======
+
+
 	position:relative;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
 }
 
 
@@ -124,12 +124,11 @@ nav ul.mainNav li:nth-child(3) {
 }
 
 
-<<<<<<< HEAD
-=======
+
 #listHide {
 	display:none;
 }
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
 
 
 div.mainContent {
@@ -232,24 +231,24 @@ div.memberLists div button {
     height: 25px;
     background-color: white;
     margin-left: 9px;
-<<<<<<< HEAD
+
     border:1px solid #6e6e6e;
-=======
+
     color: #6e6e6e;
     border:1px solid #bcbcbc;
     border-radius:2px;
     box-shadow:1px 1px 2px #c4c4c4;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
     cursor:pointer;
 }
 
 
 div.memberLists div button:active {
-<<<<<<< HEAD
+
 	background-color: red;
-=======
+
 	background-color: #bcbcbc;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
 }
 
 
