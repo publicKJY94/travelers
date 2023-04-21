@@ -199,4 +199,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
+<script type="text/javascript" src="../../static/js/mypage/fix-delete.js"></script>
 </html>
