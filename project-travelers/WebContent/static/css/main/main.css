@@ -197,7 +197,7 @@ a:link, a:active, a:visited, a:hover {
     height: 3.9rem;
     display: inline-block;
     overflow: hidden;
-    background: url('./../image/main_logo/travelers.png') 0 0 no-repeat;
+    background: url('../../image/main_logo/travelers.png') 0 0 no-repeat;
     background-size: cover;
     font-size: 0;
     color: transparent;

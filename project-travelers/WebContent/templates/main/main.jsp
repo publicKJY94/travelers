@@ -8,7 +8,6 @@
 <link href="./../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="./../../static/css/main/main.css" rel="stylesheet">
-<<<<<<< HEAD
 <script src="./../../static/js/main/main/js" type="text/javascript"></script>
 <style class="vjs-styles-defaults">
    .video-js {
@@ -27,8 +26,6 @@
  }
 </style>
 <script src="./../../static/js/main/main.js" type="text/javascript"></script>
-=======
-
   	<style class="vjs-styles-defaults">
       .video-js {
         width: 300px;
