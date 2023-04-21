@@ -70,7 +70,7 @@ body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl,
 
 body, table, th, td, button, select, input, textarea {
     font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -82,15 +82,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     display: block;
     margin: 0;
     padding: 0;
-}
-
-body, table, th, td, button, select, input, textarea {
-    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
-    color: #111;
-    line-height: 1;
-    letter-spacing: 0;
-    word-break: keep-all;
 }
 
 li {
@@ -110,7 +101,7 @@ a:link, a:active, a:visited, a:hover {
     text-decoration: none;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]), a:not([href]):not([class]) {
     color: inherit;
     text-decoration: none;
 }
@@ -140,7 +131,7 @@ body{
  	-webkit-text-size-adjust: none;
  	-webkit-tap-highlight-color: transparent!important;
  	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
     line-height: 1;
     letter-spacing: 0;
@@ -384,7 +375,14 @@ hr {
     margin-top: 2.4rem;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
+.menu_wrap .inner li a:hover, .menu_wrap .inner li span:hover, .my_menu_wrap .list li a:hover, .city_sch_wrap .list_city dd a:hover, .city_sch_wrap .city_open button:hover, .city_sch_wrap2 .list_city dd a:hover, .city_sch_wrap2 .city_open button:hover {
+    text-decoration: underline;
+}
+
+.dim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 500;
 }

@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>고객응대</title>
+<title>여행기게시물 수정/삭제</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/admin/admin-qa.css">
+<link rel="stylesheet" href="../../static/css/admin/admin-trip-board.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -17,11 +17,15 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
+<<<<<<< HEAD
+				<a href="./admin-main.jsp"><img src="../../static/image/logo.svg" alt="travelers"></a>
+=======
 				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 			</div>
 			<div class="title">
 				<div>
-					<span class="ChangeTitle">고객응대</span>
+					<span class="ChangeTitle">여행기 게시물 관리</span>
 				</div>
 				<span><small>관리자모드</small></span>
 			</div>
@@ -35,6 +39,17 @@
 						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
 						<li><a href="./admin.jsp" target="_self">사용자</a></li>
 						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
+<<<<<<< HEAD
+						<li id="listShow"><a>게시글관리</a></li>
+							<!-- <ul id="listHide">
+								<li><a>여행기 게시글</a></li>
+								<li><a>추천루트 게시글</a></li>
+								<li><a>기념품 게시글</a></li>
+							</ul>
+							 -->
+						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
+						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
+=======
 						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
 						<li><a href="./admin-announcement2.jsp" target="_self">공지사항</a></li>
 						<li id="listShow"><a>게시글관리</a></li>
@@ -43,6 +58,7 @@
 								<li><a href="./admin-root-board.jsp" target="_self">추천루트 게시글</a></li>
 								<li><a href="./admin-souvenir-board.jsp" target="_self">기념품 게시글</a></li>
 							</ul> 
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 					</ul>
 				</nav>
 			<!-- 여기까지 복사 -->
@@ -65,16 +81,15 @@
 							</div>
 							<div>
 								<img src="../../static/image/search.png">
-<<<<<<< HEAD
-								<i class="fa-regular fa-magnifying-glass" style="color: #bfbfbf;"></i>
-=======
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 							</div>
 						</div>
 					</div>
 					
 					
 					<div class="memberLists">
+<<<<<<< HEAD
+						<div>총 6건<button>수정</button><button>삭제</button></div>
+=======
 					<!-- 버튼복사부분 -->
 						<div id="root">
 							<div>
@@ -82,6 +97,7 @@
 				       			<button>삭제</button>
 				       		</div>
 						</div>
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 						<table>
 							<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
 								<td></td>
@@ -180,6 +196,9 @@
 			</section>
 	</div>
 </body>
+<<<<<<< HEAD
+=======
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="../../static/js/admin.js"></script>
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 </html>

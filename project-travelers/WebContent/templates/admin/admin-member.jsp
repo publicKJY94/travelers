@@ -17,7 +17,7 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="../../static/image/logo.svg" alt="travelers"></a>
+				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -35,15 +35,14 @@
 						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
 						<li><a href="./admin.jsp" target="_self">사용자</a></li>
 						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
-						<li id="listShow"><a>게시글관리</a></li>
-							<!-- <ul id="listHide">
-								<li><a>여행기 게시글</a></li>
-								<li><a>추천루트 게시글</a></li>
-								<li><a>기념품 게시글</a></li>
-							</ul>
-							 -->
 						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
-						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
+						<li><a href="./admin-announcement2.jsp" target="_self">공지사항</a></li>
+						<li id="listShow"><a>게시글관리</a></li>
+							<ul id="listHide">
+								<li><a href="./admin-trip-board.jsp" target="_self">여행기 게시글</a></li>
+								<li><a href="./admin-root-board.jsp" target="_self">추천루트 게시글</a></li>
+								<li><a href="./admin-souvenir-board.jsp" target="_self">기념품 게시글</a></li>
+							</ul> 
 					</ul>
 				</nav>
 			<!-- 여기까지 복사 -->
@@ -52,22 +51,26 @@
 				<div class="mainContent">
 					<div class="memberSearch">
 						<div class="memberSearchInput">
-							<div>닉네임</div>
+							<select>
+								<option value="nickName">작성자</option>
+								<option value="box title">제목</option>
+								<option value="box write">내용</option>
+							</select>
 							<div>
 								<input type="text" placeholder="검색어를 입력하세요">
 							</div>
 							<div>
 								<img src="../../static/image/search.png">
-								<i class="fa-regular fa-magnifying-glass" style="color: #bfbfbf;"></i>
 							</div>
 						</div>
 					</div>
 					
 					
 					<div class="memberLists">
-						<div>총 6건</div>
+						<div>탈퇴회원 수 총 6건<button>삭제</button></div>
 						<table>
-							<tr class="tableTh">
+							<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
+								<td></td>
 								<td>번호</td>
 								<td>닉네임</td>
 								<td>구분</td>
@@ -75,9 +78,9 @@
 								<td>이름</td>
 								<td>생년월일</td>
 								<td>지역</td>
-								<td>탈퇴</td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td>432</td>
 								<td>구글민혁</td>
 								<td>USER</td>
@@ -85,9 +88,9 @@
 								<td>민혁</td>
 								<td>1990-02-19</td>
 								<td>서울</td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -95,9 +98,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -105,9 +108,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -115,9 +118,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -125,9 +128,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -135,9 +138,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -145,9 +148,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -155,9 +158,9 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							<tr>
+								<td><input type="checkbox"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -165,7 +168,6 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><button class="deleteBtn">삭제</button></td>
 							</tr>
 							
 						</table>
@@ -174,4 +176,5 @@
 			</section>
 	</div>
 </body>
+<script src="../../static/js/admin.js"></script>
 </html>

@@ -31,10 +31,7 @@ div.logoImage {
 	width:15%;
 	height:100%;
 	background-color:bule;
-<<<<<<< HEAD
-=======
 	position:relative;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
 
 
@@ -43,7 +40,6 @@ div.logoImage a>img {
     top: -5px;
     left: 25px;
 }
-
 
 div.title {
 	width:85%;
@@ -61,7 +57,7 @@ div.title div {
 div.title div span.ChangeTitle {
 	font-size:20px;
 	font-weight: 800;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	color:#272727;
 }
 
@@ -118,19 +114,10 @@ nav ul li a {
 	text-decoration: none;
 	cursor:pointer;
 }
-/*열린 곳*/
-nav ul.mainNav li:nth-child(3) {
-	background-color:#ff7f00;
-}
 
-
-<<<<<<< HEAD
-=======
 #listHide {
 	display:none;
 }
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
-
 
 div.mainContent {
 	width: 74%;
@@ -216,41 +203,150 @@ div.memberLists {
 	background-color:white;
 	box-shadow:1px 1px 5px #c4c4c4;
 	position:realtive;
-	padding-top: 50px;
+	padding-top: 15px;
 }
 
-div.memberLists div {
-	position: absolute;
-	right: 31px;
-    top: 103px;
+div.memberLists div#root {
+	margin: 0 auto;
+    width: 95%;
+    padding-bottom: 13px
+}
+
+div.memberLists div#root div {
+	text-align: right;
+}
+
+
+div.memberLists div#root div span {
 	font-size:13px;
 	color: #6e6e6e;
 }
 
-div.memberLists div button {
+div.memberLists div#root div button {
 	width: 50px;
     height: 25px;
     background-color: white;
     margin-left: 9px;
-<<<<<<< HEAD
-    border:1px solid #6e6e6e;
-=======
-    color: #6e6e6e;
     border:1px solid #bcbcbc;
-    border-radius:2px;
-    box-shadow:1px 1px 2px #c4c4c4;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
     cursor:pointer;
+    border-radius:2px;
+    color: #6e6e6e;
 }
 
 
-div.memberLists div button:active {
-<<<<<<< HEAD
-	background-color: red;
-=======
+div.memberLists div#root div button:active {
 	background-color: #bcbcbc;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
+
+
+
+
+
+/*모달창시작*/
+#modal {
+  display:none;
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+#modal h3 {
+  margin:0;   
+  
+}
+
+#modal button {
+  display:inline-block;
+  width:100px;
+  margin-left:calc(100% - 100px - 10px);
+  box-shadow: 1px 1px 2px #c4c4c4;
+}
+
+#modal .modal_content {
+  width:1000px;
+  height:100%;
+  margin: -170px auto;
+  padding:20px 10px;
+  background:#fff;
+  border:2px solid #666;
+}
+
+#modal .modal_content header {
+	width:95%;
+	margin: 0 auto;
+} 
+
+#modal .modal_content header div.inputList {
+	padding: 15px 0 15px 0;
+}
+
+          
+#modal .modal_content div.changeText {
+	width:95%;
+	margin: 0 auto;
+}
+#modal .modal_content hr {
+	width:100%;
+	border:2px solid #ccc;
+} 
+             
+   
+#modal .modal_content div textarea {
+	width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    outline:none;
+}
+
+input.modal_input {
+    width: 230px;
+	border:none;
+	border-bottom: 1px solid #6e6e6e;
+	outline:none;
+}
+
+
+#modal .modal_content div.changeTextBtn {
+	width:97%;
+	margin: 0 auto;
+}
+
+
+#modal_close_btn {
+	width:100px;
+	height:30px;
+	font-size:13px;
+	background-color: #ffffff;
+	cursor:pointer;
+	border: 1px solid #bcbcbc;
+	border-radius:2px;
+	color: #6e6e6e;
+	box-shadow:1px 1px 2px #c4c4c4;
+}
+
+#modal_close_btn:active {
+	background-color:#bcbcbc;
+}
+
+
+#modal .modal_layer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:-1;
+}   
+
+
+
+/*모달창끝*/
+
+
+
+
 
 
 
@@ -295,3 +391,19 @@ table tr.tableTh td {
 }
 
 
+.clickWriteBtn {
+	width: 100px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 21px auto;
+    box-shadow: 1px 1px 2px #bcbcbc;
+    border: 1px solid #bcbcbc;
+    height: 30px;
+    color: #6e6e6e;
+}
+
+.clickWriteBtn:active {
+	background-color:#c4c4c4;
+}

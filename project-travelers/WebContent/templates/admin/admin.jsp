@@ -15,7 +15,7 @@
 		<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="../../static/image/logo.svg" alt="travelers"></a>
+				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -33,14 +33,14 @@
 						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
 						<li><a href="./admin.jsp">사용자</a></li>
 						<li><a href="./admin-member.jsp">회원관리</a></li>
-						<li id="listShow"><a>게시글관리</a></li>
-							<!-- <ul id="listHide">
-								<li><a>여행기 게시글</a></li>
-								<li><a>추천루트 게시글</a></li>
-								<li><a>기념품 게시글</a></li>
-							</ul> -->
 						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
-						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
+						<li><a href="./admin-announcement2.jsp" target="_self">공지사항</a></li>
+						<li id="listShow"><a>게시글관리</a></li>
+							<ul id="listHide">
+								<li><a href="./admin-trip-board.jsp" target="_self">여행기 게시글</a></li>
+								<li><a href="./admin-root-board.jsp" target="_self">추천루트 게시글</a></li>
+								<li><a href="./admin-souvenir-board.jsp" target="_self">기념품 게시글</a></li>
+							</ul> 
 					</ul>
 				</nav>
 				
@@ -54,7 +54,7 @@
 							<hr>
 						</div>
 						<table class="adminInfo">
-							<tr class="siteName">
+							<tr class="siteName" style="border-top:3px solid #6e6e6e;">
 								<td>사이트명</td>
 								<td>travelers</td>
 							</tr>
@@ -69,11 +69,10 @@
 							<tr class="adminPassword">
 								<td>관리자 비밀번호</td>
 								<td><input type="text" placeholder="변경 할 비밀번호 입력">
-									<button class="passwordBtn">변경</button>
 								</td>
 							</tr>
 						</table>
-						<button>저장하기</button>
+						<button class="clickBtn">저장하기</button>
 					</div>
 				</section>
 		</div>

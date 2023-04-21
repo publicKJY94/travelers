@@ -8,6 +8,7 @@
 <link href="./../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="./../../static/css/main/main.css" rel="stylesheet">
+<<<<<<< HEAD
 <script src="./../../static/js/main/main/js" type="text/javascript"></script>
 <style class="vjs-styles-defaults">
    .video-js {
@@ -26,6 +27,29 @@
  }
 </style>
 <script src="./../../static/js/main/main.js" type="text/javascript"></script>
+=======
+
+  	<style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style>
+    
+    <style type="text/css">
+        a {
+		    color: inherit;
+		    text-decoration: inherit;
+		}
+	</style>
+	
+   	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+>>>>>>> master
  </head>
   <body>
     <app-root _nghost-fmk-c68="" ng-version="13.3.12">
