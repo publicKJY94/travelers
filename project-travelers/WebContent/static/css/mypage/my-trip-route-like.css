@@ -531,6 +531,10 @@ em, address {
     color: #111;
 }
 
+.btn_set:hover {
+    background: #edeaea;
+}
+
 .btn_set {
     padding: 1rem;
     display: inline-block;
@@ -554,4 +558,41 @@ em, address {
     content: "";
     display: block;
     clear: both;
+}
+
+.set_menu {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border: 0.1rem solid #242424;
+    box-shadow: 0.3rem 0.3rem 0.5rem #0000004d;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.trip_list1 .set_menu {
+    top: 5rem;
+}
+
+.set_menu li {
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.set_menu li+li {
+    margin: 0!important;
+    border-top: 0.1rem solid #e7e7e7;
+}
+
+.set_menu a:hover {
+    background: #f5f5f5;
+}
+
+.set_menu a {
+    padding: 1rem 0;
+    display: block;
 }

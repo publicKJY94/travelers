@@ -20,6 +20,124 @@ div.wrap {
 }
 
 
+<<<<<<< HEAD
+=======
+div.header {
+	min-width:100%;
+	height:60px;
+	display:flex;
+	box-shadow:1px 1px 5px #c4c4c4;
+	background:white;
+	position:relative;
+}
+
+div.logoImage {
+	width:15%;
+	height:100%;
+	background-color:bule;
+	position:relative;
+}
+
+
+div.logoImage a>img {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+}
+
+
+div.title {
+	width:85%;
+	height:60px;
+	/*background-color: aqua;*/
+}
+
+div.title div {
+	display:inline-block;
+	line-height: 70px;
+	padding-left:30px;
+}
+
+
+div.title div span.ChangeTitle {
+	font-size:20px;
+	font-weight: 800;
+	letter-spacing: 5px;
+	color:#272727;
+}
+
+div.title span small {
+	color:#6e6e6e;
+	position:absolute;
+	right: 10px;
+    top: 31px;
+}
+
+section.mainContainer {
+	width:100%;
+	height:800px;
+	display:flex;
+}
+
+nav {
+	width:15%;
+	height:800px;
+	background-color: white;
+	display:inline-block;
+	position:relative;
+	top:1px;
+}
+
+
+nav ul {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	list-style:none;
+}
+
+
+nav ul li {
+	width: 100%;
+	height:50px;
+	border-bottom: 0.3px solid #6e6e6e24;
+	text-align:left;
+	line-height:50px;
+	padding-left:20px;
+	list-style:none;
+	font-weight: 600;
+	font-size:12px;
+}
+
+nav ul li:active{
+	background-color:#ff7f00;
+}
+
+
+nav ul li a {
+	color:#272727;
+	text-decoration: none;
+	cursor:pointer;
+}
+<<<<<<< HEAD
+/*열린 곳*/
+nav ul.mainNav li:nth-child(2) {
+	background-color:#ff7f00;
+=======
+
+#listHide {
+	display:none;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+}
+
+/*nav ul li a::after {
+	content:'+';
+	position:absolute;
+	right:20px;
+
+}*/
+
+>>>>>>> e5b0a0f2124ee7d02629070f2361f2707d11bd31
 
 
 div.mainContent {
@@ -78,14 +196,25 @@ table.adminInfo tr td {
 input {
 	border:none;
 	border-bottom: 1px solid #6e6e6e;
+<<<<<<< HEAD
+}
+
+
+input {
+=======
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 	outline:none;
 }
 
 
+<<<<<<< HEAD
+button {
+=======
 
 
 
 button.clickBtn {
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 	width: 72px;
     height: 25px;
     background-color: white;
@@ -97,7 +226,16 @@ button.clickBtn {
     box-shadow: 1px 1px 2px #c4c4c4;
     margin:0 auto;
     display:block;
+<<<<<<< HEAD
+}
+
+
+
+button:action {
+	background-color:#ff7f00;
+=======
     color: #6e6e6e;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
 
 

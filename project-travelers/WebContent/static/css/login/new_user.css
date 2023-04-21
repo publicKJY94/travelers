@@ -507,3 +507,8 @@ input.txtbox {
     line-height: 19px;
     margin-bottom: 5rem;
 }
+.wb_btn.outline {
+    color: #ff8000;
+    border: 1px solid #ff8000;
+    background: transparent;
+}

@@ -113,8 +113,143 @@
 				
 			<!-- 여기까지 복사 -->
 			
+<<<<<<< HEAD
 			
 	
+=======
+			<!--mainScreen 회원관리-->
+				<div class="mainContent">
+					<div class="memberSearch">
+						<div class="memberSearchInput">
+<<<<<<< HEAD
+							<div>닉네임</div>
+=======
+							<select>
+								<option value="nickName">작성자</option>
+								<option value="nickName">제목</option>
+								<option value="nickName">내용</option>
+							</select>
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+							<div>
+								<input type="text" placeholder="검색어를 입력하세요">
+							</div>
+							<div>
+								<img src="../../static/image/search.png">
+<<<<<<< HEAD
+								<i class="fa-regular fa-magnifying-glass" style="color: #bfbfbf;"></i>
+=======
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="memberLists">
+					<!-- 버튼복사부분 -->
+						<div id="root">
+							<div>
+								<span>총 6건</span>
+				       			<button>삭제</button>
+				       		</div>
+						</div>
+						<table>
+							<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
+								<td></td>
+								<td>번호</td>
+								<td>제목</td>
+								<td>내용</td>
+								<td>작성자</td>
+								<td>작성날짜</td>
+								<td>조회수</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>432</td>
+								<td>이번 여행해서 느꼈던점</td>
+								<td>클릭해주세요</td>
+								<td>민혁</td>
+								<td>1990-02-19</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							
+						</table>
+					</div> 
+				</div>
+			</section>
+	</div>
+>>>>>>> e5b0a0f2124ee7d02629070f2361f2707d11bd31
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="../../static/js/admin.js"></script>

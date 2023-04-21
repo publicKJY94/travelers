@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #content {
-	padding: 7rem 0 0;
+	padding: 11rem 0 0;
 	background: #fff;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .pdt50 {
-	padding-top: 120px !important;
+	padding-top: 50px !important;
 }
 
 .board_view .tit_wrap {

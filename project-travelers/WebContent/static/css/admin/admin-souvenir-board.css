@@ -31,6 +31,17 @@ div.logoImage {
 	width:15%;
 	height:100%;
 	background-color:bule;
+<<<<<<< HEAD
+}
+
+
+div.logoImage a {
+	position: absolute;
+	top: 7px;
+    left: 51px;
+}
+
+=======
 	position:relative;
 }
 
@@ -42,6 +53,7 @@ div.logoImage a>img {
 }
 
 
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 div.title {
 	width:85%;
 	height:60px;
@@ -96,7 +108,11 @@ nav ul {
 nav ul li {
 	width: 100%;
 	height:50px;
+<<<<<<< HEAD
+	border-bottom: 0.3px solid #6e6e6e;
+=======
 	border-bottom: 0.3px solid #6e6e6e24;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 	text-align:left;
 	line-height:50px;
 	padding-left:20px;
@@ -116,9 +132,13 @@ nav ul li a {
 	cursor:pointer;
 }
 
+<<<<<<< HEAD
+
+=======
 #listHide {
 	display:none;
 }
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 
 div.mainContent {
 	width: 74%;
@@ -159,12 +179,19 @@ div.memberSearch div.memberSearchInput {
 
 
 
+<<<<<<< HEAD
+div.memberSearch div.memberSearchInput div:nth-child(1) {
+	width: 20%;
+    height: 100%;
+    border-right: 1px solid #c5c5c5;
+=======
 div.memberSearch div.memberSearchInput select {
 	width: 17%;
     height: 100%;
     border: none;
     border-right: 1px solid #c5c5c5;
     outline: none;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
 
 
@@ -204,6 +231,15 @@ div.memberLists {
 	background-color:white;
 	box-shadow:1px 1px 5px #c4c4c4;
 	position:realtive;
+<<<<<<< HEAD
+	padding-top: 50px;
+}
+
+div.memberLists div {
+	position: absolute;
+	right: 31px;
+    top: 103px;
+=======
 	padding-top: 15px;
 }
 
@@ -217,6 +253,7 @@ div.memberLists div#root div {
 	text-align: right;
 }
 div.memberLists div#root div span {
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 	font-size:13px;
 	color: #6e6e6e;
 }
@@ -226,16 +263,24 @@ div.memberLists div button {
     height: 25px;
     background-color: white;
     margin-left: 9px;
+<<<<<<< HEAD
+    border:1px solid #6e6e6e;
+=======
     color: #6e6e6e;
     border:1px solid #bcbcbc;
     border-radius:2px;
     box-shadow:1px 1px 2px #c4c4c4;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
     cursor:pointer;
 }
 
 
 div.memberLists div button:active {
+<<<<<<< HEAD
+	background-color: red;
+=======
 	background-color: #bcbcbc;
+>>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
 }
 
 

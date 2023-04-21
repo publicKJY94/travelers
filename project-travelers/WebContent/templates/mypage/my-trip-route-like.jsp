@@ -212,4 +212,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
+<script type="text/javascript" src="../../static/js/mypage/like-cancel.js"></script>
 </html>
