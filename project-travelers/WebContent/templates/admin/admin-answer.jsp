@@ -4,25 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>고객응대 답변</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/admin/admin-qa.css">
+<title>답변</title>
+<link rel="stylesheet" href="../../static/css/admin/admin-answer.css">
 <link rel="stylesheet" href="../../static/css/admin/admin-header-nav.css">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
-
 	<div class="wrap">
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="./admin-main.jsp"><img src="./../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
-					<span class="ChangeTitle">고객응대 답변</span>
+					<span class="ChangeTitle">고객응대</span>
 				</div>
 				<span><small>관리자모드</small></span>
 			</div>
@@ -32,6 +27,7 @@
 		 <!--mainSidebar -->
 		 	<section class="mainContainer">
 				<nav>
+				
 					<ul class="mainNav">
 						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
 						<li><a href="./admin.jsp" target="_self">사용자</a></li>
@@ -46,10 +42,8 @@
 							</ul> 
 					</ul>
 				</nav>
-				
-						<!--mainScreen 공지사항 작성하기-->
+				<!--mainScreen 공지사항 작성하기-->
 		         <div class="mainContent">
-		
 		            <div class="content-wrap">
 		               
 		               <!-- [S] 문의 정보 -->
@@ -98,24 +92,14 @@
 		               </div>
 		               
 		            </div>
-		
-		
-		         </div>
-		
-		      </section>
 		      <!-- [E] mainSidebar -->
 		
 		
 		   </div>
 		   <!-- [E] wrap -->
-
-
-				
-			<!-- 여기까지 복사 -->
-			
-			
-	
+						
+					</section>
+				</div>
+					<!-- 여기까지 복사 -->
 </body>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/admin.js"></script>
 </html>
