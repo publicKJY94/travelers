@@ -82,8 +82,8 @@
 								<input formcontrolname="travelogue_title"
 									placeholder="제목을 입력해 주세요" type="text" maxlength="30"
 									class="txtbox st1  ng-pristine ng-invalid"> <span
-									class="desc c_st02 cant-submit" style="display: none;"> 제목 입력은
-									필수입니다. </span>
+									class="desc c_st02 cant-submit" style="display: none;">
+									제목 입력은 필수입니다. </span>
 								<!---->
 								<!---->
 							</div>
@@ -120,7 +120,7 @@
 									</div>
 									<!-- // .my-calendar -->
 								</div>
-								
+
 								<input type="text" disabled placeholder="여행시작"
 									class="trip-start input-day">
 								<mat-datepicker-toggle class="calender-back">
@@ -138,7 +138,7 @@
 
 								</button>
 								</mat-datepicker-toggle>
-								
+
 								<input type="text" disabled placeholder="여행 끝"
 									class="trip-end input-day">
 								<mat-datepicker-toggle class="calender-back">
@@ -156,10 +156,10 @@
 								</button>
 								</mat-datepicker-toggle>
 							</div>
-							<span
-									class="desc trip-date-inval cant-submit" style="display: none;">시작날짜가 끝날짜보다 클 수 없습니다!</span>
-									<span
-									class="desc trip-date-none-inval cant-submit" style="display: block;">여행일정 입력은 필수입니다!</span>
+							<span class="desc trip-date-inval cant-submit"
+								style="display: none;">시작날짜가 끝날짜보다 클 수 없습니다!</span> <span
+								class="desc trip-date-none-inval cant-submit"
+								style="display: block;">여행일정 입력은 필수입니다!</span>
 							<!---->
 							<div id="editorjs" class="inner">
 								<div class="codex-editor codex-editor--empty">
@@ -308,7 +308,8 @@
 				</div>
 				</snack-bar-container>
 			</div>
-			<div id="cdk-overlay-27" class="cdk-overlay-pane title-schedule-modal">
+			<div id="cdk-overlay-27"
+				class="cdk-overlay-pane title-schedule-modal">
 				<snack-bar-container
 					class="mat-snack-bar-container ng-tns-c51-28 ng-trigger ng-trigger-state mat-snack-bar-center "
 					style="transform: scale(1); opacity: 1;">
@@ -316,7 +317,7 @@
 					<div class="ng-tns-c51-28">
 						<simple-snack-bar class="mat-simple-snackbar ">
 						<span class="mat-simple-snack-bar-content">제목과 일정을 확인해주세요!
-							</span><!----></simple-snack-bar>
+						</span><!----></simple-snack-bar>
 						<!---->
 					</div>
 				</div>
@@ -329,8 +330,8 @@
 				<div class="ng-tns-c51-28" aria-live="assertive">
 					<div class="ng-tns-c51-28">
 						<simple-snack-bar class="mat-simple-snackbar ">
-						<span class="mat-simple-snack-bar-content">여행도시는 반드시 1개이상은 선택해주세요
-							</span><!----></simple-snack-bar>
+						<span class="mat-simple-snack-bar-content">여행도시는 반드시 1개이상은
+							선택해주세요 </span><!----></simple-snack-bar>
 						<!---->
 					</div>
 				</div>

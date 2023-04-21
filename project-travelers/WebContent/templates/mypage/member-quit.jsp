@@ -56,8 +56,7 @@
 				</ul>
 			</nav>
 		</div>
-	</header> </app-header> 
-	<app-account-management _nghost-kyu-c85="" class="ng-star-inserted">
+	</header> </app-header> <app-account-management _nghost-kyu-c85="" class="ng-star-inserted">
 	<div _ngcontent-kyu-c85="" id="content">
 		<header _ngcontent-kyu-c85="" class="sub_header st1">
 			<div _ngcontent-kyu-c85="" class="in_wrap">
@@ -72,7 +71,8 @@
 					<span _ngcontent-kyu-c85="">회원 정보</span><i _ngcontent-kyu-c85=""
 						class="ico"><img _ngcontent-kyu-c85=""
 						data-brackets-id="27106"
-						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></i>
+						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
+						alt="더보기"></i>
 				</button>
 				<ul _ngcontent-kyu-c85="" class="tab_nav st01">
 					<li _ngcontent-kyu-c85=""><a _ngcontent-kyu-c85=""
@@ -241,5 +241,41 @@
 			</div>
 		</div>
 	</footer> </app-footer> </app-root>
+	<ngb-modal-window role="dialog" tabindex="-1" aria-modal="true"
+		class="d-block modal show">
+	<div role="document" class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<app-default-dialog _nghost-wqi-c38="">
+			<div _ngcontent-wqi-c38="" class="modal_wrap pop01">
+				<div _ngcontent-wqi-c38="" class="header">
+					<button _ngcontent-wqi-c38="" type="button"
+						class="btn_pop_cls ng-star-inserted">
+						<img _ngcontent-wqi-c38=""
+							src="../../../assets/images/svg/btn_close.svg" alt="닫기 버튼 이미지">
+					</button>
+					<!---->
+				</div>
+				<div _ngcontent-wqi-c38="" class="cont">
+					<h4 _ngcontent-wqi-c38="" class="title ng-star-inserted">
+						<pre _ngcontent-wqi-c38="">여행기를 발행하시겠습니까?</pre>
+					</h4>
+					<!---->
+					<pre _ngcontent-wqi-c38="" class="description ng-star-inserted">* 작성하신 여행기는 공개되어 포인트가 적립되며,
+공개된 여행기는 비공개 전환이 불가능합니다.</pre>
+					<!---->
+					<!---->
+				</div>
+				<div _ngcontent-wqi-c38="" class="footer">
+					<button _ngcontent-wqi-c38="" type="button"
+						class="wb_btn_st0 ng-star-inserted">취소</button>
+					<!---->
+					<button _ngcontent-wqi-c38="" type="button"
+						class="wb_btn_st0 active st1">발행하기</button>
+				</div>
+			</div>
+			</app-default-dialog>
+		</div>
+	</div>
+	</ngb-modal-window>
 </body>
 </html>
