@@ -7,7 +7,9 @@
 <title>MyPage-like</title>
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">
-<link href="../../static/css/mypage/my-trip-board-like.css" rel="stylesheet">
+<link href="../../static/css/mypage/my-trip-board-like.css"
+	rel="stylesheet">
+<link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
 	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <app-header
@@ -193,4 +195,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
+<script type="text/javascript" src="../../static/js/mypage/my-trip-board-like.js"></script>
 </html>

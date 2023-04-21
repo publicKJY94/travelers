@@ -5,8 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>여행기 상세 페이지</title>
-
-
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">

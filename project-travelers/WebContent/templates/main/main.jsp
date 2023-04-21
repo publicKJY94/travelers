@@ -4,8 +4,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="./../../static/css/header.css" rel="stylesheet">
+<link href="./../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 <link href="./../../static/css/main/main.css" rel="stylesheet">
+<script src="./../../static/js/main/main/js" type="text/javascript"></script>
+<style class="vjs-styles-defaults">
+   .video-js {
+     width: 300px;
+     height: 150px;
+   }
+
+   .vjs-fluid:not(.vjs-audio-only-mode) {
+     padding-top: 56.25%
+   }
+ </style>
+ <style type="text/css">
+    a {
+   color: inherit;
+   text-decoration: inherit;
+ }
+</style>
+<script src="./../../static/js/main/main.js" type="text/javascript"></script>
   	<style class="vjs-styles-defaults">
       .video-js {
         width: 300px;
@@ -16,14 +36,17 @@
         padding-top: 56.25%
       }
     </style>
+    
     <style type="text/css">
         a {
 		    color: inherit;
 		    text-decoration: inherit;
 		}
 	</style>
+	
    	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+>>>>>>> master
  </head>
   <body>
     <app-root _nghost-fmk-c68="" ng-version="13.3.12">
@@ -1925,437 +1948,71 @@
                  </div>
                </div>
              </div>
-             <div _ngcontent-fmk-c79="" class="mainBanner">
-               <ul
-                 _ngcontent-fmk-c79=""
-                 class="slick-initialized slick-slider"
-               >
-                 <button
-                   class="slick-prev slick-arrow"
-                   aria-label="Previous"
-                   type="button"
-                   style="display: inline-block"
-                 >
-                   Previous
-                 </button>
-                 <div class="slick-list draggable" style="padding: 0px">
-                   <div
-                     class="slick-track"
-                     style="
-                       opacity: 1;
-                       width: 25000px;
-                       transform: translate3d(-2656px, 0px, 0px);
-                     "
-                   >
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="-2"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="밀크T 이벤트 페이지 바로가기"
-                             href="/event/chunjae-milkt"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/pc/banner_milkt_pc.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/m/banner_milkt_mo.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="-1"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a _ngcontent-fmk-c79="" tabindex="-1">
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/pc/banner_checkin_pc.png"
-                               alt="위시빈 출석 체크"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/m/banner_checkin_m.png"
-                               alt="위시빈 출석 체크"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide"
-                       data-slick-index="0"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             href="https://www.ybtour.co.kr/promotion/promotionDetail.yb?mstNo=20000020510&amp;utm_source=wishbeen&amp;utm_medium=mainbanner&amp;utm_campaign=osl_yp&amp;_CAD=wb02"
-                             target="_blank"
-                             title="노랑풍선 오슬로 특가 기획전 보러가기"
-                             class="pc"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0407/pc/banner_oslo_pc.png"
-                               alt="노랑풍선 오슬로 특가 기획전, 오슬로 직항 전세기 특가 북유럽 &amp; 발틱 배너 이미지"
-                             />
-                           </a>
-                           <a
-                             _ngcontent-fmk-c79=""
-                             href="https://www.ybtour.co.kr/promotion/promotionDetail.yb?mstNo=20000020510&amp;utm_source=wishbeen&amp;utm_medium=mainbanner&amp;utm_campaign=osl_yp&amp;_CAD=wb02"
-                             target="_blank"
-                             title="노랑풍선 오슬로 특가 기획전 보러가기"
-                             class="m"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0407/m/banner_oslo_mo.png"
-                               alt="노랑풍선 오슬로 특가 기획전, 오슬로 직항 전세기 특가 북유럽 &amp; 발틱 배너 이미지"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide"
-                       data-slick-index="1"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="위시빈 가이드 보러가기"
-                             href="/customer-center/guide"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/pc/guide_banner_pc.png"
-                               alt="위시빈 가이드"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/m/guide_banner_m.png"
-                               alt="위시빈 가이드"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide"
-                       data-slick-index="2"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="가입하고, 적립하러가기"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/bridge/2023/0217/banner_main_mid_pc.svg"
-                               alt="지금 가입하면 5,000P 즉시 적립"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/bridge/2023/0217/banner_main_mid_m.svg"
-                               alt="지금 가입하면 5,000P 즉시 적립"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-current slick-active slick-center"
-                       data-slick-index="3"
-                       aria-hidden="false"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="밀크T 이벤트 페이지 바로가기"
-                             href="/event/chunjae-milkt"
-                             tabindex="0"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/pc/banner_milkt_pc.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/m/banner_milkt_mo.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide"
-                       data-slick-index="4"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a _ngcontent-fmk-c79="" tabindex="-1">
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/pc/banner_checkin_pc.png"
-                               alt="위시빈 출석 체크"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/m/banner_checkin_m.png"
-                               alt="위시빈 출석 체크"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="5"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             href="https://www.ybtour.co.kr/promotion/promotionDetail.yb?mstNo=20000020510&amp;utm_source=wishbeen&amp;utm_medium=mainbanner&amp;utm_campaign=osl_yp&amp;_CAD=wb02"
-                             target="_blank"
-                             title="노랑풍선 오슬로 특가 기획전 보러가기"
-                             class="pc"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0407/pc/banner_oslo_pc.png"
-                               alt="노랑풍선 오슬로 특가 기획전, 오슬로 직항 전세기 특가 북유럽 &amp; 발틱 배너 이미지"
-                             />
-                           </a>
-                           <a
-                             _ngcontent-fmk-c79=""
-                             href="https://www.ybtour.co.kr/promotion/promotionDetail.yb?mstNo=20000020510&amp;utm_source=wishbeen&amp;utm_medium=mainbanner&amp;utm_campaign=osl_yp&amp;_CAD=wb02"
-                             target="_blank"
-                             title="노랑풍선 오슬로 특가 기획전 보러가기"
-                             class="m"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0407/m/banner_oslo_mo.png"
-                               alt="노랑풍선 오슬로 특가 기획전, 오슬로 직항 전세기 특가 북유럽 &amp; 발틱 배너 이미지"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="6"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="위시빈 가이드 보러가기"
-                             href="/customer-center/guide"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/pc/guide_banner_pc.png"
-                               alt="위시빈 가이드"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/m/guide_banner_m.png"
-                               alt="위시빈 가이드"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="7"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="가입하고, 적립하러가기"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/bridge/2023/0217/banner_main_mid_pc.svg"
-                               alt="지금 가입하면 5,000P 즉시 적립"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/bridge/2023/0217/banner_main_mid_m.svg"
-                               alt="지금 가입하면 5,000P 즉시 적립"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="8"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a
-                             _ngcontent-fmk-c79=""
-                             title="밀크T 이벤트 페이지 바로가기"
-                             href="/event/chunjae-milkt"
-                             tabindex="-1"
-                           >
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/pc/banner_milkt_pc.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0410/m/banner_milkt_mo.jpg"
-                               alt="밀크T 배너 이미지"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                     <div
-                       class="slick-slide slick-cloned"
-                       data-slick-index="9"
-                       aria-hidden="true"
-                       tabindex="-1"
-                     >
-                       <div>
-                         <li
-                           _ngcontent-fmk-c79=""
-                           style="width: 100%; display: inline-block"
-                         >
-                           <a _ngcontent-fmk-c79="" tabindex="-1">
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/pc/banner_checkin_pc.png"
-                               alt="위시빈 출석 체크"
-                               class="pc"
-                             />
-                             <img
-                               _ngcontent-fmk-c79=""
-                               src="./assets/images/banner/2023/0213/m/banner_checkin_m.png"
-                               alt="위시빈 출석 체크"
-                               class="m"
-                             />
-                           </a>
-                         </li>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-                 <button
-                   class="slick-next slick-arrow"
-                   aria-label="Next"
-                   type="button"
-                   style="display: inline-block"
-                 >
-                    Next
-                  </button>
-                </ul>
+             <div class="kind_wrap">
+                <div class="kind_slider">
+                  <ul class="slider">
+                    <li>
+                      <a href="">
+                        <img
+                          id="apla"
+                          class="banners"
+                          src="https://www.wishbeen.co.kr/assets/images/banner/2023/0213/pc/banner_checkin_pc.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          id="apla"
+                          class="banners"
+                          src="https://www.wishbeen.co.kr/assets/images/banner/2023/0407/pc/banner_oslo_pc.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          id="apla"
+                          class="banners"
+                          src="https://www.wishbeen.co.kr/assets/images/bridge/2023/0217/banner_main_mid_pc.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          id="apla"
+                          class="banners"
+                          src="https://www.wishbeen.co.kr/assets/images/banner/2023/0213/pc/guide_banner_pc.png"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    </a>
+                    <li>
+                      <a href="">
+                        <img
+                          id="apla"
+                          class="banners"
+                          src="https://www.wishbeen.co.kr/assets/images/banner/2023/0410/pc/banner_milkt_pc.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="arrow">
+                  <a href="" class="prev">
+                    <img id="direction" class="prev" src="https://www.wishbeen.co.kr/btn_left_01.ad908de13b95a218.png" alt="">
+                  </a>
+                  <a href="" class="next">
+                    <img id="direction" class="next" src="https://www.wishbeen.co.kr/btn_right_01.0d118f672f48641a.png" alt="">
+                  </a>
+                </div>
               </div>
               <section _ngcontent-fmk-c79="" class="section02">
                 <h2 _ngcontent-fmk-c79="" class="title">여행 다녀왔습니다🖐</h2>
@@ -2817,7 +2474,7 @@
                   <div _ngcontent-fmk-c79="" class="app_pc">
                     <img
                       _ngcontent-fmk-c79=""
-                      src="https://www.wishbeen.co.kr/assets/images/main/img_tablet_banner_01.png"
+                      src="https://www.wishbeen.co.kr/assets/images/main/img_pc_banner_01.png"
                       alt=""
                     />
                   
