@@ -19,12 +19,12 @@
 			<div class="in_wrap">
 				<h1 class="logo">
 					<a href="/"><img
-						src="https://www.wishbeen.co.kr/assets/images/svg/logo.svg"
+						src="../../static/image/logo.png"
 						alt="WishBeen"></a>
 				</h1>
 				<h2 class="tit">계정 찾기</h2>
 				<nav>
-					<ul class="tab_nav tab">
+					<ul class="tab_nav tab" style="padding-left:0;">
 						<li><a class="">이메일 인증</a></li>
 						<li><a class="active">휴대폰 인증</a></li>
 					</ul>
@@ -64,7 +64,7 @@
 								<span class="tit">등록된 휴대전화번호를 입력해주세요.</span><br>
 								<span class="desc"> (개인정보를 변경하신 경우 변경된 휴대전화번호를 입력해주세요.) </span>
 							</dt>
-							<dd>
+							<dd style="margin-left: 0;">
 								<div>
 									<select formcontrolname="country_code" class="selbox"><option
 											value="82" class="">대한민국 +82</option>
