@@ -113,10 +113,6 @@
 								_ngcontent-tbh-c84=""
 								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg"
 								alt="menu" class="ng-star-inserted"> <!----></a>
-							<ul _ngcontent-dtp-c81="" class="set_menu ng-star-inserted">
-								<li _ngcontent-dtp-c81=""><a _ngcontent-dtp-c81="">수정하기</a></li>
-								<li _ngcontent-dtp-c81=""><a _ngcontent-dtp-c81="">삭제하기</a></li>
-							</ul>
 							<!---->
 						</div>
 					</div>
@@ -197,4 +193,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
+<script type="text/javascript" src="../../static/js/mypage/fix-delete.js"></script>
 </html>

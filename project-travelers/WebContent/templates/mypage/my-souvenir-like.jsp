@@ -105,17 +105,13 @@
 									_ngcontent-dcs-c86="" class="img"><img
 										_ngcontent-dcs-c86="" alt="userimg"
 										src="https://www.wishbeen.co.kr/assets/images/img_default.jpg"></span><span
-									_ngcontent-dcs-c86="" class="nick"> 좋아요한 아이디 </span></li>
+									_ngcontent-dcs-c86="" class="nick"> 작성자 닉네임 </span></li>
 							</ul>
 							<span _ngcontent-dcs-c86="" class="ico_like on"></span><a
 								_ngcontent-dcs-c86="" class="btn_set"><img
 								_ngcontent-dcs-c86=""
 								src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg"
 								alt="menu"></a>
-								<ul _ngcontent-dtp-c76="" class="set_menu ng-star-inserted">
-								<li _ngcontent-dtp-c76=""><a _ngcontent-dtp-c76=""> 좋아요
-										취소 </a></li>
-							</ul>
 							<!---->
 						</div>
 					</div>
@@ -196,4 +192,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
+<script type="text/javascript" src="../../static/js/mypage/like-cancel.js"></script>
 </html>

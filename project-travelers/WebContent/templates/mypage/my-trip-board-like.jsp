@@ -97,18 +97,18 @@
 						<div _ngcontent-dcs-c86="" class="txt_wrap">
 							<ul _ngcontent-dcs-c86="">
 								<li _ngcontent-dcs-c86="" class="geo txt_hide"><span
-									_ngcontent-dcs-c86="" class="ico_geo"></span> 파리</li>
-								<li _ngcontent-dcs-c86="" class="tit">프랑스 파리</li>
+									_ngcontent-dcs-c86="" class="ico_geo"></span> 여행지역</li>
+								<li _ngcontent-dcs-c86="" class="tit">여행기 제목</li>
 								<li _ngcontent-dcs-c86="" class="txt_hide"><span
 									_ngcontent-dcs-c86="" class="tag ng-star-inserted">
-										#프랑스파리 </span> <!----></li>
+										#여행 관련 태그 </span> <!----></li>
 								<li _ngcontent-dcs-c86="" class="date">
 									TRAVEL·2023.04.15~2023.04.18</li>
 								<li _ngcontent-dcs-c86="" class="user_wrap"><span
 									_ngcontent-dcs-c86="" class="img"><img
 										_ngcontent-dcs-c86="" alt="userimg"
 										src="https://www.wishbeen.co.kr/assets/images/img_default.jpg"></span><span
-									_ngcontent-dcs-c86="" class="nick"> 양치하는 테디베어 </span></li>
+									_ngcontent-dcs-c86="" class="nick"> 작성자 닉네임 </span></li>
 							</ul>
 							<span _ngcontent-dcs-c86="" class="ico_like on"></span><a
 								_ngcontent-dcs-c86="" class="btn_set"><img
@@ -195,5 +195,5 @@
 		</div>
 	</footer> </app-footer> </app-root>
 </body>
-<script type="text/javascript" src="../../static/js/mypage/my-trip-board-like.js"></script>
+<script type="text/javascript" src="../../static/js/mypage/like-cancel.js"></script>
 </html>
