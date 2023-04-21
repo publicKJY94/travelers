@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../static/css/admin/admin-header-nav.css">
 <link rel="stylesheet" href="../../static/css/admin/admin-main.css">
 </head>
 <body>
@@ -165,7 +166,7 @@
 								<tr class="tableTh">
 									<th>공지사항</th>
 								</tr>
-							`	<tr style="border-top:3px solid #6e6e6e;">
+								<tr style="border-top:3px solid #6e6e6e;">
 									<td>[공지사항]</td>
 									<td>처음 가입했을때, 해야할 것들</td>
 									<td>2023-04-05 10:04</td>
