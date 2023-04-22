@@ -17,7 +17,7 @@
 			<div  class="in_wrap">
 				<h1  class="logo">
 					<a  href="/"><img 
-						src="https://www.wishbeen.co.kr/assets/images/svg/logo.svg" alt="WishBeen"></a>
+						src="../../static/image/logo.png" alt="WishBeen"></a>
 				</h1>
 				<h2  class="tit">비밀번호 재설정</h2>
 				<nav >

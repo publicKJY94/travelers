@@ -33,7 +33,7 @@
 						</dt>
 						<dd class="di_flex st1">
 							<div>
-								<input formcontrolname="nick" placeholder="이름" type="text"
+								<input formcontrolname="nick" placeholder="이름" type="text" id="nick"
 									autocomplete="username" class="txtbox">
 								<!---->
 								<!---->

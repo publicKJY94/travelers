@@ -5,26 +5,24 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-<link rel="stylesheet"
-	href="../../static/css/login/find_id.css">
+<link rel="stylesheet" href="../../static/css/login/find_id.css">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
-	<app-root _nghost-iey-c68="" ng-version="13.3.12">
-	<div _ngcontent-iey-c68="" id="wrap">
+	<app-root  ng-version="13.3.12">
+	<div  id="wrap">
 		<!---->
-		<router-outlet _ngcontent-iey-c68=""></router-outlet>
-		<app-find-id _nghost-iey-c85="" class="">
+		<router-outlet ></router-outlet>
+		<app-find-id  class="">
 		<section class="join_wrap write_form">
 			<div class="in_wrap">
 				<h1 class="logo">
-					<a href="/"><img
-						src="../../static/image/logo.png"
+					<a href="/"><img src="../../static/image/logo.png"
 						alt="WishBeen"></a>
 				</h1>
 				<h2 class="tit">계정 찾기</h2>
 				<nav>
-					<ul class="tab_nav tab" style="padding-left:0;">
+					<ul class="tab_nav tab" style="padding-left: 0;">
 						<li><a class="">이메일 인증</a></li>
 						<li><a class="active">휴대폰 인증</a></li>
 					</ul>
@@ -61,8 +59,8 @@
 					<dl class="inner">
 						<form novalidate="" class="">
 							<dt>
-								<span class="tit">등록된 휴대전화번호를 입력해주세요.</span><br>
-								<span class="desc"> (개인정보를 변경하신 경우 변경된 휴대전화번호를 입력해주세요.) </span>
+								<span class="tit">등록된 휴대전화번호를 입력해주세요.</span><br> <span
+									class="desc"> (개인정보를 변경하신 경우 변경된 휴대전화번호를 입력해주세요.) </span>
 							</dt>
 							<dd style="margin-left: 0;">
 								<div>
@@ -178,9 +176,9 @@
 				</div>
 			</div>
 		</section>
-		<app-login-footer _nghost-iey-c83=""> <footer
-			_ngcontent-iey-c83="" class="login_footer">
-			<p _ngcontent-iey-c83="">2022 ⓒ Better Than WishBeen.</p>
+		<app-login-footer > <footer
+			class="login_footer">
+			<p>2022 ⓒ Better Than WishBeen.</p>
 		</footer></app-login-footer></app-find-id>
 	</div>
 	</app-root>
