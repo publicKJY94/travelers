@@ -2,7 +2,7 @@
  * 
  */
 
-<div class='rout'>
+/*<div class='rout'>
 	<div class="day">DAY1</div>
 	<div class='location'>
 		<ul _ngcontent-htq-c84=""
@@ -24,4 +24,4 @@
 				<p _ngcontent-htq-c84="" class="cate">먹거리·기타(음식)</p></li>
 		</ul>
 	</div>
-</div>
+</div>*/
