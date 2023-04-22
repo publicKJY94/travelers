@@ -46,7 +46,6 @@
 	
    	<script src="./../../static/js/main/main.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
->>>>>>> master
  </head>
   <body>
     <app-root _nghost-fmk-c68="" ng-version="13.3.12">
@@ -2700,7 +2699,6 @@
            </ul>
          </div>
        </aside>
-     </div>
      <div _ngcontent-fmk-c68="" class="dim" style="display: none"></div>
     </app-root>
   </body>

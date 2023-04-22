@@ -78,7 +78,7 @@
     height: 3.9rem;
     display: inline-block;
     overflow: hidden;
-    background: url('https://www.wishbeen.co.kr/logo.86dd47c5979413f8.svg') 0 0 no-repeat;
+    background: url('../image/logo.png') 0 0 no-repeat;
     background-size: cover;
     font-size: 0;
     color: transparent;

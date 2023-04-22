@@ -19,8 +19,7 @@ div.wrap {
 }
 
 
-<<<<<<< HEAD
-=======
+
 div.header {
 	min-width:100%;
 	height:60px;
@@ -35,10 +34,10 @@ div.logoImage {
 	width:15%;
 	height:100%;
 	background-color:bule;
-<<<<<<< HEAD
-=======
+
+
 	position:relative;
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
 }
 
 
@@ -123,14 +122,13 @@ nav ul li a {
 	cursor:pointer;
 }
 
-<<<<<<< HEAD
-=======
+
 
 #listHide {
 	display:none;
 }
 
->>>>>>> 26e83799edf6bc6202892a71f50ae48988a28cae
+
 /*nav ul li a::after {
 	content:'+';
 	position:absolute;
@@ -139,7 +137,7 @@ nav ul li a {
 }*/
 
 
->>>>>>> e5b0a0f2124ee7d02629070f2361f2707d11bd31
+
 
 div.mainContent {
 	width: 80%;
