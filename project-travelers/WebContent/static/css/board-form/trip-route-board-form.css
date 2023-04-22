@@ -435,6 +435,13 @@ input.txtbox {
     width: 36px;
     height: 36px;
     border: 1px solid #e8e8eb;
+    position: absolute;
+    top: 340px;
+    z-index: 50;
+    left: 500px;
+}
+.ce-toolbar__plus:hover {
+	background: #eeeeee;
 }
 
 .ce-toolbar__plus svg, .ce-toolbar__settings-btn svg {

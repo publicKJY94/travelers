@@ -281,8 +281,6 @@
 						</form>
 					</div>
 					<div class="list_btn ta_right">
-						<span class="btn_st0 "><a>임시저장[비공개]</a><a
-							class="c_st01 pop05"><strong>1</strong></a></span>
 						<!---->
 						<a class="btn_st0 active submit-btn">발행[공개]</a>
 					</div>

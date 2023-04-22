@@ -11,7 +11,10 @@
 <link href="../../static/css/header.css" rel="stylesheet">
 <link href="../../static/css/footer.css" rel="stylesheet">
 <link href="../../static/css/home.css" rel="stylesheet">
-<link href="../../static/css/board-detail/trip-route-board-detail.css" rel="stylesheet">
+<link href="../../static/css/board-detail/trip-route-board-detail.css"
+	rel="stylesheet">
+<link href="../../static/css/board-detail/trip-board-detail.css"
+	rel="stylesheet">
 
 </head>
 <body>
@@ -91,51 +94,163 @@
 											class="ico_like"></span> 추천 수</li>
 										<li _ngcontent-phe-c90=""><a _ngcontent-phe-c90=""
 											class="btn_share"><span _ngcontent-phe-c90=""
-												class="ico_share"></span> 공유하기 </a>
-										<!----></li>
-										<li _ngcontent-phe-c90=""><a _ngcontent-phe-c90=""
-											class="btn_set"><img _ngcontent-phe-c90=""
-												src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
-										<!----></li>
+												class="ico_share"></span> 공유하기 </a> <!----></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div _ngcontent-phe-c90="" class="cont_wrap">
-							<fieldset>
-								<legend>DAY1</legend>
-								<input type = "text" >  <button>추가</button>
-								<div>
-									경포대  <button>x</button>->
-									해운대  <button>x</button>
+							<aside class="side_bar">
+								<span _ngcontent-oma-c66="" class="btn_top_scroll"></span> <span
+									_ngcontent-oma-c66="" class="btn_write_board"></span> <span
+									_ngcontent-oma-c66="" class="btn_heart"> <span> </span>
+								</span>
+							</aside>
+							<aside class='day_bar'>
+								<div class='day_btn'>1</div>
+								<div class='day_btn'>2</div>
+							</aside>
+							<div>
+								<div class='rout'>
+									<div class="day">DAY1</div>
+									<div class='location'>
+										<ul _ngcontent-htq-c84=""
+											class="attraction_wrap ng-star-inserted">
+											<li _ngcontent-htq-c84=""><p _ngcontent-htq-c84=""
+													class="no">1</p></li>
+											<li _ngcontent-htq-c84="" class="ng-star-inserted"><a
+												_ngcontent-htq-c84="" class="btn_detail"></a>
+												<p _ngcontent-htq-c84="" class="name">인천국제공항</p>
+												<p _ngcontent-htq-c84="" class="cate">교통·공항</p></li>
+										</ul>
+										<ul _ngcontent-htq-c84=""
+											class="attraction_wrap ng-star-inserted">
+											<li _ngcontent-htq-c84=""><p _ngcontent-htq-c84=""
+													class="no">2</p></li>
+											<li _ngcontent-htq-c84="" class="ng-star-inserted"><a
+												_ngcontent-htq-c84="" class="btn_detail"></a>
+												<p _ngcontent-htq-c84="" class="name">아이홉 사이판</p>
+												<p _ngcontent-htq-c84="" class="cate">먹거리·기타(음식)</p></li>
+										</ul>
+									</div>
 								</div>
-							</fieldset>
-							
-							1일차 내용
-							
-							<fieldset>
-								<legend>DAY2</legend>
-								<input type = "text" >  <button>추가</button>
-								<div>
-									톤쇼우  <button>x</button>->
-									서면  <button>x</button>
+								<div class='cont'>
+									<div class="ce-block">
+										<div class="ce-block__content">
+											<div class="ce-paragraph cdx-block" contenteditable="false"
+												data-placeholder="">
+												내용<br>내용 <br>내용<br>내용 <br>내용
+											</div>
+										</div>
+									</div>
+									<div class="ce-block">
+										<div class="ce-block__content">
+											<div class="edit inner img-block ta_center"
+												id="blockid_kmUztftdlN" readonly="true">
+												<figure>
+													<ul class="editbox">
+														<li id="kmUztftdlN_box" style="position: relative;"><p
+																class="img_wrap">
+																<img
+																	src="https://test-resize-image.wishbeen.co.kr/65b12a34e5df5d3c8cb381b281ac8c4a.jpg?w=790">
+															</p> <a class="like"></a></li>
+														<li><ul class="edit_menu">
+																<li><button type="button" class="btn_img_rotate">회전</button></li>
+																<li><button type="button" class="btn_img_left">왼쪽정렬</button></li>
+																<li><button type="button"
+																		class="btn_img_center active">가운데정렬</button></li>
+																<li><button type="button" class="btn_img_right">우측정렬</button></li>
+																<li><button type="button" class="btn_trash">삭제</button></li>
+															</ul></li>
+														<li><figcaption>이미지 상세설명</figcaption></li>
+													</ul>
+												</figure>
+											</div>
+										</div>
+									</div>
 								</div>
-							</fieldset>
-							
-							2일차 내용
-							
+							</div>
+							<div>
+								<div class='rout'>
+									<div class="day">DAY2</div>
+									<div class='location'>
+										<ul _ngcontent-htq-c84=""
+											class="attraction_wrap ng-star-inserted">
+											<li _ngcontent-htq-c84=""><p _ngcontent-htq-c84=""
+													class="no">1</p></li>
+											<li _ngcontent-htq-c84="" class="ng-star-inserted"><a
+												_ngcontent-htq-c84="" class="btn_detail"></a>
+												<p _ngcontent-htq-c84="" class="name">호텔</p>
+												<p _ngcontent-htq-c84="" class="cate">숙박·호텔</p></li>
+										</ul>
+										<ul _ngcontent-htq-c84=""
+											class="attraction_wrap ng-star-inserted">
+											<li _ngcontent-htq-c84=""><p _ngcontent-htq-c84=""
+													class="no">2</p></li>
+											<li _ngcontent-htq-c84="" class="ng-star-inserted"><a
+												_ngcontent-htq-c84="" class="btn_detail"></a>
+												<p _ngcontent-htq-c84="" class="name">이마트</p>
+												<p _ngcontent-htq-c84="" class="cate">쇼핑·슈퍼마켓</p></li>
+										</ul>
+										<ul _ngcontent-htq-c84=""
+											class="attraction_wrap ng-star-inserted">
+											<li _ngcontent-htq-c84=""><p _ngcontent-htq-c84=""
+													class="no">3</p></li>
+											<li _ngcontent-htq-c84="" class="ng-star-inserted"><a
+												_ngcontent-htq-c84="" class="btn_detail"></a>
+												<p _ngcontent-htq-c84="" class="name">로하스 마사지</p>
+												<p _ngcontent-htq-c84="" class="cate">즐길거리·기타(즐길거리)</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class='cont'>
+									<div class="ce-block">
+										<div class="ce-block__content">
+											<div class="ce-paragraph cdx-block" contenteditable="false"
+												data-placeholder="">
+												내용<br>내용 <br>내용<br>내용 <br>내용
+											</div>
+										</div>
+									</div>
+									<div class="ce-block">
+										<div class="ce-block__content">
+											<div class="edit inner img-block ta_center"
+												id="blockid_kmUztftdlN" readonly="true">
+												<figure>
+													<ul class="editbox">
+														<li id="kmUztftdlN_box" style="position: relative;"><p
+																class="img_wrap">
+																<img
+																	src="https://test-resize-image.wishbeen.co.kr/65b12a34e5df5d3c8cb381b281ac8c4a.jpg?w=790">
+															</p> <a class="like"></a></li>
+														<li><ul class="edit_menu">
+																<li><button type="button" class="btn_img_rotate">회전</button></li>
+																<li><button type="button" class="btn_img_left">왼쪽정렬</button></li>
+																<li><button type="button"
+																		class="btn_img_center active">가운데정렬</button></li>
+																<li><button type="button" class="btn_img_right">우측정렬</button></li>
+																<li><button type="button" class="btn_trash">삭제</button></li>
+															</ul></li>
+														<li><figcaption>이미지 상세설명</figcaption></li>
+													</ul>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
 						</div>
 						<div _ngcontent-phe-c90="" class="tag_wrap">
 							<span _ngcontent-phe-c90="" class="tag ng-star-inserted">
-								#태그 </span><span _ngcontent-phe-c90=""
-								class="tag ng-star-inserted"> #태그 </span><span
-								_ngcontent-phe-c90="" class="tag ng-star-inserted">
-								#태그 </span><span _ngcontent-phe-c90=""
-								class="tag ng-star-inserted"> #태그 </span><span
-								_ngcontent-phe-c90="" class="tag ng-star-inserted">
 								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
-								#태그 </span><span _ngcontent-phe-c90=""
-								class="tag ng-star-inserted"> #태그 </span>
+								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
+								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
+								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
+								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
+								#태그 </span><span _ngcontent-phe-c90="" class="tag ng-star-inserted">
+								#태그 </span>
 							<!---->
 						</div>
 						<div _ngcontent-phe-c90="" class="like_wrap">
@@ -164,7 +279,8 @@
 								</div>
 								<div _ngcontent-phe-c90="">
 									<a _ngcontent-phe-c90=""><img _ngcontent-phe-c90=""
-										src="https://www.wishbeen.co.kr/assets/images/svg/refresh.svg" alt="새로고침"></a>
+										src="https://www.wishbeen.co.kr/assets/images/svg/refresh.svg"
+										alt="새로고침"></a>
 								</div>
 							</dt>
 							<dd _ngcontent-phe-c90="">
@@ -197,8 +313,8 @@
 							<div _ngcontent-phe-c90="" class="txt_wrap">
 								<ul _ngcontent-phe-c90="">
 									<li _ngcontent-phe-c90="" class="nick">저자</li>
-									<li _ngcontent-phe-c90="" class="desc">한줄소개
-										마이페이지에서 [예쁜 소개글]을 작성해주세요.</li>
+									<li _ngcontent-phe-c90="" class="desc">한줄소개 마이페이지에서 [예쁜
+										소개글]을 작성해주세요.</li>
 								</ul>
 							</div>
 						</div></a>
@@ -294,4 +410,7 @@
 	</div>
 	</app-root>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="../../static/js/aside/aside-icons.js"></script>
+<script src="../../static/js/aside/aside-day.js"></script>
 </html>
