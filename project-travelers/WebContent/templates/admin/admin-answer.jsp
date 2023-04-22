@@ -5,15 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>답변</title>
-<link rel="stylesheet" href="../../static/css/admin/admin-answer.css">
-<link rel="stylesheet" href="../../static/css/admin/admin-header-nav.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-answer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-header-nav.css">
 </head>
 <body>
 	<div class="wrap">
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="./../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="./admin-main.jsp"><img src="./${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>

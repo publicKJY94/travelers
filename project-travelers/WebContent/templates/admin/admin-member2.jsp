@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/admin/admin-member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-member.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -17,7 +17,7 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="./admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -60,7 +60,7 @@
 								<input type="text" placeholder="검색어를 입력하세요">
 							</div>
 							<div>
-								<img src="../../static/image/search.png">
+								<img src="${pageContext.request.contextPath}/static/image/search.png">
 							</div>
 						</div>
 					</div>
@@ -176,5 +176,5 @@
 			</section>
 	</div>
 </body>
-<script src="../../static/js/admin.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin.js"></script>
 </html>
