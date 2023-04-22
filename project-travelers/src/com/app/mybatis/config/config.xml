@@ -1,1 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+   <settings>
+      <setting name="mapUnderscoreToCamelCase" value="true"/>
+   </settings>
+   
+   <typeAliases>
+      <typeAlias type="com.app.domain.VO.user.UserVO" alias="userVO"/>
+      <typeAlias type="com.app.domain.VO.board.TripBoardVO" alias="tripBoardVO"/>
+      <typeAlias type="com.app.domain.VO.board.ItemBoardVO" alias="itemBoardVO"/>
+      <typeAlias type="com.app.domain.VO.board.RouteBoardVO" alias="routeBoardVO"/>
+      <typeAlias type="com.app.domain.VO.board.NoticeBoardVO" alias="noticeBoardVO"/>
+      <typeAlias type="com.app.domain.VO.board.QuestionBoardVO" alias="questionBoardVO"/>
+      <typeAlias type="com.app.domain.VO.comment.TripBoardCommentVO" alias="tripBoardCommentVO"/>
+      <typeAlias type="com.app.domain.VO.comment.ItemBoardCommentVO" alias="itemBoardCommentVO"/>
+      <typeAlias type="com.app.domain.VO.comment.RouteBoardCommentVO" alias="routeBoardCommentVO"/>
+      <typeAlias type="com.app.domain.VO.comment.NoticeBoardCommentVO" alias="noticeBoardCommentVO"/>
+      <typeAlias type="com.app.domain.VO.comment.QuestionBoardCommentVO" alias="questionBoardCommentVO"/>
+      <typeAlias type="com.app.domain.VO.service.BoardImageVO" alias="boardImageVO"/>
+      <typeAlias type="com.app.domain.VO.service.BoardLocationVO" alias="boardLocationVO"/>
+      <typeAlias type="com.app.domain.VO.service.BoardTagVO" alias="boardTagVO"/>
+      <typeAlias type="com.app.domain.VO.service.BoardVoteVO" alias="boardVoteVO"/>
+      <typeAlias type="com.app.domain.VO.service.RouteCourseVO" alias="routeCourseVO"/>
+   </typeAliases>
+
+   <environments default="mysql">
+      <environment id="mysql">
+         <transactionManager type="JDBC"/>
+         <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/app"/>
+            <property name="username" value="root"/>
+            <property name="password" value="1234"/>
+         </dataSource>
+      </environment>
+   </environments>
+   
+   <mappers>
+      <mapper resource="com/app/mybatis/mapper/user/userMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/board/tripBoardMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/board/routeBoardMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/board/itemBoardMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/board/noticeBoardMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/board/questionBoardMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/comment/tripCommentMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/comment/routeCommentMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/comment/itemCommentMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/comment/noticeCommentMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/comment/questionCommentMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/service/boardImageMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/service/boardLocationMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/service/boardTagMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/service/boardVoteMapper.xml"/>
+      <mapper resource="com/app/mybatis/mapper/service/routeCourseMapper.xml"/>
+   </mappers>
+</configuration>
+
+
