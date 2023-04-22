@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-<link rel="stylesheet" href="../../static/css/login/find_id.css">
-<link href="../../static/css/font/font.css" rel="stylesheet">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/login/find_id.css">
+<link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
 	<app-root  ng-version="13.3.12">
@@ -17,7 +17,7 @@
 			<div  class="in_wrap">
 				<h1  class="logo">
 					<a  href="/"><img 
-						src="../../static/image/logo.png" alt="WishBeen"></a>
+						src="${pageContext.request.contextPath}/static/image/logo.png" alt="WishBeen"></a>
 				</h1>
 				<h2  class="tit">비밀번호 재설정</h2>
 				<nav >
