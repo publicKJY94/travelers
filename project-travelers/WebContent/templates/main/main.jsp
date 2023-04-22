@@ -2014,7 +2014,7 @@
                 </div>
               </div>
               <section _ngcontent-fmk-c79="" class="section02">
-                <h2 _ngcontent-fmk-c79="" class="title">여행 다녀왔습니다🖐</h2>
+                <h2 _ngcontent-fmk-c79="" class="title">여행기 목록</h2>
                 <div _ngcontent-fmk-c79="" class="thumbList">
                   <ul _ngcontent-fmk-c79="">
                     <li _ngcontent-fmk-c79="">
@@ -2243,7 +2243,7 @@
                 </div>
               </section>
               <section _ngcontent-fmk-c79="" class="section02">
-                <h2 _ngcontent-fmk-c79="" class="title">요즘, 어디 가? 👀</h2>
+                <h2 _ngcontent-fmk-c79="" class="title">추천품 목록</h2>
                 <div _ngcontent-fmk-c79="" class="thumbList">
                   <ul _ngcontent-fmk-c79="">
                     <li _ngcontent-fmk-c79="">
@@ -2464,6 +2464,123 @@
                       </a>
                     </li>
                     
+                  </ul>
+                </div>
+              </section>
+              <section _ngcontent-fmk-c79="" class="section02">
+                <h2 _ngcontent-fmk-c79="" class="title">추천 루트</h2>
+                <div _ngcontent-fmk-c79="" class="thumbList">
+                  <ul _ngcontent-fmk-c79="">
+                    <li _ngcontent-fmk-c79="">
+                      <a _ngcontent-fmk-c79="" href="/community/616">
+                        <span _ngcontent-fmk-c79="" class="thumb">
+                          <img
+                            _ngcontent-fmk-c79=""
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_01.png"
+                            width="100%"
+                            alt=""
+                          />
+                        </span>
+                        <p _ngcontent-fmk-c79="" class="detail">
+                          <span _ngcontent-fmk-c79="" class="badge location">
+                            후쿠오카, 일본</span
+                          >
+                          <strong _ngcontent-fmk-c79="" class="subject">
+                            5월, 후쿠오카에 가면 생기는 일</strong
+                          >
+                          <span _ngcontent-fmk-c79="" class="txt">
+                            후쿠오카 Must to do 6가지</span
+                          >
+                          <span _ngcontent-fmk-c79="" class="writer">
+                            <span _ngcontent-fmk-c79="">
+                              Wishpicker 님의 여행</span
+                            >
+                          </span>
+                        </p>
+                      </a>
+                    </li>
+                    <li _ngcontent-fmk-c79="">
+                      <a _ngcontent-fmk-c79="" href="/community/617">
+                        <span _ngcontent-fmk-c79="" class="thumb">
+                          <img
+                            _ngcontent-fmk-c79=""
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_02.png"
+                            width="100%"
+                            alt=""
+                          />
+                        </span>
+                        <p _ngcontent-fmk-c79="" class="detail">
+                          <span _ngcontent-fmk-c79="" class="badge location">
+                            오슬로, 노르웨이</span
+                          >
+                          <strong _ngcontent-fmk-c79="" class="subject">
+                            지금가기 딱 좋은 북유럽 여행</strong
+                          >
+                          <span _ngcontent-fmk-c79="" class="txt">
+                            핀란드부터 노르웨이까지 가보자아~!</span
+                          >
+                          <span _ngcontent-fmk-c79="" class="writer">
+                            <span _ngcontent-fmk-c79="">
+                              Wishpicker 님의 여행</span
+                            >
+                          </span>
+                        </p>
+                      </a>
+                    </li>
+                    <li _ngcontent-fmk-c79="">
+                      <a _ngcontent-fmk-c79="" href="/note/594523">
+                        <span _ngcontent-fmk-c79="" class="thumb">
+                          <img
+                            _ngcontent-fmk-c79=""
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_03.png"
+                            width="100%"
+                            alt=""
+                          />
+                        </span>
+                        <p _ngcontent-fmk-c79="" class="detail">
+                          <span _ngcontent-fmk-c79="" class="badge location">
+                            리스본, 포르투갈</span
+                          >
+                          <strong _ngcontent-fmk-c79="" class="subject">
+                            4박 5일 리스본 + 근교 여행</strong
+                          >
+                          <span _ngcontent-fmk-c79="" class="txt">
+                            신트라와 호카곶, 카스카이스</span
+                          >
+                          <span _ngcontent-fmk-c79="" class="writer">
+                            <span _ngcontent-fmk-c79="">
+                              러블리뽀뽀 님의 여행</span
+                            >
+                          </span>
+                        </p>
+                      </a>
+                    </li>
+                    <li _ngcontent-fmk-c79="">
+                      <a _ngcontent-fmk-c79="" href="/note/466063">
+                        <span _ngcontent-fmk-c79="" class="thumb">
+                          <img
+                            _ngcontent-fmk-c79=""
+                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_04.png"
+                            width="100%"
+                            alt=""
+                          />
+                        </span>
+                        <p _ngcontent-fmk-c79="" class="detail">
+                          <span _ngcontent-fmk-c79="" class="badge location">
+                            오사카, 일본</span
+                          >
+                          <strong _ngcontent-fmk-c79="" class="subject">
+                            로컬 친구와 함께한 오사카 일주일
+                          </strong>
+                          <span _ngcontent-fmk-c79="" class="txt">
+                            현지인이 추천하는 필수 맛집</span
+                          >
+                          <span _ngcontent-fmk-c79="" class="writer">
+                            <span _ngcontent-fmk-c79=""> 실클필 님의 여행</span>
+                          </span>
+                        </p>
+                      </a>
+                    </li>             
                   </ul>
                 </div>
               </section>
