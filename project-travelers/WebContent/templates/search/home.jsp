@@ -258,7 +258,7 @@
 										<li _ngcontent-akd-c124><span _ngcontent-akd-c124
 											class="ico_attr"></span> 전체장소개수</li>
 										<li _ngcontent-akd-c124><span _ngcontent-akd-c124
-											class="ico_down"></span> 다운로드 수</li>
+											class="ico_like"></span>추천 수</li>
 									</ul>
 								</a>
 							</div>
@@ -284,7 +284,7 @@
 										<li _ngcontent-akd-c124><span _ngcontent-akd-c124
 											class="ico_attr"></span> 전체장소개수</li>
 										<li _ngcontent-akd-c124><span _ngcontent-akd-c124
-											class="ico_down"></span> 다운로드 수</li>
+											class="ico_like"></span> 추천 수</li>
 									</ul>
 								</a>
 							</div>

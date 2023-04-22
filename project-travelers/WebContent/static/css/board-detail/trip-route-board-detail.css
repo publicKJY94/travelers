@@ -702,14 +702,119 @@ dt {
 }
 
 
-fieldset {
-	border : 1px dashed blue;
+.cont_wrap .rout {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #dfe1e6;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: none;
+    overflow: hidden;
+    vertical-align: top;
 }
 
+.rout .day {
+    height: 5.2rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #ff7a37;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 5rem;
+}
 
+.rout .location {
+	padding: 7rem 2rem 2rem;
+    box-sizing: border-box;
+    white-space: normal;
+}
 
+.attraction_wrap {
+    background: #fff;
+    border-color: #e7e7e7;
+    border-top-color: transparent;
+    display: inline-flex;
+    margin-right: 3rem;
+}
 
+.attraction_wrap>li:first-child {
+    min-width: 6.6rem;
+}
 
+.attraction_wrap .no {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 auto;
+    background: #ff5800;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
 
+.attraction_wrap .time {
+    margin: 0.3rem 0 0;
+    color: #666;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-align: center;
+}
 
+.attraction_wrap a {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
 
+.attraction_wrap .name {
+    max-height: 6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.attraction_wrap .cate {
+    font-size: 1.3rem;
+}
+
+.day_bar {
+	position: fixed;
+	left: 40rem;
+	top: 30rem;
+}
+
+.day_bar .day_btn {
+	text-align:center;
+	margin-top:1rem;
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	border-radius: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	transition: all .3s;
+	cursor: pointer;
+	transform: translate(1rem);
+	line-height: 4rem;
+	z-index: 50;
+	box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.day_bar .day_btn:hover {
+	background: #ff7a37;
+	color:#fff;
+}
