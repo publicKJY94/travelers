@@ -60,19 +60,6 @@ window.onload = function () {
     }
     }
 };
-function sliding() {
-    move(-1);
-    if (currentIdx === sliderCloneLis.length - 1)
-    setTimeout(() => {
-        slider.style.transition = "none";
-        currentIdx = 1;
-        translate = -liWidth;
-        slider.style.transform = `translateX(${translate}px)`;
-    }, speedTime);
-}
 
-function showSliding() {
-    setInterval(sliding, 1500);
-}
 
 showSliding();
