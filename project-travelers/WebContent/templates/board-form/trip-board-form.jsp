@@ -6,9 +6,7 @@
 <meta charset="UTF-8">
 <title>내 여행기 작성 폼</title>
 
-<link href="../../static/css/font/font.css" rel="stylesheet">
-<link href="../../static/css/header.css" rel="stylesheet">
-<link href="../../static/css/home.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/board-form/trip-board-form.css"
 	rel="stylesheet">
 
@@ -33,43 +31,8 @@
 
 	<app-root>
 	<div id="wrap">
-		<app-header> <app-top-banner>
-		<div class="bandBanner ">
-			<div class="inner ">
-				<div class="text">
-					<a class="link" href="/bridge/sign-up-0217"> ✨지금 가입하면 <span
-						class="point">&nbsp;5,OOOP&nbsp;</span> 로또 당첨! <span class="arrow"></span>
-					</a>
-				</div>
-			</div>
-		</div>
-		</app-top-banner> <header id="header" class="mainHeader">
-			<div class="in_wrap">
-				<h1 class="logo">
-					<a title="WishBeen" href="/main"> <span>WishBeen</span>
-					</a>
-				</h1>
-				<nav class="gnb_wrap">
-					<ul>
-						<li class="pc"><a href="/write-note"> <span>여행기 목록</span>
-						</a></li>
-						<li class="pc"><a href="/write-note"> <span>추천루트
-									목록</span>
-						</a></li>
-						<li class="pc"><a href="/write-note"> <span>여행품 교환</span>
-						</a></li>
-						<li class="pc"><a href="/write-note"> <span>공지사항</span>
-						</a></li>
-					</ul>
-					<ul class="side_wrap">
-
-						<li class="pc"><a class="btn_login " href="/login"> <span></span>
-								로그인
-						</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header> </app-header>
+		<jsp:include
+		page="/templates/header-footer/header.jsp"></jsp:include>
 		<app-write-travel-note>
 		<div id="content">
 			<div class="in_wrap">
@@ -340,6 +303,6 @@
 </body>
 
 
-<script src="../../static/js/board-form/trip-board-form.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/board-form/trip-board-form.js"></script>
 
 </html>

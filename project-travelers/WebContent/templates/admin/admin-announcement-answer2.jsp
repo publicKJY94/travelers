@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>공지사항 작성</title>
-<link rel="stylesheet" href="../../static/css/admin/admin-answer.css">
-<link rel="stylesheet" href="../../static/css/admin/admin-header-nav.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-answer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-header-nav.css">
 </head>
 <body>
 
@@ -167,6 +167,6 @@ $(document).ready(function(){
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="../../static/js/modal.js"></script>
-<script src="../../static/js/admin.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/modal.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin.js"></script>
 </html>

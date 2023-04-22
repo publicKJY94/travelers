@@ -8,15 +8,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../static/css/admin/admin-header-nav.css">
-<link rel="stylesheet" href="../../static/css/admin/admin-main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-header-nav.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-main.css">
 </head>
 <body>
 	<div class="wrap">
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="./admin-main.jsp"><img src="../../static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="./admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -198,5 +198,5 @@
 			</section>
 		</div>
 </body>
-<script src="../../static/js/admin.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin.js"></script>
 </html>

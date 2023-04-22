@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-<link rel="stylesheet" href="../../static/css/login/login_main.css">
-<link href="../../static/css/font/font.css" rel="stylesheet">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/login/login_main.css">
+<link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
 	<app-root ng-version="13.3.12">
@@ -17,7 +17,7 @@
 			<div class="in_wrap">
 				<h1 class="logo">
 					<a href="/"><img
-						src="../../static/image/logo.png"
+						src="${pageContext.request.contextPath}/static/image/logo.png"
 						alt="WishBeen"></a>
 				</h1>
 				<h2 class="tit">로그인</h2>
@@ -58,5 +58,5 @@
 	</app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="../../static/js/login/login.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/login/login.js"></script>
 </html>
