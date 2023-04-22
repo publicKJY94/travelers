@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
-<link rel="stylesheet" href="../../static/css/login/find_id-reset_pw.css">
+<link rel="stylesheet" href="../../static/css/login/find_id.css">
 <link href="../../static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
