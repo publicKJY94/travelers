@@ -9,4 +9,76 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  
+  <!-- userFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>User</servlet-name>
+  	<servlet-class>com.app.user.UserFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>User</servlet-name>
+  	<url-pattern>*.user</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- mypageFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>MyPage</servlet-name>
+  	<servlet-class>com.app.mypage.MyPageFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyPage</servlet-name>
+  	<url-pattern>*.myPage</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AdminFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>Admin</servlet-name>
+  	<servlet-class>com.app.admin.AdminFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Admin</servlet-name>
+  	<url-pattern>*.admin</url-pattern>
+  </servlet-mapping>
+  
+  <!-- tripBoardFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>TripBoard</servlet-name>
+  	<servlet-class>com.app.tripBoard.TripBoardFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TripBoard</servlet-name>
+  	<url-pattern>*.tripBoard</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ItemBoardFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>ItemBoard</servlet-name>
+  	<servlet-class>com.app.itemBoard.ItemBoardFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ItemBoard</servlet-name>
+  	<url-pattern>*.itemBoard</url-pattern>
+  </servlet-mapping>
+  
+  <!-- RouteBoardFrontCotroller로 매핑-->
+    <servlet>
+  	<servlet-name>RouteBoard</servlet-name>
+  	<servlet-class>com.app.routeBoard.RouteBoardFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RouteBoard</servlet-name>
+  	<url-pattern>*.routeBoard</url-pattern>
+  </servlet-mapping>
+  
+  
+  
 </web-app>

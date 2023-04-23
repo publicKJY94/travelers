@@ -1,4 +1,4 @@
-package com.app.DAO.comment;
+package com.app.domain.DAO.comment;
 
 public class QuestionCommentDAO {
 

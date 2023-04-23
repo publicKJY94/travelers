@@ -1,4 +1,4 @@
-package com.app.DAO.service;
+package com.app.domain.DAO.service;
 
 public class BoardLocationDAO {
 

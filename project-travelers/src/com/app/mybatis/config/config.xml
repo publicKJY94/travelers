@@ -23,6 +23,14 @@
       <typeAlias type="com.app.domain.VO.service.BoardTagVO" alias="boardTagVO"/>
       <typeAlias type="com.app.domain.VO.service.BoardVoteVO" alias="boardVoteVO"/>
       <typeAlias type="com.app.domain.VO.service.RouteCourseVO" alias="routeCourseVO"/>
+      
+      
+      
+      <!--DTO 타입 알리아스 적는 구간 밑부분  -->
+      
+      
+      
+      
    </typeAliases>
 
    <environments default="mysql">
