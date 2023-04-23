@@ -3,11 +3,7 @@
 <mapper namespace="itemBoard">
 	<!-- asd -->
 	<select id=""></select>
-<<<<<<< HEAD
-	<delete id=""></delete>
-=======
 	<update id=""></update>
->>>>>>> 4d262b596b82c3e9fa9e8673dbb4cb654005edc6
 	
 	
 	
