@@ -1,5 +1,13 @@
 package com.app.domain.DAO.comment;
 
-public class QuestionCommentDAO {
+import org.apache.ibatis.session.SqlSession;
 
+import com.app.mybatis.config.MyBatisConfig;
+
+public class QuestionCommentDAO {
+public SqlSession sqlSession;
+	
+	public QuestionCommentDAO() {
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+	}
 }

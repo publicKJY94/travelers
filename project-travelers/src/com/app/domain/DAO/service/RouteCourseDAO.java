@@ -1,5 +1,13 @@
 package com.app.domain.DAO.service;
 
-public class RouteCourseDAO {
+import org.apache.ibatis.session.SqlSession;
 
+import com.app.mybatis.config.MyBatisConfig;
+
+public class RouteCourseDAO {
+public SqlSession sqlSession;
+	
+	public RouteCourseDAO() {
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+	}
 }
