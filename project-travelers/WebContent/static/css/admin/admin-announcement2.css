@@ -1,0 +1,353 @@
+* {
+	margin: 0;
+	padding:0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+	width:100%;
+	background-color:#e2e2e2;
+}
+
+
+
+div.wrap {
+	min-width:1500px;
+	height:100%;
+}
+.table-wrap, .content-wrap {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+.qna-info-wrap, .con-write-wrap {
+    border-top: 2px solid #6e6e6e;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6e6e6e;
+}
+.con-write-wrap {
+    border-bottom: 2px solid #6e6e6e;
+}
+.qna-info-list .qna-list, .notice-write {
+    display: flex;
+    border-bottom: 1px solid #c4c4c4;
+}
+.qna-info-list .qna-list .qna-list-title, .con-write-wrap .con-write .write-title, .con-write-wrap .notice-write .write-title {
+    display: block;
+    padding: 0px 0px 0px 7px;
+    width: 25%;
+}
+.con-write-wrap .write-title {
+    vertical-align: top;
+}
+.write-text write-notice{
+	width: 100%;
+}
+
+.con-write-wrap .notice-write .write-sec .write-notice {
+    height: 20px;
+}
+
+.con-write-wrap .write-sec .write-text {
+    display: block;
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    word-break: break-all;
+    overflow: auto;
+}
+
+div.mainContent {
+	width: 74%;
+	height: 600px;
+	margin:50px auto;
+	position:relative;
+
+	
+}
+/*가져가야할부분end*/
+
+
+
+
+
+div.mainContent div.memberSearch {
+	width: 100%;
+	height: 50px;
+    margin-bottom: 30px;
+    padding-top: 8px;	
+    background-color: white;
+    box-shadow:1px 1px 5px #c4c4c4;
+}
+
+
+div.memberSearch div.memberSearchInput {
+	width: 96%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #c5c5c5;
+    height: 40px;
+    line-height:40px;
+    padding-left:15px;
+    font-size:13px;
+    font-weight:600;
+    color:#6e6e6e;
+}
+
+
+
+div.memberSearch div.memberSearchInput select {
+	width: 17%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #c5c5c5;
+    outline: none;
+}
+
+
+div.memberSearch div.memberSearchInput div:nth-child(2) {
+	width: 80%;
+    height: 100%;
+    border-right: 1px solid #c5c5c5;
+}
+
+
+div.memberSearch div.memberSearchInput div:nth-child(3) {
+	width: 5%;
+    height: 100%;
+}
+
+div.memberSearch div.memberSearchInput div input {
+    outline: none;
+    border:0;
+    padding-left:10px;
+}
+
+
+div.memberSearch div.memberSearchInput div img{
+    cursor: pointer;
+    width: 63%;
+    height: 63%;
+    padding-left: 9px;
+    padding-top: 7px;
+}
+
+
+
+
+div.memberLists {
+	width:100%;
+	height:100%;
+	background-color:white;
+	box-shadow:1px 1px 5px #c4c4c4;
+	position:realtive;
+	padding-top: 15px;
+}
+
+div.memberLists div#root {
+	margin: 0 auto;
+    width: 95%;
+    padding-bottom: 13px
+}
+
+div.memberLists div#root div {
+	text-align: right;
+}
+
+
+div.memberLists div#root div span {
+	font-size:13px;
+	color: #6e6e6e;
+}
+
+div.memberLists div#root div button {
+	width: 50px;
+    height: 25px;
+    background-color: white;
+    margin-left: 9px;
+    border:1px solid #bcbcbc;
+    cursor:pointer;
+    border-radius:2px;
+    color: #6e6e6e;
+}
+
+
+div.memberLists div#root div button:active {
+	background-color: #bcbcbc;
+}
+
+
+
+
+
+/*모달창시작*/
+#modal {
+  display:none;
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+#modal h3 {
+  margin:0;   
+  
+}
+
+#modal button {
+  display:inline-block;
+  width:100px;
+  margin-left:calc(100% - 100px - 10px);
+  box-shadow: 1px 1px 2px #c4c4c4;
+}
+
+#modal .modal_content {
+  width:1000px;
+  height:100%;
+  margin: -170px auto;
+  padding:20px 10px;
+  background:#fff;
+  border:2px solid #666;
+}
+
+#modal .modal_content header {
+	width:95%;
+	margin: 0 auto;
+} 
+
+#modal .modal_content header div.inputList {
+	padding: 15px 0 15px 0;
+}
+
+          
+#modal .modal_content div.changeText {
+	width:95%;
+	margin: 0 auto;
+}
+#modal .modal_content hr {
+	width:100%;
+	border:2px solid #ccc;
+} 
+             
+   
+#modal .modal_content div textarea {
+	width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    outline:none;
+}
+
+input.modal_input {
+    width: 230px;
+	border:none;
+	border-bottom: 1px solid #6e6e6e;
+	outline:none;
+}
+
+
+#modal .modal_content div.changeTextBtn {
+	width:97%;
+	margin: 0 auto;
+}
+
+
+#modal_close_btn {
+	width:100px;
+	height:30px;
+	font-size:13px;
+	background-color: #ffffff;
+	cursor:pointer;
+	border: 1px solid #bcbcbc;
+	border-radius:2px;
+	color: #6e6e6e;
+	box-shadow:1px 1px 2px #c4c4c4;
+}
+
+#modal_close_btn:active {
+	background-color:#bcbcbc;
+}
+
+
+#modal .modal_layer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:-1;
+}   
+
+
+
+/*모달창끝*/
+
+
+
+
+
+
+
+table {
+	width:95%;
+	margin:0 auto;
+	border-collapse: collapse;
+	line-height: 1.5;
+	font-size:13px;
+
+}
+
+
+
+table tr td {
+		border: 1px solid #bcbcbc;
+		padding:15px;	
+		font-weight:600;
+		color:#6e6e6e;
+		font-size:12px;
+		height:8px;
+}
+
+table tr,table td {
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+
+
+table tr:first-child,
+table td:first-child {
+	border-left: 0;
+}
+table tr:last-child,
+table td:last-child {
+	border-right: 0;
+}
+
+
+table tr.tableTh td {
+	background-color:#f1f1f1;
+}
+
+
+.clickWriteBtn {
+	width: 100px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 21px auto;
+    box-shadow: 1px 1px 2px #bcbcbc;
+    border: 1px solid #bcbcbc;
+    height: 30px;
+    color: #6e6e6e;
+}
+
+.clickWriteBtn:active {
+	background-color:#c4c4c4;
+}
