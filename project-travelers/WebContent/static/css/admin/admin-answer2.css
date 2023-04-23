@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding:0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+	width:100%;
+	background-color:#e2e2e2;
+}
+
+
+
+div.wrap {
+	min-width:1500px;
+	height:100%;
+}
+
+
+
+
+div.mainContent {
+	width: 74%;
+	height: 600px;
+	margin:50px auto;
+	position:relative;
+}
+/*가져가야할부분end*/
+
+
+
+
+
+div.mainContent div.memberSearch {
+	width: 100%;
+	height: 50px;
+    margin-bottom: 30px;
+    padding-top: 8px;	
+    background-color: white;
+    box-shadow:1px 1px 5px #c4c4c4;
+}
+
+
+div.memberSearch div.memberSearchInput {
+	width: 96%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #c5c5c5;
+    height: 40px;
+    line-height:40px;
+    padding-left:15px;
+    font-size:13px;
+    font-weight:600;
+    color:#6e6e6e;
+}
+
+
+
+div.memberSearch div.memberSearchInput select {
+	width: 17%;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #c5c5c5;
+    outline: none;
+}
+
+
+div.memberSearch div.memberSearchInput div:nth-child(2) {
+	width: 80%;
+    height: 100%;
+    border-right: 1px solid #c5c5c5;
+}
+
+
+div.memberSearch div.memberSearchInput div:nth-child(3) {
+	width: 5%;
+    height: 100%;
+}
+
+div.memberSearch div.memberSearchInput div input {
+    outline: none;
+    border:0;
+    padding-left:10px;
+}
+
+
+div.memberSearch div.memberSearchInput div img{
+    cursor: pointer;
+    width: 63%;
+    height: 63%;
+    padding-left: 9px;
+    padding-top: 7px;
+}
+
+
+
+
+div.memberLists {
+	width:100%;
+	height:100%;
+	background-color:white;
+	box-shadow:1px 1px 5px #c4c4c4;
+	position:realtive;
+	padding-top: 15px;
+}
+div.memberLists div#root {
+	margin: 0 auto;
+    width: 95%;
+    padding-bottom: 13px
+}
+
+div.memberLists div#root div {
+	text-align: right;
+}
+div.memberLists div#root div span {
+	font-size:13px;
+	color: #6e6e6e;
+}
+
+div.memberLists div#root div button {
+	width: 50px;
+    height: 25px;
+    background-color: white;
+    margin-left: 9px;
+    color: #6e6e6e;
+    border:1px solid #bcbcbc;
+    border-radius:2px;
+    box-shadow:1px 1px 2px #c4c4c4;
+    cursor:pointer;
+}
+
+
+div.memberLists div#root div button:active {
+	background-color: #bcbcbc;
+}
+
+
+
+
+table {
+	width:95%;
+	margin:0 auto;
+	border-collapse: collapse;
+	line-height: 1.5;
+	font-size:13px;
+
+}
+
+
+
+table tr td {
+		border: 1px solid #bcbcbc;
+		padding:15px;	
+		font-weight:600;
+		color:#6e6e6e;
+		font-size:12px;
+		height:8px;
+}
+
+table tr,table td {
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+
+
+table tr:first-child,
+table td:first-child {
+	border-left: 0;
+}
+table tr:last-child,
+table td:last-child {
+	border-right: 0;
+}
+
+
+table tr.tableTh td {
+	background-color:#f1f1f1;
+}
+
+

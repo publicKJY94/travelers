@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+html {
+	display: block;
+	font-size: 10px;
+   	padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+:root{
+ 	/* view-transition-name: root; */
+	--bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+    --key-color: #ff8000;
+    --key-color-disabled: #dfe1e6;
+    --kakao-background-color: #fee500;
+    --naver-background-color: #03c75a;
+    --facebook-background-color: #1877f2;
+    --apple-background-color: #000000;
+}
+
+/*
+html[Attributes Style] {
+    -webkit-locale: "ko";
+}
+*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body, table, th, td, button, select, input, textarea, img, a, label, ol, ul, dl, li, dt, dd, div, p, pre, form, fieldset {
+    -webkit-tap-highlight-color: transparent!important;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 400;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, address {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body, table, th, td, button, select, input, textarea {
+    font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 400;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, input[type=file], button {
+    cursor: pointer;
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+button, select {
+    text-transform: none;
+}
+
+body{
+	display: block;
+ 	box-sizing: border-box;
+ 	background-color: #fff;
+ 	-webkit-text-size-adjust: none;
+ 	-webkit-tap-highlight-color: transparent!important;
+ 	font-family: Noto Sans KR,Malgun Gothic,dotum,sans-serif;
+    font-weight: 400;
+    color: #111;
+    line-height: 1;
+    letter-spacing: 0;
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+    min-width: 28rem;
+    position: relative;
+    word-break: break-all;
+}
+
+header {
+    display: block;
+}
+
+.sub_header {
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.sub_header:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+.in_wrap {
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sub_header.st1:after {
+    background-image: url(bg_st1.6a2f5896da8523ee.jpg);
+}
+
+.sub_header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.sub_header .dth2 {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    z-index: 5;
+    display: block;
+    padding-top: 36px;
+}
+
+.sub_header.st1:after {
+    background-image: url(bg_st1.6a2f5896da8523ee.jpg);
+}
+
+.sub_header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.position_r {
+    position: relative!important;
+    margin-top : 5rem;
+}
+
+#content {
+    padding: 7rem 0 0;
+    background: #fff;
+}
+
+.my_header {
+    margin: 5rem 0;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.mo {
+    display: none!important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+i {
+    font-style: italic;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.tab_nav.st01 {
+    width: 100%;
+    margin: 0 auto 2rem;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.tab_nav {
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto 3rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.tab_nav.st01 li {
+    display: inline-block;
+    transition: all .3s;
+}
+
+.tab_nav.st01 li a {
+    min-width: 10rem;
+    height: 4rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+    padding: 0 1.6rem;
+    display: inline-block;
+    background: #fff;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    box-shadow: 0 1px 2px #00000026;
+}
+
+.tab_nav.st01 li a:hover {
+    background: #242424;
+    color: #fff;
+}
+
+.tab_nav.st01 li a.active {
+    background: #242424;
+    color: #fff;
+}
+
+.tab_nav li:first-child a {
+    border-left-color: #ddd;
+}
+
+.tab_nav a {
+    display: block;
+    margin-left: -0.1rem;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #ddd;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s ease;
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.my_wrap {
+    padding: 0 0 10rem;
+}
+
+.trip_list1:not(.skeleton_wrap) .inner:hover {
+    border-color: #ff5800;
+}
+
+.trip_list1 .inner {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    border: 0.1rem solid #d7d7d7;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.my_wrap .trip_list1 .inner>a {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+
+.trip_list1 .inner>a {
+    display: block;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.trip_list1 .inner .txt_wrap {
+    min-height: 13.5rem;
+    padding: 2rem 2rem 2rem 17.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tab_nav li a.active {
+    color: #242424;
+    font-weight: 400;
+    border: 0.1rem solid #242424;
+    border-bottom-color: transparent;
+}
+
+.trip_list1 .geo {
+    font-size: 1.5rem;
+}
+
+.txt_hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trip_list1 .ico_geo, .trip_list1 .ico_cal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: -0.3rem 0.5rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.ico_geo {
+    background: url(https://www.wishbeen.co.kr/geo.922951f5cf1908d9.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .tit {
+    max-height: 6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .tit {
+    max-height: 6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.trip_list1 .tag {
+    margin: 0.2rem 0.8rem 0.2rem 0;
+}
+
+.tag {
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    background: #f7f9ff;
+    border-radius: 3rem;
+    box-sizing: border-box;
+    color: #242424;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.trip_list1 .inner .txt_wrap>ul>li+li {
+    margin: 1.2rem 0 0;
+}
+
+.trip_list1 .inner .date {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.trip_list1 .user_wrap .img {
+    width: 2rem!important;
+    height: 2rem!important;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.trip_list1 .inner .img {
+    width: 16rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.trip_list1 .user_wrap span {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.img img, .map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip_list1 .user_wrap .nick {
+    margin: 0 0 0 0.5rem;
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.trip_list1 .user_wrap span {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.trip_list1 .ico_like.on {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.ico_like.on {
+    background: url(https://www.wishbeen.co.kr/heart_fill_w.b4def27d5edb8412.svg) center no-repeat;
+    background-size: cover;
+}
+
+.ico_like {
+    background: url(https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg) center no-repeat;
+    background-size: cover;
+}
+
+.btn_set:hover {
+    background: #edeaea;
+}
+
+.trip_list1 .btn_set {
+    top: 1rem;
+}
+
+.btn_set {
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .6;
+    z-index: 15;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a, input[type=file], button {
+    cursor: pointer;
+}
+
+.btn_set img {
+    width: 2rem;
+}
+
+.sub_header.st1:after {
+    background-image: url(https://www.wishbeen.co.kr/bg_st1.6a2f5896da8523ee.jpg);
+}
+
+.sub_header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.set_menu {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border: 0.1rem solid #242424;
+    box-shadow: 0.3rem 0.3rem 0.5rem #0000004d;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.trip_list1 .set_menu {
+    top: 5rem;
+}
+
+.set_menu li {
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.set_menu li+li {
+    margin: 0!important;
+    border-top: 0.1rem solid #e7e7e7;
+}
+
+.set_menu a:hover {
+    background: #f5f5f5;
+}
+
+.set_menu a {
+    padding: 1rem 0;
+    display: block;
+}
