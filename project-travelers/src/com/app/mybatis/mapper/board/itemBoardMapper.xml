@@ -3,6 +3,7 @@
 <mapper namespace="itemBoard">
 	<!-- asd -->
 	<select id=""></select>
+	<delete id=""></delete>
 	
 	
 	
