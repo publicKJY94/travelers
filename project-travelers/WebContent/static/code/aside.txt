@@ -1,0 +1,117 @@
+사이드 바 세개 원하는거 가져다 쓰셈
+
+
+<aside class="side_bar">
+								<span _ngcontent-oma-c66="" class="btn_top_scroll active"></span>
+								<span _ngcontent-oma-c66="" class="btn_write_board active"></span>
+								<span _ngcontent-oma-c66="" class="btn_heart active"></span>
+							</aside>
+
+
+
+
+
+CSS=======================================================================================================
+
+
+.side_bar .btn_top_scroll{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 35rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_write_board{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 30rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+.side_bar .btn_heart{
+	 width: 4rem;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    right: 38rem;
+    bottom: 25rem;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translate(1rem);
+    line-height: 4.4rem;
+    z-index: 50;
+    box-shadow: 0.4rem 0.4rem 0.8rem #0000001f;
+}
+
+
+.side_bar .btn_top_scroll.active, .side_bar .btn_write_board.active, .side_bar .btn_heart.active{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.side_bar .btn_top_scroll:before {
+    content: "";
+    width: 1.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url(https://www.wishbeen.co.kr/chevron_up.3db1f7ee401e3d2d.svg) 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.side_bar .btn_write_board:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("../../image/write_board.png") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.side_bar .btn_heart:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url("https://www.wishbeen.co.kr/heart.576b28cd5d31a1cd.svg") 0 0 no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+}
