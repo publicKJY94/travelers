@@ -1,10 +1,11 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>답변</title>
+<title>공지사항 작성</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
@@ -12,7 +13,8 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/admin-header-nav.css">
 </head>
 <body>
-	<div class="wrap">
+
+   <div class="wrap">
 		<!-- header -->
 		<div class="header">
 			<div class="logoImage">
@@ -20,7 +22,7 @@
 			</div>
 			<div class="title">
 				<div>
-					<span class="ChangeTitle">고객응대 답변</span>
+					<span class="ChangeTitle">공지사항 작성</span>
 				</div>
 				<span><small>관리자모드</small></span>
 			</div>
@@ -46,47 +48,57 @@
 				</nav>
 				
 				
-				<!--mainScreen 문의답변 작성하기-->
+				<!--mainScreen 공지사항 작성하기-->
 				<div class="mainContent">
+
 					<div class="content-wrap">
 					   
-					   <!-- [S] 문의 정보 -->
-						  <div class="qna-info-wrap">
-							 <ul class="qna-info-list">
-								<li class="qna-list">
-								   <div class="qna-list-title">문의번호</div>
-								   <div class="qna-list-desc">000</div>
-								</li>
-								<li class="qna-list">
-								   <div class="qna-list-title">제목</div>
-								   <div class="qna-list-desc">문의합니다</div>
-								</li>
-								<li class="qna-list">
-								   <div class="qna-list-title">작성자</div>
-								   <div class="qna-list-desc">작성날짜</div>
-								</li>
-								<li class="qna-list">
-								   <div class="qna-list-title">문의날짜</div>
-								   <div class="qna-list-desc">0000.00.00 00:00</div>
-								</li>
-								<li class="qna-list">
-								   <div class="qna-list-title">문의내용</div>
-								   <div class="qna-list-desc">문의합니다.</div>
-								</li>
-							 </ul>
-						  </div>
-					   <!-- [E] 문의 정보 -->
-					   
-					   <!-- [S] 답변하기 -->
+					   <!-- [S] 공지사항 등록 -->
+						  
 						  <div class="con-write-wrap">
-							 <div class="con-write">
-								<div class="write-title">답변 내용</div>
+							 <div class="notice-write">
+								<div class="write-title">공지사항 제목</div>
 								<div class="write-sec">
-								   <form><textarea class="write-text" type="text"  placeholder="답변 내용을 적어주세요."></textarea></form>
+								   <form><input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요."></form>
+								</div>
+							 </div>
+							 <div class="notice-write">
+								<div class="write-title">공지사항 내용</div>
+								<div class="write-sec">
+								   <form><textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요."></textarea></form>
+								</div>
+							 </div>
+							 <div class="notice-write">
+								<div class="write-title">공지사항 상태</div>
+								<div class="write-sec">
+								   <button type="button" class="btn toggle-btn">선택</button>
+								   <ul class="select-box">
+									   <li class="select-option select-on">
+										  <button type="button" class="btn option-btn">활성화</button>
+									   </li>
+									   <li class="select-option select-off">
+										  <button type="button" class="btn option-btn">비활성화</button>
+									   </li>
+								   </ul>
+								</div>
+							 </div>
+							 <div class="notice-write">
+								<div class="write-title">첨부파일</div>
+								<div class="write-sec notice-img-sec">
+								   <div class="notice-images-list">
+									  <div class="notice-img thum-img"></div>
+									  <div class="notice-img">
+										   <div class="cancel">X</div>
+									  </div>
+								   </div>
+									<label for="attach">
+									  <div class="search-notice-img">찾아보기</div>
+								   </label>
+								   <input type="file" id="attach" style="display: none;">
 								</div>
 							 </div>
 						  </div>   
-					   <!-- [E] 답변하기 -->   
+					   <!-- [E] 공지사항 등록 -->   
 		
 		   
 					   <!-- 작성하기 btn -->
@@ -106,7 +118,9 @@
 		
 		   </div>
 		   <!-- [E] wrap -->
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/answer.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/admin/andmin-nav.js"></script>
 </html>
