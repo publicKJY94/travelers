@@ -3,7 +3,6 @@
 <mapper namespace="itemBoard">
 	<!-- asd -->
 	<select id=""></select>
-	<update id=""></update>
 	
 	
 	
