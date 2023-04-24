@@ -15,7 +15,7 @@
   <!-- userFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>User</servlet-name>
-  	<servlet-class>com.app.user.UserFrontController</servlet-class>
+  	<servlet-class>com.app.services.user.UserFrontController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -27,7 +27,7 @@
   <!-- mypageFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>MyPage</servlet-name>
-  	<servlet-class>com.app.mypage.MyPageFrontController</servlet-class>
+  	<servlet-class>com.app.services.mypage.MyPageFrontController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -38,7 +38,7 @@
   <!-- AdminFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>Admin</servlet-name>
-  	<servlet-class>com.app.admin.AdminFrontController</servlet-class>
+  	<servlet-class>com.app.services.admin.AdminFrontController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -49,7 +49,7 @@
   <!-- tripBoardFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>TripBoard</servlet-name>
-  	<servlet-class>com.app.tripBoard.TripBoardFrontController</servlet-class>
+  	<servlet-class>com.app.services.tripBoard.TripBoardFrontController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -60,7 +60,7 @@
   <!-- ItemBoardFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>ItemBoard</servlet-name>
-  	<servlet-class>com.app.itemBoard.ItemBoardFrontController</servlet-class>
+  	<servlet-class>com.app.services.itemBoard.ItemBoardFrontController</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -71,16 +71,57 @@
   <!-- RouteBoardFrontCotroller로 매핑-->
     <servlet>
   	<servlet-name>RouteBoard</servlet-name>
-  	<servlet-class>com.app.routeBoard.RouteBoardFrontController</servlet-class>
+  	<servlet-class>com.app.services.routeBoard.RouteBoardFrontController</servlet-class>
   </servlet>
-
-
-
 
   <servlet-mapping>
   	<servlet-name>RouteBoard</servlet-name>
   	<url-pattern>*.routeBoard</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>QuestionBoard</servlet-name>
+  	<servlet-class>com.app.services.questionBoard.QuestionBoardFrontController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>QuestionBoard</servlet-name>
+  	<url-pattern>*.questionBoard</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>NoticeBoard</servlet-name>
+  	<servlet-class>com.app.services.noticeBoard.NoticeBoardFrontController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>NoticeBoard</servlet-name>
+  	<url-pattern>*.noticeBoard</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>Search</servlet-name>
+  	<servlet-class>com.app.services.search.SearchFrontController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>Search</servlet-name>
+  	<url-pattern>*.search</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>Main</servlet-name>
+  	<servlet-class>com.app.services.main.MainFrontController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>Main</servlet-name>
+  	<url-pattern>*.main</url-pattern>
+  </servlet-mapping>
+  
 
 
 

@@ -178,5 +178,5 @@
 			</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/admin/andmin-nav.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-nav.js"></script>
 </html>

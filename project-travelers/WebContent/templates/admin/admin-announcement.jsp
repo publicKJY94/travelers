@@ -79,7 +79,7 @@
 						</div>
 
 
-				            <!-- 모달창 
+				            <!--  모달창--> 
 							<div id="modal">
 							    <div class="modal_content">
 							    	<section>
@@ -128,7 +128,7 @@
 							   		
 							    <div class="modal_layer"></div>
 							</div>
-                                모달창 끝--> 
+                                <!-- 모달창 끝  -->
 
                             <table>
                                 <thead>
