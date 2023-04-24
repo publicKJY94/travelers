@@ -16,7 +16,7 @@
 		<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="../admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="./admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
