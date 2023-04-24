@@ -24,7 +24,7 @@ public class AdminFrontController extends HttpServlet{
 		
 		//target에 따른 if문 분기처리 구간
 	
-		
+		System.out.println("허은상바보");
 		
 		
 		
