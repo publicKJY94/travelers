@@ -17,7 +17,7 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="../admin-main.jsp"><img src="../logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="${pageContext.request.contextPath}/templates/admin/admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -36,7 +36,7 @@
 						<li><a href="./admin.jsp" target="_self">사용자</a></li>
 						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
 						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
-						<li><a href="./admin-announcement2.jsp" target="_self">공지사항</a></li>
+						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
 						<li id="listShow"><a>게시글관리</a></li>
 							<ul id="listHide">
 								<li><a href="./admin-trip-board.jsp" target="_self">여행기 게시글</a></li>
@@ -60,7 +60,7 @@
 								<input type="text" placeholder="검색어를 입력하세요">
 							</div>
 							<div>
-								<img src="../search.png">
+								<img src="${pageContext.request.contextPath}/static/image/search.png">
 							</div>
 						</div>
 					</div>
@@ -181,5 +181,5 @@
 			</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/admin/andmin-nav.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-nav.js"></script>
 </html>
