@@ -16,16 +16,12 @@ public class AdminFrontController extends HttpServlet{
 		Result result = null;
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
-		System.out.println(target);
-		System.out.println(req.getRequestURI());
-		System.out.println(req.getContextPath());
-		
-		resp.getWriter().print("바보");
-		
 		//target에 따른 if문 분기처리 구간
-	
-		System.out.println("허은상바보");
+		if(target.equals("admin.admin")) {
+			
+		}
 		
+		System.out.println("허은상바보");
 		
 		
 		
