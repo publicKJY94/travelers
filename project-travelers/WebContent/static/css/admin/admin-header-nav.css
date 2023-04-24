@@ -111,6 +111,9 @@ nav ul li:active{
 	background-color:#ff7f00;
 }
 
+nav ul li:visited{
+	background-color:#ff7f00;
+ }
 
 nav ul li a {
 	color:#272727;
