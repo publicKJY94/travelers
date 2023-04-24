@@ -118,10 +118,6 @@ nav ul li a {
 	text-decoration: none;
 	cursor:pointer;
 }
-/*열린 곳*/
-nav ul.mainNav li:nth-child(3) {
-	background-color:#ff7f00;
-}
 
 
 
