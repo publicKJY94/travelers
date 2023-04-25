@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.user.controller.JoinOkController;
 import com.app.services.user.controller.LoginOkController;
 
 public class UserFrontController extends HttpServlet{
@@ -24,6 +25,13 @@ public class UserFrontController extends HttpServlet{
 			
 		}
 		
+		if(target.equals("join.user")) {
+			result= new Result();
+			result.setPath("templates/login/login_main.jsp");
+		} 
+		else if(target.equals("joinOK.user")) {
+			result = new JoinOkController().execute(req, resp);
+		}
 		
 		
 		

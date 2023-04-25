@@ -36,6 +36,9 @@ public class JoinOkController implements Action{
 		userVO.setProfilImageSize(req.getParameter("profilImageSize"));
 		
 		userDAO.insert(userVO);
+		
+		result.setRedirect(true);
+		result.setPath(req.getContextPath() + "/login.user");
 
 		return null;
 	}
