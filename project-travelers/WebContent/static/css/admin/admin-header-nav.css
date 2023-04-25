@@ -113,11 +113,11 @@ nav ul li:active{
 
 
 nav ul li a {
-	padding-left: 20px;
-    display: block;
-    color: #272727;
-    text-decoration: none;
-    cursor: pointer;
+	color:#272727;
+	text-decoration: none;
+	cursor:pointer;
+	display: block;
+    padding-left: 20px;
 }
 
 
