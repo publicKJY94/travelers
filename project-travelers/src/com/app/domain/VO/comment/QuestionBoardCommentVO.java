@@ -1,6 +1,6 @@
 package com.app.domain.VO.comment;
 
-public class NoticeCommentVO {
+public class QuestionBoardCommentVO {
 	private long id;
 	private String content;
 	private String registerDate;
@@ -8,7 +8,7 @@ public class NoticeCommentVO {
 	private long userId;
 	private long boardId;
 	
-	public NoticeCommentVO() {;}
+	public QuestionBoardCommentVO() {;}
 
 	public long getId() {
 		return id;
@@ -60,7 +60,7 @@ public class NoticeCommentVO {
 
 	@Override
 	public String toString() {
-		return "NoticeCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate
+		return "QuestionCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate
 				+ ", updatedDate=" + updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
 	}
 
@@ -80,7 +80,7 @@ public class NoticeCommentVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		NoticeCommentVO other = (NoticeCommentVO) obj;
+		QuestionBoardCommentVO other = (QuestionBoardCommentVO) obj;
 		if (id != other.id)
 			return false;
 		return true;

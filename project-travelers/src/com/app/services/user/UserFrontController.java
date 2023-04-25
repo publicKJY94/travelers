@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.user.controller.LoginOkController;
 
 public class UserFrontController extends HttpServlet{
 	@Override
@@ -16,10 +17,12 @@ public class UserFrontController extends HttpServlet{
 		Result result = null;
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
-		
-		
 		//target에 따른 if문 분기처리 구간
-	
+		
+		if(target.equals("loginOk")) {
+			result = new LoginOkController().execute(req, resp);
+			
+		}
 		
 		
 		

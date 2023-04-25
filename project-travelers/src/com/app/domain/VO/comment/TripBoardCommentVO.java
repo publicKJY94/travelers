@@ -1,6 +1,6 @@
 package com.app.domain.VO.comment;
 
-public class RouteCommentVo {
+public class TripBoardCommentVO {
 	private long id;
 	private String content;
 	private String registerDate;
@@ -8,61 +8,91 @@ public class RouteCommentVo {
 	private long userId;
 	private long boardId;
 	
-	public RouteCommentVo() {;}
+	public TripBoardCommentVO() {;}
+	
+	
+	
 	
 	@Override
 	public String toString() {
-		return "RouteCommentVo [id=" + id + ", content=" + content + ", registerDate=" + registerDate + ", updatedDate="
+		return "TropCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate + ", updatedDate="
 				+ updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
 	}
+
+
+
 
 	public long getId() {
 		return id;
 	}
 
+
+
 	public void setId(long id) {
 		this.id = id;
 	}
+
+
 
 	public String getContent() {
 		return content;
 	}
 
+
+
 	public void setContent(String content) {
 		this.content = content;
 	}
+
+
 
 	public String getRegisterDate() {
 		return registerDate;
 	}
 
+
+
 	public void setRegisterDate(String registerDate) {
 		this.registerDate = registerDate;
 	}
+
+
 
 	public String getUpdatedDate() {
 		return updatedDate;
 	}
 
+
+
 	public void setUpdatedDate(String updatedDate) {
 		this.updatedDate = updatedDate;
 	}
+
+
 
 	public long getUserId() {
 		return userId;
 	}
 
+
+
 	public void setUserId(long userId) {
 		this.userId = userId;
 	}
+
+
 
 	public long getBoardId() {
 		return boardId;
 	}
 
+
+
 	public void setBoardId(long boardId) {
 		this.boardId = boardId;
 	}
+
+
 
 	@Override
 	public int hashCode() {
@@ -71,7 +101,6 @@ public class RouteCommentVo {
 		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -80,12 +109,11 @@ public class RouteCommentVo {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		RouteCommentVo other = (RouteCommentVo) obj;
+		TripBoardCommentVO other = (TripBoardCommentVO) obj;
 		if (id != other.id)
 			return false;
 		return true;
 	}
-	
 	
 	
 }
