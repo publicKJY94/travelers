@@ -1,13 +1,13 @@
 package com.app.domain.VO.service;
 
 public class RouteCourseVO {
-			private long id ;
+			private Long id ;
 			private String location;
-			private long boardId;
-			public long getId() {
+			private Long boardId;
+			public Long getId() {
 				return id;
 			}
-			public void setId(long id) {
+			public void setId(Long id) {
 				this.id = id;
 			}
 			public String getLocation() {
@@ -16,10 +16,10 @@ public class RouteCourseVO {
 			public void setLocation(String location) {
 				this.location = location;
 			}
-			public long getBoardId() {
+			public Long getBoardId() {
 				return boardId;
 			}
-			public void setBoardId(long boardId) {
+			public void setBoardId(Long boardId) {
 				this.boardId = boardId;
 			}
 			@Override

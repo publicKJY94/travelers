@@ -59,14 +59,13 @@
                             <div id="root">
                                 <div>
                                     <span>총 <div id="checkResult" style="width: 10px; height: 10px;">0</div> 건 </span>
-                                    <button type="button" id="modal_opne_btn">수정</button>
                                     <button>삭제</button>
                                 </div>                           
 						</div>
 
 
 				            <!--  모달창--> 
-							<div id="modal">
+						<!-- 	<div id="modal">
 							    <div class="modal_content">
 							    	<section>
                                         <header>
@@ -113,7 +112,7 @@
 							    </div>
 							   		
 							    <div class="modal_layer"></div>
-							</div>
+							</div> -->
                                 <!-- 모달창 끝  -->
 
                             <table>
@@ -202,9 +201,11 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <form action="admin-announcement-answer.admin">
                             <div class="btn btn-write">
                                 <button class="clickWriteBtn">작성하기</button>
                             </div>
+                            </form>
 
 
                                 <!-- [S] 페이지 컨트롤러 -->

@@ -1,9 +1,9 @@
 package com.app.domain.VO.service;
 
 public class BoardLocationVO {
-	private long id;
+	private Long id;
 	private String board_type;
-	private long board_id;
+	private Long board_id;
 	private String countryName;
 	private String locationName;
 	
@@ -11,11 +11,11 @@ public class BoardLocationVO {
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -27,11 +27,11 @@ public class BoardLocationVO {
 		this.board_type = board_type;
 	}
 
-	public long getBoard_id() {
+	public Long getBoard_id() {
 		return board_id;
 	}
 
-	public void setBoard_id(long board_id) {
+	public void setBoard_id(Long board_id) {
 		this.board_id = board_id;
 	}
 

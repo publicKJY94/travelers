@@ -6,7 +6,7 @@ package com.app.domain.VO.user;
  */
 public class UserVO {
 
-	private long id;
+	private Long id;
 	private String identification;
 	private String password;
 	private String name;
@@ -22,15 +22,15 @@ public class UserVO {
 	private String role;
 	private String profilImageName;
 	private String profilImageOriginalName;
-	private String profilImageSize;
+	private Long profilImageSize;
 	
 	public UserVO() {;}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -154,11 +154,11 @@ public class UserVO {
 		this.profilImageOriginalName = profilImageOriginalName;
 	}
 
-	public String getProfilImageSize() {
+	public Long getProfilImageSize() {
 		return profilImageSize;
 	}
 
-	public void setProfilImageSize(String profilImageSize) {
+	public void setProfilImageSize(Long profilImageSize) {
 		this.profilImageSize = profilImageSize;
 	}
 
