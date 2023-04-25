@@ -15,6 +15,10 @@ public SqlSession sqlSession;
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
+	//회원가입
+	public void insert(UserVO userVO) {
+		sqlSession.insert("user.insert", userVO);
+	}
 	
 	public UserVO login(String userIdentification, String userPassword) {
 		Map<String,String> info = new HashMap<>();
