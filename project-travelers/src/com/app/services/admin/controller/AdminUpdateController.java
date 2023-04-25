@@ -10,18 +10,26 @@ import com.app.Action;
 import com.app.Result;
 import com.app.domain.DAO.user.UserDAO;
 
-public class AdminController implements Action{
+public class AdminUpdateController implements Action {
+
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		String adminEmail = req.getParameter("adminEmail");
+		String newPassword= req.getParameter("newPassword");
+		UserDAO userDAO = new UserDAO();
+		userDAO.updateAdminPassword(newPassword, (long)req.getSession().getAttribute("adminId"));
+		
+		req.getSession().invalidate();
+		
 		Result result = new Result();
 		
-		UserDAO userDAO = new UserDAO();
-		String adminName = userDAO.selectOneAdmin((long)req.getSession().getAttribute("adminId")).getName();
-		req.setAttribute("adminName",adminName );
-		
-		
-		result.setPath("/templates/admin/admin.jsp");
+		result.setRedirect(true);
+		result.setPath(req.getContextPath()+ "/admin.main");
 		
 		return result;
+		
+		
+		
 	}
+
 }

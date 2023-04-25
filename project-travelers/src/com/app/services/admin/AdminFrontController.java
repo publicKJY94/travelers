@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
 import com.app.services.admin.controller.AdminController;
+import com.app.services.admin.controller.AdminUpdateController;
+import com.app.services.admin.controller.CheckAdminEmail;
 
 public class AdminFrontController extends HttpServlet{
 	@Override
@@ -24,8 +26,16 @@ public class AdminFrontController extends HttpServlet{
 			
 			result = new AdminController().execute(req, resp);
 			
-		}else if(target.equals("update")) {
-				
+		}else if(target.equals("checkAdminEmail")) {
+			result = new CheckAdminEmail().execute(req, resp);
+			
+			
+			
+		}
+		
+		else if(target.equals("adminUpdate")) {
+			
+			result = new AdminUpdateController().execute(req, resp);
 			
 		}else if(target.equals("admin-announcement")) {
 			

@@ -38,7 +38,7 @@
 						
 					<div class="mainContent">
 						<section>
-						<form action="update.admin">
+						<form action="adminUpdate.admin">
 							<div>
 								<h3>기본정보</h3>
 								<hr>
@@ -54,7 +54,7 @@
 								</tr>
 								<tr class="adminEmail">
 									<td>관리자 이메일 주소</td>
-									<td><input type="email" name = "adminEmail" placeholder="00000@naver.com"></td>
+									<td><input type="email" name = "adminEmail" placeholder="00000@naver.com"><span class="notice" style="display : none;">이메일이 일치하지 않습니다</span></td>
 								</tr>
 								<tr class="adminPassword">
 									<td>관리자 비밀번호</td>
@@ -63,7 +63,7 @@
 								</tr>
 							</table>
 							<div class="btn btn-write">
-                                <button type = "button" onclick="submit()" class="clickWriteBtn">변경하기</button>
+                                <button type = "button" class="clickWriteBtn">변경하기</button>
                             </div>
                             </form>
 						</section>
@@ -72,4 +72,5 @@
 		</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin.js"></script>
 </html>

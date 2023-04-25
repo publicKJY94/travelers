@@ -17,9 +17,17 @@
 		where identification = #{userIdentification} and password = #{userPassword}
 	</select>
 	
-	<select id="selectAdminName" resultType="string">
-		select name from tbl_user
+	<select id="selectOneAdmin" resultType="UserVO">
+		select identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, role from tbl_user
 		where id = #{adminId}
 	</select>
+	
+	<update id="updateAdminPassword">
+		update tbl_user
+		set password = #{newPassword}
+		where id = #{adminId}
+	</update>
+	
+	
 	
 </mapper>

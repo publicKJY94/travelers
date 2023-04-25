@@ -28,9 +28,18 @@ public SqlSession sqlSession;
 		
 	}
 	
-	public String selectAdminName(Long adminId) {
-		return sqlSession.selectOne("user.selectAdminName",adminId);
+	public UserVO selectOneAdmin(Long adminId) {
+		return sqlSession.selectOne("user.selectOneAdmin",adminId);
 	}
 	
+	
+	public void updateAdminPassword(String newPassword, Long adminId){
+		System.out.println(newPassword);
+		System.out.println(adminId);
+		Map<String,Object> info = new HashMap<>();
+		info.put("newPassword",newPassword );
+		info.put("adminId", adminId);
+		sqlSession.update("user.updateAdminPassword",info);
+	}
 	
 }

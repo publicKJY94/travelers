@@ -22,6 +22,9 @@ public class UserFrontController extends HttpServlet{
 		if(target.equals("loginOk")) {
 			result = new LoginOkController().execute(req, resp);
 			
+		}else if(target.equals("login")) {
+			result.setPath("/templates/login/login_main.jsp");
+			
 		}
 		
 		
