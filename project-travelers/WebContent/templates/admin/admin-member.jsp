@@ -18,7 +18,7 @@
 	<!-- header -->
 		<div class="header">
 			<div class="logoImage">
-				<a href="../admin-main.jsp"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
+				<a href="${pageContext.request.contextPath}/admin.main"><img src="${pageContext.request.contextPath}/static/image/logo.png" alt="travelers" style="width:158px;"></a>
 			</div>
 			<div class="title">
 				<div>
@@ -31,21 +31,7 @@
 		 
 		 <!--mainSidebar -->
 		 	<section class="mainContainer">
-				<nav>
-					<ul class="mainNav">
-						<li><a href="https://www.wishbeen.co.kr/main">사이트 바로가기</a></li>
-						<li><a href="./admin.jsp" target="_self">사용자</a></li>
-						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
-						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
-						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
-						<li id="listShow"><a>게시글관리</a></li>
-							<ul id="listHide">
-								<li><a href="./admin-trip-board.jsp" target="_self">여행기 게시글</a></li>
-								<li><a href="./admin-root-board.jsp" target="_self">추천루트 게시글</a></li>
-								<li><a href="./admin-souvenir-board.jsp" target="_self">기념품 게시글</a></li>
-							</ul> 
-					</ul>
-				</nav>
+				 <jsp:include page="/templates/admin/mainSidebar.jsp"></jsp:include>
 			<!-- 여기까지 복사 -->
 			
 			<!--mainScreen 회원관리-->
@@ -186,5 +172,4 @@
 			</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/admin/andmin-nav.js"></script>
 </html>

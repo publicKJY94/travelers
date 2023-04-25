@@ -13,7 +13,7 @@ public class NoticeBoardFrontController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("utf-8");
-		Result result = null;
+		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
 		

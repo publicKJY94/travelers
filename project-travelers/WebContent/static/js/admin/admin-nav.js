@@ -16,7 +16,7 @@ const listHideBtn = document.querySelector("#listHide");
 			iscliecked = false;
 		}else{
 			listHideBtn.style.display = "block";
-			iscliecked = ture;
+			iscliecked = true;
 		}
 	});
 	

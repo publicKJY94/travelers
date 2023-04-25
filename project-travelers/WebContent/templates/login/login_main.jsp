@@ -23,24 +23,24 @@
 				<h2 class="tit">로그인</h2>
 				<div class="inner">
 					<div>
-						<form novalidate=""
+						<form novalidate=""	 action="${pageContext.request.contextPath}/loginOk.user"	
 							class="">
 							<ul>
 								<li><input id="email"
-									formcontrolname="id" placeholder="이메일" type="email"
+									formcontrolname="id" placeholder="이메일" type="email" name="userIdentification"
 									class="txtbox">
 									<br><span id="message_login"></span> <!---->
 									<!----></li>
 								<li><input id="password"
-									formcontrolname="password" placeholder="비밀번호" type="password"
+									formcontrolname="password" placeholder="비밀번호" type="password" name="userPassword"
 									class="txtbox ng-untouched ng-pristine ng-invalid"> <!---->
 									<!----></li>
 								<li><input
 									id="auto_login" formcontrolname="auto_login" type="checkbox"
 									value="" class="chbox ng-untouched ng-pristine ng-valid"><label
 									for="auto_login">자동로그인</label></li>
-								<li><a id="btn_login"
-									class="btn_login">로그인</a></li>
+								<li><button id="btn_login"
+									class="btn_login">로그인</button></li>
 							</ul>
 						</form>
 						<div class="link">

@@ -1,6 +1,6 @@
 package com.app.domain.VO.comment;
 
-public class TropCommentVO {
+public class NoticeBoardCommentVO {
 	private long id;
 	private String content;
 	private String registerDate;
@@ -8,91 +8,61 @@ public class TropCommentVO {
 	private long userId;
 	private long boardId;
 	
-	public TropCommentVO() {;}
-	
-	
-	
-	
-	@Override
-	public String toString() {
-		return "TropCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate + ", updatedDate="
-				+ updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
-	}
-
-
-
+	public NoticeBoardCommentVO() {;}
 
 	public long getId() {
 		return id;
 	}
 
-
-
 	public void setId(long id) {
 		this.id = id;
 	}
-
-
 
 	public String getContent() {
 		return content;
 	}
 
-
-
 	public void setContent(String content) {
 		this.content = content;
 	}
-
-
 
 	public String getRegisterDate() {
 		return registerDate;
 	}
 
-
-
 	public void setRegisterDate(String registerDate) {
 		this.registerDate = registerDate;
 	}
-
-
 
 	public String getUpdatedDate() {
 		return updatedDate;
 	}
 
-
-
 	public void setUpdatedDate(String updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-
-
 
 	public long getUserId() {
 		return userId;
 	}
 
-
-
 	public void setUserId(long userId) {
 		this.userId = userId;
 	}
-
-
 
 	public long getBoardId() {
 		return boardId;
 	}
 
-
-
 	public void setBoardId(long boardId) {
 		this.boardId = boardId;
 	}
 
-
+	@Override
+	public String toString() {
+		return "NoticeCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate
+				+ ", updatedDate=" + updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
+	}
 
 	@Override
 	public int hashCode() {
@@ -101,6 +71,7 @@ public class TropCommentVO {
 		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -109,7 +80,7 @@ public class TropCommentVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		TropCommentVO other = (TropCommentVO) obj;
+		NoticeBoardCommentVO other = (NoticeBoardCommentVO) obj;
 		if (id != other.id)
 			return false;
 		return true;
