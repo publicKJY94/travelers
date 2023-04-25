@@ -33,9 +33,11 @@
 							</div>
 							<div></div>
 						</div>
-						<div>
-							<button id="wb_btn" class="wb_btn disabled ">인증번호 발송</button>
-						</div>
+							<div>
+								<button id="wb_btn" class="wb_btn disabled">
+								회원정보 입력
+								</button>
+							</div>
 					</div>
 				</div>
 				<div class="signup-certification "></div>
