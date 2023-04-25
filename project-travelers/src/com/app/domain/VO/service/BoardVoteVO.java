@@ -1,20 +1,20 @@
 package com.app.domain.VO.service;
 
 public class BoardVoteVO {
-	private long id;
+	private Long id;
 	private String board_type;
-	private long userId;
-	private long board_id;
+	private Long userId;
+	private Long board_id;
 	
 	public BoardVoteVO() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -26,19 +26,19 @@ public class BoardVoteVO {
 		this.board_type = board_type;
 	}
 
-	public long getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 
-	public long getBoard_id() {
+	public Long getBoard_id() {
 		return board_id;
 	}
 
-	public void setBoard_id(long board_id) {
+	public void setBoard_id(Long board_id) {
 		this.board_id = board_id;
 	}
 

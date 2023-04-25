@@ -16,4 +16,10 @@
 		tbl_user
 		where identification = #{userIdentification} and password = #{userPassword}
 	</select>
+	
+	<select id="selectAdminName" resultType="string">
+		select name from tbl_user
+		where id = #{adminId}
+	</select>
+	
 </mapper>

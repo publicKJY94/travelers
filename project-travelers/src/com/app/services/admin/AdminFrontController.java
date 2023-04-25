@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.admin.controller.AdminController;
 
 public class AdminFrontController extends HttpServlet{
 	@Override
@@ -18,30 +19,46 @@ public class AdminFrontController extends HttpServlet{
 		System.out.println(target);
 		System.out.println("프컨 들어옴");
 		//target에 따른 if문 분기처리 구간
+		
 		if(target.equals("admin")) {
 			
-			result.setPath("/templates/admin/admin.jsp");
+			result = new AdminController().execute(req, resp);
+			
+		}else if(target.equals("update")) {
+				
+			
 		}else if(target.equals("admin-announcement")) {
 			
 			result.setPath("templates/admin/admin-announcement.jsp");
+			
+		}else if(target.equals("admin-announcement-answer")) {
+			
+			result.setPath("templates/admin/admin-announcement-answer.jsp");
+			
 		}else if(target.equals("admin-main")) {
 			
 			result.setPath("templates/admin/admin-main.jsp");
+			
 		}else if(target.equals("admin-member")) {
 			
 			result.setPath("templates/admin/admin-member.jsp");
+			
 		}else if(target.equals("admin-qa")) {
 			
 			result.setPath("templates/admin/admin-qa.jsp");
+			
 		}else if(target.equals("admin-root-board")) {
 			
 			result.setPath("templates/admin/admin-root-board.jsp");
+			
 		}else if(target.equals("admin-souvenir-board")) {
 			
 			result.setPath("templates/admin/admin-souvenir-board.jsp");
+			
 		}else if(target.equals("admin-trip-board")) {
 			
 			result.setPath("templates/admin/admin-trip-board.jsp");
+			
 		}
 
 		

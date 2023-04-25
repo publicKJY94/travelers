@@ -27,4 +27,10 @@ public SqlSession sqlSession;
 		return sqlSession.selectOne("user.login",info);
 		
 	}
+	
+	public String selectAdminName(Long adminId) {
+		return sqlSession.selectOne("user.selectAdminName",adminId);
+	}
+	
+	
 }

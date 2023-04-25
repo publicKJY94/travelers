@@ -1,12 +1,12 @@
 package com.app.domain.VO.comment;
 
 public class RouteBoardCommentVO {
-	private long id;
+	private Long id;
 	private String content;
 	private String registerDate;
 	private String updatedDate;
-	private long userId;
-	private long boardId;
+	private Long userId;
+	private Long boardId;
 	
 	public RouteBoardCommentVO() {;}
 	
@@ -16,11 +16,11 @@ public class RouteBoardCommentVO {
 				+ updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -48,19 +48,19 @@ public class RouteBoardCommentVO {
 		this.updatedDate = updatedDate;
 	}
 
-	public long getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 
-	public long getBoardId() {
+	public Long getBoardId() {
 		return boardId;
 	}
 
-	public void setBoardId(long boardId) {
+	public void setBoardId(Long boardId) {
 		this.boardId = boardId;
 	}
 
