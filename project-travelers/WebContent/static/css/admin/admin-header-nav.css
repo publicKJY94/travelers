@@ -101,7 +101,6 @@ nav ul li {
 	border-bottom: 0.3px solid #6e6e6e24;
 	text-align:left;
 	line-height:50px;
-	padding-left:20px;
 	list-style:none;
 	font-weight: 600;
 	font-size:12px;
@@ -111,14 +110,14 @@ nav ul li:active{
 	background-color:#ff7f00;
 }
 
-nav ul li:visited{
-	background-color:#ff7f00;
- }
+
 
 nav ul li a {
 	color:#272727;
 	text-decoration: none;
 	cursor:pointer;
+	display: block;
+    padding-left: 20px;
 }
 
 

@@ -7,15 +7,16 @@ const listHideBtn = document.querySelector("#listHide");
 
 
 	
-	let count = true;
+	let iscliecked;
 	
 	listShowBtn.addEventListener("click",() => {
-	if(count) {
-		listHideBtn.style.display = "block";
-		count = false;
+		console.log(" emfdjdh")
+		if(iscliecked){
+			listHideBtn.style.display = "none";
+			iscliecked = false;
 		}else{
-		listHideBtn.style.display = "none";
-		count = true;
+			listHideBtn.style.display = "block";
+			iscliecked = true;
 		}
 	});
 	

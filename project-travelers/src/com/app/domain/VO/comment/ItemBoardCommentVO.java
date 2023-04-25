@@ -1,6 +1,6 @@
 package com.app.domain.VO.comment;
 
-public class ItemCommentVO {
+public class ItemBoardCommentVO {
 	private long id;
 	private String content;
 	private String registerDate;
@@ -11,7 +11,7 @@ public class ItemCommentVO {
 	private String exchangeItemImageOriginalName;
 	private String exchangeItemImageSize;
 
-	public ItemCommentVO() {;}
+	public ItemBoardCommentVO() {;}
 
 	public long getId() {
 		return id;
@@ -109,7 +109,7 @@ public class ItemCommentVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		ItemCommentVO other = (ItemCommentVO) obj;
+		ItemBoardCommentVO other = (ItemBoardCommentVO) obj;
 		if (id != other.id)
 			return false;
 		return true;

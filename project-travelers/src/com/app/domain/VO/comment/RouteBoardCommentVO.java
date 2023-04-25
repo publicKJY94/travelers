@@ -1,6 +1,6 @@
 package com.app.domain.VO.comment;
 
-public class QuestionCommentVO {
+public class RouteBoardCommentVO {
 	private long id;
 	private String content;
 	private String registerDate;
@@ -8,7 +8,13 @@ public class QuestionCommentVO {
 	private long userId;
 	private long boardId;
 	
-	public QuestionCommentVO() {;}
+	public RouteBoardCommentVO() {;}
+	
+	@Override
+	public String toString() {
+		return "RouteCommentVo [id=" + id + ", content=" + content + ", registerDate=" + registerDate + ", updatedDate="
+				+ updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
+	}
 
 	public long getId() {
 		return id;
@@ -59,12 +65,6 @@ public class QuestionCommentVO {
 	}
 
 	@Override
-	public String toString() {
-		return "QuestionCommentVO [id=" + id + ", content=" + content + ", registerDate=" + registerDate
-				+ ", updatedDate=" + updatedDate + ", userId=" + userId + ", boardId=" + boardId + "]";
-	}
-
-	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -80,11 +80,12 @@ public class QuestionCommentVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		QuestionCommentVO other = (QuestionCommentVO) obj;
+		RouteBoardCommentVO other = (RouteBoardCommentVO) obj;
 		if (id != other.id)
 			return false;
 		return true;
 	}
+	
 	
 	
 }
