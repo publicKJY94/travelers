@@ -5,6 +5,7 @@ package com.app.domain.VO.user;
  *
  */
 public class UserVO {
+
 	private long id;
 	private String identification;
 	private String password;

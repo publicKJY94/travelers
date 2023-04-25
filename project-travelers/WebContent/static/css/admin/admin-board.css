@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
 	margin: 0;
 	padding:0;
@@ -102,7 +104,6 @@ nav ul li {
 	border-bottom: 0.3px solid #6e6e6e24;
 	text-align:left;
 	line-height:50px;
-	padding-left:20px;
 	list-style:none;
 	font-weight: 600;
 	font-size:12px;
@@ -191,6 +192,7 @@ div.memberSearch div.memberSearchInput div input {
     outline: none;
     border:0;
     padding-left:10px;
+    width: 98%;
 }
 
 
@@ -211,40 +213,44 @@ div.memberLists {
 	background-color:white;
 	box-shadow:1px 1px 5px #c4c4c4;
 	position:realtive;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
-div.memberLists div {
-	position: absolute;
-	right: 31px;
-    top: 103px;
+div.memberLists div#root {
+	margin: 0 auto;
+    width: 95%;
+    padding-bottom: 5px
+}
+
+div.memberLists div#root div {
+	text-align: right;
+}
+
+
+div.memberLists div#root div#checkResult {
+	display: inline-block;
+}
+
+
+
+div.memberLists div#root div span {
 	font-size:13px;
 	color: #6e6e6e;
 }
 
-div.memberLists div button {
+div.memberLists div#root div button {
 	width: 50px;
     height: 25px;
     background-color: white;
-    margin-left: 9px;
-
-    border:1px solid #6e6e6e;
-
-    color: #6e6e6e;
     border:1px solid #bcbcbc;
-    border-radius:2px;
-    box-shadow:1px 1px 2px #c4c4c4;
-
     cursor:pointer;
+    border-radius:2px;
+    color: #6e6e6e;
 }
 
 
-div.memberLists div button:active {
-
-	background-color: red;
-
+div.memberLists div#root div button:active {
 	background-color: #bcbcbc;
-
 }
 
 
@@ -278,6 +284,7 @@ table tr,table td {
 table tr:first-child,
 table td:first-child {
 	border-left: 0;
+	width : 10px;
 }
 table tr:last-child,
 table td:last-child {
@@ -290,3 +297,80 @@ table tr.tableTh td {
 }
 
 
+
+
+
+.btn-write {
+	width: 95%;
+	margin: 0 auto;
+	text-align: end;
+}
+.clickWriteBtn {
+	width: 100px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #bcbcbc;
+    border: 1px solid #bcbcbc;
+    height: 30px;
+    color: #6e6e6e;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.clickWriteBtn:active {
+	background-color:#c4c4c4;
+}
+
+
+
+
+/* page controller */
+.page-controller-wrap {
+	display: flex;
+	 justify-content: center;
+	 -webkit-box-align: center;
+	 align-items: center;
+	 margin-top: 10px;
+	 background : #fff;
+	 font-size: 12px;
+	 color: #ddd;
+ }
+ 
+ .page-list {
+	display: flex;
+	 -webkit-box-align: center;
+	 align-items: center;
+	 -webkit-box-pack: center;
+	 justify-content: center;
+	 width: 34px;
+	 height: 34px;
+	 border-top: 1px solid rgb(221, 221, 221);
+	 border-right: 1px solid rgb(221, 221, 221);
+	 border-bottom: 1px solid rgb(221, 221, 221);
+	 border-image: initial;
+	 border-left: none;
+	 cursor: pointer;
+ }
+ 
+ 
+ .page-list:hover ,
+ .page-list.list-on {
+	color: #666;
+	font-weight: 700;
+ }
+ 
+ .page-list:first-of-type {
+	border-left : 1px solid rgb(221, 221, 221);
+ }
+ 
+ .page-list-move {
+	 border-image: initial;
+	 border-left: none;
+	 cursor: pointer;
+ }
+ 
+ .page-list-move img {
+	width: 5px;
+	height : 7px;
+ } 

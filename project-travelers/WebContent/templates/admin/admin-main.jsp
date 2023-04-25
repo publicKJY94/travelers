@@ -35,7 +35,7 @@
 						<li><a href="./admin.jsp" target="_self">사용자</a></li>
 						<li><a href="./admin-member.jsp" target="_self">회원관리</a></li>
 						<li><a href="./admin-qa.jsp" target="_self">고객응대</a></li>
-						<li><a href="./admin-announcement2.jsp" target="_self">공지사항</a></li>
+						<li><a href="./admin-announcement.jsp" target="_self">공지사항</a></li>
 						<li id="listShow"><a>게시글관리</a></li>
 							<ul id="listHide">
 								<li><a href="./admin-trip-board.jsp" target="_self">여행기 게시글</a></li>
@@ -198,5 +198,6 @@
 			</section>
 		</div>
 </body>
-<script src="${pageContext.request.contextPath}/static/js/admin.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/andmin-nav.js"></script>
 </html>

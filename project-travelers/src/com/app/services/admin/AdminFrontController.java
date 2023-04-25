@@ -20,8 +20,8 @@ public class AdminFrontController extends HttpServlet{
 		if(target.equals("admin.admin")) {
 			
 		}
-		
-		
+
+		System.out.println("허은상바보");
 		
 		
 		
