@@ -7,6 +7,7 @@
 		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
 	</insert>
 
+	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->
 	<select id="login" resultType="userVO">
 		select id, identification,
 		password, name, email, phone_number, nickname, birthday, gender,
