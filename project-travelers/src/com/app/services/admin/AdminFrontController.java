@@ -13,15 +13,37 @@ public class AdminFrontController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("utf-8");
-		Result result = null;
+		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
-		
+		System.out.println(target);
+		System.out.println("프컨 들어옴");
 		//target에 따른 if문 분기처리 구간
-		if(target.equals("admin.admin")) {
+		if(target.equals("admin")) {
 			
+			result.setPath("/templates/admin/admin.jsp");
+		}else if(target.equals("admin-announcement")) {
+			
+			result.setPath("templates/admin/admin-announcement.jsp");
+		}else if(target.equals("admin-main")) {
+			
+			result.setPath("templates/admin/admin-main.jsp");
+		}else if(target.equals("admin-member")) {
+			
+			result.setPath("templates/admin/admin-member.jsp");
+		}else if(target.equals("admin-qa")) {
+			
+			result.setPath("templates/admin/admin-qa.jsp");
+		}else if(target.equals("admin-root-board")) {
+			
+			result.setPath("templates/admin/admin-root-board.jsp");
+		}else if(target.equals("admin-souvenir-board")) {
+			
+			result.setPath("templates/admin/admin-souvenir-board.jsp");
+		}else if(target.equals("admin-trip-board")) {
+			
+			result.setPath("templates/admin/admin-trip-board.jsp");
 		}
 
-		System.out.println("허은상바보");
 		
 		
 		
