@@ -14,6 +14,7 @@ public class AdminController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
+		System.out.println("들어옴");
 		
 		UserDAO userDAO = new UserDAO();
 		String adminName = userDAO.selectOneAdmin((long)req.getSession().getAttribute("adminId")).getName();

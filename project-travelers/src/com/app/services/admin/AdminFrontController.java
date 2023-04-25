@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
 import com.app.services.admin.controller.AdminController;
+import com.app.services.admin.controller.AdminMainController;
 import com.app.services.admin.controller.AdminUpdateController;
 import com.app.services.admin.controller.CheckAdminEmail;
 
@@ -29,8 +30,6 @@ public class AdminFrontController extends HttpServlet{
 		}else if(target.equals("checkAdminEmail")) {
 			result = new CheckAdminEmail().execute(req, resp);
 			
-			
-			
 		}
 		
 		else if(target.equals("adminUpdate")) {
@@ -46,8 +45,8 @@ public class AdminFrontController extends HttpServlet{
 			result.setPath("templates/admin/admin-announcement-answer.jsp");
 			
 		}else if(target.equals("admin-main")) {
+			result = new AdminMainController().execute(req,resp);
 			
-			result.setPath("templates/admin/admin-main.jsp");
 			
 		}else if(target.equals("admin-member")) {
 			

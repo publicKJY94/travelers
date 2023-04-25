@@ -9,8 +9,8 @@
 <body>
 		<nav>
 					<ul class="mainNav">
-						<li><a href="${pageContext.request.contextPath}/admin-main.admin">메인 관리</a></li>
 						<li><a href="${pageContext.request.contextPath}/admin.admin">관리자 계정 관리</a></li>
+						<li><a href="${pageContext.request.contextPath}/admin-main.admin">메인 관리</a></li>
 						<li><a href="${pageContext.request.contextPath}/admin-member.admin">회원관리</a></li>
 						<li><a href="${pageContext.request.contextPath}/admin-qa.admin" >고객응대</a></li>
 						<li><a href="${pageContext.request.contextPath}/admin-announcement.admin" >공지사항</a></li>
