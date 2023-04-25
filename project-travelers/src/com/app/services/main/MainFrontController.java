@@ -20,7 +20,6 @@ public class MainFrontController extends HttpServlet{
 		
 		//target에 따른 if문 분기처리 구간
 		if(target.equals("admin")) {
-			
 			result.setPath("templates/main/main.jsp");
 		}
 		

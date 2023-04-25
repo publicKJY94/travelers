@@ -1,25 +1,17 @@
-/**
- * 
- */
-
-const listShowBtn = document.querySelector("#listShow");
-const listHideBtn = document.querySelector("#listHide");
-
 
 	
-	let iscliecked;
 	
-	listShowBtn.addEventListener("click",() => {
-		console.log(" emfdjdh")
-		if(iscliecked){
-			listHideBtn.style.display = "none";
-			iscliecked = false;
-		}else{
-			listHideBtn.style.display = "block";
-			iscliecked = true;
+	const $title = document.querySelector(".ChangeTitle");
+	const $sideList = document.querySelectorAll(".mainNav>li");
+	console.log($sideList);
+	console.log($title);
+	
+	$sideList.forEach(el =>{
+		if(el.innerText == $title.innerText){
+			el.style.background="#ff7f00";
+			el.firstChild.style.color ="white";
 		}
-	});
-	
+	})
 	
 	
 	

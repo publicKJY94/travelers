@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.app.Action;
 import com.app.Result;
@@ -16,6 +17,7 @@ public class LoginOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
+		HttpSession session = req.getSession();
 		String userIdentification = req.getParameter("userIdentification");
 		String userPassword = req.getParameter("userPassword");
 		
@@ -26,7 +28,9 @@ public class LoginOkController implements Action {
 			
 		}else if(userVO.getRole().equals("admin")){
 			result.setRedirect(true);
-			result.setPath(req.getContextPath()+"/templates/admin/admin-main.jsp"); 
+			result.setPath(req.getContextPath()+"/admin.admin"); 
+			session.setAttribute("adminId", userVO.getId());
+			
 		}
 		
 		
