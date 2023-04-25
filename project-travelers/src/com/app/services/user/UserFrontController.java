@@ -25,11 +25,11 @@ public class UserFrontController extends HttpServlet{
 			
 		}
 		
-		if(target.equals("join.user")) {
+		if(target.equals("join")) {
 			result= new Result();
 			result.setPath("templates/login/login_main.jsp");
 		} 
-		else if(target.equals("joinOK.user")) {
+		else if(target.equals("joinOK")) {
 			result = new JoinOkController().execute(req, resp);
 		}
 		
