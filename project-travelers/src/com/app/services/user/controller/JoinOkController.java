@@ -33,7 +33,7 @@ public class JoinOkController implements Action{
 		userVO.setRole(req.getParameter("role"));
 		userVO.setProfilImageName(req.getParameter("profilImageName"));
 		userVO.setProfilImageOriginalName(req.getParameter("profilImageOriginalName"));
-		userVO.setProfilImageSize(req.getParameter("profilImageSize"));
+		userVO.setProfilImageSize(Long.valueOf(req.getParameter("profilImageSize")));
 		
 		userDAO.insert(userVO);
 		

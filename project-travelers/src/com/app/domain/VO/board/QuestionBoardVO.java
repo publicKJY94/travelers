@@ -2,20 +2,20 @@ package com.app.domain.VO.board;
 
 
 public class QuestionBoardVO {
-	private long id;
+	private Long id;
 	private String title;
 	private String content;
 	private String registerDate;
 	private String updatedDate;
 	private String responsedStatus;
-	private long userId;
+	private Long userId;
 	
 	public QuestionBoardVO() {;}
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -48,10 +48,10 @@ public class QuestionBoardVO {
 	public void setResponsedStatus(String responsedStatus) {
 		this.responsedStatus = responsedStatus;
 	}
-	public long getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
-	public void setUserId(long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 	@Override

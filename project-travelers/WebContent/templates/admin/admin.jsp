@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,6 +38,7 @@
 						
 					<div class="mainContent">
 						<section>
+						<form action="update.admin">
 							<div>
 								<h3>기본정보</h3>
 								<hr>
@@ -48,21 +50,22 @@
 								</tr>
 								<tr class="adminName">
 									<td>관리자이름</td>
-									<td>관리자</td>
+									<td><c:out value = "${adminName}"/></td>
 								</tr>
 								<tr class="adminEmail">
 									<td>관리자 이메일 주소</td>
-									<td><input type="text" placeholder="00000@naver.com"></td>
+									<td><input type="email" name = "adminEmail" placeholder="00000@naver.com"></td>
 								</tr>
 								<tr class="adminPassword">
 									<td>관리자 비밀번호</td>
-									<td><input type="text" placeholder="변경 할 비밀번호 입력">
+									<td><input type="password" name = "newPassword" placeholder="변경 할 비밀번호 입력">
 									</td>
 								</tr>
 							</table>
 							<div class="btn btn-write">
-                                <button class="clickWriteBtn">변경하기</button>
+                                <button type = "button" onclick="submit()" class="clickWriteBtn">변경하기</button>
                             </div>
+                            </form>
 						</section>
 					</div>
 				</section>

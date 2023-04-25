@@ -5,21 +5,21 @@ package com.app.domain.VO.board;
  *
  */
 public class NoticeBoardVO {
-	private long id;
+	private Long id;
 	private String title;
 	private String content;
 	private String registerDate;
 	private String updatedDate;
 	private String viewedCount;
-	private long adminId;
+	private Long adminId;
 	
 	
 	public NoticeBoardVO() {;}
 	
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -52,10 +52,10 @@ public class NoticeBoardVO {
 	public void setViewedCount(String viewedCount) {
 		this.viewedCount = viewedCount;
 	}
-	public long getAdminId() {
+	public Long getAdminId() {
 		return adminId;
 	}
-	public void setAdminId(long adminId) {
+	public void setAdminId(Long adminId) {
 		this.adminId = adminId;
 	}
 	@Override
