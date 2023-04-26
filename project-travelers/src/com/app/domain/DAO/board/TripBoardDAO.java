@@ -4,19 +4,18 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.app.domain.DTO.board.NoticeBoardDTO;
+import com.app.domain.DTO.board.TripBoardDTO;
 import com.app.mybatis.config.MyBatisConfig;
 
-public class NoticeBoardDAO {
+public class TripBoardDAO {
 public SqlSession sqlSession;
 	
-	public NoticeBoardDAO() {
+	public TripBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-
-	public List<NoticeBoardDTO> selectNoticeBoardList(){
-		return sqlSession.selectList("noticeBoard.selectNoticeBoardList");
+	
+	//최신순 게시판 다가져오기
+	public List<TripBoardDTO> selectTripBoardList(){
+		return sqlSession.selectList("tripBoard.selectTripBoardList");
 	}
-	
-	
 }
