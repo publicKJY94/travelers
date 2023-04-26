@@ -40,34 +40,21 @@
 					<div class="content-wrap">
 					   
 					   <!-- [S] 공지사항 등록 -->
-						  
+						 <form action="admin-announcement.admin">
 						  <div class="con-write-wrap">
 							 <div class="notice-write">
 								<div class="write-title">공지사항 제목</div>
 								<div class="write-sec">
-								   <form><input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요."></form>
+								 <input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요.">
 								</div>
 							 </div>
 							 <div class="notice-write">
 								<div class="write-title">공지사항 내용</div>
 								<div class="write-sec">
-								   <form><textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요."></textarea></form>
+								  <textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요."></textarea>
 								</div>
 							 </div>
-							 <div class="notice-write">
-								<div class="write-title">공지사항 상태</div>
-								<div class="write-sec">
-								   <button type="button" class="btn toggle-btn">선택</button>
-								   <ul class="select-box">
-									   <li class="select-option select-on">
-										  <button type="button" class="btn option-btn">활성화</button>
-									   </li>
-									   <li class="select-option select-off">
-										  <button type="button" class="btn option-btn">비활성화</button>
-									   </li>
-								   </ul>
-								</div>
-							 </div>
+							 
 							 <div class="notice-write">
 								<div class="write-title">첨부파일</div>
 								<div class="write-sec notice-img-sec">
@@ -83,16 +70,17 @@
 								   <input type="file" id="attach" style="display: none;">
 								</div>
 							 </div>
-						  </div>   
+						  </div>
 					   <!-- [E] 공지사항 등록 -->   
 		
 		   
 					   <!-- 작성하기 btn -->
 					   <div class="write-btn-wrap">
-						  <button class="btn btn-list">문의목록</button>
-						  <button class="btn btn-write">작성하기</button>
+						  <button type="button" class="btn btn-list"><a href="admin-announcement.admin">문의목록</a></button>
+						  <button type="submit" class="btn btn-write">작성하기</button>
 					   </div>
-					   
+					 </form>
+					  
 					</div>
 		
 		

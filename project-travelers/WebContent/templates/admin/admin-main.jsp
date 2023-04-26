@@ -34,50 +34,18 @@
 				<div class="mainContent">
 					<div class="mainBox">
 						<div class="mainBoxList">
-							<table>
+							<table class="userTable" >
 								<tr class="tableTh" >
 									<th>최근가입자</th>
 								</tr>
 								<tr style="border-top:3px solid #6e6e6e;" >
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
+									<td>아이디</td>
+									<td>닉네임</td>
+									<td>성별</td>
+									<td>핸드폰 번호</td>
+									<td>가입날짜</td>
 								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
+								
 								
 							</table>
 						</div>
@@ -185,4 +153,12 @@
 		</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let userList = `${userList}`;
+	console.log(userList);
+
+</script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-main.js"></script>
+
+
 </html>

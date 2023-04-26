@@ -7,6 +7,7 @@
 		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
 	</insert>
 
+	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->
 	<select id="login" resultType="userVO">
 		select id, identification,
 		password, name, email, phone_number, nickname, birthday, gender,
@@ -15,4 +16,22 @@
 		tbl_user
 		where identification = #{userIdentification} and password = #{userPassword}
 	</select>
+	
+	<select id="selectOneAdmin" resultType="UserVO">
+		select identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, role from tbl_user
+		where id = #{adminId}
+	</select>
+	
+	<update id="updateAdminPassword">
+		update tbl_user
+		set password = #{newPassword}
+		where id = #{adminId}
+	</update>
+	
+	<select id="selectAllUser" resultType="UserVO">
+		select id, identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, `role`, profil_image_name, profil_image_original_name, profil_image_size
+		from tbl_user
+		order by id desc
+	</select>
+	
 </mapper>
