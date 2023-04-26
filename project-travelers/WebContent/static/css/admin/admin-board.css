@@ -130,8 +130,8 @@ nav ul li a {
 
 div.mainContent {
 	width: 74%;
-	height: 600px;
-	margin:50px auto;
+	height: 650px;
+	margin:30px auto;
 	position:relative;
 
 	
@@ -223,7 +223,7 @@ div.memberLists div#root {
 }
 
 div.memberLists div#root div {
-	text-align: right;
+	text-align: left;
 }
 
 
@@ -246,6 +246,7 @@ div.memberLists div#root div button {
     cursor:pointer;
     border-radius:2px;
     color: #6e6e6e;
+        margin-left: 1104px;
 }
 
 
@@ -261,6 +262,7 @@ table {
 	border-collapse: collapse;
 	line-height: 1.5;
 	font-size:13px;
+	text-align : center;
 
 }
 
@@ -301,9 +303,12 @@ table tr.tableTh td {
 
 
 .btn-write {
-	width: 95%;
-	margin: 0 auto;
-	text-align: end;
+	    position: absolute;
+    width: 200px;
+    margin: 0 auto;
+    text-align: end;
+    right: 50px;
+    bottom: -90px;
 }
 .clickWriteBtn {
 	width: 100px;

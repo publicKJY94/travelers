@@ -56,26 +56,36 @@
 					<div class="memberLists">
 						<div id="root">
 							<div>
-								<span>탈퇴한 회원 총 <div id="checkResult" style="width: 10px; height: 10px;">0</div>건</span>
-				       			<button>삭제</button>
+								<span>총 <div id="checkResult" style="width: 10px; height: 10px;">0</div> 명</span>
+				       			<button class="deleteBtn">삭제</button>
 				       		</div>
 						</div>
 						<table>
 							<thead>
 								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
-									<td></td>
-									<td>번호</td>
+									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
+									<td>유저번호</td>
+									<td>이메일</td>
 									<td>닉네임</td>
-									<td>구분</td>
-									<td>연락처</td>
 									<td>이름</td>
+									<td>연락처</td>
+									<td>성별</td>
 									<td>생년월일</td>
-									<td>지역</td>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' type="checkbox"></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
+								</tr>
+							<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
 									<td>432</td>
 									<td>구글민혁</td>
 									<td>USER</td>
@@ -85,64 +95,84 @@
 									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' name="checkedElement" type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' name="checkedElement" type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' name="checkedElement" type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' name="checkedElement" type="checkbox"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+									<td>서울</td>
 								</tr>
 							</tbody>
 						</table>
@@ -172,4 +202,5 @@
 			</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-table.js"></script>
 </html>
