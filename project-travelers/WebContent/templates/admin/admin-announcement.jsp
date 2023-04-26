@@ -115,92 +115,111 @@
 							</div> -->
                                 <!-- 모달창 끝  -->
 
-                            <table>
-                                <thead>
-                                    <tr class="tableTh" style="border-top:3px solid #6e6e6e;">
-                                        <td></td>
-                                        <td>번호</td>
-                                        <td>제목</td>
-                                        <td>내용</td>
-                                        <td>작성자</td>
-                                        <td>활성화</td>
-                                        <td>작성날짜</td>
-                                        <td>조회수</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" ></td>
-                                        <td>1</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td>공개</td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box"></td>
-                                        <td>2</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td>비공개</td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td>3</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td></td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                           <table>
+							<thead>
+								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
+									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
+									<td>공지사항 번호</td>
+									<td>제목</td>
+									<td>작성자</td>
+									<td>등록날짜</td>
+									<td>조회수</td>
+									<td>업데이트 날짜</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>구글민혁</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+							</tbody>
+						</table>
                             <form action="admin-announcement-answer.admin">
                             <div class="btn btn-write">
                                 <button class="clickWriteBtn">작성하기</button>
@@ -236,4 +255,5 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/admin/modal.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-table.js"></script>
 </html>

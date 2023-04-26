@@ -11,7 +11,9 @@ html{
 }
 
 
-
+td{
+	text-align : center;
+}
 div.wrap {
 	min-width:1500px;
 	height:100%;
@@ -177,8 +179,7 @@ table {
 }
 
 
-table tr th::after {
-    content: ' 더보기 → ';
+.moreSee{
     width: 45px;
     border: 1px solid #6e6e6e;
     border-radius: 30px;
@@ -190,6 +191,8 @@ table tr th::after {
     position: absolute;
     right: 0;
     cursor: pointer;
+    top : 1px;
+   text-decoration: none;
 }
 
 
