@@ -39,7 +39,7 @@
 						href="/my/account/info" class="active"> 회원 정보 </a></li>
 					<li _ngcontent-lmw-c83=""><a _ngcontent-lmw-c83=""
 						routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify"> 비밀번호 수정 </a></li>
+						href="${pageContext.request.contextPath}/newPassword.myPage"> 비밀번호 수정 </a></li>
 					<li _ngcontent-lmw-c83=""><a _ngcontent-lmw-c83=""
 						routerlink="withdrawal" routerlinkactive="active"
 						href="/my/account/withdrawal"> 회원탈퇴 </a></li>

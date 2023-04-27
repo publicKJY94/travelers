@@ -18,15 +18,16 @@ public class JoinOkController implements Action{
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		userVO.setIdentification("koreamax");
-		userVO.setEmail("koreamax");
+		
+		userVO.setIdentification(req.getParameter("identification"));
+		userVO.setEmail(req.getParameter("identification"));
 		userVO.setPassword(req.getParameter("password"));
 		userVO.setName(req.getParameter("name"));
 		userVO.setNickname(req.getParameter("nickname"));
 		userVO.setBirthday("19500120");
 		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
 		String gender = "남자";
-		userVO.setGender("gender");
+		userVO.setGender(gender);
 		userVO.setStatus("normal");
 		userVO.setCreatedDate("2023-01-01");
 		userVO.setUpdatedDate("2023.09.09");
