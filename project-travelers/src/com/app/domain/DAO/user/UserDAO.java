@@ -1,11 +1,14 @@
 package com.app.domain.DAO.user;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.app.domain.Criteria;
 import com.app.domain.VO.user.UserVO;
 import com.app.mybatis.config.MyBatisConfig;
 
@@ -53,6 +56,30 @@ public SqlSession sqlSession;
 	public List<UserVO> selectAllUser(){
 		return sqlSession.selectList("user.selectAllUser");
 
+	}
+	
+	//유저 전체 수 조회 (검색)
+	public int getTotal(String type, String keyword) {
+		Map<String,String> map = new HashMap<String, String>();
+		map.put("type", type);
+		map.put("keyword", keyword);
+		return sqlSession.selectOne("user.getTotal",map);
+	}
+	
+	//10명씩 페이징처리 최신순
+	public List<UserVO> selectAllUserLimitTen(Criteria criteria){
+		return sqlSession.selectList("user.selectAllUserLimitTen",criteria);
+	}
+	
+	
+	//여러명 삭제
+	public void deleteAllUserSelected(String[] deleteIds) {
+		List<Integer> ids = new ArrayList<>();
+		Arrays.stream(deleteIds).map(Integer::parseInt).forEach(ids::add);
+		
+		Map<String,List<Integer>> map = new HashMap<String, List<Integer>>();
+		map.put("ids", ids);
+		sqlSession.delete("user.deleteAllUserSelected",map);
 	}
 	
 }

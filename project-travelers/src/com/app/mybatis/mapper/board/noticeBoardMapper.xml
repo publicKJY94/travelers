@@ -9,4 +9,62 @@
 		on nb.admin_id = tu.id
 		order by nb.id desc
 	</select>
+	
+	
+	<select id="getTotal" resultType="_int">
+		select count(tu.id) from notice_board nb
+		join tbl_user tu 
+		on nb.id = tu.id
+		
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+	</select>
+
+	<select id="selectAllNoticeBoardLimitTen" resultType="noticeBoardDTO">
+			SELECT nb.id,
+		title, content, register_date, nb.updated_date, viewed_count,
+		admin_id,tu.nickname admin_nickname
+		FROM notice_board nb join tbl_user tu
+		on nb.admin_id = tu.id
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+				
+			</choose>
+			
+		</where>
+		order by nb.id desc
+		limit #{offset},#{rowCount};
+	</select>
+	
+	
+	<delete id="deleteAllNoticeBoardSelected">
+		delete from notice_board
+		<where>
+			<foreach collection ="ids" item = "boardId" separator="or">
+				id =#{boardId}
+			</foreach>
+		</where>
+	</delete>
+	
 </mapper>
