@@ -48,5 +48,20 @@ public SqlSession sqlSession;
 	public List<UserVO> selectAllUser(){
 		return sqlSession.selectList("user.selectAllUser");
 	}
+
+	// 사용자 정보 가져오기
+	public UserVO selectUserInfo(Long userId) {
+		return sqlSession.selectOne("user.selectUserInfo");
+	}
 	
+	// 사용자 정보 변경
+	public void updateUserInfo(UserVO userVO) {
+		Map<String, String> updateUserInfo = new HashMap<>();
+		updateUserInfo.put("newName", userVO.getName());
+		updateUserInfo.put("newNickname", userVO.getNickname());
+		updateUserInfo.put("newIntroducingMessage", userVO.getIntroducingMessage());
+		updateUserInfo.put("newPhoneNumber", userVO.getPhoneNumber());
+		updateUserInfo.put("newEmail", userVO.getEmail());
+		sqlSession.update("user.updateUserInfo", userVO);
+	}
 }
