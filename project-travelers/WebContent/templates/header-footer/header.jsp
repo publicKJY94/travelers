@@ -48,7 +48,7 @@
 				<ul _ngcontent-qlk-c65 class="side_wrap">
 
 					<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
-						class="btn_login ng-star-inserted" href="login.user"> <span
+						class="btn_login ng-star-inserted" href="${pageContext.request.contextPath}/login.user"> <span
 							_ngcontent-qlk-c65></span> 로그인
 					</a></li>
 				</ul>

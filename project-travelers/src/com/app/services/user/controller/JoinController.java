@@ -11,32 +11,21 @@ import com.app.Result;
 import com.app.domain.DAO.user.UserDAO;
 import com.app.domain.VO.user.UserVO;
 
-public class JoinOkController implements Action{
+public class JoinController implements Action {
+
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
 		UserDAO userDAO = new UserDAO();
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		
-		userVO.setNickname(req.getParameter("nickname"));
-		userVO.setPassword(req.getParameter("password"));
-		userVO.setName(req.getParameter("name"));
 		userVO.setEmail(req.getParameter("email"));
-		userVO.setBirthday(req.getParameterValues("birthday"));
-		
-		String[] country = req.getParameterValues("country");
-		String number = req.getParameter("number");
-		String phoneNumber = country + number;
-				
-		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
-		userVO.setGender(req.getParameter("gender"));
-		
-		userDAO.insertUserInfo(userVO);
+		userDAO.insertUserEmail(userVO);
 		
 		result.setRedirect(true);
-		result.setPath(req.getContextPath() + "/loginOk.user");
-
+		result.setPath(req.getContextPath() + "/joinOk.user");
+		
 		return result;
 	}
 }

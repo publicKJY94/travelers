@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.user.controller.JoinController;
+import com.app.services.user.controller.JoinOkController;
 import com.app.services.user.controller.LoginOkController;
 
 public class UserFrontController extends HttpServlet{
@@ -27,6 +29,19 @@ public class UserFrontController extends HttpServlet{
 			
 		}
 		
+		if(target.equals("joinEmail")) {
+			result.setPath("/templates/login/new_user.jsp");
+			
+		}else if (target.equals("join")) {
+			result = new JoinController().execute(req, resp);
+			
+		}else if (target.equals("joinOk")) {
+			result = new JoinOkController().execute(req, resp);
+		}
+		
+		if(target.equals("findId")) {
+			result.setPath("/templates/login/find_id.jsp");
+		}
 		
 		
 		
