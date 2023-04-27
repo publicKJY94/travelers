@@ -32,13 +32,13 @@
 				<ul class="tab_nav st01">
 					<li><a
 						routerlink="info" routerlinkactive="active"
-						href="/my/account/info"> 회원 정보 </a></li>
+						href="${pageContext.request.contextPath}/memberInfo.mypage" > 회원 정보 </a></li>
 					<li><a
 						routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify" class="active"> 비밀번호 수정 </a></li>
+						href="${pageContext.request.contextPath}/newPassword.mypage" class="active"> 비밀번호 수정 </a></li>
 					<li><a
 						routerlink="withdrawal" routerlinkactive="active"
-						href="/my/account/withdrawal"> 회원탈퇴 </a></li>
+						href="${pageContext.request.contextPath}/disaccount.mypage"> 회원탈퇴 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>

@@ -27,16 +27,15 @@
 						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg"
 						alt="더보기"></i>
 				</button>
-				<ul  class="tab_nav st01">
-					<li ><a 
-						routerlink="info" routerlinkactive="active"
-						href="/my/account/info"> 회원 정보 </a></li>
-					<li ><a 
+				<ul class="tab_nav st01">
+					<li><a routerlink="info" routerlinkactive="active"
+						href="${pageContext.request.contextPath}/memberInfo.mypage" > 회원 정보 </a></li>
+					<li><a
 						routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify"> 비밀번호 수정 </a></li>
-					<li ><a 
+						href="${pageContext.request.contextPath}/newPassword.mypage"> 비밀번호 수정 </a></li>
+					<li><a
 						routerlink="withdrawal" routerlinkactive="active"
-						href="/my/account/withdrawal" class="active"> 회원탈퇴 </a></li>
+						href="${pageContext.request.contextPath}/disaccount.mypage" class="active"> 회원탈퇴 </a></li>
 				</ul>
 			</nav>
 			<router-outlet ></router-outlet>
@@ -59,7 +58,7 @@
 							<ul class="box_wrap">
 								<li ><div 
 										class="th">아이디</div>
-									<div >max021159@naver.com</div></li>
+									<div>max021159@naver.com</div></li>
 								<li ><div 
 										class="th">이름</div>
 									<div >이민형</div></li>

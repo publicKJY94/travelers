@@ -34,10 +34,10 @@
 				<ul class="tab_nav st01">
 					<li><a
 						routerlink="my" routerlinkactive="active"
-						href="/my/travel-note/my" class="active"> 나의 여행기 </a></li>
+						href="${pageContext.request.contextPath}/mytripboardpage.mypage" class="active"> 나의 여행기 </a></li>
 					<li><a
 						routerlink="like" routerlinkactive="active"
-						href="/my/travel-note/like" class=""> 좋아요한 여행기 </a></li>
+						href="${pageContext.request.contextPath}/mytripboardlike.mypage" class=""> 좋아요한 여행기 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>

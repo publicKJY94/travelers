@@ -37,7 +37,7 @@
 				</button>
 				<ul class="tab_nav st01">
 					<li><a routerlink="my" routerlinkactive="active"
-						href="/my/community/my" class="active"> 나의 문의하기 </a></li>
+						href="${pageContext.request.contextPath}/myquestion.mypage" class="active"> 나의 문의하기 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>

@@ -32,12 +32,12 @@
 				</button>
 				<ul class="tab_nav st01">
 					<li><a
-						routerlink="my" routerlinkactive="active" href="/my/schedules/my"
+						routerlink="my" routerlinkactive="active" href="${pageContext.request.contextPath}/mytriproute.mypage"
 						class="active"> 나의 추천루트 </a></li>
 					<li></li>
 					<li><a
 						routerlink="scrap" routerlinkactive="active"
-						href="/my/schedules/scrap"> 내가 찜한 추천루트 </a></li>
+						href="${pageContext.request.contextPath}/mytriproutelike.mypage"> 내가 찜한 추천루트 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>

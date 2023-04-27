@@ -29,11 +29,12 @@
 				</button>
 				<ul class="tab_nav st01">
 					<li><a
-						routerlink="my" routerlinkactive="active" href="/my/reply/my"
-						class="active"> 내가 등록한 댓글 </a></li>
+					class="active"
+						routerlink="my" routerlinkactive="active" href="${pageContext.request.contextPath}/mycomment.mypage">
+							내가 등록한 댓글 </a></li>
 					<li><a
 						routerlink="content" routerlinkactive="active"
-						href="/my/reply/content"> 내글에 등록된 댓글 </a></li>
+						href="${pageContext.request.contextPath}/myregisteredcomment.mypage" class=""> 내글에 등록된 댓글 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>
