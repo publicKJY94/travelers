@@ -56,10 +56,12 @@ input[type=submit] {
 				<ul class="tab_nav st01">
 					<li><a routerlink="info" routerlinkactive="active"
 						href="/my/account/info" class="active"> 회원 정보 </a></li>
-					<li><a routerlink="pw-modify" routerlinkactive="active"
-						href="${pageContext.request.contextPath}/newPassword.mypage"> 비밀번호 수정 </a></li>
-					<li><a routerlink="withdrawal" routerlinkactive="active"
-						href="${pageContext.request.contextPath}/disaccount.mypage"> 회원탈퇴 </a></li>
+					<li _ngcontent-lmw-c83=""><a _ngcontent-lmw-c83=""
+						routerlink="pw-modify" routerlinkactive="active"
+						href="${pageContext.request.contextPath}/newPassword.myPage"> 비밀번호 수정 </a></li>
+					<li _ngcontent-lmw-c83=""><a _ngcontent-lmw-c83=""
+						routerlink="withdrawal" routerlinkactive="active"
+						href="/my/account/withdrawal"> 회원탈퇴 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>

@@ -8,8 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+<<<<<<< HEAD
 import com.app.services.mypage.controller.MemberInfoController;
 import com.app.services.mypage.controller.MemberInfoOkController;
+=======
+import com.app.services.user.controller.LoginOkController;
+>>>>>>> deab18774082d53d045d0f4123f751b6a7ae6717
 
 public class MyPageFrontController extends HttpServlet{
 	@Override
@@ -19,13 +23,11 @@ public class MyPageFrontController extends HttpServlet{
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
 		//target에 따른 if문 분기처리 구간
+	
 		if(target.equals("newPassword")) {
 			result.setPath("/templates/mypage/password-amend.jsp");
-		} /*
-			 * else if(){
-			 * 
-			 * }
-			 */
+		}
+		
 		
 		
 		
