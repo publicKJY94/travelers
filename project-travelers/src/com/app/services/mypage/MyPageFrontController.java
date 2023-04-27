@@ -8,12 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
-<<<<<<< HEAD
-import com.app.services.mypage.controller.MemberInfoController;
-import com.app.services.mypage.controller.MemberInfoOkController;
-=======
 import com.app.services.user.controller.LoginOkController;
->>>>>>> deab18774082d53d045d0f4123f751b6a7ae6717
 
 public class MyPageFrontController extends HttpServlet{
 	@Override
