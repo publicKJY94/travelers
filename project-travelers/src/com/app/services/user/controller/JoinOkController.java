@@ -30,7 +30,6 @@ public class JoinOkController implements Action{
 		String phoneNumber = country + number;
 				
 		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
-		userVO.setBirthday(req.getParameter("birthday"));
 		userVO.setGender(req.getParameter("gender"));
 		
 		userDAO.insertUserInfo(userVO);

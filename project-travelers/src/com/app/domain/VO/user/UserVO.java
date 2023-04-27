@@ -70,8 +70,8 @@ public class UserVO {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(String phone_number) {
-		this.phoneNumber = phone_number;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getNickname() {
@@ -187,7 +187,7 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [id=" + id + ", identification=" + identification + ", password=" + password + ", name=" + name
-				+ ", email=" + email + ", phone_number=" + phoneNumber + ", nickname=" + nickname + ", birthday="
+				+ ", email=" + email + ", phoneNumber=" + phoneNumber + ", nickname=" + nickname + ", birthday="
 				+ birthday + ", gender=" + gender + ", introducingMessage=" + introducingMessage + ", status=" + status
 				+ ", createdDate=" + createdDate + ", updatedDate=" + updatedDate + ", role=" + role
 				+ ", profilImageName=" + profilImageName + ", profilImageOriginalName=" + profilImageOriginalName

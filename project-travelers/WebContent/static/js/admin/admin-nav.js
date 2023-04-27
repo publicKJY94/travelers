@@ -3,8 +3,6 @@
 	
 	const $title = document.querySelector(".ChangeTitle");
 	const $sideList = document.querySelectorAll(".mainNav>li");
-	console.log($sideList);
-	console.log($title);
 	
 	$sideList.forEach(el =>{
 		if(el.innerText == $title.innerText){

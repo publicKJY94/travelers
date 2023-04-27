@@ -34,149 +34,68 @@
 				<div class="mainContent">
 					<div class="mainBox">
 						<div class="mainBoxList">
-							<table>
+							<table class="userTable" >
 								<tr class="tableTh" >
 									<th>최근가입자</th>
+									<th><a href="admin-member.admin" class="moreSee">더보기 -></a><th>
 								</tr>
 								<tr style="border-top:3px solid #6e6e6e;" >
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
+									<td>아이디</td>
+									<td>닉네임</td>
+									<td>성별</td>
+									<td>핸드폰 번호</td>
+									<td>가입날짜</td>
 								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[구글민혁]</td>
-									<td>구글민혁</td>
-									<td>일반인</td>
-									<td>010-0000-0000</td>
-									<td>서울</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
+								
 								
 							</table>
 						</div>
 						<div class="mainBoxList">
-							<table>
+							<table class="boardTable">
 								<tr class="tableTh">
 									<th>게시판관리</th>
+									<th><a href="admin-trip-board.admin" class="moreSee">더보기 -></a><th>
 								</tr>
 								<tr style="border-top:3px solid #6e6e6e;">
-									<td>[여행기게시판]</td>
-									<td>여행왔어요</td>
-									<td>2023-04-05 10:04</td>
+									<td>[게시판 종류]</td>
+									<td>게시판 제목</td>
+									<td>작성자</td>
+									<td>조회수</td>
+									<td>등록날짜</td>
 								</tr>
-								<tr>
-									<td>[기념품게시판]</td>
-									<td>여행왔어요</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[추천루트게시판]</td>
-									<td>여행왔어요</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[추천루트게시판]</td>
-									<td>여행왔어요</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[추천루트게시판]</td>
-									<td>여행왔어요</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
+							
 							</table>
 						</div>
 					</div>
 					<div class="mainBox">
 						<div class="mainBoxList">
-							<table>
+							<table class="questionBoardTable">
 								<tr class="tableTh">
 									<th>고객응대</th>
+									<th><a href="admin-qa.admin" class="moreSee">더보기 -></a><th>
 								</tr>
 								<tr style="border-top:3px solid #6e6e6e;">
-									<td>[Q질문드립니다]</td>
-									<td>이용문의 드립니다</td>
-									<td>2023-04-05 10:04</td>
+									<td>문의 제목</td>
+									<td>작성자</td>
+									<td>등록 날짜</td>
+									<td>답변 상태</td>
 								</tr>
-								<tr>
-									<td>[Q질문드립니다]</td>
-									<td>이용문의 드립니다</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[Q질문드립니다]</td>
-									<td>이용문의 드립니다</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[Q질문드립니다]</td>
-									<td>이용문의 드립니다</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[Q질문드립니다]</td>
-									<td>이용문의 드립니다</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
+								
 							</table>
 						</div>
 						<div class="mainBoxList">
-							<table>
+							<table class="noticeBoardTable">
 								<tr class="tableTh">
 									<th>공지사항</th>
+									<th><a href="admin-announcement.admin" class="moreSee">더보기 -></a><th>
 								</tr>
 								<tr style="border-top:3px solid #6e6e6e;">
-									<td>[공지사항]</td>
-									<td>처음 가입했을때, 해야할 것들</td>
-									<td>2023-04-05 10:04</td>
+									<td>공지사항 제목</td>
+									<td>작성자</td>
+									<td>조회수</td>
+									<td>등록날짜</td>
 								</tr>
-								<tr>
-									<td>[공지사항]</td>
-									<td>처음 가입했을때, 해야할 것들</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[공지사항]</td>
-									<td>처음 가입했을때, 해야할 것들</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[공지사항]</td>
-									<td>처음 가입했을때, 해야할 것들</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
-								<tr>
-									<td>[공지사항]</td>
-									<td>처음 가입했을때, 해야할 것들</td>
-									<td>2023-04-05 10:04</td>
-								</tr>
+							
 							</table>
 						</div>
 					</div>
@@ -185,4 +104,15 @@
 		</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+	let userList = `${userList}`;
+	let tripBoardList = `${tripBoardList}`;
+	let noticeBoardList = `${noticeBoardList}`;
+	let questionBoardList = `${questionBoardList}`;
+	
+
+</script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-main.js"></script>
+
+
 </html>

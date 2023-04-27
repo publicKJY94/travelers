@@ -59,88 +59,112 @@
                                     <button>삭제</button>
                                    </div>
                             </div>
-                            <table>
-                                <tr class="tableTh" style="border-top:3px solid #6e6e6e;">
-									<td></td>
+                          <table>
+							<thead>
+								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
+									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
+									<td>q&a번호</td>
 									<td>제목</td>
-									<td>내용</td>
 									<td>작성자</td>
-									<td>첨부파일</td>
-									<td>활성화</td>
-									<td>작성날짜</td>
-									<td>조회수</td>
+									<td>등록날짜</td>
+									<td>답변 상태</td>
+									<td>답변 버튼</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' type="checkbox"></td>
-									<td>문의드립니다</td>
-									<td>문의드립니다문의드립니다</td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
 									<td>USER</td>
-									<td>-</td>
-									<td>공개</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
 									<td>1990-02-19</td>
-									<td>50</td>
 								</tr>
 								<tr>
-									<td><input class="inputCheckBox" onclick='getCheckedCnt()' type="checkbox"></td>
-									<td>문의드립니다</td>
-									<td>문의드립니다문의드립니다</td>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
 									<td>USER</td>
-									<td>-</td>
-									<td>비공개</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
 									<td>1990-02-19</td>
-									<td>50</td>
 								</tr>
-                                <tr>
-                                    <td><input type="checkbox" class="inputCheckBox" onclick='getCheckedCnt()'></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-									<td></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="inputCheckBox" onclick='getCheckedCnt()'></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-									<td></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="inputCheckBox" onclick='getCheckedCnt()'></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-									<td></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="inputCheckBox" onclick='getCheckedCnt()'></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-									<td></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" class="inputCheckBox" onclick='getCheckedCnt()'></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-									<td></td>
-                                </tr>
-                            </table>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+								<tr>
+									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
+									<td>432</td>
+									<td>안녕</td>
+									<td>USER</td>
+									<td>010-0000-0000</td>
+									<td>민혁</td>
+									<td>1990-02-19</td>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+						</table>
                             <div class="btn btn-write">
                                 <button class="clickWriteBtn">작성하기</button>
                             </div>
@@ -171,4 +195,5 @@
         </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-table.js"></script>
 </html>
