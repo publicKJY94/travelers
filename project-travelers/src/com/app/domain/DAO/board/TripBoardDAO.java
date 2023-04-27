@@ -18,4 +18,8 @@ public SqlSession sqlSession;
 	public List<TripBoardDTO> selectTripBoardList(){
 		return sqlSession.selectList("tripBoard.selectTripBoardList");
 	}
+//	전체 게시글 개수 조회
+	public int getTotal() {
+		return sqlSession.selectOne("board.getTotal");
+	}
 }

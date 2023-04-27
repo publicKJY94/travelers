@@ -11,4 +11,8 @@
 		on tb.user_id = tu.id
 		order by tb.id desc
 	</select>
+	
+	<select id="getTotal" resultType="_int">
+		select distinct count(board_id)
+	</select>
 </mapper>
