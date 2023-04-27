@@ -94,8 +94,8 @@ public class UserVO {
 		return gender;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setGender(String strings) {
+		this.gender = strings;
 	}
 
 	public String getIntroducingMessage() {
@@ -195,6 +195,7 @@ public class UserVO {
 	}
 
 	public void setBirthday(String[] parameterValues) {;}
+	public void setGender(String[] parameterValues) {;}
 	
 	
 }
