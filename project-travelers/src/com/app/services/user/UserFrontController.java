@@ -47,6 +47,9 @@ public class UserFrontController extends HttpServlet{
 			result.setPath("/templates/login/find_id.jsp");
 		}
 		
+		if(target.equals("resetPwd")) {
+			result.setPath("/templates/login/reset_password.jsp");
+		}
 		
 		
 		

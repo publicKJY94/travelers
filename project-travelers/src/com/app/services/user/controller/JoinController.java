@@ -18,8 +18,10 @@ public class JoinController implements Action{
 		Result result = new Result();
 		
 		String identification = req.getParameter("identification");
-		userVO.setIdentification("identification");
-		userVO.setEmail("identification");
+		String email = req.getParameter("email");
+		
+		userVO.setIdentification(identification);
+		userVO.setEmail(email);
 		
 		result.setPath("/templates/login/new_user_info.jsp");
 		
