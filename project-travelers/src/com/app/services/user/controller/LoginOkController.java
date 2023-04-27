@@ -18,22 +18,26 @@ public class LoginOkController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
 		HttpSession session = req.getSession();
-		String userIdentification = req.getParameter("userIdentification");
+		
+		String userIdentification = req.getParameter("userIdentification"); 
 		String userPassword = req.getParameter("userPassword");
+		
 		
 		UserDAO userDAO = new UserDAO();
 		UserVO userVO = userDAO.login(userIdentification, userPassword);
 		
 		if(userVO==null) {
-			
+			result.setPath(req.getContextPath()+"/login.user?login=false"); 
 		}else if(userVO.getRole().equals("admin")){
 			result.setRedirect(true);
 			result.setPath(req.getContextPath()+"/admin.admin"); 
 			session.setAttribute("adminId", userVO.getId());
 			
+		}else if(userVO.getRole().equals("user")) {
+			result.setRedirect(true);
+			result.setPath(req.getContextPath()+"/user.main"); 
+			session.setAttribute("userId", userVO.getId());
 		}
-		
-		
 		
 		
 		

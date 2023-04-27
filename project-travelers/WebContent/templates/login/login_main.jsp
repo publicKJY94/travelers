@@ -44,9 +44,9 @@
 							</ul>
 						</form>
 						<div class="link">
-							<a href="/lookup/newuser">회원가입</a><a
-								href="/find-id">계정 찾기</a><a
-								href="/password-modify-request">비밀번호
+							<a href="/project-travelers/joinEmail.user">회원가입</a><a
+								href="/project-travelers/findId.user">계정 찾기</a><a
+								href="/project-travelers/">비밀번호
 								재설정</a>
 						</div>
 					</div>

@@ -16,9 +16,12 @@ public SqlSession sqlSession;
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
+	public void insertUserEmail(UserVO userVO) {
+		sqlSession.insert("user.insertUserEmail",userVO);
+	}
 	//회원가입
-	public void insert(UserVO userVO) {
-		sqlSession.insert("user.insert", userVO);
+	public void insertUserInfo(UserVO userVO) {
+		sqlSession.insert("user.insertUserInfo", userVO);
 	}
 	
 	
@@ -44,9 +47,16 @@ public SqlSession sqlSession;
 		sqlSession.update("user.updateAdminPassword",info);
 	}
 	
+
+	public UserVO selectOneUser(Long userId) {
+		return sqlSession.selectOne("user.selectOneUser",userId);
+
+	}
+	
 	//유저 전체 조회 최근조회순
 	public List<UserVO> selectAllUser(){
 		return sqlSession.selectList("user.selectAllUser");
+
 	}
 	
 }

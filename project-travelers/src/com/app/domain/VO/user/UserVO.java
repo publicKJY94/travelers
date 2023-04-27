@@ -193,6 +193,8 @@ public class UserVO {
 				+ ", profilImageName=" + profilImageName + ", profilImageOriginalName=" + profilImageOriginalName
 				+ ", profilImageSize=" + profilImageSize + "]";
 	}
+
+	public void setBirthday(String[] parameterValues) {;}
 	
 	
 }
