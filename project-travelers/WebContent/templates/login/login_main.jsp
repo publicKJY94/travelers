@@ -46,7 +46,7 @@
 						<div class="link">
 							<a href="/project-travelers/joinEmail.user">회원가입</a><a
 								href="/project-travelers/findId.user">계정 찾기</a><a
-								href="/project-travelers/">비밀번호
+								href="/project-travelers/resetPwd.user">비밀번호
 								재설정</a>
 						</div>
 					</div>
