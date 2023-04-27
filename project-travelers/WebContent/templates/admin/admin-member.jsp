@@ -122,7 +122,7 @@
 				<input type = "hidden" name = "type" value = "${criteria.type}">
 				<input type = "hidden" name = "keyword" value = "${criteria.keyword}">
 			</form>
-			
+		</div>	
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
