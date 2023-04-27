@@ -19,14 +19,10 @@ public SqlSession sqlSession;
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
-	public void insertUserEmail(UserVO userVO) {
-		sqlSession.insert("user.insertUserEmail",userVO);
-	}
 	//회원가입
-	public void insertUserInfo(UserVO userVO) {
-		sqlSession.insert("user.insertUserInfo", userVO);
+	public void insert(UserVO userVO) {
+		sqlSession.insert("user.insert",userVO);
 	}
-	
 	
 	//로그인
 	public UserVO login(String userIdentification, String userPassword) {

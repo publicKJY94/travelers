@@ -8,20 +8,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Action;
 import com.app.Result;
-import com.app.domain.VO.user.UserVO;
 
-public class JoinController implements Action{
-
+public class LogoutController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		UserVO userVO = new UserVO();
+		
 		Result result = new Result();
 		
-		String identification = req.getParameter("identification");
-		userVO.setIdentification("identification");
-		userVO.setEmail("identification");
-		
-		result.setPath("/templates/login/new_user_info.jsp");
+		result.setRedirect(true);
+		result.setPath(req.getContextPath()+"/login.user"); 
 		
 		return result;
 	}
