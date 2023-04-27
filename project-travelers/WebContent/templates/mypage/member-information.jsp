@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="com.app.domain.DAO.user.UserDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +26,9 @@ a.btn_st0 {
 	line-height: 1.5;
 }
 
-input[type=submit]{
-border: none;
-background-color: transparent; 
+input[type=submit] {
+	border: none;
+	background-color: transparent;
 }
 </style>
 </head>
@@ -57,7 +57,7 @@ background-color: transparent;
 					<li><a routerlink="info" routerlinkactive="active"
 						href="/my/account/info" class="active"> 회원 정보 </a></li>
 					<li><a routerlink="pw-modify" routerlinkactive="active"
-						href="/my/account/pw-modify"> 비밀번호 수정 </a></li>
+						href="newPassword.myPage"> 비밀번호 수정 </a></li>
 					<li><a routerlink="withdrawal" routerlinkactive="active"
 						href="/my/account/withdrawal"> 회원탈퇴 </a></li>
 				</ul>
@@ -66,63 +66,68 @@ background-color: transparent;
 			<app-my-info class="ng-star-inserted">
 			<section class="my_wrap">
 				<dl class="inner">
-					<dt class="tit">로그인 정보</dt>
-					<dd>
-						<ul class="box_wrap">
-							<li>
-								<div class="th">이름</div>
-								<div>
-									<input type="text" class="memberInfo" value="${name}">
-								</div>
-							</li>
-							<li>
-								<div class="th">닉네임</div>
-								<div>
-									<input type="text" class="memberInfo" value="${nickname}">
-								</div>
-							</li>
-							<li>
-								<div class="th">한줄 소개</div>
-								<div class="txt">
-									<input type="text" class="memberInfo" value="${introducingMessage}">
-								</div>
-							</li>
-						</ul>
-					</dd>
+					<form action="/MyPage"
+						id="update-info">
+						<dt class="tit">로그인 정보</dt>
+						<dd>
+							<ul class="box_wrap">
+								<li>
+									<div class="th">이름</div>
+									<div>
+										<input type="text" class="memberInfo" value="${userVO.name}">
+									</div>
+								</li>
+								<li>
+									<div class="th">닉네임</div>
+									<div>
+										<input type="text" class="memberInfo"
+											value="${userVO.nickname}">
+									</div>
+								</li>
+								<li>
+									<div class="th">한줄 소개</div>
+									<div class="txt">
+										<input type="text" class="memberInfo"
+											value="${userVO.introducingMessage}">
+									</div>
+								</li>
+							</ul>
+						</dd>
 
-					<dt class="tit">개인 정보</dt>
-					<dd>
-						<ul class="box_wrap">
-							<li>
-								<div class="th">연락처</div>
-								<div>
-									<input type="text" class="memberInfo" value="${phoneNumber}">
-								</div>
-							</li>
-							<li>
-								<div class="th">이메일</div>
-								<div>
-									<input type="text" class="memberInfo" value="${email}">
-								</div>
-							</li>
-						</ul>
-					</dd>
+						<dt class="tit">개인 정보</dt>
+						<dd>
+							<ul class="box_wrap">
+								<li>
+									<div class="th">연락처</div>
+									<div>
+										<input type="text" class="memberInfo" value="${phoneNumber}">
+									</div>
+								</li>
+								<li>
+									<div class="th">이메일</div>
+									<div>
+										<input type="text" class="memberInfo" value="${email}">
+									</div>
+								</li>
+							</ul>
+						</dd>
 
-					<dt class="tit">개인정보 유효기간 설정</dt>
-					<dd>
-						<ul class="box_wrap">
-							<li><div class="th">서비스 이용기간 선택</div>
-								<div>
-									<input id="agree" type="checkbox" class="chbox"><label
-										for="agree"> 개인정보를 파기 또는 분리 저장ㆍ관리하여야 하는 서비스 미 이용 기간을
-										회원 탈퇴 시까지로 요청합니다. </label><span class="desc"> * 다만, 별도의 요청이 없을
-										경우 서비스 미이용 기간은 1년으로 합니다. </span>
-								</div></li>
-						</ul>
-					</dd>
-					<span class="btn_area"><a class="btn_st0"> 
-					<input type="submit" value="수정">
-					</a></span>
+						<dt class="tit">개인정보 유효기간 설정</dt>
+						<dd>
+							<ul class="box_wrap">
+								<li><div class="th">서비스 이용기간 선택</div>
+									<div>
+										<input id="agree" type="checkbox" class="chbox"><label
+											for="agree"> 개인정보를 파기 또는 분리 저장ㆍ관리하여야 하는 서비스 미 이용 기간을
+											회원 탈퇴 시까지로 요청합니다. </label><span class="desc"> * 다만, 별도의 요청이 없을
+											경우 서비스 미이용 기간은 1년으로 합니다. </span>
+									</div></li>
+							</ul>
+						</dd>
+						<span class="btn_area"><a class="btn_st0"> <input
+								type="submit" value="수정">
+						</a></span>
+					</form>
 				</dl>
 			</section>
 			</app-my-info>
@@ -130,31 +135,22 @@ background-color: transparent;
 		</div>
 	</div>
 	</app-account-management> <jsp:include page="/templates/header-footer/footer.jsp"></jsp:include></app-root>
-	<form action="${pageContext.request.contextPath}/" id="input-info">
-		<input type="hidden" name="name" value="${name}">
-		<input type="hidden" name="nickname" value="${nickname}">
-		<input type="hidden" name="introducingMessage" value="${introducingMessage}">
-		<input type="hidden" name="phoneNumber" value="${phoneNumber}">
-		<input type="hidden" name="email" value="${email}">
-	</form>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script type="text/javascript">
-	let contextPath = `${pageContext.request.contextPath}`;
-	let $form = $("form[name='input-info']"); 
-	$('input.memberInfo').on("click", (e) =>
-		e.preventDefault
-		 $form.find("input[name='name']").val($(this).attr("value"));
-		 $form.find("input[name='nickname']").val($(this).attr("value"));
-		 $form.find("input[name='introducingMessage']").val($(this).attr("value"));
-		 $form.find("input[name='phoneNumber']").val($(this).attr("value"));
-		 $form.find("input[name='email']").val($(this).attr("value"));
-	);
-	$("a.btn_st0").on("click", (e) =>
-		e.preventDefault
+	let $contextPath = `${pageContext.request.contextPath}`;
+	let $form = $("form[name='update-info']");
+	$('input.memberInfo').on("input", function() {
+		$form.find("input[name='name']").val($(this).val());
+		$form.find("input[name='nickname']").val($(this).val());
+		$form.find("input[name='introducingMessage']").val($(this).val());
+		$form.find("input[name='phoneNumber']").val($(this).val());
+		$form.find("input[name='email']").val($(this).val());
+	});
+	$("a.btn_st0").on("click", function(e) {
+		e.preventDefault();
 		$form.submit();
-	);
-	
+	});
 </script>
-<script src="${pageContext.request.contextPath}/static/js/"></script>
+<%-- <script src="${pageContext.request.contextPath}/static/js/memberInfo-ajax.js"></script> --%>
 </html>

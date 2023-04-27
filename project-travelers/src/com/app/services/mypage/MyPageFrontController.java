@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.mypage.controller.MemberInfoController;
 import com.app.services.mypage.controller.MemberInfoOkController;
 
 public class MyPageFrontController extends HttpServlet{
@@ -17,12 +18,14 @@ public class MyPageFrontController extends HttpServlet{
 		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
-		
-		
 		//target에 따른 if문 분기처리 구간
-		if(target.equals("memberInfoOk")) {
-			result = new MemberInfoOkController().execute(req, resp);
-		} 
+		if(target.equals("newPassword")) {
+			result.setPath(req.getContextPath()+"/templates/mypage/password-amend.jsp");
+		} /*
+			 * else if(){
+			 * 
+			 * }
+			 */
 		
 		
 		

@@ -9,7 +9,7 @@
 		profil_image_original_name, profil_image_size)
 		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
 	</insert>
-
+	
 	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->
 	<select id="login" resultType="userVO">
 		select id, identification,
@@ -47,8 +47,8 @@
 	</select>
 
 	<!-- 사용자 정보 조회 / 은행 및 계좌정보 테이블 물어봐야할듯 -->
-	<select id="selectUserInfo" resultType="userVO">
-		select id, name, nickname, introducin_message, phone_number, email
+	<select id="selectUserInfoByUserId" resultType="MyPageInfoDTO">
+		id, identification, name, email, phone_number, nickname, introducing_message
 		from tbl_user
 		where id = #{userId}
 	</select>
@@ -66,5 +66,53 @@
 		delete from tbl_user
 		where id = #{userId}
 	</update>
+
+
+	<select id="getTotal" resultType="_int">
+		select count(id) from tbl_user
+		<where>
+			<choose>
+				<when test = "type == 'name'.toString()">
+					and name like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+	</select>
+
+	<select id="selectAllUserLimitTen" resultType="userVO">
+		SELECT id, identification, password, name, email,
+		phone_number, nickname, birthday, gender, introducing_message, status,
+		created_date, updated_date, `role`, profil_image_name,
+		profil_image_original_name, profil_image_size
+		FROM tbl_user
+		<where>
+			<choose>
+				<when test = "type == 'name'.toString()">
+					and name like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+		order by id desc
+		limit #{offset},#{rowCount};
+	</select>
+
+	
+	
+	<delete id="deleteAllUserSelected">
+		delete from tbl_user
+		<where>
+			<foreach collection ="ids" item = "userId" separator="or">
+				id =#{userId}
+			</foreach>
+		</where>
+	</delete>
 
 </mapper>

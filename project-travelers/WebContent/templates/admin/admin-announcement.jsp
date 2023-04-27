@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,204 +37,107 @@
                 <!-- 여기까지 복사 -->
                 
                 <!--mainScreen-->
-                    <div class="mainContent">
-                        <div class="memberSearch">
-                            <div class="memberSearchInput">
-                                <select>
-                                    <option value="nickName">작성자</option>
-                                    <option value="box title">제목</option>
-                                    <option value="box write">내용</option>
-                                </select>
-                                <div>
-                                    <input type="text" placeholder="검색어를 입력하세요">
-                                </div>
-                                <div>
-                                    <img src="${pageContext.request.contextPath}/static/image/search.png">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="memberLists">
-                           
-                            <div id="root">
-                                <div>
-                                    <span>총 <div id="checkResult" style="width: 10px; height: 10px;">0</div> 건 </span>
-                                    <button>삭제</button>
-                                </div>                           
+                		<div class="mainContent">
+				<form action="admin-announcement.admin" class = "searchForm">
+					<div class="memberSearch">
+						<div class="memberSearchInput">
+							<select name = "type">
+								<option value="title" ${criteria.type == '' ? 'selected' : '' }>제목</option>
+								<option value="content" ${criteria.type == 'content' ? 'selected' : '' }>내용</option>
+								<option value="nickname" ${criteria.type == 'nickname' ? 'selected' : '' }>작성자</option>
+							</select>
+							<div>
+								<input type="text" name ="keyword" placeholder="검색어를 입력하세요" value ="${criteria.keyword}">
+							</div>
+							
+							
+								<button class = "searchBtn">
+								<img src="${pageContext.request.contextPath}/static/image/search.png">
+								</button>
 						</div>
-
-
-				            <!--  모달창--> 
-						<!-- 	<div id="modal">
-							    <div class="modal_content">
-							    	<section>
-                                        <header>
-                                            <h3>공지사항</h3>
-                                            <hr>
-                                        </header>
-							    		<div class="con-write-wrap">
-									        <div class="notice-write">
-									           <div class="write-title">공지사항 제목</div>
-									           <div class="write-sec">
-									              <form><input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요."></form>
-									           </div>
-									        </div>
-                                            <div class="notice-write">
-									           <div class="write-title">공지사항 상태</div>
-									           <div class="write-sec">
-                                                    <form>
-                                                        <select name="" id="">
-                                                            <option>활성화</option>
-                                                            <option>비활성화</option>
-                                                        </select>
-                                                    </form>
-									           </div>
-									        </div>
-                                            <div class="notice-write">
-                                                <div class="write-title">공지사항 수정날짜</div>
-                                                <div class="write-sec">
-                                                   <form><input class="write-input" type="date" placeholder=""></form>
-                                                </div>
-                                             </div>
-									        <div class="notice-write">
-									           <div class="write-title">공지사항 내용</div>
-									           <div class="write-sec">
-									              <form><textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요."></textarea></form>
-									           </div>
-									        </div>
-									        
-									    </div>
-                                        <div class="changeTextBtn">
-                                            <button type="button" id="modal_close_btn">수정하기</button>
-                                        </div>
-                                    </section>
-						        	
-							    </div>
-							   		
-							    <div class="modal_layer"></div>
-							</div> -->
-                                <!-- 모달창 끝  -->
-
-                            <table>
-                                <thead>
-                                    <tr class="tableTh" style="border-top:3px solid #6e6e6e;">
-                                        <td></td>
-                                        <td>번호</td>
-                                        <td>제목</td>
-                                        <td>내용</td>
-                                        <td>작성자</td>
-                                        <td>활성화</td>
-                                        <td>작성날짜</td>
-                                        <td>조회수</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" ></td>
-                                        <td>1</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td>공개</td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box"></td>
-                                        <td>2</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td>비공개</td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td>3</td>
-                                        <td>travelers를 이용하는 방법</td>
-                                        <td>travelers를 이용하는 방법travelers를 이용하는 방법</td>
-                                        <td>관리자</td>
-                                        <td></td>
-                                        <td>1990-02-19</td>
-                                        <td>50</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" class="select-box" onclick='getCheckedCnt()'></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <form action="admin-announcement-answer.admin">
+					</div>
+				</form>
+					
+					<div class="memberLists">
+						<div id="root">
+							<div>
+								<span>총 <c:out value="${criteria.total}"/>건</span>
+				       			<button class="deleteBtn">삭제</button>
+				       		</div>
+						</div>
+						<form action="admin-announcement-delete.admin" class = "deleteForm">
+							<input type = "hidden" name = "page" value = "${criteria.page}">
+							<input type = "hidden" name = "type" value = "${criteria.type}">
+							<input type = "hidden" name = "keyword" value = "${criteria.keyword}">
+						<table class="noticeBoardTable">
+							<thead>
+								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
+									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
+									<td>공지사항번호</td>
+									<td>제목</td>
+									<td>작성자</td>
+									<td>조회수</td>
+									<td>작성날짜</td>
+									<td>수정날짜</td>
+								</tr>
+							</thead>
+							
+						</table>
+						</form>
+						<form action="admin-announcement-answer.admin">
                             <div class="btn btn-write">
                                 <button class="clickWriteBtn">작성하기</button>
                             </div>
                             </form>
+						<!-- [S] 페이지 컨트롤러 -->
+						<div class="page-controller-wrap">
 
-
-                                <!-- [S] 페이지 컨트롤러 -->
-                            <div class="page-controller-wrap">
-
-                                <!-- 이전 페이지로 이동하기 -->
-                                <a class="page-list page-list-move page-before"> <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
-                                alt="이전 페이지로 이동하기 아이콘"></a> 
-                                <a class="page-list page-list-first list-on">1</a> 
-                                <a class="page-list page-list-second">2</a> 
-                                <a class="page-list page-list-third">3</a> 
-                                <a class="page-list page-list-fourth">4</a>
-                                <a class="page-list page-list-fifth">5</a>
-            
-                                <!-- 다음 페이지로 이동하기 -->
-                                <a class="page-list page-list-move page-after"> <img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
-                                alt="다음 페이지로 이동하기 아이콘">
-                                </a>
-            
-                            </div>
-                            <!-- [E] 페이지 컨트롤러 -->
-                        </div> 
-                    </div>
-                </section>
-        </div>
+							<!-- 이전 페이지로 이동하기 -->
+						<c:if test ="${criteria.prev}">
+								<a class="page-list page-list-move page-before page-move" id="${criteria.startPage - 1}"> <img
+							   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
+							   alt="이전 페이지로 이동하기 아이콘"></a> 
+						</c:if>
+							  <c:forEach var = "i" begin ="${criteria.startPage}" end ="${criteria.endPage}">
+							   	<c:choose>
+							   		<c:when test = "${i eq criteria.page }">
+								   <a href="javascript:void(0)" class="page-list page-list-first list-on"><c:out value="${i}"></c:out></a> 
+							   		</c:when>
+							   	<c:otherwise>
+								   <a id = "${i}" class="page-list page-list-first  page-move"><c:out value="${i}"></c:out></a> 
+								   		
+							   	</c:otherwise>
+							   	</c:choose>
+							  </c:forEach>
+		  
+							<!-- 다음 페이지로 이동하기 -->
+						<c:if test = "${criteria.next}">
+							<a id="${criteria.endPage+1}" class="page-list page-list-move page-after page-move"> <img
+							   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
+							   alt="다음 페이지로 이동하기 아이콘">
+							</a>
+						</c:if>
+		  
+						 </div>
+						 <!-- [E] 페이지 컨트롤러 -->
+					</div> 
+				</div>
+			</section>
+			<form action="admin-announcement.admin" name = "page-form">
+				<input id="page" type = "hidden" name = "page" value = "${criteria.page}">
+				<input type = "hidden" name = "type" value = "${criteria.type}">
+				<input type = "hidden" name = "keyword" value = "${criteria.keyword}">
+			</form>
+			
+			</div>
+			
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/admin/modal.js"></script>
+
+
+<script>
+let noticeBoardList = `${noticeBoardList}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-announcement.js"></script>
+
 </html>

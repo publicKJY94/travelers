@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>위시빈 ㅣ 150만개의 진짜 여행정보</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/login/find_id.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/js/login/find_id.js">
 <link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
@@ -23,8 +24,8 @@
 				<h2 class="tit">계정 찾기</h2>
 				<nav>
 					<ul class="tab_nav tab" style="padding-left: 0;">
-						<li><a class="">이메일 인증</a></li>
-						<li><a class="active">휴대폰 인증</a></li>
+						<li id="fir"><a class="">이메일 인증</a></li>
+						<li id="sec"><a class="active">휴대폰 인증</a></li>
 					</ul>
 				</nav>
 				<div id="tab_nav1_wrap" class="tab_nav_wrap">
@@ -52,7 +53,7 @@
 						</form>
 					</dl>
 					<div class="list_btn">
-						<a class="btn_st0 active" href="/login">로그인 페이지로</a>
+						<a class="btn_st0 active" href="/project-travelers/login.user">로그인 페이지로</a>
 					</div>
 				</div>
 				<div id="tab_nav2_wrap" class="tab_nav_wrap active">
@@ -143,15 +144,15 @@
 										<option value="387" class="">보스니아 +387</option>
 										<option value="381" class="">세르비아 +381</option>
 										<option value="41" class="">스위스 +41</option>
-										<!----></select>
+										</select>
 								</div>
 							</dd>
 							<dd class="di_flex">
 								<div>
 									<input formcontrolname="phone" wbonlynumber=""
 										placeholder="전화번호 입력" type="tel" class="txtbox ">
-									<!---->
-									<!---->
+									
+									
 								</div>
 								<div>
 									<a class="btn_st0">인증번호발송</a>
@@ -161,7 +162,7 @@
 								<div>
 									<input formcontrolname="auth_num" placeholder="인증번호를 입력하세요"
 										type="number" class="txtbox ">
-									<!---->
+									
 								</div>
 								<div>
 									<a class="btn_st0">인증 확인</a>
@@ -169,9 +170,9 @@
 							</dd>
 						</form>
 					</dl>
-					<!---->
+					
 					<div class="list_btn">
-						<a class="btn_st0 active" href="/login">로그인 페이지로</a>
+						<a class="btn_st0 active" href="/project-travelers/login.user">로그인 페이지로</a>
 					</div>
 				</div>
 			</div>
