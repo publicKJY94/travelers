@@ -9,65 +9,66 @@
 <link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
-	<app-root _nghost-dcs-c68 ng-version="13.3.12"> <jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
-	<app-reply-management _nghost-kyu-c94="" class="ng-star-inserted">
-	<div _ngcontent-kyu-c94="" id="content">
-		<header _ngcontent-kyu-c94="" class="sub_header st1">
-			<div _ngcontent-kyu-c94="" class="in_wrap">
-				<h2 _ngcontent-kyu-c94="">
-					<p _ngcontent-kyu-c94="" class="dth2">댓글 관리</p>
+	<app-root ng-version="13.3.12"> <jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
+	<app-reply-management class="ng-star-inserted">
+	<div id="content">
+		<header class="sub_header st1">
+			<div class="in_wrap">
+				<h2>
+					<p class="dth2">댓글 관리</p>
 				</h2>
 			</div>
 		</header>
-		<div _ngcontent-kyu-c94="" class="in_wrap">
-			<nav _ngcontent-kyu-c94="" value="false" class="position_r">
-				<button _ngcontent-kyu-c94="" type="button" class="tab_nav_btn mo">
-					<span _ngcontent-kyu-c94="">내가 등록한 댓글</span><i
-						_ngcontent-kyu-c94="" class="ico"><img _ngcontent-kyu-c94=""
+		<div class="in_wrap">
+			<nav value="false" class="position_r">
+				<button type="button" class="tab_nav_btn mo">
+					<span>내가 등록한 댓글</span><i
+						class="ico"><img
 						data-brackets-id="27106"
 						src="https://www.wishbeen.co.kr/assets/images/svg/chevron_down.svg" alt="더보기"></i>
 				</button>
-				<ul _ngcontent-kyu-c94="" class="tab_nav st01">
-					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
-						routerlink="my" routerlinkactive="active" href="/my/reply/my"
-						class="active"> 내가 등록한 댓글 </a></li>
-					<li _ngcontent-kyu-c94=""><a _ngcontent-kyu-c94=""
+				<ul class="tab_nav st01">
+					<li><a
+					class="active"
+						routerlink="my" routerlinkactive="active" href="${pageContext.request.contextPath}/mycomment.mypage">
+							내가 등록한 댓글 </a></li>
+					<li><a
 						routerlink="content" routerlinkactive="active"
-						href="/my/reply/content"> 내글에 등록된 댓글 </a></li>
+						href="${pageContext.request.contextPath}/myregisteredcomment.mypage" class=""> 내글에 등록된 댓글 </a></li>
 				</ul>
 			</nav>
-			<router-outlet _ngcontent-kyu-c94=""></router-outlet>
-			<app-my-reply _nghost-kyu-c95="" class="ng-star-inserted">
-			<section _ngcontent-kyu-c95="" class="my_wrap">
-				<div _ngcontent-kyu-c95="" class="cmt_list clear_v2">
-					<div _ngcontent-kyu-c95="" class="inner ng-star-inserted">
-						<ul _ngcontent-kyu-c95="" class="tit_bar">
-							<li _ngcontent-kyu-c95="" class="txt_hide"><span
-								_ngcontent-kyu-c95="" class="cate">여행기</span><span
-								_ngcontent-kyu-c95="" class="tit">2ND 결혼기념일 여행, SAIPAN</span></li>
-							<li _ngcontent-kyu-c95=""><a _ngcontent-kyu-c95=""
-								class="btn_go"> 원글보기 <img _ngcontent-kyu-c95=""
+			<router-outlet></router-outlet>
+			<app-my-reply class="ng-star-inserted">
+			<section class="my_wrap">
+				<div class="cmt_list clear_v2">
+					<div class="inner ng-star-inserted">
+						<ul class="tit_bar">
+							<li class="txt_hide"><span
+								class="cate">여행기</span><span
+								class="tit">2ND 결혼기념일 여행, SAIPAN</span></li>
+							<li><a
+								class="btn_go"> 원글보기 <img
 									src="https://www.wishbeen.co.kr/assets/images/svg/arrow_right.svg" alt="go"></a></li>
 						</ul>
-						<div _ngcontent-kyu-c95="" class="cont di_flex">
-							<div _ngcontent-kyu-c95="">
-								<ul _ngcontent-kyu-c95="">
-									<li _ngcontent-kyu-c95="" class="txt_wrap">와 정말 가보고 싶어요!!
+						<div class="cont di_flex">
+							<div>
+								<ul>
+									<li class="txt_wrap">와 정말 가보고 싶어요!!
 									</li>
-									<li _ngcontent-kyu-c95="" class="ta_right ng-star-inserted"><a
-										_ngcontent-kyu-c95="" class="btn_fold ng-star-inserted">
+									<li class="ta_right ng-star-inserted"><a
+										class="btn_fold ng-star-inserted">
 											더보기 </a>
 									<!----></li>
 									<!---->
 								</ul>
 							</div>
-							<div _ngcontent-kyu-c95="">
-								<ul _ngcontent-kyu-c95="">
-									<li _ngcontent-kyu-c95=""><a _ngcontent-kyu-c95=""
-										class="btn_set"><img _ngcontent-kyu-c95=""
+							<div>
+								<ul>
+									<li><a
+										class="btn_set"><img
 											src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
 									<!----></li>
-									<li _ngcontent-kyu-c95="" class="date ng-star-inserted">
+									<li class="date ng-star-inserted">
 										2023.04.17 02:25:52</li>
 									<!---->
 								</ul>

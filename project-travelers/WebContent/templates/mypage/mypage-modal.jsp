@@ -43,18 +43,18 @@
 						src="https://www.wishbeen.co.kr/assets/images/event/2023/checkin/icon_calendar.svg"><a
 						_ngcontent-nsf-c68="" onclick="closeSideMenu();"> 출석 체크 혜택 </a></li>
 					<hr _ngcontent-nsf-c68="">
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/memberInfo.mypage"
 						onclick="closeSideMenu();"> 계정 관리</a></li>
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/mytripboardpage.mypage"
 						onclick="closeSideMenu();"> 여행기 관리 </a></li>
 					<!---->
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/mytriproute.mypage"
 						onclick="closeSideMenu();"> 추천루트 관리 </a></li>
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/mysouvenir.mypage"
 						onclick="closeSideMenu();"> 여행품 관리 </a></li>
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/mycomment.mypage"
 						onclick="closeSideMenu();"> 댓글 관리 </a></li>
-					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68=""
+					<li _ngcontent-nsf-c68=""><a _ngcontent-nsf-c68="" href="${pageContext.request.contextPath}/myquestion.mypage"
 						onclick="closeSideMenu();"> 나의 문의 </a></li>
 				</ul>
 			</div>
