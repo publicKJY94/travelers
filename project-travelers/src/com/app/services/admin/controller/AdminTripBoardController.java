@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 import com.app.Action;
 import com.app.Result;
+import com.app.domain.Criteria;
 import com.app.domain.DAO.board.TripBoardDAO;
 import com.app.domain.DTO.board.TripBoardDTO;
 
@@ -25,15 +26,28 @@ public class AdminTripBoardController implements Action {
 		TripBoardDAO tripBoardDAO = new TripBoardDAO();
 
 		List<TripBoardDTO> tripBoardList = new ArrayList<>();
+		
+		int page = Integer.parseInt(req.getParameter("page")==null? "1" : req.getParameter("page"));
+		String type =  req.getParameter("type") == null? "" : req.getParameter("type");
+		String keyword = req.getParameter("keyword")==null ? "" : req.getParameter("keyword");
+		int total = tripBoardDAO.getTotal(type,keyword);
 
-		tripBoardList = tripBoardDAO.selectTripBoardList();
+		Criteria criteria = new Criteria(page,total,type,keyword);
+		tripBoardList = tripBoardDAO.selectAllTripBoardLimitTen(criteria);
 
 		JSONArray jsonTripBoardList = new JSONArray();
 		tripBoardList.stream().map(tripBoard -> new JSONObject(tripBoard)).forEach(jsonTripBoardList::put);
 		req.setAttribute("tripBoardList", jsonTripBoardList);
+		req.setAttribute("criteria", criteria);
 		
 		result.setPath("templates/admin/admin-trip-board.jsp");
 		return result;
+		
+		
+		
+		
+		
+		
 	}
 
 }

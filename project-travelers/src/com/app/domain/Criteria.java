@@ -11,6 +11,8 @@ public class Criteria {
 	private int page;
 	private String type;
 	private String keyword;
+	private int realEndPage;
+	
 
 	public Criteria(int page, int total, String type, String keyword) {
 		this.type =type;
@@ -25,7 +27,7 @@ public class Criteria {
 		offset = (page - 1) * rowCount;
 		endPage = (int)(Math.ceil(page / (double)pageCount) * pageCount);
 		startPage = endPage - (pageCount - 1);
-		int realEndPage = (int)Math.ceil(total / (double)rowCount);
+		realEndPage = (int)Math.ceil(total / (double)rowCount);
 		
 		prev = startPage > 1;
 		next = false;
@@ -33,6 +35,13 @@ public class Criteria {
 		next = endPage < realEndPage;
 	}
 	
+	public int getRealEndPage() {
+		return realEndPage;
+	}
+	
+	public void setRealEndPage(int realEndPage) {
+		this.realEndPage = realEndPage;
+	}
 	public String getType() {
 		return type;
 	}
