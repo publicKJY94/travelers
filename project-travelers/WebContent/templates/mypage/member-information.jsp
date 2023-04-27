@@ -57,9 +57,9 @@ input[type=submit] {
 					<li><a routerlink="info" routerlinkactive="active"
 						href="/my/account/info" class="active"> 회원 정보 </a></li>
 					<li><a routerlink="pw-modify" routerlinkactive="active"
-						href="newPassword.myPage"> 비밀번호 수정 </a></li>
+						href="${pageContext.request.contextPath}/newPassword.mypage"> 비밀번호 수정 </a></li>
 					<li><a routerlink="withdrawal" routerlinkactive="active"
-						href="/my/account/withdrawal"> 회원탈퇴 </a></li>
+						href="${pageContext.request.contextPath}/disaccount.mypage"> 회원탈퇴 </a></li>
 				</ul>
 			</nav>
 			<router-outlet></router-outlet>
@@ -138,7 +138,6 @@ input[type=submit] {
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script type="text/javascript">
-	let $contextPath = `${pageContext.request.contextPath}`;
 	let $form = $("form[name='update-info']");
 	$('input.memberInfo').on("input", function() {
 		$form.find("input[name='name']").val($(this).val());

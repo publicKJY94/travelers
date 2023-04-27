@@ -20,7 +20,7 @@ public class MyPageFrontController extends HttpServlet{
 		
 		//target에 따른 if문 분기처리 구간
 		if(target.equals("newPassword")) {
-			result.setPath(req.getContextPath()+"/templates/mypage/password-amend.jsp");
+			result.setPath("/templates/mypage/password-amend.jsp");
 		} /*
 			 * else if(){
 			 * 
