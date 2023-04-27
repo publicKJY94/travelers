@@ -23,6 +23,7 @@ public SqlSession sqlSession;
 	public List<TripBoardDTO> selectTripBoardList(){
 		return sqlSession.selectList("tripBoard.selectTripBoardList");
 	}
+
 	
 	public int getTotal(String type, String keyword) {
 		Map<String,String> map = new HashMap<String, String>();
