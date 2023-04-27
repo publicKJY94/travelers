@@ -59,120 +59,19 @@
 								<button>삭제</button>
 				       		</div>
 						</div>
-						<table>
+						<table class="boardTable">
 							<thead>
 								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
 									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
 									<td>게시글 번호</td>
 									<td>제목</td>
 									<td>작성자</td>
-									<td>등록날짜</td>
 									<td>조회수</td>
-									<td>하트수</td>
+									<td>등록날짜</td>
+									<td>업데이트날짜</td>
 								</tr>
 							</thead>
-							<tbody>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>안녕</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-								</tr>
-								
-								
-							</tbody>
+							
 						</table>
 
 						<!-- [S] 페이지 컨트롤러 -->
@@ -205,4 +104,8 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/admin/admin-table.js"></script>
+<script>
+	let tripBoardList = `${tripBoardList}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-trip-board.js"></script>
 </html>
