@@ -17,11 +17,6 @@ public class JoinController implements Action{
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		String identification = req.getParameter("identification");
-		String email = req.getParameter("email");
-		
-		userVO.setIdentification(identification);
-		userVO.setEmail(email);
 		
 		result.setPath("/templates/login/new_user_info.jsp");
 		

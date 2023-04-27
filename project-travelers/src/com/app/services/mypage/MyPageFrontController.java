@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.user.controller.LoginOkController;
 
 public class MyPageFrontController extends HttpServlet{
 	@Override
@@ -20,8 +21,9 @@ public class MyPageFrontController extends HttpServlet{
 		
 		//target에 따른 if문 분기처리 구간
 	
-		
-		
+		if(target.equals("newPassword")) {
+			result.setPath("/templates/mypage/password-amend.jsp");
+		}
 		
 		
 		
