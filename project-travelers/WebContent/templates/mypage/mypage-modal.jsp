@@ -28,8 +28,10 @@
 						src="https://www.wishbeen.co.kr/assets/images/svg/wb_symbol.svg"></span>
 					<div _ngcontent-nsf-c68="" class="user_info">
 						<span _ngcontent-nsf-c68="" class="name">화려한 조명이 감싸는 강아지</span>
-						<button _ngcontent-nsf-c68="" type="button" class="btn_logout">
+						<form action="/project-travelers/logout.user">
+						<button _ngcontent-nsf-c68="" type="submit" class="btn_logout">
 							로그아웃</button>
+						</form>
 					</div>
 				</div>
 			</div>
