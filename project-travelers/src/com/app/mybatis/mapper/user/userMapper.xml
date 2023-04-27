@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="user">
-	<insert id="insert">
+	<insert id="insertUserEmail">
+	insert into tbl_user
+	(email) values (#{email})
+	</insert>
+
+	<insert id="insertUserInfo">
 		insert into tbl_user
-		(identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, `role`, profil_image_name, profil_image_original_name, profil_image_size)
-		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
+		(nickname, password, name, phoneNumber, birthday, gender)
+		values (#{nickname}, #{password}, #{name}, #{phoneNumber}, #{birthday}, #{gender})
 	</insert>
 
 	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->
@@ -27,7 +32,6 @@
 		set password = #{newPassword}
 		where id = #{adminId}
 	</update>
-	
 	
 	
 </mapper>

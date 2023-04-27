@@ -44,8 +44,8 @@
 							</ul>
 						</form>
 						<div class="link">
-							<a href="/project-travelers/join.user">회원가입</a><a
-								href="/project-travelers/">계정 찾기</a><a
+							<a href="/project-travelers/joinEmail.user">회원가입</a><a
+								href="/project-travelers/findId.user">계정 찾기</a><a
 								href="/project-travelers/">비밀번호
 								재설정</a>
 						</div>

@@ -25,6 +25,7 @@ function validateEmail() {
 			span.removeChild(errorMessage);
 		}
 		button.classList.add('outline');
+		button.classList.remove('disabled');
 		return true;
 	}
 }

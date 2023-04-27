@@ -11,7 +11,7 @@ public class UserVO {
 	private String password;
 	private String name;
 	private String email;
-	private String phone_number;
+	private String phoneNumber;
 	private String nickname;
 	private String birthday;
 	private String gender;
@@ -66,12 +66,12 @@ public class UserVO {
 		this.email = email;
 	}
 
-	public String getPhone_number() {
-		return phone_number;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 
-	public void setPhone_number(String phone_number) {
-		this.phone_number = phone_number;
+	public void setPhoneNumber(String phone_number) {
+		this.phoneNumber = phone_number;
 	}
 
 	public String getNickname() {
@@ -187,12 +187,14 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [id=" + id + ", identification=" + identification + ", password=" + password + ", name=" + name
-				+ ", email=" + email + ", phone_number=" + phone_number + ", nickname=" + nickname + ", birthday="
+				+ ", email=" + email + ", phone_number=" + phoneNumber + ", nickname=" + nickname + ", birthday="
 				+ birthday + ", gender=" + gender + ", introducingMessage=" + introducingMessage + ", status=" + status
 				+ ", createdDate=" + createdDate + ", updatedDate=" + updatedDate + ", role=" + role
 				+ ", profilImageName=" + profilImageName + ", profilImageOriginalName=" + profilImageOriginalName
 				+ ", profilImageSize=" + profilImageSize + "]";
 	}
+
+	public void setBirthday(String[] parameterValues) {;}
 	
 	
 }

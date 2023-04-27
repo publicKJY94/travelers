@@ -29,13 +29,18 @@ public class UserFrontController extends HttpServlet{
 			
 		}
 		
-		if(target.equals("join")) {
+		if(target.equals("joinEmail")) {
 			result.setPath("/templates/login/new_user.jsp");
-		} 
-		
-		
-		if (target.equals("joinOK")) {
+			
+		}else if (target.equals("join")) {
+			result = new JoinController().execute(req, resp);
+			
+		}else if (target.equals("joinOk")) {
 			result = new JoinOkController().execute(req, resp);
+		}
+		
+		if(target.equals("findId")) {
+			result.setPath("/templates/login/find_id.jsp");
 		}
 		
 		

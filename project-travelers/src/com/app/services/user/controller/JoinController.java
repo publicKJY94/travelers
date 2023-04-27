@@ -11,15 +11,21 @@ import com.app.Result;
 import com.app.domain.DAO.user.UserDAO;
 import com.app.domain.VO.user.UserVO;
 
-public class JoinController implements Action{
+public class JoinController implements Action {
+
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
 		UserDAO userDAO = new UserDAO();
-		UserVO userVO = new	UserVO();
+		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		userVO.setEmail(req.getParameter("Email"));
+		userVO.setEmail(req.getParameter("email"));
+		userDAO.insertUserEmail(userVO);
 		
-		return null;
+		result.setRedirect(true);
+		result.setPath(req.getContextPath() + "/joinOk.user");
+		
+		return result;
 	}
 }

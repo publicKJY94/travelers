@@ -283,12 +283,6 @@ button, select {
     margin-left: 10px;
 }
 
-.wb_btn.disabled {
-    border: 1px solid #dfe1e6;
-    background: #f7f8fa;
-    cursor: unset;
-    pointer-events: none;
-}
 .wb_btn {
     color: #dfe1e6;
     border-radius: 4px;
@@ -301,6 +295,14 @@ button, select {
     transition-duration: .2s;
     transition-timing-function: ease-out;
 }
+
+/* .wb_btn.disabled {
+    border: 1px solid #dfe1e6;
+    background: #f7f8fa;
+    cursor: unset;
+    pointer-events: none;
+} */
+
 .di_flex.phone_cert + div.di_flex {
     display: none;
 }
@@ -359,12 +361,7 @@ input.chbox+label {
 .join_wrap .submit_div .wb_btn {
     width: 180px;
 }
-.wb_btn.disabled {
-    border: 1px solid #dfe1e6;
-    background: #f7f8fa;
-    cursor: unset;
-    pointer-events: none;
-}
+
 #terms_all + label:before {
     width: 2rem;
     height: 2rem;
