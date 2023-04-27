@@ -14,7 +14,7 @@
 	<div id="wrap">
 		<!---->
 		<router-outlet></router-outlet>
-		<form action="${pageContext.request.contextPath}/joinOk.user" method="post">
+		<form action="${pageContext.request.contextPath}/joinOk.user">
 		<app-join-input class="">
 		<section class="join_wrap write_form">
 			<div class="in_wrap">
@@ -91,7 +91,7 @@
 						</dt>
 						<dd class="di_flex wid03">
 							<div>
-								<select formcontrolname="birthYear" name="bithday" class="selbox"><option
+								<select formcontrolname="birthYear" name="birthday" class="selbox"><option
 										value="">연도</option>
 									<option value="2009" class="">2009년</option>
 									<option value="2008" class="">2008년</option>
@@ -227,7 +227,7 @@
 								<!---->
 							</div>
 							<div>
-								<select formcontrolname="birthMonth" name="bithday" class="selbox">
+								<select formcontrolname="birthMonth" name="birthday" class="selbox">
 									<option	value="">월</option>
 									<option value="01">1월</option>
 									<option value="02">2월</option>
@@ -244,7 +244,7 @@
 								<!---->
 							</div>
 							<div>
-								<select formcontrolname="birthDay" name="bithday" class="selbox"><option
+								<select formcontrolname="birthDay" name="birthday" class="selbox"><option
 										value="">일</option>
 									<option value="01" class="">1일</option>
 									<option value="02" class="">2일</option>
@@ -287,10 +287,10 @@
 							<span class="tit necessary">성별</span>
 						</dt>
 						<dd>
-							<div class="gender_btn_group">
-								<button class="gender_btn">남자</button>
+							<div class="gender_btn_group" name="gender">
+								<button class="gender_btn active">남자</button>
 								<button class="gender_btn">여자</button>
-								<button class="gender_btn active">선택안함</button>
+								<button class="gender_btn">선택안함</button>
 							</div>
 						</dd>
 					</dl>
@@ -384,7 +384,7 @@
 						</dd>
 						<dd class="di_flex">
 							<div>
-								<input wbonlynumber="" formcontrolname="phone" name="number"
+								<input wbonlynumber="" formcontrolname="phone" name="phoneNumber"
 									placeholder="전화번호 입력" type="tel" class="txtbox">
 								<!---->
 								<!---->
