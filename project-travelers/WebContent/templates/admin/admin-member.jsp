@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,32 +36,38 @@
 			<!-- 여기까지 복사 -->
 			
 			<!--mainScreen 회원관리-->
-				<div class="mainContent">
+			<div class="mainContent">
+				<form action="admin-member.admin" class = "searchForm">
 					<div class="memberSearch">
 						<div class="memberSearchInput">
-							<select>
-								<option value="nickName">작성자</option>
-								<option value="box title">제목</option>
-								<option value="box write">내용</option>
+							<select name = "type">
+								<option value="name" ${criteria.type == '' ? 'selected' : '' }>이름</option>
+								<option value="nickname" ${criteria.type == 'nickname' ? 'selected' : '' }>닉네임</option>
 							</select>
 							<div>
-								<input type="text" placeholder="검색어를 입력하세요">
+								<input type="text" name ="keyword" placeholder="검색어를 입력하세요" value ="${criteria.keyword}">
 							</div>
-							<div>
+							
+							
+								<button class = "searchBtn">
 								<img src="${pageContext.request.contextPath}/static/image/search.png">
-							</div>
+								</button>
 						</div>
 					</div>
-					
+				</form>
 					
 					<div class="memberLists">
 						<div id="root">
 							<div>
-								<span>총 <div id="checkResult" style="width: 10px; height: 10px;">0</div> 명</span>
+								<span>총 <c:out value="${criteria.total}"/>명</span>
 				       			<button class="deleteBtn">삭제</button>
 				       		</div>
 						</div>
-						<table>
+						<form action="admin-member-delete.admin" class = "deleteForm">
+							<input type = "hidden" name = "page" value = "${criteria.page}">
+							<input type = "hidden" name = "type" value = "${criteria.type}">
+							<input type = "hidden" name = "keyword" value = "${criteria.keyword}">
+						<table class="userTable">
 							<thead>
 								<tr class="tableTh" style="border-top:3px solid #6e6e6e;">
 									<td class = "inputCheckBoxAllBtn"><input class="inputCheckBoxAll"type="checkbox"></td>
@@ -73,134 +80,54 @@
 									<td>생년월일</td>
 								</tr>
 							</thead>
-							<tbody>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-							<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<td class = "inputCheckBoxBtn"><input class="inputCheckBox" type="checkbox"></td>
-									<td>432</td>
-									<td>구글민혁</td>
-									<td>USER</td>
-									<td>010-0000-0000</td>
-									<td>민혁</td>
-									<td>1990-02-19</td>
-									<td>서울</td>
-								</tr>
-							</tbody>
+							
 						</table>
+						</form>
 						<!-- [S] 페이지 컨트롤러 -->
 						<div class="page-controller-wrap">
 
 							<!-- 이전 페이지로 이동하기 -->
-							<a class="page-list page-list-move page-before"> <img
+						<c:if test ="${criteria.prev}">
+								<a class="page-list page-list-move page-before page-move" id="${criteria.startPage - 1}"> <img
 							   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGElEQVR42mNgAIPi/8X/4QwwE5PBQJADAAKSG3cyVhtXAAAAAElFTkSuQmCC"
 							   alt="이전 페이지로 이동하기 아이콘"></a> 
-							   <a class="page-list page-list-first list-on">1</a> 
-							   <a class="page-list page-list-second">2</a> 
-							   <a class="page-list page-list-third">3</a> 
-							   <a class="page-list page-list-fourth">4</a>
-							   <a class="page-list page-list-fifth">5</a>
+						</c:if>
+							  <c:forEach var = "i" begin ="${criteria.startPage}" end ="${criteria.endPage}">
+							   	<c:choose>
+							   		<c:when test = "${i eq criteria.page }">
+								   <a href="javascript:void(0)" class="page-list page-list-first list-on"><c:out value="${i}"></c:out></a> 
+							   		</c:when>
+							   	<c:otherwise>
+								   <a id = "${i}" class="page-list page-list-first  page-move"><c:out value="${i}"></c:out></a> 
+								   		
+							   	</c:otherwise>
+							   	</c:choose>
+							  </c:forEach>
 		  
 							<!-- 다음 페이지로 이동하기 -->
-							<a class="page-list page-list-move page-after"> <img
+						<c:if test = "${criteria.next}">
+							<a id="${criteria.endPage+1}" class="page-list page-list-move page-after page-move"> <img
 							   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAQAAABqrk9lAAAAGUlEQVR42mMo/l/8nwECQEwCHEwGhAlRBgA2mht3SwgzrwAAAABJRU5ErkJggg=="
 							   alt="다음 페이지로 이동하기 아이콘">
 							</a>
+						</c:if>
 		  
 						 </div>
 						 <!-- [E] 페이지 컨트롤러 -->
 					</div> 
 				</div>
 			</section>
+			<form action="admin-member.admin" name = "page-form">
+				<input id="page" type = "hidden" name = "page" value = "${criteria.page}">
+				<input type = "hidden" name = "type" value = "${criteria.type}">
+				<input type = "hidden" name = "keyword" value = "${criteria.keyword}">
+			</form>
+			
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/admin/admin-table.js"></script>
+<script>
+	let userList = `${userList}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/admin/admin-member.js"></script>
+
 </html>

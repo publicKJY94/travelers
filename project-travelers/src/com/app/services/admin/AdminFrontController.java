@@ -8,8 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.admin.controller.AdminAnnounceMentController;
+import com.app.services.admin.controller.AdminAnnounceMentDeleteController;
 import com.app.services.admin.controller.AdminController;
 import com.app.services.admin.controller.AdminMainController;
+import com.app.services.admin.controller.AdminMemberController;
+import com.app.services.admin.controller.AdminMemberDeleteController;
+import com.app.services.admin.controller.AdminTripBoardController;
 import com.app.services.admin.controller.AdminUpdateController;
 import com.app.services.admin.controller.CheckAdminEmail;
 
@@ -31,30 +36,33 @@ public class AdminFrontController extends HttpServlet{
 			result = new CheckAdminEmail().execute(req, resp);
 			
 		}
-		
 		else if(target.equals("adminUpdate")) {
 			
 			result = new AdminUpdateController().execute(req, resp);
 			
 		}else if(target.equals("admin-announcement")) {
 			
-			result.setPath("templates/admin/admin-announcement.jsp");
+			result = new AdminAnnounceMentController().execute(req,resp);
 			
-		}else if(target.equals("admin-announcement-answer")) {
+		}else if(target.equals("admin-announcement-delete")) {
 			
-			result.setPath("templates/admin/admin-announcement-answer.jsp");
+			result = new AdminAnnounceMentDeleteController().execute(req,resp);
 			
 		}else if(target.equals("admin-main")) {
 			result = new AdminMainController().execute(req,resp);
 			
 			
 		}else if(target.equals("admin-member")) {
+			result = new AdminMemberController().execute(req,resp);
 			
-			result.setPath("templates/admin/admin-member.jsp");
 			
-		}else if(target.equals("admin-qa")) {
+		}else if(target.equals("admin-member-delete")) {
+			result = new AdminMemberDeleteController().execute(req,resp);
 			
-			result.setPath("templates/admin/admin-qa.jsp");
+			
+		}else if(target.equals("admin-trip-board")) {
+			result = new AdminTripBoardController().execute(req,resp);
+			
 			
 		}else if(target.equals("admin-root-board")) {
 			
@@ -64,9 +72,21 @@ public class AdminFrontController extends HttpServlet{
 			
 			result.setPath("templates/admin/admin-souvenir-board.jsp");
 			
-		}else if(target.equals("admin-trip-board")) {
+		}
+		
+		
+		
+		
+		
+		
+		
+		else if(target.equals("admin-announcement-answer")) {
 			
-			result.setPath("templates/admin/admin-trip-board.jsp");
+			result.setPath("templates/admin/admin-announcement-answer.jsp");
+			
+		}else if(target.equals("admin-qa")) {
+			
+			result.setPath("templates/admin/admin-qa.jsp");
 			
 		}
 

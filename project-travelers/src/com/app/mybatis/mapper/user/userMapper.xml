@@ -19,25 +19,82 @@
 		introducing_message, status, created_date, updated_date, `role`,
 		profil_image_name, profil_image_original_name, profil_image_size from
 		tbl_user
-		where identification = #{userIdentification} and password = #{userPassword}
+		where identification = #{userIdentification} and password =
+		#{userPassword}
 	</select>
-	
+
 	<select id="selectOneAdmin" resultType="UserVO">
-		select identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, role from tbl_user
+		select identification,
+		password, name, email, phone_number, nickname, birthday, gender,
+		introducing_message, status, created_date, updated_date, role from
+		tbl_user
 		where id = #{adminId}
 	</select>
-	
+
 	<update id="updateAdminPassword">
 		update tbl_user
 		set password = #{newPassword}
-		where id = #{adminId}
+		where id
+		= #{adminId}
 	</update>
-	
+
 	<select id="selectAllUser" resultType="UserVO">
-		select id, identification, password, name, email, phone_number, nickname, birthday, gender, introducing_message, status, created_date, updated_date, `role`, profil_image_name, profil_image_original_name, profil_image_size
-		from tbl_user
+		select id, identification,
+		password, name, email, phone_number, nickname, birthday, gender,
+		introducing_message, status, created_date, updated_date, `role`,
+		profil_image_name, profil_image_original_name, profil_image_size
+		from
+		tbl_user
 		order by id desc
 	</select>
 
+
+
+	<select id="getTotal" resultType="_int">
+		select count(id) from tbl_user
+		<where>
+			<choose>
+				<when test = "type == 'name'.toString()">
+					and name like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+	</select>
+
+	<select id="selectAllUserLimitTen" resultType="userVO">
+		SELECT id, identification, password, name, email,
+		phone_number, nickname, birthday, gender, introducing_message, status,
+		created_date, updated_date, `role`, profil_image_name,
+		profil_image_original_name, profil_image_size
+		FROM tbl_user
+		<where>
+			<choose>
+				<when test = "type == 'name'.toString()">
+					and name like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+		order by id desc
+		limit #{offset},#{rowCount};
+	</select>
+
 	
+	
+	<delete id="deleteAllUserSelected">
+		delete from tbl_user
+		<where>
+			<foreach collection ="ids" item = "userId" separator="or">
+				id =#{userId}
+			</foreach>
+		</where>
+	</delete>
+
 </mapper>
