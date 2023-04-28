@@ -348,22 +348,10 @@ button, input, optgroup, select, textarea {
 	line-height: inherit;
 }
 
-.wb_btn.disabled {
-	border: 1px solid #dfe1e6;
-	background: #f7f8fa;
-	cursor: unset;
-	pointer-events: none;
-}
-
 @media only screen and (max-width: 480px) {
 	.wb_btn[_ngcontent-rrf-c84] {
 		width: 280px;
 	}
-}
-
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled),
-	button:not(:disabled) {
-	cursor: pointer;
 }
 
 .wb_btn {
@@ -447,9 +435,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup,
     border: 1px solid var(--key-color);
     background: transparent;
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-    cursor: pointer;
-}
+
 .wb_btn {
     color: #dfe1e6;
     border: none;
@@ -491,12 +477,18 @@ input.txtbox {
     right: 0;
     top: 5px;
 }
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled),
+	button:not(:disabled) {
+	cursor: pointer;
+}
 .wb_btn.disabled {
     border: 1px solid #dfe1e6;
     background: #f7f8fa;
     cursor: unset;
     pointer-events: none;
 }
+
 .join_wrap p {
     color: #888;
     text-align: center;

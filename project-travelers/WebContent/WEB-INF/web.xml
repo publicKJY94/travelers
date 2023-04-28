@@ -32,7 +32,7 @@
 
   <servlet-mapping>
   	<servlet-name>MyPage</servlet-name>
-  	<url-pattern>*.myPage</url-pattern>
+  	<url-pattern>*.mypage</url-pattern>
   </servlet-mapping>
 
   <!-- AdminFrontCotroller로 매핑-->

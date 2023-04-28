@@ -16,12 +16,14 @@ public class TripBoardFrontController extends HttpServlet{
 		req.setCharacterEncoding("utf-8");
 		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
-		
-		
+
+
 		
 		//target에 따른 if문 분기처리 구간
 	
-		
+		if(target.equals("listOk")) {
+			result = new ListOkOController().execute(req, resp);
+		}
 		
 		
 		

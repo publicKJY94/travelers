@@ -23,6 +23,10 @@ public class MainFrontController extends HttpServlet{
 			result.setPath("templates/main/main.jsp");
 		}
 		
+		if(target.equals("user")) {
+			result.setPath("templates/main/main.jsp");
+		}
+		
 		
 		
 		

@@ -31,6 +31,7 @@
       <typeAlias type="com.app.domain.DTO.board.TripBoardDTO" alias="tripBoardDTO"/>
       <typeAlias type="com.app.domain.DTO.board.NoticeBoardDTO" alias="noticeBoardDTO"/>
       <typeAlias type="com.app.domain.DTO.board.QuestionBoardDTO" alias="questionBoardDTO"/>
+      <typeAlias type="com.app.domain.DTO.user.MyPageInfoDTO" alias="mypageinfoDTO"/>
       
       
       

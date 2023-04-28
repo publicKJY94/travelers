@@ -18,28 +18,25 @@ public class JoinOkController implements Action{
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
+		
 		userVO.setIdentification(req.getParameter("identification"));
+		userVO.setEmail(req.getParameter("identification"));
 		userVO.setPassword(req.getParameter("password"));
 		userVO.setName(req.getParameter("name"));
-		userVO.setEmail(req.getParameter("email"));
-		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
 		userVO.setNickname(req.getParameter("nickname"));
-		userVO.setBirthday(req.getParameter("birthday"));
-		userVO.setGender(req.getParameter("gender"));
-		userVO.setIntroducingMessage(req.getParameter("introducingMessage"));
-		userVO.setStatus(req.getParameter("status"));
-		userVO.setCreatedDate(req.getParameter("createdDate"));
-		userVO.setUpdatedDate(req.getParameter("updatedDate"));
-		userVO.setRole(req.getParameter("role"));
-		userVO.setProfilImageName(req.getParameter("profilImageName"));
-		userVO.setProfilImageOriginalName(req.getParameter("profilImageOriginalName"));
-		userVO.setProfilImageSize(Long.valueOf(req.getParameter("profilImageSize")));
-		
+		userVO.setBirthday("19500120");
+		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
+		String gender = "남자";
+		userVO.setGender(gender);
+		userVO.setStatus("normal");
+		userVO.setCreatedDate("2023-01-01");
+		userVO.setUpdatedDate("2023.09.09");
+		userVO.setRole("user");
 		userDAO.insert(userVO);
 		
 		result.setRedirect(true);
 		result.setPath(req.getContextPath() + "/login.user");
 
-		return null;
+		return result;
 	}
 }
