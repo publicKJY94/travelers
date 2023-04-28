@@ -10,12 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 import com.app.Result;
 import com.app.services.admin.controller.AdminAnnounceMentController;
 import com.app.services.admin.controller.AdminAnnounceMentDeleteController;
+import com.app.services.admin.controller.AdminAnnouncementAnswerOkController;
 import com.app.services.admin.controller.AdminController;
 import com.app.services.admin.controller.AdminMainController;
 import com.app.services.admin.controller.AdminMemberController;
 import com.app.services.admin.controller.AdminMemberDeleteController;
-import com.app.services.admin.controller.AdminTripBoardDeleteController;
 import com.app.services.admin.controller.AdminTripBoardController;
+import com.app.services.admin.controller.AdminTripBoardDeleteController;
 import com.app.services.admin.controller.AdminUpdateController;
 import com.app.services.admin.controller.CheckAdminEmail;
 
@@ -58,6 +59,10 @@ public class AdminFrontController extends HttpServlet{
 		else if(target.equals("admin-announcement-answer")) {
 			
 			result.setPath("templates/admin/admin-announcement-answer.jsp");
+			
+		}else if(target.equals("admin-announcement-answerOk")) {
+			
+			result= new AdminAnnouncementAnswerOkController().execute(req, resp);
 			
 		}
 		

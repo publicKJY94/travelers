@@ -10,7 +10,7 @@ noticeBoardList.forEach(board=>{
 	tableText += `<div class="board_tr noti ">
 							<div class="no">${board.id}</div>
 							<div class="tit">
-								<a href="/customer-center/notice/299"> ${board.title} </a>
+								<a href="/announcement-detail.noticeBoard?boardId=${board.id}"> ${board.title} </a>
 							</div>
 							<div class="date">${board.registerDate}</div>
 						</div>`
