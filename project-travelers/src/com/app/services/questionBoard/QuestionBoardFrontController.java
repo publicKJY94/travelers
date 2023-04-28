@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.user.controller.LoginOkController;
 
 public class QuestionBoardFrontController extends HttpServlet{
 	@Override
@@ -19,7 +20,10 @@ public class QuestionBoardFrontController extends HttpServlet{
 		
 		
 		//target에 따른 if문 분기처리 구간
-	
+		if(target.equals("writeOk")) {
+			result = new WriteOkController().execute(req, resp);
+			
+		}
 		
 		
 		
