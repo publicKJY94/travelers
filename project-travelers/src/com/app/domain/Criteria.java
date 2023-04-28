@@ -12,36 +12,44 @@ public class Criteria {
 	private String type;
 	private String keyword;
 	private int realEndPage;
-	
+	private String sort;
 
-	public Criteria(int page, int total, String type, String keyword) {
-		this.type =type;
-		this.keyword=keyword;
+	public String getSort() {
+		return sort;
+	}
+
+	public void setSort(String sort) {
+		this.sort = sort;
+	}
+
+	public Criteria(int page, int total, String sort) {
 		this.page = page;
 		this.total = total;
-		//	한 페이지에 출력되는 게시글의 개수
+		this.sort = sort;
+		// 한 페이지에 출력되는 게시글의 개수
 		rowCount = 10;
-		//	한 페이지에서 나오는 페이지 버튼의 개수
+		// 한 페이지에서 나오는 페이지 버튼의 개수
 		int pageCount = 5;
-		
+
 		offset = (page - 1) * rowCount;
-		endPage = (int)(Math.ceil(page / (double)pageCount) * pageCount);
+		endPage = (int) (Math.ceil(page / (double) pageCount) * pageCount);
 		startPage = endPage - (pageCount - 1);
-		realEndPage = (int)Math.ceil(total / (double)rowCount);
-		
+		realEndPage = (int) Math.ceil(total / (double) rowCount);
+
 		prev = startPage > 1;
 		next = false;
 		endPage = endPage > realEndPage ? realEndPage == 0 ? 1 : realEndPage : endPage;
 		next = endPage < realEndPage;
 	}
-	
+
 	public int getRealEndPage() {
 		return realEndPage;
 	}
-	
+
 	public void setRealEndPage(int realEndPage) {
 		this.realEndPage = realEndPage;
 	}
+
 	public String getType() {
 		return type;
 	}
@@ -57,7 +65,6 @@ public class Criteria {
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
-
 
 	public int getPage() {
 		return page;

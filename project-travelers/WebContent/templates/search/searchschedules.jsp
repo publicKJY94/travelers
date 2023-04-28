@@ -74,7 +74,7 @@
 						<h2 class="hide">기념품 목록</h2>
 						<div>
 							<ul class="sel_wrap">
-								<li><select class="selbox">
+								<li><select class="selbox month">
 										<option value>여행기간</option>
 										<option value="1">1월</option>
 										<option value="2">2월</option>
@@ -89,7 +89,7 @@
 										<option value="11">11월</option>
 										<option value="12">12월</option>
 								</select></li>
-								<li><select class="selbox">
+								<li><select class="selbox sort">
 										<option value="during_start__desc">여행 시작일 순</option>
 										<option value="createdatdesc">최신순</option>
 										<option value="popularitydesc">인기순</option>

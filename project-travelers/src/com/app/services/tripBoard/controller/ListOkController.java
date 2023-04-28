@@ -22,9 +22,16 @@ public class ListOkController implements Action{
 		JSONArray jsonArray = new JSONArray();
 		String temp = req.getParameter("page");
 		int page = temp == null ? 1 : Integer.parseInt(temp);
+		String type = null;
+		String keyword = null;
 		String sort = req.getParameter("sort");
 		
-		tripboardDAO.selectTripBoardList().stream().map(board -> new JSONObject(board)).forEach(jsonArray::put);
+
+		sort = sort == null ? "during_start__desc" : sort;  
+		
+		Criteria criteria = new Criteria(page, tripboardDAO.getTotal(type, sort), sort);
+		
+		tripboardDAO.selectAllTripBoardLimitTen(criteria).stream().map(board -> new JSONObject(board)).forEach(jsonArray::put);
 		
 		req.setAttribute("boards", jsonArray.toString());
 		

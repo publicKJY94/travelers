@@ -57,7 +57,19 @@
 			</choose>
 			
 		</where>
-		order by tb.id desc
+		order by
+		<choose>
+			<when test="sort=='during_start__desc'.toString()">
+				start_date
+			</when>
+			<when test="sort=='createdatdesc'.toString()">
+				register_date
+			</when>
+			<when test="sort=='popularitydesc'.toString()">
+				viewed_count
+			</when>
+		</choose>
+		desc
 		limit #{offset},#{rowCount};
 	</select>
 	
