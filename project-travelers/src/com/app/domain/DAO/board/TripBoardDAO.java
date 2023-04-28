@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import com.app.domain.Criteria;
 import com.app.domain.DTO.board.TripBoardDTO;
+import com.app.domain.VO.board.TripBoardVO;
 import com.app.mybatis.config.MyBatisConfig;
 
 public class TripBoardDAO {
@@ -38,6 +39,14 @@ public SqlSession sqlSession;
 		return sqlSession.selectList("tripBoard.selectAllTripBoardLimitTen",criteria);
 	}
 	
+//	게시글 추가
+	public void insert(TripBoardVO tripboardVO) {
+		sqlSession.insert("board.insert", tripboardVO);
+	}
+	
+	public TripBoardVO select(Long tripboardId) {
+		return sqlSession.selectOne("board.select", tripboardId);
+	}
 	
 	//여러개 삭제
 	public void deleteAllTripBoardSelected(String[] deleteIds) {
