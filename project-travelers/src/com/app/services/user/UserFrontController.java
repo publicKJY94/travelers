@@ -11,6 +11,7 @@ import com.app.Result;
 import com.app.services.user.controller.JoinController;
 import com.app.services.user.controller.JoinOkController;
 import com.app.services.user.controller.LoginOkController;
+import com.app.services.user.controller.LogoutController;
 
 public class UserFrontController extends HttpServlet{
 	@Override
@@ -26,6 +27,9 @@ public class UserFrontController extends HttpServlet{
 			
 		}else if(target.equals("login")) {
 			result.setPath("/templates/login/login_main.jsp");
+			
+		}else if(target.equals("logout")) {
+			result = new LogoutController().execute(req, resp);
 			
 		}
 		
@@ -43,6 +47,9 @@ public class UserFrontController extends HttpServlet{
 			result.setPath("/templates/login/find_id.jsp");
 		}
 		
+		if(target.equals("resetPwd")) {
+			result.setPath("/templates/login/reset_password.jsp");
+		}
 		
 		
 		

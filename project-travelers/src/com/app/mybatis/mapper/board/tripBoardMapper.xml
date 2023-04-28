@@ -12,7 +12,72 @@
 		order by tb.id desc
 	</select>
 	
+	
+	
+	
 	<select id="getTotal" resultType="_int">
-		select distinct count(board_id)
+		select count(tu.id) from trip_board tb
+		join tbl_user tu 
+		on tb.id = tu.id
+		
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
 	</select>
+
+	<select id="selectAllTripBoardLimitTen" resultType="tripBoardDTO">
+			SELECT tb.id,
+		title, content, register_date, tb.updated_date, viewed_count,
+		user_id,tu.nickname
+		FROM trip_board tb join tbl_user tu
+		on tb.user_id = tu.id
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+				
+			</choose>
+			
+		</where>
+		order by
+		<choose>
+			<when test="sort=='createdatdesc'.toString()">
+				register_date
+			</when>
+			<when test="sort=='popularitydesc'.toString()">
+				viewed_count
+			</when>
+		</choose>
+		desc
+		limit #{offset},#{rowCount};
+	</select>
+	
+	
+	<delete id="deleteAllTripBoardSelected">
+		delete from trip_board
+		<where>
+			<foreach collection ="ids" item = "boardId" separator="or">
+				id =#{boardId}
+			</foreach>
+		</where>
+	</delete>
+	
 </mapper>

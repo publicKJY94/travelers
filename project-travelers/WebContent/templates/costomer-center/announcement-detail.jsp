@@ -17,7 +17,7 @@
 		<jsp:include
 		page="/templates/header-footer/header.jsp"></jsp:include>
 
-		<app-customer-center  class="ng-star-inserted">
+		<app-customer-center  class="">
 		<section  id="content" class="withTopBanner"
 			style="padding: 11rem 0 0; word-break: break-all">
 			<div  class="sub_header st3">
@@ -29,22 +29,18 @@
 			<div  class="in_wrap">
 				<div  class="tab_sub_wrap withTopBanner">
 					<ul  class="tab_nav">
-						<li><a 
-							routerlink="notice"
-							routerlinkactive="active" href="/customer-center/notice"
-							class="active">공지사항</a></li>
-						<li><a 
-							routerlink="faq"
-							routerlinkactive="active" href="/customer-center/faq">자주묻는질문</a></li>
-						<li><a 
-							routerlink="qna"
-							routerlinkactive="active" href="/customer-center/qna">문의하기</a></li>
+						<li><a routerlink="notice" routerlinkactive="active"
+							href="announcement.noticeBoard" class="active">공지사항</a></li>
+						<li><a routerlink="faq" routerlinkactive="active"
+							href="questionBoard.questionBoard">자주묻는질문</a></li>
+						<li><a routerlink="qna" routerlinkactive="active"
+							href="/customer-center/qna">문의하기</a></li>
 					</ul>
 				</div>
 				<router-outlet></router-outlet>
 				<app-customer-center-notice-detail
 					
-					class="ng-star-inserted">
+					class="">
 				<section  class="board_wrap">
 					<div  class="board_view content_view">
 						<div  class="tit_wrap di_flex">
@@ -141,7 +137,7 @@
 							<!---->
 						</div>
 						<div  class="ta_right">
-							<a  class="btn_st0" href="/customer-center/notice">목록</a>
+							<a  class="btn_st0" href="${pageContext.request.contextPath}/announcement.noticeBoard">목록</a>
 							<!---->
 						</div>
 					</div>

@@ -11,6 +11,16 @@ public class TripBoardDTO {
 	private String viewedCount;
 	private Long userId;
 	private String name;
+	private String nickname;
+	
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
 	
 	public TripBoardDTO() {
 		// TODO Auto-generated constructor stub
@@ -20,7 +30,8 @@ public class TripBoardDTO {
 	public String toString() {
 		return "TripBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", startDate=" + startDate
 				+ ", endDate=" + endDate + ", registerDate=" + registerDate + ", updatedDate=" + updatedDate
-				+ ", viewedCount=" + viewedCount + ", userId=" + userId + ", name=" + name + "]";
+				+ ", viewedCount=" + viewedCount + ", userId=" + userId + ", name=" + name + ", nickname=" + nickname
+				+ "]";
 	}
 
 	public Long getId() {

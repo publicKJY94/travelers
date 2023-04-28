@@ -32,7 +32,7 @@
 							<div class="validation">
 								<div class="form">
 									<span id="error"><input id="email" class="txtbox" 
-									type="text" name="email" placeholder="이메일"></span>
+									type="text" name="identification" placeholder="이메일"></span>
 								</div>
 								<div></div>
 							</div>

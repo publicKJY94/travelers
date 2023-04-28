@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="user">
-	<insert id="insertUserEmail">
-	insert into tbl_user
-	(email) values (#{email})
-	</insert>
-
-	<insert id="insertUserInfo">
+	<insert id="insert">
 		insert into tbl_user
-		(nickname, password, name, phoneNumber, birthday, gender)
-		values (#{nickname}, #{password}, #{name}, #{phoneNumber}, #{birthday}, #{gender})
+		(identification, password, name,
+		email, phone_number, nickname, birthday, gender, introducing_message,
+		status, created_date, updated_date, `role`, profil_image_name,
+		profil_image_original_name, profil_image_size)
+		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
 	</insert>
-
+	
 	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->
 	<select id="login" resultType="userVO">
 		select id, identification,
@@ -48,6 +46,26 @@
 		order by id desc
 	</select>
 
+	<!-- 사용자 정보 조회 / 은행 및 계좌정보 테이블 물어봐야할듯 -->
+	<select id="selectUserInfoByUserId" resultType="MyPageInfoDTO">
+		id, identification, name, email, phone_number, nickname, introducing_message
+		from tbl_user
+		where id = #{userId}
+	</select>
+	
+	<!-- 사용자 계정정보 수정 -->
+	<update id="updateUserInfo">
+		update tbl_user
+		set name = #{newName}, nickname = #{newNickname}, introducing_Message =	#{newIntroducingMessage}
+			, phone_number = #{newPhoneNumber}, email = #{newEmail}
+		where id = #{userId}
+	</update>
+
+	<!-- 회원탈퇴 -->
+	<update id="deleteUserInfo">
+		delete from tbl_user
+		where id = #{userId}
+	</update>
 
 
 	<select id="getTotal" resultType="_int">

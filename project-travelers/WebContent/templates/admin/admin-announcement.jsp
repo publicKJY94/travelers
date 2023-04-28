@@ -137,7 +137,6 @@
 
 <script>
 let noticeBoardList = `${noticeBoardList}`;
-console.log(noticeBoardList);
 </script>
 <script src="${pageContext.request.contextPath}/static/js/admin/admin-announcement.js"></script>
 

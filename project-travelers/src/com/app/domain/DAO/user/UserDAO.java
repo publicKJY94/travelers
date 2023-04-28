@@ -9,6 +9,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 
 import com.app.domain.Criteria;
+import com.app.domain.DTO.user.MyPageInfoDTO;
 import com.app.domain.VO.user.UserVO;
 import com.app.mybatis.config.MyBatisConfig;
 
@@ -19,14 +20,10 @@ public SqlSession sqlSession;
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
-	public void insertUserEmail(UserVO userVO) {
-		sqlSession.insert("user.insertUserEmail",userVO);
-	}
 	//회원가입
-	public void insertUserInfo(UserVO userVO) {
-		sqlSession.insert("user.insertUserInfo", userVO);
+	public void insert(UserVO userVO) {
+		sqlSession.insert("user.insert",userVO);
 	}
-	
 	
 	//로그인
 	public UserVO login(String userIdentification, String userPassword) {
@@ -85,5 +82,20 @@ public SqlSession sqlSession;
 		map.put("ids", ids);
 		sqlSession.delete("user.deleteAllUserSelected",map);
 	}
+
+	// 사용자 정보 가져오기
+	public List<MyPageInfoDTO> selectUserInfoByUserId(Long userId) {
+		return sqlSession.selectList("user.selectUserInfoByUserId", userId);
+	}
 	
+	// 사용자 정보 변경
+	public void updateUserInfo(UserVO userVO) {
+		Map<String, String> updateUserInfo = new HashMap<>();
+		updateUserInfo.put("newName", userVO.getName());
+		updateUserInfo.put("newNickname", userVO.getNickname());
+		updateUserInfo.put("newIntroducingMessage", userVO.getIntroducingMessage());
+		updateUserInfo.put("newPhoneNumber", userVO.getPhoneNumber());
+		updateUserInfo.put("newEmail", userVO.getEmail());
+		sqlSession.update("user.updateUserInfo", userVO);
+	}
 }
