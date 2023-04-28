@@ -57,4 +57,7 @@ public SqlSession sqlSession;
 		map.put("ids", ids);
 		sqlSession.delete("tripBoard.deleteAllTripBoardSelected",map);
 	}
+	public List<TripBoardDTO> selectAll(HashMap<String, Object> pagable) {
+		return sqlSession.selectList("tripBoard.selectAll", pagable);
+	}
 }

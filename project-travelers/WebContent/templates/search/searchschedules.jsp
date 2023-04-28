@@ -89,7 +89,7 @@
 										<option value="11">11월</option>
 										<option value="12">12월</option>
 								</select></li>
-								<li><select class="selbox sort">
+								<li><select class="selbox sort"><!-- onchange	 -->
 										<option value="during_start__desc">여행 시작일 순</option>
 										<option value="createdatdesc">최신순</option>
 										<option value="popularitydesc">인기순</option>
@@ -109,7 +109,7 @@
 					<ul class="trip_list2">
 					</ul>
 					<div class="list_btn ng-star-inserted">
-						<a class="btn_st1 more">더보기</a>
+						<a class="btn_st1 more" href="">더보기</a>
 					</div>
 				</section>
 				</app-city-travel-plan>
@@ -142,4 +142,5 @@
 	//console.log(`${boards}`);
 </script>
 <script src="${pageContext.request.contextPath}/static/js/tripboard/list.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/tripboard/more.js"></script>
 </html>
