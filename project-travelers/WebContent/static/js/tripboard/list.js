@@ -1,4 +1,12 @@
 /*게시글 목록*/
+
+const $orders = $(".sort a");
+$orders.on("click", function(e){
+	let i = $orders.index(this);
+	$form.find("input[name='sort']").val(i == 0 ? 'recent' : 'popular');
+	$form.submit();
+});
+
 showList();
 
 function showList() {

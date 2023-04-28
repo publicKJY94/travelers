@@ -89,8 +89,7 @@
 										<option value="11">11월</option>
 										<option value="12">12월</option>
 								</select></li>
-								<li><select class="selbox">
-										<option value="during_start__desc">여행 시작일 순</option>
+								<li><select class="selbox sort">
 										<option value="createdatdesc">최신순</option>
 										<option value="popularitydesc">인기순</option>
 								</select></li>
@@ -139,7 +138,7 @@
 <script>
 	let boards = `${boards}`;
 	let contextPath = `${pageContext.request.contextPath}`;
-	console.log(`${boards}`);
+	//console.log(`${boards}`);
 </script>
 <script src="${pageContext.request.contextPath}/static/js/tripboard/list.js"></script>
 </html>
