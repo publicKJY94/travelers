@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
 import com.app.services.noticeBoard.controller.AnnouncementController;
+import com.app.services.noticeBoard.controller.AnnouncementDetailController;
 
 public class NoticeBoardFrontController extends HttpServlet{
 	@Override
@@ -22,6 +23,9 @@ public class NoticeBoardFrontController extends HttpServlet{
 		//target에 따른 if문 분기처리 구간
 		if(target.equals("announcement")) {
 			result = new AnnouncementController().execute(req,resp);
+		}else if(target.equals("announcement-detail")) {
+			
+			result = new AnnouncementDetailController().execute(req,resp);
 		}
 		
 		
