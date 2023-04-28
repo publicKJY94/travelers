@@ -15,6 +15,7 @@ public class UpdateMemberInfoController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+<<<<<<< HEAD
 		UserDAO userDAO = new UserDAO();
 		UserVO userVO = new UserVO();
 		Result result = new Result();
@@ -32,6 +33,9 @@ public class UpdateMemberInfoController implements Action {
 		result.setPath(req.getContextPath()+ "/admin.main");
 		
 		return result;
+=======
+	
+>>>>>>> admin
 		
 		return null;
 	}

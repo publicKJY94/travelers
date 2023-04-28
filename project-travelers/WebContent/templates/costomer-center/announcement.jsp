@@ -38,7 +38,7 @@
 					</ul>
 				</div>
 				<router-outlet></router-outlet>
-				<app-customer-center-notice-list class="">
+				<app-customer-center-notice-list>
 				<section class="board_wrap">
 					<header class="board_header">
 					<form action="announcement.noticeBoard">
