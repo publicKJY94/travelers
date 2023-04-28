@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="boardImage">
-
+	<insert id="insertNoticeBoardImage">
+		INSERT INTO travelers.board_image_file
+		(image_name, image_original_name, image_size, notice_board_id)
+		VALUES(#{imageName}, #{imageOriginalName},#{imageSize}, #{noticeBoardId});
+	</insert>
 </mapper>
