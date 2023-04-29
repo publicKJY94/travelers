@@ -14,6 +14,7 @@
 	<div id="wrap">
 		<!---->
 		<router-outlet></router-outlet>
+		<form action="${pageContext.request.contextPath}/joinOk.user">
 		<app-join-input class="">
 		<section class="join_wrap write_form">
 			<div class="in_wrap">
@@ -22,7 +23,7 @@
 						src="${pageContext.request.contextPath}/static/image/logo.png"></a>
 				</h1>
 				<h2 class="tit">회원정보 입력</h2>
-				<form novalidate="" class="">
+				<form novalidate="" class="" >
 					<p class="txt_intro">
 						<strong></strong> 님, 안녕하세요? <br> 다음 몇 가지만 입력하시면, 위시빈의 가족이
 						됩니다.
@@ -33,7 +34,7 @@
 						</dt>
 						<dd class="di_flex st1">
 							<div>
-								<input formcontrolname="nick" placeholder="이름" type="text" id="nick"
+								<input formcontrolname=""nick name="nickname" placeholder="이름" type="text" id="nick"
 									autocomplete="username" class="txtbox">
 								<!---->
 								<!---->
@@ -49,7 +50,7 @@
 						</dt>
 						<dd>
 							<div>
-								<input formcontrolname="pwd" placeholder="비밀번호" type="password"
+								<input formcontrolname="pwd" name="password" placeholder="비밀번호" type="password"
 									autocomplete="new-password" class="txtbox"><span
 									class="desc"> 8~20자까지 영문,숫자,특수문자(_!@#$%^&amp;*)모두 조합하여
 									입력 </span>
@@ -77,7 +78,7 @@
 						</dt>
 						<dd>
 							<div>
-								<input formcontrolname="name" placeholder="이름" type="text"
+								<input formcontrolname="name" name="name" placeholder="이름" type="text"
 									class="txtbox">
 								<!---->
 								<!---->
@@ -90,7 +91,7 @@
 						</dt>
 						<dd class="di_flex wid03">
 							<div>
-								<select formcontrolname="birthYear" class="selbox"><option
+								<select formcontrolname="birthYear" name="birthday" class="selbox"><option
 										value="">연도</option>
 									<option value="2009" class="">2009년</option>
 									<option value="2008" class="">2008년</option>
@@ -226,7 +227,7 @@
 								<!---->
 							</div>
 							<div>
-								<select formcontrolname="birthMonth" class="selbox">
+								<select formcontrolname="birthMonth" name="birthday" class="selbox">
 									<option	value="">월</option>
 									<option value="01">1월</option>
 									<option value="02">2월</option>
@@ -243,7 +244,7 @@
 								<!---->
 							</div>
 							<div>
-								<select formcontrolname="birthDay" class="selbox"><option
+								<select formcontrolname="birthDay" name="birthday" class="selbox"><option
 										value="">일</option>
 									<option value="01" class="">1일</option>
 									<option value="02" class="">2일</option>
@@ -286,10 +287,10 @@
 							<span class="tit necessary">성별</span>
 						</dt>
 						<dd>
-							<div class="gender_btn_group">
-								<button class="gender_btn">남자</button>
+							<div class="gender_btn_group" name="gender">
+								<button class="gender_btn active">남자</button>
 								<button class="gender_btn">여자</button>
-								<button class="gender_btn active">선택안함</button>
+								<button class="gender_btn">선택안함</button>
 							</div>
 						</dd>
 					</dl>
@@ -299,7 +300,7 @@
 						</dt>
 						<dd>
 							<div>
-								<select formcontrolname="country_code" id="select" class="selbox"><option
+								<select formcontrolname="country_code" name="country" id="select" class="selbox"><option
 										value="82" class="">대한민국 +82</option>
 									<option value="1" class="">미국/캐나다 +1</option>
 									<option value="886" class="">대만 +886</option>
@@ -383,27 +384,27 @@
 						</dd>
 						<dd class="di_flex">
 							<div>
-								<input wbonlynumber="" formcontrolname="phone"
+								<input wbonlynumber="" formcontrolname="phone" name="phoneNumber"
 									placeholder="전화번호 입력" type="tel" class="txtbox">
 								<!---->
 								<!---->
 								<!---->
 								<!---->
 							</div>
-							<div>
+							<!-- <div>
 								<button class="wb_btn disabled">인증번호 발송</button>
-							</div>
+							</div> -->
 						</dd>
-						<dd class="di_flex phone_cert">
+						<!-- <dd class="di_flex phone_cert">
 							<div>
 								<input wbonlynumber="" placeholder="인증번호 입력" type="authNumber"
 									class="txtbox">
 							</div>
-							<!---->
+							
 							<div>
 								<button class="wb_btn disabled">인증 확인</button>
 							</div>
-						</dd>
+						</dd> -->
 						<div class="di_flex">
 							<!---->
 						</div>
@@ -494,9 +495,20 @@
 		<app-login-footer> <footer class="login_footer">
 			<p>2022 ⓒ Better Than WishBeen.</p>
 		</footer></app-login-footer></app-join-input>
+		</form>
 		<!---->
 		<!---->
 	</div>
 	</app-root>
 </body>
+<script type="text/javascript">
+
+	const submit = document.getElementsbyClassName("submit_div");
+	
+	submit[0].classList.remove('disabled');
+	submit[0].addEventListner("click",event=>{
+		document.location.href ='/project-travelers/login_main.user';
+	});
+	
+</script>
 </html>

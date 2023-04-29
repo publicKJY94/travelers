@@ -56,7 +56,7 @@
 						</form>
 					</dl>
 					<div  class="list_btn">
-						<a  class="btn_st0 active" href="/login">로그인
+						<a  class="btn_st0 active" href="${pageContext.request.contextPath}/login.user">로그인
 							페이지로</a>
 					</div>
 				</div>

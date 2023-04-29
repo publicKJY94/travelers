@@ -2,4 +2,73 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="tripBoard">
 
+	<!-- 작성자와 보드 전부 가져오기 내림차순 -->
+	<select id="selectTripBoardList" resultType="tripBoardDTO">
+		select tb.id, title,
+		content, start_date, end_date, register_date, tb.updated_date,
+		viewed_count, user_id,tu.name
+		FROM trip_board tb join tbl_user tu
+		on tb.user_id = tu.id
+		order by tb.id desc
+	</select>
+	
+	
+	
+	
+	<select id="getTotal" resultType="_int">
+		select count(tu.id) from trip_board tb
+		join tbl_user tu 
+		on tb.id = tu.id
+		
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+			</choose>
+			
+		</where>
+	</select>
+
+	<select id="selectAllTripBoardLimitTen" resultType="tripBoardDTO">
+			SELECT tb.id,
+		title, content, register_date, tb.updated_date, viewed_count,
+		user_id,tu.nickname
+		FROM trip_board tb join tbl_user tu
+		on tb.user_id = tu.id
+		<where>
+			<choose>
+				<when test = "type == 'title'.toString()">
+					and title like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'nickname'.toString()">
+					and nickname like concat('%',#{keyword},'%')
+				</when>
+				<when test = "type == 'content'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
+				
+			</choose>
+			
+		</where>
+		order by tb.id desc
+		limit #{offset},#{rowCount};
+	</select>
+	
+	
+	<delete id="deleteAllTripBoardSelected">
+		delete from trip_board
+		<where>
+			<foreach collection ="ids" item = "boardId" separator="or">
+				id =#{boardId}
+			</foreach>
+		</where>
+	</delete>
+	
 </mapper>

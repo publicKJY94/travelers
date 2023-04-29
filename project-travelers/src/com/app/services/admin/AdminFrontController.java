@@ -1,5 +1,6 @@
 package com.app.services.admin;
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -8,8 +9,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.admin.controller.AdminAnnounceMentController;
+import com.app.services.admin.controller.AdminAnnounceMentDeleteController;
+import com.app.services.admin.controller.AdminAnnouncementAnswerOkController;
 import com.app.services.admin.controller.AdminController;
 import com.app.services.admin.controller.AdminMainController;
+import com.app.services.admin.controller.AdminMemberController;
+import com.app.services.admin.controller.AdminMemberDeleteController;
+import com.app.services.admin.controller.AdminTripBoardController;
+import com.app.services.admin.controller.AdminTripBoardDeleteController;
 import com.app.services.admin.controller.AdminUpdateController;
 import com.app.services.admin.controller.CheckAdminEmail;
 
@@ -23,6 +31,7 @@ public class AdminFrontController extends HttpServlet{
 		System.out.println("프컨 들어옴");
 		//target에 따른 if문 분기처리 구간
 		
+		//admin 계정관리
 		if(target.equals("admin")) {
 			
 			result = new AdminController().execute(req, resp);
@@ -31,42 +40,85 @@ public class AdminFrontController extends HttpServlet{
 			result = new CheckAdminEmail().execute(req, resp);
 			
 		}
-		
 		else if(target.equals("adminUpdate")) {
 			
 			result = new AdminUpdateController().execute(req, resp);
 			
-		}else if(target.equals("admin-announcement")) {
+		}
+		//공지사항
+		else if(target.equals("admin-announcement")) {
 			
-			result.setPath("templates/admin/admin-announcement.jsp");
+			result = new AdminAnnounceMentController().execute(req,resp);
 			
-		}else if(target.equals("admin-announcement-answer")) {
+		}else if(target.equals("admin-announcement-delete")) {
+			
+			result = new AdminAnnounceMentDeleteController().execute(req,resp);
+			
+		}	
+		
+		//공지사항 작성
+		else if(target.equals("admin-announcement-answer")) {
 			
 			result.setPath("templates/admin/admin-announcement-answer.jsp");
 			
-		}else if(target.equals("admin-main")) {
+		}else if(target.equals("admin-announcement-answerOk")) {
+			
+			result= new AdminAnnouncementAnswerOkController().execute(req, resp);
+			
+		}
+		
+		//메인화면
+		else if(target.equals("admin-main")) {
 			result = new AdminMainController().execute(req,resp);
 			
 			
-		}else if(target.equals("admin-member")) {
+		}
+		
+		//회원관리
+		else if(target.equals("admin-member")) {
+			result = new AdminMemberController().execute(req,resp);
 			
-			result.setPath("templates/admin/admin-member.jsp");
 			
-		}else if(target.equals("admin-qa")) {
+		}else if(target.equals("admin-member-delete")) {
+			result = new AdminMemberDeleteController().execute(req,resp);
 			
-			result.setPath("templates/admin/admin-qa.jsp");
 			
-		}else if(target.equals("admin-root-board")) {
+		}
+		//여행기게시판관리
+		else if(target.equals("admin-trip-board")) {
+			result = new AdminTripBoardController().execute(req,resp);
+			
+			
+		}else if(target.equals("admin-trip-board-delete")) {
+			result = new AdminTripBoardDeleteController().execute(req,resp);
+			
+			
+		}
+		//추천루트
+		else if(target.equals("admin-root-board")) {
 			
 			result.setPath("templates/admin/admin-root-board.jsp");
 			
-		}else if(target.equals("admin-souvenir-board")) {
+		}
+		//여행품
+		else if(target.equals("admin-souvenir-board")) {
 			
 			result.setPath("templates/admin/admin-souvenir-board.jsp");
 			
-		}else if(target.equals("admin-trip-board")) {
+		}
+		
+		
+		
+		
+		
+		//qna게시판
+		else if(target.equals("admin-qa")) {
 			
-			result.setPath("templates/admin/admin-trip-board.jsp");
+			result.setPath("templates/admin/admin-qa.jsp");
+			
+		}else if(target.equals("admin-answer")) {
+			
+			result.setPath("templates/admin/admin-answer.jsp");
 			
 		}
 

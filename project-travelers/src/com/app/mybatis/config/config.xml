@@ -28,6 +28,10 @@
       
       
       <!--DTO 타입 알리아스 적는 구간 밑부분  -->
+      <typeAlias type="com.app.domain.DTO.board.TripBoardDTO" alias="tripBoardDTO"/>
+      <typeAlias type="com.app.domain.DTO.board.NoticeBoardDTO" alias="noticeBoardDTO"/>
+      <typeAlias type="com.app.domain.DTO.board.QuestionBoardDTO" alias="questionBoardDTO"/>
+      <typeAlias type="com.app.domain.DTO.user.MyPageInfoDTO" alias="mypageinfoDTO"/>
       
       
       

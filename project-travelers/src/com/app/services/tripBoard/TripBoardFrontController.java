@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.tripBoard.controller.ListOkController;
 
 public class TripBoardFrontController extends HttpServlet{
 	@Override
@@ -16,12 +17,14 @@ public class TripBoardFrontController extends HttpServlet{
 		req.setCharacterEncoding("utf-8");
 		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
-		
-		
+
+
 		
 		//target에 따른 if문 분기처리 구간
 	
-		
+		if(target.equals("listOk")) {
+			result = new ListOkController().execute(req, resp);
+		}
 		
 		
 		
