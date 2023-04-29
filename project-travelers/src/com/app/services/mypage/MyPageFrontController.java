@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.mypage.controller.UserInfoController;
 import com.app.services.user.controller.LoginOkController;
 
 public class MyPageFrontController extends HttpServlet {
@@ -19,9 +20,9 @@ public class MyPageFrontController extends HttpServlet {
 
 		// target에 따른 if문 분기처리 구간
 		if (target.equals("newPassword")) {
-			result.setPath("/templates/mypage/password-amend.jsp");
+			
 		} else if (target.equals("memberInfo")) {
-			result.setPath("/templates/mypage/member-information.jsp");
+			result = new UserInfoController().execute(req, resp);
 		} else if (target.equals("disaccount")) {
 			result.setPath("/templates/mypage/member-quit.jsp");
 		}else if (target.equals("mytriproute")) {
@@ -40,6 +41,8 @@ public class MyPageFrontController extends HttpServlet {
 			result.setPath("/templates/mypage/my-comment.jsp");
 		}else if (target.equals("myregisteredcommit")) {
 			result.setPath("/templates/mypage/my-registered-commit.jsp");
+		}else if (target.equals("myquestion")) {
+			result.setPath("/templates/mypage/my-question.jsp");
 		}
 
 		// 모든 분기처리는 이부분 위에까지만

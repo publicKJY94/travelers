@@ -11,7 +11,7 @@ import com.app.Result;
 import com.app.domain.DAO.user.UserDAO;
 import com.app.domain.VO.user.UserVO;
 
-public class UpdateMemberInfoController implements Action {
+public class UserUpdateController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -19,21 +19,21 @@ public class UpdateMemberInfoController implements Action {
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		String MemberEmail = req.getParameter("userEmail");
-		String newPassword= req.getParameter("newPassword");
-		UserDAO userDAO = new UserDAO();
-		userDAO.updateAdminPassword(newPassword, (long)req.getSession().getAttribute("adminId"));
+		Long userId = (Long)req.getSession().getAttribute("id");
+		userVO.setName(req.getParameter("name"));
+		userVO.setName(req.getParameter("nickname"));
+		userVO.setName(req.getParameter("introducingMessage"));
+		userVO.setName(req.getParameter("phoneNumber"));
+		userVO.setName(req.getParameter("email"));
+		
+		userDAO.updateUserInfo(userVO);
 		
 		req.getSession().invalidate();
-		
-		Result result = new Result();
 		
 		result.setRedirect(true);
 		result.setPath(req.getContextPath()+ "/admin.main");
 		
 		return result;
-		
-		return null;
 	}
 
 }

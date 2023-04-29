@@ -84,8 +84,8 @@ public SqlSession sqlSession;
 	}
 
 	// 사용자 정보 가져오기
-	public List<MyPageInfoDTO> selectUserInfoByUserId(Long userId) {
-		return sqlSession.selectList("user.selectUserInfoByUserId", userId);
+	public UserVO selectUserInfoByUserId(Long userId) {
+		return sqlSession.selectOne("user.selectUserInfoByUserId", userId);
 	}
 	
 	// 사용자 정보 변경
