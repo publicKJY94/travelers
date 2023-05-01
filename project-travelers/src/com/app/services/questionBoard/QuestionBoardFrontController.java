@@ -19,7 +19,7 @@ public class QuestionBoardFrontController extends HttpServlet{
 		
 		
 		//target에 따른 if문 분기처리 구간
-	
+		
 		
 		
 		

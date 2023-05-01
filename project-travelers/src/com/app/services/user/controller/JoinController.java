@@ -14,9 +14,10 @@ public class JoinController implements Action{
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
+		String name = req.getParameter("identification");
+		req.setAttribute("email",name);
 		
 		result.setPath("/templates/login/new_user_info.jsp");
 		
