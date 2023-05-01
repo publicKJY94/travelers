@@ -18,14 +18,20 @@ public class ItemBoardFrontController extends HttpServlet{
 		Result result = new Result();
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		
-
+		
 		
 		//target에 따른 if문 분기처리 구간
-		if(target.equals("listOk")) {
-			result = new ListIOkController().execute(req, resp);
-		}
+	
 		
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		//모든 분기처리는 이부분 위에까지만
@@ -39,6 +45,18 @@ public class ItemBoardFrontController extends HttpServlet{
 		}
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
