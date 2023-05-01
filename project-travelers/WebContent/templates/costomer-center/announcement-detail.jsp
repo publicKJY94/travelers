@@ -136,7 +136,7 @@
 	<script>
 	let contextPath = "${pageContext.request.contextPath}";
 	let boardId = "${noticeBoard.id}";
-	console.log(boardId);
+	let userId = "${sessionScope.userId}";
 	</script>
 <script
 	src="${pageContext.request.contextPath}/static/js/costomer-center/announcement-detail.js">

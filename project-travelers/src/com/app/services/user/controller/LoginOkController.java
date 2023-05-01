@@ -33,7 +33,7 @@ public class LoginOkController implements Action {
 			result.setPath(req.getContextPath()+"/admin.admin"); 
 			session.setAttribute("adminId", userVO.getId());
 			
-		}else if(userVO.getRole().equals("user")) {
+		}else {
 			result.setRedirect(true);
 			result.setPath(req.getContextPath()+"/user.main"); 
 			session.setAttribute("userId", userVO.getId());

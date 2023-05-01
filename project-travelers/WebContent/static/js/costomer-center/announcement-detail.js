@@ -126,6 +126,8 @@ let comment_list = document.querySelector(".comment_list");
 let commentText ='';
 
 commentList.forEach(comment =>{
+	console.log(comment.userId)
+	console.log(userId)
 	commentText +=`<div  class="inner"
 								id="reply_113442">
 								<ul  class="di_flex">
@@ -141,16 +143,19 @@ commentList.forEach(comment =>{
 											<p  class="txt">${comment.content}</p>
 										</div></li>
 									<li  class="right_wrap"><div>
-											<span  class="date">${elapsedTime(comment.updatedDate)}</span><a
-												 class="btn_set"><img
-												
-												src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>
-										</div>
+											<span  class="date">${elapsedTime(comment.updatedDate)}</span>`
+								if(comment.userId == userId){
+									
+								commentText += `<a class="btn_set"><img	src="https://www.wishbeen.co.kr/assets/images/svg/three_dots_vertical.svg" alt="menu"></a>`
+								}			
+										
+										
+										commentText +=	`</div>
 										
 										</li>
 								</ul>
 							</div>`
-	
+	 
 })
 
 comment_list.innerHTML += commentText;
