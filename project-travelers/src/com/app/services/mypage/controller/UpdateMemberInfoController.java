@@ -16,9 +16,9 @@ public class UpdateMemberInfoController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
+
 		
 		return null;
-
 	}
 
 }
