@@ -11,7 +11,6 @@ import org.json.JSONObject;
 
 import com.app.Action;
 import com.app.Result;
-import com.app.domain.Criteria;
 import com.app.domain.DAO.board.ItemBoardDAO;
 
 public class ListIOkController implements Action{

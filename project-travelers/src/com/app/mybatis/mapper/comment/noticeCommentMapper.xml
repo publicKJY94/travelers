@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="noticeComment">
-	<insert id="insertNoticeBoardComment">
-		INSERT INTO travelers.notice_board_comment
-		(content, register_date, updated_date, user_id, board_id)
-		VALUES(#{content}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, #{userId}, #{boardId});
-	</insert>
-
-	<select id="selectNoticeBoardCommentLimitTen"
-		resultType="noticeBoardCommentDTO">
-		SELECT nbc.id, nbc.content, nbc.register_date,
-		nbc.updated_date, nbc.user_id, board_id, tu.nickname
-		FROM notice_board_comment nbc join tbl_user tu
-		on tu.id = nbc.user_id join notice_board nb
-		on nb.id = nbc.board_id
-		order by nbc.id desc
-		limit #{offset},10
-	</select>
-	
-	<select id="getTotal"	resultType="_int">
-		select count(id) from notice_board_comment
-	</select>
 
 </mapper>
