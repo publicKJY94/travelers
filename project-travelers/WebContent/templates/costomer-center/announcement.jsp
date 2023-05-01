@@ -114,7 +114,6 @@
 	let noticeBoardList = `${noticeBoardList}`;
 	let criteria = `${criteria}`
 	console.log(criteria)
-	console.log(noticeBoardList)
 </script>
 <script src="${pageContext.request.contextPath}/static/js/costomer-center/announcement.js"></script>
 </html>
