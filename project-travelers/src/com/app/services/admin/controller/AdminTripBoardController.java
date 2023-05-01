@@ -35,7 +35,6 @@ public class AdminTripBoardController implements Action {
 		Criteria criteria = new Criteria(page,total,type,keyword);
 		tripBoardList = tripBoardDAO.selectAllTripBoardLimitTen(criteria);
 
-		tripBoardList.stream().forEach(i -> i.setContent(""));
 		JSONArray jsonTripBoardList = new JSONArray();
 		tripBoardList.stream().map(tripBoard -> new JSONObject(tripBoard)).forEach(jsonTripBoardList::put);
 		req.setAttribute("tripBoardList", jsonTripBoardList);

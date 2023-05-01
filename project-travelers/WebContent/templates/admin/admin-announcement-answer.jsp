@@ -64,10 +64,10 @@
 										   <div class="cancel">X</div>
 									  </div>
 								   </div>
-									<label for="attach">	
+									<label for="attach">
 									  <div class="search-notice-img">찾아보기</div>
 								   </label>
-								   <input type="file" id="attach" style="display: none;" name= "upload" multiple >
+								   <input type="file" id="attach" style="display: none;" name= "upload" >
 								</div>
 							 </div>
 						  </div>
@@ -96,5 +96,4 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/admin/answer.js"></script>
-
 </html>
