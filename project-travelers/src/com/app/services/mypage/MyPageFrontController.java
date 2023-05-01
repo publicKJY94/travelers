@@ -6,18 +6,23 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.app.Result;
 import com.app.services.mypage.controller.UserInfoController;
 import com.app.services.user.controller.LoginOkController;
+import com.mysql.cj.Session;
 
 public class MyPageFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//		요청사항 인코딩
 		req.setCharacterEncoding("UTF-8");
+//		결과를 저장하기 위함
 		Result result = new Result();
+//		어디에 적용할지 분기점 요소를 구별해주는 것
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
-
+		
 		// target에 따른 if문 분기처리 구간
 		if (target.equals("newPassword")) {
 			

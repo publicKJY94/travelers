@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,17 +25,17 @@ public class UserInfoController implements Action {
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		Long userId = (Long)req.getSession().getAttribute("id");
-		userVO.setName(req.getParameter("name"));
-		userVO.setNickname(req.getParameter("nickname"));
-		userVO.setIntroducingMessage(req.getParameter("introducingMessage"));
-		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
-		userVO.setEmail(req.getParameter("email"));
+		Long userId = ((Long)req.getSession().getAttribute("id"));
+		userVO = userDAO.selectUserInfoByUserId(userId);
 		
-		userDAO.selectUserInfoByUserId(userId);
+		req.setAttribute("newname", userVO.getName());
+		req.setAttribute("newnickname", userVO.getNickname());
+		req.setAttribute("newintroducingMessage", userVO.getIntroducingMessage());
+		req.setAttribute("newphoneNumber", userVO.getPhoneNumber());
+		req.setAttribute("newemail", userVO.getEmail());
 		
-		result.setPath("/templates/mypage/member-information.jsp");
-		return null;
+		result.setPath("/templates/mypage/member-infomation.jsp");
+		return result;
 	}
 
 }

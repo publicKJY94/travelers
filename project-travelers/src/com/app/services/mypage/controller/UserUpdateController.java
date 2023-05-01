@@ -20,18 +20,18 @@ public class UserUpdateController implements Action {
 		Result result = new Result();
 		
 		Long userId = (Long)req.getSession().getAttribute("id");
-		userVO.setName(req.getParameter("name"));
-		userVO.setName(req.getParameter("nickname"));
-		userVO.setName(req.getParameter("introducingMessage"));
-		userVO.setName(req.getParameter("phoneNumber"));
-		userVO.setName(req.getParameter("email"));
+//		userVO.setName(req.getParameter("newname"));
+//		userVO.setNickname(req.getParameter("newnickname"));
+//		userVO.setIntroducingMessage(req.getParameter("newintroducingMessage"));
+//		userVO.setPhoneNumber(req.getParameter("newphoneNumber"));
+//		userVO.setEmail(req.getParameter("newemail"));
 		
-		userDAO.updateUserInfo(userVO);
-		
+		userDAO.updateUserInfo(userId);
+
 		req.getSession().invalidate();
 		
 		result.setRedirect(true);
-		result.setPath(req.getContextPath()+ "/admin.main");
+		result.setPath("/templates/mypage/member-infomation.jsp");
 		
 		return result;
 	}

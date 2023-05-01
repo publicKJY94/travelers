@@ -89,13 +89,7 @@ public SqlSession sqlSession;
 	}
 	
 	// 사용자 정보 변경
-	public void updateUserInfo(UserVO userVO) {
-		Map<String, String> updateUserInfo = new HashMap<>();
-		updateUserInfo.put("newName", userVO.getName());
-		updateUserInfo.put("newNickname", userVO.getNickname());
-		updateUserInfo.put("newIntroducingMessage", userVO.getIntroducingMessage());
-		updateUserInfo.put("newPhoneNumber", userVO.getPhoneNumber());
-		updateUserInfo.put("newEmail", userVO.getEmail());
-		sqlSession.update("user.updateUserInfo", userVO);
+	public void updateUserInfo(Long userId) {
+		
 	}
 }

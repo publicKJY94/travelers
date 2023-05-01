@@ -38,6 +38,11 @@ public SqlSession sqlSession;
 		return sqlSession.selectList("tripBoard.selectAllTripBoardLimitTen",criteria);
 	}
 	
+	//마이페이지 10개씩 페이징처리 최신순
+	public List<TripBoardDTO> selectAllMyTripBoard(Long userId){
+		return sqlSession.selectList("tripBoard.selectAllMyTripBoardLimitTen", criteria);
+	}
+	
 	
 	//여러개 삭제
 	public void deleteAllTripBoardSelected(String[] deleteIds) {

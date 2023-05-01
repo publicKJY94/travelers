@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@page import="com.app.domain.DAO.user.UserDAO"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,19 +71,19 @@ input[type=submit] {
 								<li>
 									<div class="th">이름</div>
 									<div>
-										<input type="text" class="memberInfo" value="${userVO.name}">
+										<input type="text" class="memberInfo" name="newname" value="${name}">
 									</div>
 								</li>
 								<li>
 									<div class="th">닉네임</div>
 									<div>
-										<input type="text" class="memberInfo" value="${userVO.nickname}">
+										<input type="text" class="memberInfo" name="newnickname" value="${nickname}">
 									</div>
 								</li>
 								<li>
 									<div class="th">한줄 소개</div>
 									<div class="txt">
-										<input type="text" class="memberInfo" value="${userVO.introducingMessage}">
+										<input type="text" class="memberInfo" name="newintroducingMessage" value="${introducingMessage}">
 									</div>
 								</li>
 							</ul>
@@ -95,13 +94,13 @@ input[type=submit] {
 								<li>
 									<div class="th">연락처</div>
 									<div>
-										<input type="text" class="memberInfo" value="${userVO.phoneNumber}">
+										<input type="text" class="memberInfo" name="newphoneNumber" value="${phoneNumber}">
 									</div>
 								</li>
 								<li>
 									<div class="th">이메일</div>
 									<div>
-										<input type="text" class="memberInfo" value="${userVO.email}">
+										<input type="text" class="memberInfo" name="newemail" value="${email}">
 									</div>
 								</li>
 							</ul>
@@ -135,11 +134,11 @@ input[type=submit] {
 <script type="text/javascript">
 	let $form = $("form[name='update-info']");
 	$('input.memberInfo').on("input", function() {
-		$form.find("input[name='name']").val($(this).val());
-		$form.find("input[name='nickname']").val($(this).val());
-		$form.find("input[name='introducingMessage']").val($(this).val());
-		$form.find("input[name='phoneNumber']").val($(this).val());
-		$form.find("input[name='email']").val($(this).val());
+		$form.find("input[name='newname']").val($(this).val());
+		$form.find("input[name='newnickname']").val($(this).val());
+		$form.find("input[name='newintroducingMessage']").val($(this).val());
+		$form.find("input[name='newphoneNumber']").val($(this).val());
+		$form.find("input[name='newemail']").val($(this).val());
 	});
 	$("a.btn_st0").on("click", function(e) {
 		e.preventDefault();
