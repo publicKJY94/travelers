@@ -373,6 +373,15 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 	margin-right: 1rem;
 }
 
+.comment_form .desc {
+    position: absolute;
+    margin-top: -0.6rem;
+    top: 50%;
+    right: 7.5rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+
 .attr_tag {
 	padding: 0.8rem 1.2rem 0.8rem 2.4rem;
 	display: inline-block;

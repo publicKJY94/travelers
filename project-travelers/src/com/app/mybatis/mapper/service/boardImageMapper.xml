@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="boardImage">
-
+	<insert id="insertNoticeBoardImage">
+		INSERT INTO travelers.board_image_file
+		(image_name, image_original_name, image_size, notice_board_id)
+		VALUES(#{imageName}, #{imageOriginalName},#{imageSize}, #{noticeBoardId});
+	</insert>
+	<select id="selectNoticeBoardImages" resultType="boardImageVO">
+		SELECT id, image_name, image_original_name, image_size, trip_board_id, trip_route_board_id, trip_item_board_id, notice_board_id
+		FROM travelers.board_image_file
+		where notice_board_id = #{noticeBoardId}
+	
+	</select>
+	
+	<delete id="deleteAllNoticeBoardImagesSelected">
+			delete from board_image_file
+		<where>
+			<foreach collection ="ids" item = "boardId" separator="or">
+				notice_board_id =#{boardId}
+			</foreach>
+		</where>
+	</delete>
+		
+		
+		<select id="selectNoticeBoardImagesToDelete" resultType="boardImageVO">
+			SELECT id, image_name, image_original_name, image_size, trip_board_id, trip_route_board_id, trip_item_board_id, notice_board_id
+			FROM travelers.board_image_file
+			
+			<where>
+			<foreach collection ="ids" item = "boardId" separator="or">
+				notice_board_id =#{boardId}
+			</foreach>
+		</where>
+		</select>
 </mapper>

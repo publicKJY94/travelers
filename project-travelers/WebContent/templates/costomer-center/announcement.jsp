@@ -38,7 +38,7 @@
 					</ul>
 				</div>
 				<router-outlet></router-outlet>
-				<app-customer-center-notice-list class="">
+				<app-customer-center-notice-list>
 				<section class="board_wrap">
 					<header class="board_header">
 					<form action="announcement.noticeBoard">
@@ -114,6 +114,7 @@
 	let noticeBoardList = `${noticeBoardList}`;
 	let criteria = `${criteria}`
 	console.log(criteria)
+	console.log(noticeBoardList)
 </script>
 <script src="${pageContext.request.contextPath}/static/js/costomer-center/announcement.js"></script>
 </html>
