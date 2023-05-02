@@ -20,7 +20,7 @@ tripBoardList.forEach((board, i) => {
 				<ul
 					class="ico_wrap">
 					<li><span
-						class="ico_spot"></span> 5</li>
+						class="ico_spot"></span> ${board.}</li>
 					<li><span
 						class="ico_cmt"></span> 0</li>
 					<li><span
