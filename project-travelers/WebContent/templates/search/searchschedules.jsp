@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,8 +77,8 @@
 						<h2 class="hide">기념품 목록</h2>
 						<div>
 							<ul class="sel_wrap">
-								<li><select class="selbox">
-										<option value>여행기간</option>
+								<li><select class="selbox" id="month">
+										<option value="0" >여행기간</option>
 										<option value="1">1월</option>
 										<option value="2">2월</option>
 										<option value="3">3월</option>
@@ -92,8 +93,8 @@
 										<option value="12">12월</option>
 								</select></li>
 								<li><select class="selbox" id="sort">
-										<option value="during_start__desc" selected="">여행 시작일 순</option>
-										<option value="createdatdesc" >최신순</option>
+										<option value="during_start__desc">여행 시작일 순</option>
+										<option value="createdatdesc">최신순</option>
 										<option value="popularitydesc">인기순</option>
 								</select></li>
 							</ul>
@@ -110,9 +111,24 @@
 					</div>
 					<ul class="trip_list2">
 					</ul>
-					<div class="list_btn ng-star-inserted">
-						<a class="btn_st1" id="more">더보기</a>
-					</div>
+					<ul class="pagination pc" style="margin-top : 50px">
+                		<c:if test="${prev}">
+							<li><a href="${startPage - 1}"><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_left.svg" alt="이전"></a></li>
+						</c:if>
+						<c:forEach var="i" begin="${startPage}" end="${endPage}">
+                			<c:choose>
+	                			<c:when test="${i eq page}">
+	                				<li><a href="javascript:void(0)" class="active ng-star-inserted"> <c:out value="${i}"/> </a></li>
+	                			</c:when>
+	                			<c:otherwise>
+									<li><a href="${i}" class="active ng-star-inserted"> <c:out value="${i}"/> </a></li>
+	                			</c:otherwise>
+                			</c:choose>
+                		</c:forEach>
+                		<c:if test="${next}">
+							<li><a href="${endPage - 1}"><img src="https://www.wishbeen.co.kr/assets/images/svg/chevron_right.svg" alt="다음"></a></li>
+						</c:if>
+					</ul>
 				</section>
 				</app-city-travel-plan>
 			</div>
@@ -142,10 +158,22 @@
 	let boards = `${boards}`;
 	let contextPath = `${pageContext.request.contextPath}`;
 	console.log(`${boards}`);
-	$('#sort').val("${param.sort}").attr("selected","selected");
-	$('#sort').change(function(){
-		let val = $(this).val();
-		window.location.href=contextPath+"/listOk.tripBoard?sort="+val;
+	
+	const urlParams = new URL(location.href).searchParams;
+
+	const sort = urlParams.get('sort');
+	const month = urlParams.get('month');
+	
+	if(sort!=null)
+	 	$('#sort').val("${param.sort}").attr("selected","selected");
+		
+	if(month!=null)
+		$('#month').val("${param.month}").attr("selected","selected");
+	
+	$('.selbox').change(function(){
+		let sort = $('#sort').val();
+		let mon = $('#month').val();
+		window.location.href=contextPath+"/listOk.tripBoard?sort="+sort+"&month="+mon;
 	});
 </script>
 <script src="${pageContext.request.contextPath}/static/js/tripboard/list.js"></script>

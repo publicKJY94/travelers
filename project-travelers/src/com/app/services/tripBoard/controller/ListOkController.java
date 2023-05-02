@@ -23,9 +23,15 @@ public class ListOkController implements Action{
 		JSONArray jsonArray = new JSONArray();
 		String temp = req.getParameter("page");
 		String sort = req.getParameter("sort");
+		int month;
 		
-
-		sort = sort == null ? "during_start__desc" : sort; 
+		try {
+			month = Integer.parseInt(req.getParameter("month"));
+		} catch (Exception e) {
+			month = 0;
+		}
+		
+		sort = sort == null ? "during_start__desc" : sort;
 		
 		int page = temp == null ? 1 : Integer.parseInt(temp);
 		Criteria criteria = new Criteria(page, tripboardDAO.getTotal(null, null));
@@ -33,10 +39,18 @@ public class ListOkController implements Action{
 		pagable.put("offset", criteria.getOffset());
 		pagable.put("rowCount", criteria.getRowCount());
 		pagable.put("sort", sort);
+		pagable.put("month", month);
 		
 		tripboardDAO.selectAll(pagable).stream().map(board -> new JSONObject(board)).forEach(jsonArray::put);
 		
 		req.setAttribute("boards", jsonArray.toString());
+		req.setAttribute("sort", sort);
+		req.setAttribute("month", month);
+		req.setAttribute("page", page);
+		req.setAttribute("startPage", criteria.getStartPage());
+		req.setAttribute("endPage", criteria.getEndPage());
+		req.setAttribute("prev", criteria.isPrev());
+		req.setAttribute("next", criteria.isNext());
 		
 		result.setPath("/templates/search/searchschedules.jsp");
 		return result;

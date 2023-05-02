@@ -86,6 +86,12 @@
 		viewed_count, user_id,tu.name
 		FROM trip_board tb join tbl_user tu
 		on tb.user_id = tu.id
+			<choose>
+				<when test="month!=0">
+					where
+						month(start_date) = #{month}
+				</when>
+			</choose>
 		order by
 			<choose>
 				<when test="sort=='during_start__desc'.toString()">	
