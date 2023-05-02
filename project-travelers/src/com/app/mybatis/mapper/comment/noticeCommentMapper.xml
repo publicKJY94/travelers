@@ -21,5 +21,17 @@
 	<select id="getTotal"	resultType="_int">
 		select count(id) from notice_board_comment
 	</select>
+	
+	<delete id="delete">
+		DELETE FROM travelers.notice_board_comment
+		WHERE id= #{commentId}
+			
+	</delete>
+	
+	<update id="update">
+		update notice_board_comment
+		set	content = #{content}, updated_date = CURRENT_TIMESTAMP
+		where id = #{commentId}
+	</update>
 
 </mapper>

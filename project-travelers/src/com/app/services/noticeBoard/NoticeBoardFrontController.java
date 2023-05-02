@@ -13,7 +13,9 @@ import com.app.services.noticeBoard.controller.AnnouncementController;
 import com.app.services.noticeBoard.controller.AnnouncementDetailController;
 import com.app.services.noticeBoard.controller.NoticeBoardCommentOkController;
 import com.app.services.noticeBoard.controller.NoticeBoardCommentSelectController;
-import com.app.services.noticeBoard.controller.noticeBoardCommentGetTotalController;
+import com.app.services.noticeBoard.controller.AnnouncementCommentDeleteController;
+import com.app.services.noticeBoard.controller.AnnouncementCommentUpdateController;
+import com.app.services.noticeBoard.controller.NoticeBoardCommentGetTotalController;
 
 public class NoticeBoardFrontController extends HttpServlet{
 	@Override
@@ -38,7 +40,13 @@ public class NoticeBoardFrontController extends HttpServlet{
 			result = new NoticeBoardCommentSelectController().execute(req,resp);
 			
 		}else if(target.equals("noticeBoardCommentGetTotal")) {
-			result = new noticeBoardCommentGetTotalController().execute(req,resp);
+			result = new NoticeBoardCommentGetTotalController().execute(req,resp);
+			
+		}else if(target.equals("announcementCommentDelete")) {
+			result = new AnnouncementCommentDeleteController().execute(req,resp);
+			
+		}else if(target.equals("announcementCommentUpdate")) {
+			result = new AnnouncementCommentUpdateController().execute(req,resp);
 			
 		}
 		

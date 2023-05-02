@@ -23,8 +23,8 @@ public class NoticeBoardCommentSelectController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		System.out.println("들");
 		NoticeCommentDAO noticeCommentdDAO = new NoticeCommentDAO();
-		int offset = Integer.parseInt(req.getParameter("page")==null ? "1" : req.getParameter("page"));
-		offset = (offset-1)*10;
+		int offset = Integer.parseInt(req.getParameter("count")==null ? "0" : req.getParameter("count"));
+		
 		List<NoticeBoardCommentDTO> noticeBoardCommentList = new ArrayList();
 		noticeBoardCommentList = noticeCommentdDAO.selectNoticeBoardCommentLimitTen(offset);
 		noticeBoardCommentList.stream().forEach(comment -> comment.setContent(comment.getContent().replace("\r\n", "<br>")));

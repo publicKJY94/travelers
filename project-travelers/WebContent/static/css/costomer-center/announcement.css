@@ -589,3 +589,162 @@ a:link, a:active, a:visited, a:hover {
     opacity: 1;
     transition: all .3;
 }
+
+.comment_list .right_wrap .set_menu {
+    top: 5rem;
+}
+.set_menu {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border: 0.1rem solid #242424;
+    box-shadow: 0.3rem 0.3rem 0.5rem #0000004d;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.set_menu li {
+    color: #333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.set_menu a {
+    padding: 1rem 0;
+    display: block;
+}
+
+.set_menu li+li {
+    margin: 0!important;
+    border-top: 0.1rem solid #e7e7e7;
+}
+
+
+.comment_list .inner {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.comment_form {
+    padding: 1.2rem;
+    background: #fafafa;
+    border-top: 0.1rem solid #d7d7d7;
+    border-bottom: 0.1rem solid #d7d7d7;
+    box-sizing: border-box;
+}
+
+.comment_form dt {
+    margin: 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.hide {
+    position: absolute!important;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.comment_form dd {
+    position: relative;
+}
+
+
+.comment_form .txtbox {
+    width: calc(100% - 6rem);
+    padding: 1.2rem 7rem 1.2rem 1.2rem;
+    border: 0.1rem solid #d7d7d7;
+    background: #fff;
+    font-size: 1.6rem;
+}
+.comment_form .btn_register {
+    width: 6rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #666;
+    border-radius: 0 0.3rem 0.3rem 0;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.comment_form .desc {
+    position: absolute;
+    margin-top: -0.6rem;
+    top: 50%;
+    right: 7.5rem;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.list_btn {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+.more {
+    width: 30%;
+    max-width: 20rem;
+}
+.more:hover{
+	    box-shadow: inset 0 -10em #242424;
+    color: #fff;
+}
+
+.list_btn a, .list_btn button {
+    margin: 0.3rem;
+    background: transparent;
+    border-radius: 0.6rem;
+    outline: 0;
+    border: 0;
+    font-weight: 400;
+}
+
+
+.btn_st1 {
+    min-width: 10rem;
+    height: 4.5rem;
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 0.1rem solid #242424!important;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    outline: 0;
+    color: #242424;
+    font-size: 1.5rem;
+    line-height: 4.3rem;
+    text-align: center;
+    box-shadow: inset 0 0 #242424;
+    transition: all .2s;
+}
+
+
+img.infinite_rotating_logo {
+    
+    animation: rotate_image 0.5s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+div.logo-area {
+    text-align: center;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}

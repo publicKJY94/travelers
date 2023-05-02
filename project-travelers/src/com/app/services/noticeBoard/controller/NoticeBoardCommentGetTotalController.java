@@ -11,7 +11,7 @@ import com.app.Action;
 import com.app.Result;
 import com.app.domain.DAO.comment.NoticeCommentDAO;
 
-public class noticeBoardCommentGetTotalController implements Action {
+public class NoticeBoardCommentGetTotalController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

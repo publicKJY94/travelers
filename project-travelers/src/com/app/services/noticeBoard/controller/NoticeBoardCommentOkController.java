@@ -19,7 +19,7 @@ public class NoticeBoardCommentOkController implements Action {
 		NoticeCommentDAO noticeCommentdDAO = new NoticeCommentDAO();
 		
 		/* long userId = (long)req.getSession().getAttribute("userId"); */
-		long userId = 1l;
+		long userId = (long)req.getSession().getAttribute("userId");
 		
 		NoticeBoardCommentVO noticeCommentVO = new NoticeBoardCommentVO();
 			

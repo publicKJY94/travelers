@@ -89,4 +89,13 @@
 		limit 0,1
 	</select>
 	
+	<update id="updateNoticeBoard">
+	UPDATE travelers.notice_board
+	SET title=#{title}, content=#{content}, updated_date=CURRENT_TIMESTAMP
+	WHERE id=#{id};
+	
+	
+	</update>
+	
+	
 </mapper>

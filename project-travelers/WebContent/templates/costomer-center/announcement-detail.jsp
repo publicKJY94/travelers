@@ -41,7 +41,7 @@
 				</div>
 				<router-outlet></router-outlet>
 				<app-customer-center-notice-detail>
-				<section class="board_wrap">
+				<section class="board_wrap" style="padding : 0;">
 					<div class="board_view content_view board">
 						<div class="tit_wrap di_flex">
 
@@ -60,7 +60,7 @@
 							<div id="editorjs_notice_detail">
 								<div class="codex-editor">
 									<div class="codex-editor__redactor"
-										style="padding-bottom: 300px;">${noticeBoard.content}
+										style="padding-bottom: 100px;">${noticeBoard.content}
 										<c:forEach var="noticeBoardImage" items="${noticeBoardImages}">
 											<div class="noticeBoardImages">
 												<img
@@ -97,7 +97,7 @@
 						<dl  class="comment_form">
 							<dt >
 								<div>
-									댓글 <span  class="count">3</span>
+									댓글 <span  class="count">0</span>
 								</div>
 								<div>
 									<a class="reload"><img 
@@ -112,6 +112,9 @@
 								<span  class="desc limitComment">0 / 500</span>
 							</dd>
 						</dl>
+						<div class="logo-area">
+							<img src="${pageContext.request.contextPath}/static/image/dimmed-reply.png" class="infinite_rotating_logo" width="48">
+						</div>
 						<div  class="comment_list">
 							
 						</div>
@@ -124,10 +127,10 @@
 				</app-customer-center-notice-detail>
 				<!---->
 			</div>
+		<div class="list_btn"><a class="btn_st1 more">더보기</a></div>
 		</section>
 		</app-customer-center>
-
-		<%-- <jsp:include page="/templates/header-footer/footer.jsp"></jsp:include> --%>
+		<jsp:include page="/templates/header-footer/footer.jsp"></jsp:include>
 
 	</div>
 	</app-root>
@@ -137,6 +140,7 @@
 	let contextPath = "${pageContext.request.contextPath}";
 	let boardId = "${noticeBoard.id}";
 	let userId = "${sessionScope.userId}";
+	console.log(userId);
 	</script>
 <script
 	src="${pageContext.request.contextPath}/static/js/costomer-center/announcement-detail.js">

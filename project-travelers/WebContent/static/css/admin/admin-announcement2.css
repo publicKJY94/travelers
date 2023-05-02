@@ -351,3 +351,12 @@ table tr.tableTh td {
 .clickWriteBtn:active {
 	background-color:#c4c4c4;
 }
+
+.update_btn{
+	font-size: 12px;
+        background-color: white;
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
+    width: 50px;
+    cursor : pointer;
+}

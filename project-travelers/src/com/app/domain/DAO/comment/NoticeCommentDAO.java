@@ -1,6 +1,8 @@
 package com.app.domain.DAO.comment;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
@@ -25,6 +27,17 @@ public SqlSession sqlSession;
 	
 	public int getTotal() {
 		return sqlSession.selectOne("noticeComment.getTotal");
+	}
+	
+	public void delete(int commentId) {
+		sqlSession.delete("noticeComment.delete",commentId);
+	}
+	
+	public void update(int commentId,String content) {
+		Map<String,Object> map = new HashMap<>();
+		map.put("commentId",commentId);
+		map.put("content", content);
+		sqlSession.update("noticeComment.update",map);
 	}
 	
 }
