@@ -1,11 +1,5 @@
 /*게시글 목록*/
 
-const $orders = $(".sort a");
-$orders.on("click", function(e){
-	let i = $orders.index(this);
-	$form.find("input[name='sort']").val(i == 0 ? 'recent' : 'popular');
-	$form.submit();
-});
 
 showList();
 
@@ -18,7 +12,7 @@ function showList() {
 	boards.forEach(board => {
 		text += `						
 			<li class="inner">
-				<a>
+				<a href="javascript:location.href='${contextPath}/detailOk.tripBoard?tripboardId=${board.id}'">
 					<div class="img_wrap">
 						<p class="img">
 							<img alt="img" src="https://test-image.wishbeen.co.kr/160x160_376b52fa601151a3b5a651883155c734.jpg">

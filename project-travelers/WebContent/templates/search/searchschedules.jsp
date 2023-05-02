@@ -66,7 +66,9 @@
 							href="/city/35778/places"> 기념품 목록 </a></li>
 					</ul>
 				</nav>
-
+				<div  class="list_btn" style='padding-top:0px; text-align: right;'>
+					<a class="btn_st1 write" href="${pageContext.request.contextPath}/templates/board-form/trip-board-form.jsp" >글쓰기</a>
+				</div>
 				<router-outlet></router-outlet>
 				<app-city-travel-plan class="ng-star-inserted">
 				<section class="board_wrap">
@@ -74,7 +76,7 @@
 						<h2 class="hide">기념품 목록</h2>
 						<div>
 							<ul class="sel_wrap">
-								<li><select class="selbox month">
+								<li><select class="selbox">
 										<option value>여행기간</option>
 										<option value="1">1월</option>
 										<option value="2">2월</option>
@@ -89,9 +91,9 @@
 										<option value="11">11월</option>
 										<option value="12">12월</option>
 								</select></li>
-								<li><select class="selbox sort"><!-- onchange	 -->
-										<option value="during_start__desc">여행 시작일 순</option>
-										<option value="createdatdesc">최신순</option>
+								<li><select class="selbox" id="sort">
+										<option value="during_start__desc" selected="">여행 시작일 순</option>
+										<option value="createdatdesc" >최신순</option>
 										<option value="popularitydesc">인기순</option>
 								</select></li>
 							</ul>
@@ -109,7 +111,7 @@
 					<ul class="trip_list2">
 					</ul>
 					<div class="list_btn ng-star-inserted">
-						<a class="btn_st1 more" href="">더보기</a>
+						<a class="btn_st1" id="more">더보기</a>
 					</div>
 				</section>
 				</app-city-travel-plan>
@@ -139,7 +141,12 @@
 <script>
 	let boards = `${boards}`;
 	let contextPath = `${pageContext.request.contextPath}`;
-	//console.log(`${boards}`);
+	console.log(`${boards}`);
+	$('#sort').val("${param.sort}").attr("selected","selected");
+	$('#sort').change(function(){
+		let val = $(this).val();
+		window.location.href=contextPath+"/listOk.tripBoard?sort="+val;
+	});
 </script>
 <script src="${pageContext.request.contextPath}/static/js/tripboard/list.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/tripboard/more.js"></script>

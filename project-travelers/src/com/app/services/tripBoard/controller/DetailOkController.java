@@ -16,9 +16,13 @@ public class DetailOkController implements Action{
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		TripBoardDAO tripboardDAO = new TripBoardDAO();
 		Result result = new Result();
-		Long boardId = Long.valueOf(req.getParameter("tripBoardId"));
-		tripboardDAO.
-		return null;
+		Long boardId = Long.valueOf(req.getParameter("tripboardId"));
+		tripboardDAO.updateReadCount(boardId);
+		
+		req.setAttribute("board", tripboardDAO.selectOne(boardId));
+
+		result.setPath("/templates/board-detail/trip-board-detail.jsp");
+		return result;
 	}
 
 }

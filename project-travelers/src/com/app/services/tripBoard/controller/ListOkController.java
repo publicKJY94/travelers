@@ -22,11 +22,17 @@ public class ListOkController implements Action{
 		Result result = new Result();
 		JSONArray jsonArray = new JSONArray();
 		String temp = req.getParameter("page");
+		String sort = req.getParameter("sort");
+		
+
+		sort = sort == null ? "during_start__desc" : sort; 
+		
 		int page = temp == null ? 1 : Integer.parseInt(temp);
 		Criteria criteria = new Criteria(page, tripboardDAO.getTotal(null, null));
 		HashMap<String, Object> pagable = new HashMap<String, Object>();
 		pagable.put("offset", criteria.getOffset());
 		pagable.put("rowCount", criteria.getRowCount());
+		pagable.put("sort", sort);
 		
 		tripboardDAO.selectAll(pagable).stream().map(board -> new JSONObject(board)).forEach(jsonArray::put);
 		

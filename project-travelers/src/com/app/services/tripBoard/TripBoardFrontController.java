@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.tripBoard.controller.DetailOkController;
 import com.app.services.tripBoard.controller.ListOkController;
 
 public class TripBoardFrontController extends HttpServlet{
@@ -24,6 +25,12 @@ public class TripBoardFrontController extends HttpServlet{
 	
 		if(target.equals("listOk")) {
 			result = new ListOkController().execute(req, resp);
+		}
+		else if(target.equals("detailOk")) {
+			result = new DetailOkController().execute(req, resp);
+		}
+		else if(target.equals("writeOk")) {
+			result = new DetailOkController().execute(req, resp);
 		}
 		
 		
