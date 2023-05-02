@@ -10,6 +10,14 @@
 		order by nb.id desc
 	</select>
 	
+	<select id="selectOneNoticeBoard" resultType="noticeBoardDTO">
+		SELECT nb.id,
+		title, content, register_date, nb.updated_date, viewed_count,
+		admin_id,tu.nickname admin_nickname
+		FROM notice_board nb join tbl_user tu
+		on nb.admin_id = tu.id and nb.id = #{boardId}
+	</select>
+	
 	
 	<select id="getTotal" resultType="_int">
 		select count(tu.id) from notice_board nb
@@ -66,5 +74,19 @@
 			</foreach>
 		</where>
 	</delete>
+	
+	
+	<insert id="insertNoticeBoard">
+		INSERT INTO notice_board
+		(title, content, register_date, updated_date, viewed_count, admin_id)
+		VALUES( #{title}, #{content}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0, #{adminId});
+		
+	</insert>
+	
+	<select id="selectRecentSequence" resultType="_long">
+		select id from notice_board
+		order by id desc
+		limit 0,1
+	</select>
 	
 </mapper>

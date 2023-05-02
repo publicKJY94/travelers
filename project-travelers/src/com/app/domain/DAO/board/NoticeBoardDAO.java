@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import com.app.domain.Criteria;
 import com.app.domain.DTO.board.NoticeBoardDTO;
+import com.app.domain.VO.board.NoticeBoardVO;
 import com.app.mybatis.config.MyBatisConfig;
 
 public class NoticeBoardDAO {
@@ -18,7 +19,7 @@ public SqlSession sqlSession;
 	public NoticeBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-
+	
 	public List<NoticeBoardDTO> selectNoticeBoardList(){
 		return sqlSession.selectList("noticeBoard.selectNoticeBoardList");
 	}
@@ -46,6 +47,22 @@ public SqlSession sqlSession;
 			Map<String,List<Integer>> map = new HashMap<String, List<Integer>>();
 			map.put("ids", ids);
 			sqlSession.delete("noticeBoard.deleteAllNoticeBoardSelected",map);
+		}
+		
+		public NoticeBoardDTO selectOneNoticeBoard(long boardId) {
+			return sqlSession.selectOne("noticeBoard.selectOneNoticeBoard",boardId);
+		}
+		
+		
+		
+		//공지사항 추가하기
+		public void insertNoticeBoard(NoticeBoardVO noticeBoardVO) {
+			sqlSession.insert("noticeBoard.insertNoticeBoard",noticeBoardVO);
+		}
+		
+		//가장최근 추가된 공지사항 번호 가져오기
+		public long selectRecentSequence() {
+			return sqlSession.selectOne("noticeBoard.selectRecentSequence");
 		}
 	
 }
