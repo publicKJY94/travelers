@@ -1,7 +1,6 @@
 /**
  * 
  */
-
 function elapsedTime(date) {
 	const start = new Date(date);
 	const end = new Date();
@@ -26,31 +25,32 @@ function elapsedTime(date) {
 	return '방금 전';
 }
 
-showList();
+showListRoute();
 
-function showList() {
-	tripboards = JSON.parse(tripboards);
-	const $ul = $("#trip_board");
-	let text = "";
-	tripboards.forEach(board => {
-		text += `
-			<li> 
-			<a href = "javascript:location.href='${contextPath}/services/tripBoard/ListOk.tripBoard?id=${board.id}'" > 
-			<span class="thumb" > 
-			<img src = "https://www.wishbeen.co.kr/assets/images/main/main_two_01.png" width = "100%" alt />
-		</span >
-			<p class="detail" >
-			<span class="badge location" > 사이판, 미국</span > 
-			<strong class="subject" > ${board.title}</strong > 
-			<span class="txt" > ${board.content}</span > 
-			<span class="writer" >
-			<span> ${board.nickname}</span >
+function showListRoute() {
+	routeboards = JSON.parse(routeboards);
+	console.log(routeboards);
+	const $rb = $("#route_board");
+	let text_route = "";
+	routeboards.forEach(board => {
+		text_route += `
+			<li>
+			<a  href="javascript:location.href='${contextPath}/services/routeBoard/ListOk.routeBoard?id=${board.id}'"> 
+			<span class="thumb"> 
+			<img src="https://www.wishbeen.co.kr/assets/images/main/main_three_01.png" width="100%" alt />
+			</span>
+			<p  class="detail">
+			<span  class="badge location"> 리스본</span> 
+			<strong class="subject"> ${board.content}</strong> 
+			<span class="txt"> ${board.title}</span> 
+			<span class="writer"> <span> ${board.nickname}</span>
+			</span>
 			`+ elapsedTime(board.boardRegisterDate) + `</span>
 		                  </p></a ></li > `;
 	});
 
-	if (!tripboards || tripboards.length == 0) {
-		text += `
+	if (!routeboards || routeboards.length == 0) {
+		text_route += `
 			<li>
 				<div>
 					현재 게시글이 없습니다. 게시글 작성을 해보세요!
@@ -59,5 +59,5 @@ function showList() {
 		`
 	}
 
-	$ul.append(text);
+	$rb.append(text_route);
 }

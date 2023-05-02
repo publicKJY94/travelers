@@ -262,6 +262,7 @@ a {
 								<div>
 									<input formcontrolname="nick" name="nickname" placeholder="이름"
 										type="text" id="nick" autocomplete="username" class="txtbox">
+									<br><span id="id"></span>
 									<!---->
 									<!---->
 									<!---->
@@ -279,7 +280,8 @@ a {
 									<input formcontrolname="pwd" name="password" placeholder="비밀번호"
 										type="password" autocomplete="new-password" class="txtbox"><span
 										class="desc"> 8~20자까지 영문,숫자,특수문자(_!@#$%^&amp;*)모두 조합하여
-										입력 </span>
+										입력 </span><br>
+										<span class="desc"></span>
 									<!---->
 									<!---->
 									<!---->
@@ -294,6 +296,7 @@ a {
 								<div>
 									<input formcontrolname="confirmPwd" placeholder="비밀번호 재입력"
 										type="password" autocomplete="new-password" class="txtbox">
+										<span class="desc"></span>
 									<!---->
 								</div>
 							</dd>
@@ -305,7 +308,8 @@ a {
 							<dd>
 								<div>
 									<input formcontrolname="name" name="name" placeholder="이름"
-										type="text" class="txtbox">
+										type="text" class="txtbox"><br>
+									<span class="desc"></span>
 									<!---->
 									<!---->
 								</div>
@@ -616,7 +620,8 @@ a {
 								<div>
 									<input wbonlynumber="" formcontrolname="phone"
 										name="phoneNumber" placeholder="전화번호 입력" type="tel"
-										class="txtbox">
+										class="txtbox"><br>
+										<span class="desc"></span>
 									<!---->
 									<!---->
 									<!---->
@@ -624,7 +629,7 @@ a {
 								</div>
 								<!-- <div>
 								<button class="wb_btn disabled">인증번호 발송</button>
-							</div> -->
+							</div> --> 
 							</dd>
 							<!-- <dd class="di_flex phone_cert">
 							<div>
@@ -636,8 +641,8 @@ a {
 								<button class="wb_btn disabled">인증 확인</button>
 							</div>
 						</dd> -->
-							<div class="di_flex">
-								<!---->
+							<!-- <div class="di_flex">
+								
 							</div>
 						</dl>
 					</form>
@@ -654,7 +659,7 @@ a {
 							<div class="terms_item">
 								<dl class="inner terms">
 									<dt value="false" class="st1">
-										<!---->
+										
 										<input type="checkbox" class="chbox" id="over14"><label
 											for="over14"> 만 14세 이상입니다. <span class="terms">
 												(필수) </span></label>
@@ -666,7 +671,7 @@ a {
 								<dl class="inner terms ng-star-inserted">
 									<dt value="false">
 										<a class="ng-star-inserted"></a>
-										<!---->
+										
 										<input type="checkbox"
 											class="chbox ng-untouched ng-pristine ng-invalid" id="clause"><label
 											for="clause"> 이용약관 <span class="terms"> (필수) </span></label>
@@ -678,7 +683,7 @@ a {
 								<dl class="inner terms">
 									<dt value="false">
 										<a class=""></a>
-										<!---->
+										
 										<input type="checkbox" class="chbox" id="privacy"><label
 											for="privacy"> 개인정보 수집 및 이용 동의 <span class="terms">
 												(필수) </span></label>
@@ -690,7 +695,7 @@ a {
 								<dl class="inner terms">
 									<dt value="false">
 										<a class=""></a>
-										<!---->
+										
 										<input type="checkbox" class="chbox" id="third-party"><label
 											for="third-party"> 개인정보 제3자 제공 동의 <span class="terms">
 												(필수) </span>
@@ -703,7 +708,7 @@ a {
 								<dl class="inner terms">
 									<dt value="false">
 										<a class=""></a>
-										<!---->
+										
 										<input type="checkbox" class="chbox" id="marketing"> <label
 											for="marketing"> 광고성 정보 수신동의 <span class="terms">
 												(선택) </span></label>
@@ -712,12 +717,12 @@ a {
 										<div class="txt_wrap"></div>
 									</dd>
 								</dl>
-								<!---->
+								
 							</div>
-						</section>
+						</section> -->
 					</form>
 					<div class="submit_div">
-						<button class="wb_btn disabled">회원가입 완료</button>
+						<button class="wb_btn outline">회원가입 완료</button>
 					</div>
 				</div>
 			</section>

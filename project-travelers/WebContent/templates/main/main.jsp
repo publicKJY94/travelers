@@ -1414,191 +1414,21 @@ a {
 			<section  class="section02">
 				<h2  class="title">여행기 목록</h2>
 				<div  class="thumbList">
-					<ul>
+					<ul id="trip_board">
 					</ul>
 				</div>
 			</section>
 			<section  class="section02">
 				<h2  class="title">추천품 목록</h2>
 				<div  class="thumbList">
-					<ul>
-						<li><a  href="/community/616"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_01.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 후쿠오카, 일본</span> <strong
-										 class="subject"> 5월, 후쿠오카에 가면 생기는 일</strong> <span
-										 class="txt"> 후쿠오카 Must to do 6가지</span> <span
-										 class="writer"> <span> Wishpicker 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/community/617"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_02.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 오슬로, 노르웨이</span> <strong
-										 class="subject"> 지금가기 딱 좋은 북유럽 여행</strong> <span
-										 class="txt"> 핀란드부터 노르웨이까지 가보자아~!</span> <span
-										 class="writer"> <span> Wishpicker 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/594523"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_03.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 리스본, 포르투갈</span> <strong
-										 class="subject"> 4박 5일 리스본 + 근교 여행</strong> <span
-										 class="txt"> 신트라와 호카곶, 카스카이스</span> <span
-										 class="writer"> <span> 러블리뽀뽀 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/466063"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_04.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 오사카, 일본</span> <strong
-										 class="subject"> 로컬 친구와 함께한 오사카 일주일 </strong> <span
-										 class="txt"> 현지인이 추천하는 필수 맛집</span> <span
-										 class="writer"> <span> 실클필 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/community/575"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_05.png
-"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 홍콩</span> <strong
-										 class="subject"> #0박 0일 해외 여행 추천</strong> <span
-										 class="txt"> 1박 2일부터 4박 5일 추천여행지</span> <span
-										 class="writer"> <span> Wishpicker 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/594546"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_06.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 하노이, 베트남</span> <strong
-										 class="subject"> 3박 4일 하노이 OO 둘러보기</strong> <span
-										 class="txt"> 명물, 유럽 감성, 맛집 PIck!</span> <span
-										 class="writer"> <span> 효서니 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/594546"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_06.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 하노이, 베트남</span> <strong
-										 class="subject"> 3박 4일 하노이 OO 둘러보기</strong> <span
-										 class="txt"> 명물, 유럽 감성, 맛집 PIck!</span> <span
-										 class="writer"> <span> 효서니 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/594546"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_06.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 하노이, 베트남</span> <strong
-										 class="subject"> 3박 4일 하노이 OO 둘러보기</strong> <span
-										 class="txt"> 명물, 유럽 감성, 맛집 PIck!</span> <span
-										 class="writer"> <span> 효서니 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-
+					<ul id="item_board">
 					</ul>
 				</div>
 			</section>
 			<section  class="section02">
 				<h2  class="title">추천 루트</h2>
 				<div  class="thumbList">
-					<ul>
-						<li><a  href="/community/616"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_01.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 후쿠오카, 일본</span> <strong
-										 class="subject"> 5월, 후쿠오카에 가면 생기는 일</strong> <span
-										 class="txt"> 후쿠오카 Must to do 6가지</span> <span
-										 class="writer"> <span> Wishpicker 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/community/617"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_02.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 오슬로, 노르웨이</span> <strong
-										 class="subject"> 지금가기 딱 좋은 북유럽 여행</strong> <span
-										 class="txt"> 핀란드부터 노르웨이까지 가보자아~!</span> <span
-										 class="writer"> <span> Wishpicker 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/594523"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_03.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 리스본, 포르투갈</span> <strong
-										 class="subject"> 4박 5일 리스본 + 근교 여행</strong> <span
-										 class="txt"> 신트라와 호카곶, 카스카이스</span> <span
-										 class="writer"> <span> 러블리뽀뽀 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
-						<li><a  href="/note/466063"> <span
-								 class="thumb"> <img
-									
-                            src="https://www.wishbeen.co.kr/assets/images/main/main_three_04.png"
-									width="100%" alt />
-							</span>
-								<p  class="detail">
-									<span  class="badge location"> 오사카, 일본</span> <strong
-										 class="subject"> 로컬 친구와 함께한 오사카 일주일 </strong> <span
-										 class="txt"> 현지인이 추천하는 필수 맛집</span> <span
-										 class="writer"> <span> 실클필 님의 여행</span>
-									</span>
-								</p>
-						</a></li>
+					<ul id="route_board">
 					</ul>
 				</div>
 			</section>
@@ -1686,7 +1516,11 @@ a {
 <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
 	let tripboards = `${tripboards}`;
+	let itemboards = `${itemboards}`;
+	let routeboards = `${routeboards}`;
 	let contextPath = `${pageContext.request.contextPath}`;
 </script>
 <script src="${pageContext.request.contextPath}/static/js/main/main_trip_board.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/main/main_item_board.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/main/main_route_board.js"></script>
 </html>

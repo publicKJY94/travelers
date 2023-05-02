@@ -27,7 +27,6 @@ public class JoinOkController implements Action{
 		userVO.setBirthday("19500120");
 		userVO.setPhoneNumber(req.getParameter("phoneNumber"));
 		userVO.setGender(req.getParameter("gender"));
-		System.out.println(req.getParameter("gender"));
 		userDAO.insert(userVO);
 		
 		
