@@ -15,7 +15,6 @@
 <body>
 	<app-root>
 	<div id="wrap">
-
 		<jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
 		<app-city-main class="ng-star-inserted">
 		<main id="content">
@@ -51,7 +50,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="in_wrap reposition">
 				<nav class="tab_sub_wrap withTopBanner">
 					<ul class="tab_nav">
@@ -65,7 +63,6 @@
 							href="/city/35778/places" class="active"> 기념품 목록 </a></li>
 					</ul>
 				</nav>
-
 				<router-outlet></router-outlet>
 				<app-city-travel-plan class="ng-star-inserted">
 				<section class="board_wrap">
@@ -106,50 +103,6 @@
 						</div>
 					</div>
 					<ul class="trip_list2">
-						<li class="inner ng-star-inserted"><a>
-								<div class="img_wrap">
-									<p class="img">
-										<img alt="img" src="https://test-image.wishbeen.co.kr/160x160_376b52fa601151a3b5a651883155c734.jpg">
-									</p>
-								</div>
-								<div class="txt_wrap">
-									<ul>
-										<li class="schedule"><span>TRAVEL</span> ·여행
-											시작일 ~ 여행 종료일</li>
-										<li class="tit">제목</li>
-										<li class="nick">by 유저명</li>
-										<li class="di_flex">
-											<ul class="ico_wrap">
-												<li><span class="ico_vote"></span> 5</li>
-												<li><span class="ico_spot"></span> 15</li>
-												<li><span class="ico_cmt"></span> 2</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-						</a></li>
-						<li class="inner ng-star-inserted"><a>
-								<div class="img_wrap">
-									<p class="img">
-										<img alt="img" src="https://test-image.wishbeen.co.kr/160x160_376b52fa601151a3b5a651883155c734.jpg">
-									</p>
-								</div>
-								<div class="txt_wrap">
-									<ul>
-										<li class="schedule"><span>TRAVEL</span> ·여행
-											시작일 ~ 여행 종료일</li>
-										<li class="tit">제목</li>
-										<li class="nick">by 유저명</li>
-										<li class="di_flex">
-											<ul class="ico_wrap">
-												<li><span class="ico_vote"></span> 5</li>
-												<li><span class="ico_spot"></span> 15</li>
-												<li><span class="ico_cmt"></span> 2</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-						</a></li>
 					</ul>
 					<div class="list_btn ng-star-inserted">
 						<a class="btn_st1 more">더보기</a>
@@ -173,9 +126,15 @@
 			</div>
 		</section>
 		</app-city-main>
-
 		<jsp:include page="/templates/header-footer/footer.jsp"></jsp:include>
 	</div>
 	</app-root>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+	let boards = `${boards}`;
+	let contextPath = `${pageContext.request.contextPath}`;
+	console.log(`${boards}`);
+</script>
+<script src="${pageContext.request.contextPath}/static/js/tripboard/item_list.js"></script>
 </html>

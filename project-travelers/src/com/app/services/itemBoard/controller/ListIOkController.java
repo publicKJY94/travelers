@@ -11,6 +11,10 @@ import org.json.JSONObject;
 
 import com.app.Action;
 import com.app.Result;
+<<<<<<< HEAD
+=======
+import com.app.domain.Criteria;
+>>>>>>> ad77d01912f8756da38e0b6137f5abdcd2181e41
 import com.app.domain.DAO.board.ItemBoardDAO;
 
 public class ListIOkController implements Action{
@@ -27,7 +31,7 @@ public class ListIOkController implements Action{
 		
 		req.setAttribute("boards", jsonArray.toString());
 		
-		
+	
 		result.setPath("/templates/search/searchsouvenir.jsp");
 		return result;
 	}

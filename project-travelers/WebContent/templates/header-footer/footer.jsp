@@ -26,8 +26,10 @@
 					<dl _ngcontent-xjb-c66>
 						<dt _ngcontent-xjb-c66>고객지원</dt>
 						<dd _ngcontent-xjb-c66>
+
 							<a>공지사항</a> <a _ngcontent-xjb-c66>자주묻는질문</a> 
 							<a href="/project-travelers/questionListOk.questionBoard">문의하기</a> <a _ngcontent-xjb-c66>위시빈 가이드</a>
+
 						</dd>
 					</dl>
 					<dl _ngcontent-xjb-c66>
