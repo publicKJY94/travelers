@@ -37,7 +37,6 @@ public class AdminAnnounceMentController implements Action {
 
 		Criteria criteria = new Criteria(page,total,type,keyword);
 		noticeBoardList = noticeBoardDAO.selectAllNoticeBoardLimitTen(criteria);
-		noticeBoardList.stream().forEach(noticeBoard -> noticeBoard.setContent(""));
 
 		JSONArray jsonNoticeBoardList = new JSONArray();
 		noticeBoardList.stream().map(noticeBoard -> new JSONObject(noticeBoard)).forEach(jsonNoticeBoardList::put);

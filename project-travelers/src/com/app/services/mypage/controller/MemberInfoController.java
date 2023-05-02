@@ -18,7 +18,7 @@ public class MemberInfoController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-
+<<<<<<< HEAD
 		UserDAO userDAO = new UserDAO();
 		JSONArray jsonArray = new JSONArray();
 		PrintWriter out = resp.getWriter();
@@ -30,7 +30,9 @@ public class MemberInfoController implements Action {
 		System.out.println(jsonArray.toString());
 		out.print(jsonArray.toString());
 		out.close();
-
+=======
+	
+>>>>>>> admin
 		return null;
 	}
 
