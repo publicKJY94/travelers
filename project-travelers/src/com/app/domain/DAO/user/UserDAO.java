@@ -89,7 +89,7 @@ public SqlSession sqlSession;
 	}
 	
 	// 사용자 정보 변경
-	public void updateUserInfo(Long userId) {
-		
+	public void updateUserInfo(Long userId, UserVO userVO) {
+		sqlSession.update("updateUserInfo", userVO);
 	}
 }

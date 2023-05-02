@@ -1,4 +1,6 @@
+<%@page import="com.app.domain.VO.user.UserVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<% UserVO userVO = (UserVO)request.getAttribute("userVO"); %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -19,7 +21,7 @@ input.memberInfo {
 a.btn_st0 {
 	position: absolute;
 	right: 10px;
-	width: 40px;
+	width: 40px;`
 	height: 30px;
 	text-align: center;
 	vertical-align: middle;
@@ -63,7 +65,7 @@ input[type=submit] {
 			<app-my-info class="ng-star-inserted">
 			<section class="my_wrap">
 				<dl class="inner">
-					<form action=""
+					<form action="" method="post"
 						id="update-info">
 						<dt class="tit">로그인 정보</dt>
 						<dd>
@@ -71,19 +73,19 @@ input[type=submit] {
 								<li>
 									<div class="th">이름</div>
 									<div>
-										<input type="text" class="memberInfo" name="newname" value="${name}">
+										<input type="text" class="memberInfo" name="name" value="${userVO.name}">
 									</div>
 								</li>
 								<li>
 									<div class="th">닉네임</div>
 									<div>
-										<input type="text" class="memberInfo" name="newnickname" value="${nickname}">
+										<input type="text" class="memberInfo" name="nickname" value="${userVO.nickname}">
 									</div>
 								</li>
 								<li>
 									<div class="th">한줄 소개</div>
 									<div class="txt">
-										<input type="text" class="memberInfo" name="newintroducingMessage" value="${introducingMessage}">
+										<input type="text" class="memberInfo" name="introducingMessage" value="${userVO.introducingMessage}">
 									</div>
 								</li>
 							</ul>
@@ -94,13 +96,13 @@ input[type=submit] {
 								<li>
 									<div class="th">연락처</div>
 									<div>
-										<input type="text" class="memberInfo" name="newphoneNumber" value="${phoneNumber}">
+										<input type="text" class="memberInfo" name="phoneNumber" value="${userVO.phoneNumber}">
 									</div>
 								</li>
 								<li>
 									<div class="th">이메일</div>
 									<div>
-										<input type="text" class="memberInfo" name="newemail" value="${email}">
+										<input type="text" class="memberInfo" name="email" value="${userVO.email}">
 									</div>
 								</li>
 							</ul>
@@ -131,18 +133,6 @@ input[type=submit] {
 	</app-account-management> <jsp:include page="/templates/header-footer/footer.jsp"></jsp:include></app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script type="text/javascript">
-	let $form = $("form[name='update-info']");
-	$('input.memberInfo').on("input", function() {
-		$form.find("input[name='newname']").val($(this).val());
-		$form.find("input[name='newnickname']").val($(this).val());
-		$form.find("input[name='newintroducingMessage']").val($(this).val());
-		$form.find("input[name='newphoneNumber']").val($(this).val());
-		$form.find("input[name='newemail']").val($(this).val());
-	});
-	$("a.btn_st0").on("click", function(e) {
-		e.preventDefault();
-		$form.submit();
-	});
+<script src="../../static/js/mypage/updateuserInfo.js">
 </script>
 </html>

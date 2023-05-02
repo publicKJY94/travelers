@@ -63,9 +63,9 @@
 	<!-- 사용자 계정정보 수정 -->
 	<update id="updateUserInfo">
 		update tbl_user
-		set name = #{newName}, nickname =
-		#{newNickname}, introducing_Message = #{newIntroducingMessage}
-		, phone_number = #{newPhoneNumber}, email = #{newEmail}
+		set name = #{name}, nickname =
+		#{nickname}, introducing_Message = #{introducingMessage}
+		, phone_number = #{phoneNumber}, email = #{email}
 		where id =
 		#{userId}
 	</update>

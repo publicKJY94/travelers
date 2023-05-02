@@ -58,9 +58,11 @@
 							<ul class="box_wrap">
 								<li ><div 
 										class="th">아이디</div>
-									<div>max021159@naver.com</div></li>
+									<div><input type="text" class="memberInfo" name="identification" value="${userVO.identification}"></div></li>
 								<li ><div 
-										class="th">이름</div>
+										class="th">
+										<input type="text" class="memberInfo" name="name" value="${userVO.name}">
+										</div>
 									<div >이민형</div></li>
 								<li ><div 
 										class="th">비밀번호</div>
