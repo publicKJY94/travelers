@@ -7,6 +7,7 @@ import com.app.mybatis.config.MyBatisConfig;
 
 public class BoardImageDAO {
 public SqlSession sqlSession;
+
 	
 	public BoardImageDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
