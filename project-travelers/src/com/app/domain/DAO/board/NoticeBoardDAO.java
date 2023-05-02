@@ -64,5 +64,12 @@ public SqlSession sqlSession;
 		public long selectRecentSequence() {
 			return sqlSession.selectOne("noticeBoard.selectRecentSequence");
 		}
+		
+		
+		
+		//공지사항 수정하기
+		public void updateNoticeBoard(NoticeBoardVO notiecBoardVO) {
+			sqlSession.update("noticeBoard.updateNoticeBoard",notiecBoardVO);
+		}
 	
 }

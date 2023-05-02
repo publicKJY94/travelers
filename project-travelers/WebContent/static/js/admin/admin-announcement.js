@@ -37,6 +37,7 @@ noticeBoardList.forEach((board,i) =>{
 				<td>${board.viewedCount}</td>
 				<td>${board.registerDate}</td>
 				<td>${board.updatedDate}</td>
+				<td><a href ="admin-announcement-update.admin?boardId=${board.id}"><button type = "button" class = "update_btn" >수정하기</button></a></td>
 			</tr></tbody>`
 	
 })

@@ -23,6 +23,7 @@ public class AnnouncementController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
+		System.out.println(req.getSession().getAttribute("userId"));
 		
 		NoticeBoardDTO noticeBoardDTO = new NoticeBoardDTO();
 		NoticeBoardDAO noticeBoardDAO = new NoticeBoardDAO();

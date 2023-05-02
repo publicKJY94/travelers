@@ -38,6 +38,7 @@
 					</ul>
 				</div>
 				<router-outlet></router-outlet>
+<<<<<<< HEAD
 				<app-customer-center-notice-detail
 					
 					class="">
@@ -48,6 +49,84 @@
 							
 							<!-- 제목 -->
 							
+=======
+				<app-customer-center-notice-detail>
+				<section class="board_wrap" style="padding : 0;">
+					<div class="board_view content_view board">
+						<div class="tit_wrap di_flex">
+
+							<div>
+								<p class="tit">${noticeBoard.title}</p>
+							</div>
+							<div>
+								<span class="date"> ${noticeBoard.registerDate} </span>
+							</div>
+
+							<!-- 제목 -->
+
+
+						</div>
+						<div class="cont_wrap">
+							<div id="editorjs_notice_detail">
+								<div class="codex-editor">
+									<div class="codex-editor__redactor"
+										style="padding-bottom: 100px;">${noticeBoard.content}
+										<c:forEach var="noticeBoardImage" items="${noticeBoardImages}">
+											<div class="noticeBoardImages">
+												<img
+													src="${pageContext.request.contextPath}/upload/${noticeBoardImage.imageName}"
+													width="100%" />
+											</div>
+
+										</c:forEach>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+					<div class="list_btn di_flex">
+						<div class="ta_left">
+							<!---->
+							<!---->
+						</div>
+						<div class="ta_right">
+							<a class="btn_st0"
+								href="${pageContext.request.contextPath}/announcement.noticeBoard">목록</a>
+							<!---->
+						</div>
+					</div>
+					
+					
+					
+					
+					<!-- 커멘트 -->
+					<section  class="comment_wrap">
+						<dl  class="comment_form">
+							<dt >
+								<div>
+									댓글 <span  class="count">0</span>
+								</div>
+								<div>
+									<a class="reload"><img 
+										src="https://www.wishbeen.co.kr/assets/images/svg/refresh.svg" alt="새로고침"></a>
+								</div>
+							</dt>
+							<dd >
+								<input  type="text" maxlength="500"
+									class="txtbox comment" placeholder="">
+								<button  type="button" class="btn_register">
+									등록</button>
+								<span  class="desc limitComment">0 / 500</span>
+							</dd>
+						</dl>
+						<div class="logo-area">
+							<img src="${pageContext.request.contextPath}/static/image/dimmed-reply.png" class="infinite_rotating_logo" width="48">
+						</div>
+						<div  class="comment_list">
+>>>>>>> admin
 							
 						</div>
 						<div  class="cont_wrap">
@@ -83,9 +162,13 @@
 				</app-customer-center-notice-detail>
 				<!---->
 			</div>
+		<div class="list_btn"><a class="btn_st1 more">더보기</a></div>
 		</section>
 		</app-customer-center>
+<<<<<<< HEAD
 
+=======
+>>>>>>> admin
 		<jsp:include page="/templates/header-footer/footer.jsp"></jsp:include>
 
 	</div>
@@ -95,7 +178,14 @@
 	let contextPath = "${pageContext.request.contextPath}";
 	let boardId = "${noticeBoard.id}";
 	let userId = "${sessionScope.userId}";
+<<<<<<< HEAD
 	let noticeBoard = `${noticeBoard}`;
+=======
+	console.log(userId);
+	</script>
+<script
+	src="${pageContext.request.contextPath}/static/js/costomer-center/announcement-detail.js">
+>>>>>>> admin
 	</script>
 
 	<script src="${pageContext.request.contextPath}/static/js/costomer-center/announcement-detail.js"></script>

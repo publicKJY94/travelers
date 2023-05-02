@@ -12,6 +12,8 @@ import com.app.Result;
 import com.app.services.admin.controller.AdminAnnounceMentController;
 import com.app.services.admin.controller.AdminAnnounceMentDeleteController;
 import com.app.services.admin.controller.AdminAnnouncementAnswerOkController;
+import com.app.services.admin.controller.AdminAnnouncementUpdateController;
+import com.app.services.admin.controller.AdminAnnouncementUpdateOkController;
 import com.app.services.admin.controller.AdminController;
 import com.app.services.admin.controller.AdminMainController;
 import com.app.services.admin.controller.AdminMemberController;
@@ -66,6 +68,19 @@ public class AdminFrontController extends HttpServlet{
 			result= new AdminAnnouncementAnswerOkController().execute(req, resp);
 			
 		}
+		
+		//공지사항수정announcementUpdate
+		else if(target.equals("admin-announcement-update")) {
+			
+			result= new AdminAnnouncementUpdateController().execute(req, resp);
+			
+		}	else if(target.equals("admin-announcement-updateOk")) {
+			
+			result= new AdminAnnouncementUpdateOkController().execute(req, resp);
+			
+		}
+		
+		
 		
 		//메인화면
 		else if(target.equals("admin-main")) {
