@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.app.Result;
 import com.app.services.noticeBoard.controller.AnnouncementController;
 import com.app.services.noticeBoard.controller.AnnouncementDetailController;
-<<<<<<< HEAD
-=======
+
 import com.app.services.noticeBoard.controller.NoticeBoardCommentOkController;
 import com.app.services.noticeBoard.controller.NoticeBoardCommentSelectController;
 import com.app.services.noticeBoard.controller.AnnouncementCommentDeleteController;

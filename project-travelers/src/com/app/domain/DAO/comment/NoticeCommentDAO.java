@@ -1,24 +1,22 @@
 package com.app.domain.DAO.comment;
 
-<<<<<<< HEAD
-=======
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
->>>>>>> admin
 import org.apache.ibatis.session.SqlSession;
 
+import com.app.domain.VO.comment.NoticeBoardCommentVO;
 import com.app.mybatis.config.MyBatisConfig;
 
 public class NoticeCommentDAO {
 public SqlSession sqlSession;
 	
+
 	public NoticeCommentDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-<<<<<<< HEAD
-=======
 	
 	public void insertNoticeBoardComment(NoticeBoardCommentVO noticeCommentVO) {
 		sqlSession.insert("noticeComment.insertNoticeBoardComment",noticeCommentVO);
@@ -43,5 +41,4 @@ public SqlSession sqlSession;
 		sqlSession.update("noticeComment.update",map);
 	}
 	
->>>>>>> admin
 }
