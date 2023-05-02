@@ -1,6 +1,7 @@
 package com.app.services.tripBoard;
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -23,7 +24,7 @@ public class TripBoardFrontController extends HttpServlet{
 		//target에 따른 if문 분기처리 구간
 	
 		if(target.equals("listOk")) {
-			result = new ListOkController().execute(req, resp);
+			result = new ListOkOController().execute(req, resp);
 		}
 		
 		

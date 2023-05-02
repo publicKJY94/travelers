@@ -86,6 +86,10 @@ public class QuestionBoardDTO {
 			return false;
 		return true;
 	}
+	public QuestionBoardDTO() {
+		
+	}
+	
 	
 	
 	

@@ -5,6 +5,8 @@ public class ItemBoardDTO {
 	private String title;
 	private String content;
 	private String itemName;
+	private String startDate;
+	private String endDate;
 	private String registerDate;
 	private String updatedDate;
 	private String viewedCount;
@@ -33,6 +35,18 @@ public class ItemBoardDTO {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+	public String getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	public String getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
 	}
 	public String getRegisterDate() {
 		return registerDate;
@@ -67,8 +81,9 @@ public class ItemBoardDTO {
 	@Override
 	public String toString() {
 		return "ItemBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", itemName=" + itemName
-				+ ", registerDate=" + registerDate + ", updatedDate=" + updatedDate + ", viewedCount=" + viewedCount
-				+ ", userId=" + userId + ", nickname=" + nickname + "]";
+				+ ", startDate=" + startDate + ", endDate=" + endDate + ", registerDate=" + registerDate
+				+ ", updatedDate=" + updatedDate + ", viewedCount=" + viewedCount + ", userId=" + userId + ", nickname="
+				+ nickname + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -93,6 +108,8 @@ public class ItemBoardDTO {
 			return false;
 		return true;
 	}
+	
+	
 	
 	
 }

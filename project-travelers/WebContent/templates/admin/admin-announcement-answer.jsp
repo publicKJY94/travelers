@@ -40,18 +40,18 @@
 					<div class="content-wrap">
 					   
 					   <!-- [S] 공지사항 등록 -->
-						 <form action="admin-announcement.admin">
+						 <form action="admin-announcement-answerOk.admin" method="post" enctype="multipart/form-data">
 						  <div class="con-write-wrap">
 							 <div class="notice-write">
 								<div class="write-title">공지사항 제목</div>
 								<div class="write-sec">
-								 <input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요.">
+								 <input class="write-text write-input" type="text" placeholder="공지사항 제목을 적어주세요." name = "title">
 								</div>
 							 </div>
 							 <div class="notice-write">
 								<div class="write-title">공지사항 내용</div>
 								<div class="write-sec">
-								  <textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요."></textarea>
+								  <textarea class="write-text write-notice" type="text" placeholder="공지사항 내용을 적어주세요." name ="content"></textarea>
 								</div>
 							 </div>
 							 
@@ -67,7 +67,7 @@
 									<label for="attach">
 									  <div class="search-notice-img">찾아보기</div>
 								   </label>
-								   <input type="file" id="attach" style="display: none;">
+								   <input type="file" id="attach" style="display: none;" name= "upload" >
 								</div>
 							 </div>
 						  </div>
