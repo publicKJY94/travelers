@@ -18,6 +18,7 @@ public SqlSession sqlSession;
 	
 	public QuestionBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+		
 	}
 	
 	public List<QuestionBoardDTO> selectQuestionBoardList(){
@@ -50,6 +51,10 @@ public SqlSession sqlSession;
 	public QuestionBoardDTO selectOneQuestionBoard(long boardId) {
 		return sqlSession.selectOne("questionBoard.selectOneQuestionBoard",boardId);
 	}
+	
+	
+	
+	//게시글추가
 	public void insertQuestionBoard(QuestionBoardVO questionBoardVO) {
 		sqlSession.insert("questionBoard.insertQuestionBoard",questionBoardVO);
 	}
