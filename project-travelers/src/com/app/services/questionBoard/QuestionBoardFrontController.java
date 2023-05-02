@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
-import com.app.services.user.controller.LoginOkController;
+import com.app.services.questionBoard.controller.QuestionListOkController;
+import com.app.services.questionBoard.controller.WriteOkController;
 
 public class QuestionBoardFrontController extends HttpServlet{
 	@Override
@@ -23,7 +24,10 @@ public class QuestionBoardFrontController extends HttpServlet{
 		if(target.equals("writeOk")) {
 			result = new WriteOkController().execute(req, resp);
 			
-		}
+		}else if(target.equals("questionListOk")) {
+			result = new QuestionListOkController().execute(req,resp);
+		}else if(target.equals("questionListOk")) {
+			result = new QuestionListOkController().execute(req,resp);
 		
 		
 		
@@ -47,7 +51,9 @@ public class QuestionBoardFrontController extends HttpServlet{
 		}
 		
 	}
-	
+	protected void selectQuestionBoardList() {
+		
+	}
 	
 	
 	

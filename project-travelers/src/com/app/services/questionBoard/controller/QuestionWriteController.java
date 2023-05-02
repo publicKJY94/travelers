@@ -8,17 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Action;
 import com.app.Result;
-import com.app.domain.DAO.board.QuestionBoardDAO;
 
-public class WriteOkController implements Action{
+public class QuestionWriteController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		QuestionBoardDAO questionDAO = new QuestionBoardDAO();
-		Result result = new Result();
-		System.out.println("확인");
-		
-		return result;
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
+
 }
