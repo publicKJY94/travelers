@@ -9,4 +9,10 @@
 		on qb.user_id = tu.id
 		order by qb.id desc
 	</select>
+	
+	<insert id="insert">
+		insert into question_board
+		(title,content,user_id)
+		values(#{title},#{content},#{userId})
+	</insert>
 </mapper>

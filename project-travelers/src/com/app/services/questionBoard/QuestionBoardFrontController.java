@@ -26,11 +26,12 @@ public class QuestionBoardFrontController extends HttpServlet{
 			
 		}else if(target.equals("questionListOk")) {
 			result = new QuestionListOkController().execute(req,resp);
-		}else if(target.equals("questionListOk")) {
-			result = new QuestionListOkController().execute(req,resp);
+		}else if(target.equals("write")) {
+			result = new Result();
+			result.setPath("templates/costomer-center/qna.jsp");
+		}
 		
-		
-		
+	
 		
 		
 		
