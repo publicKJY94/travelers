@@ -35,7 +35,7 @@ public class ItemBoardDAO {
 	
 	//10개씩 페이징처리 최신순
 	public List<ItemBoardDTO> selectAllItemBoardLimitTen(Criteria criteria){
-		return sqlSession.selectList("ItemBoard.selectAllItemBoardLimitTen",criteria);
+		return sqlSession.selectList("itemBoard.selectAllItemBoardLimitTen",criteria);
 	}
 	
 	

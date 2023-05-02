@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
 import com.app.services.itemBoard.controller.ListIOkController;
-import com.app.services.tripBoard.ListOkController;
 
 public class ItemBoardFrontController extends HttpServlet{
 	@Override

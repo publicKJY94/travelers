@@ -3,8 +3,8 @@
 <mapper namespace="itemBoard">
 
 <select id="selectItemBoardList" resultType="itemBoardDTO">
-		select tib.id, title,
-		content, start_date, end_date, register_date, tib.updated_date,
+		select tib.id, title, tib.item_name,
+		content, register_date, tib.updated_date,
 		viewed_count, user_id,tu.name
 		FROM trip_item_board tib join tbl_user tu
 		on tib.user_id = tu.id
@@ -30,17 +30,21 @@
 				<when test = "type == 'content'.toString()">
 					and content like concat('%',#{keyword},'%')
 				</when>
+				<when test = "type == 'item_name'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
 			</choose>
 			
 		</where>
 	</select>
 
 	<select id="selectAllItemBoardLimitTen" resultType="itemBoardDTO">
-		select tib.id,
-		title, content, register_date, tib.updated_date, viewed_count,
-		user_id,tu.nickname
+		select tib.id, title, tib.item_name,
+		content, register_date, tib.updated_date,
+		viewed_count, user_id,tu.name
 		FROM trip_item_board tib join tbl_user tu
 		on tib.user_id = tu.id
+		order by tib.id desc
 		<where>
 			<choose>
 				<when test = "type == 'title'.toString()">
@@ -52,7 +56,9 @@
 				<when test = "type == 'content'.toString()">
 					and content like concat('%',#{keyword},'%')
 				</when>
-				
+				<when test = "type == 'item_name'.toString()">
+					and content like concat('%',#{keyword},'%')
+				</when>
 			</choose>
 			
 		</where>
@@ -61,7 +67,7 @@
 	</select>
 	
 	
-	<delete id="deleteAllItemBoardSelected">
+	<delete id="deleteAllItemBoardSelected"> 	
 		delete from item_board
 		<where>
 			<foreach collection ="ids" item = "boardId" separator="or">

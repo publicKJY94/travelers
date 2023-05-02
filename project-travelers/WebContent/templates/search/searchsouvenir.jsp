@@ -15,7 +15,6 @@
 <body>
 	<app-root>
 	<div id="wrap">
-
 		<jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
 		<app-city-main class="ng-star-inserted">
 		<main id="content">
@@ -51,7 +50,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="in_wrap reposition">
 				<nav class="tab_sub_wrap withTopBanner">
 					<ul class="tab_nav">
@@ -65,7 +63,6 @@
 							href="/city/35778/places" class="active"> 기념품 목록 </a></li>
 					</ul>
 				</nav>
-
 				<router-outlet></router-outlet>
 				<app-city-travel-plan class="ng-star-inserted">
 				<section class="board_wrap">
@@ -134,7 +131,7 @@
 	</app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script type="text/javascript">
+<script>
 	let boards = `${boards}`;
 	let contextPath = `${pageContext.request.contextPath}`;
 	console.log(`${boards}`);
