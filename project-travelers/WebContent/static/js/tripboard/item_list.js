@@ -18,14 +18,14 @@ function showList() {
 					</div>
 					<div class="txt_wrap">
 						<ul>
-							<li class="schedule"><span>TRAVEL</span> ·${board.startDate} ~ ${board.endDate}</li>
+							<li class="schedule"><span>ITEM</span>&nbsp&nbsp${board.item_name}</li>
 							<li class="tit">${board.title}</li>
 							<li class="nick">by ${board.name}</li>
 							<li class="di_flex">
 								<ul class="ico_wrap">
-									<li><span class="ico_vote"></span> N</li>
+									<li><span class="ico_vote"></span> 200</li>
 									<li><span class="ico_spot"></span> ${board.viewedCount}</li>
-									<li><span class="ico_cmt"></span> N</li>
+									<li><span class="ico_cmt"></span> 130</li>
 								</ul>
 							</li>
 						</ul>
@@ -34,7 +34,25 @@ function showList() {
 			</li>
 			`;
 	});
-
+	if(!boards){
+		text += `
+			<li>
+				<div>
+					현재 게시글이 없습니다. 게시글 작성을 해보세요!
+				</div>
+			</li>
+			`;
+	} else{
+		if(boards.length == 0){
+			text += `
+			<li>
+				<div>
+					현재 게시글이 없습니다. 게시글 작성을 해보세요!
+				</div>
+			</li>
+			`;
+		}
+	}
 
 	$ul.append(text);
 }

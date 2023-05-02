@@ -4,6 +4,7 @@ public class ItemBoardDTO {
 	private Long id;
 	private String title;
 	private String content;
+	private String itemName;
 	private String startDate;
 	private String endDate;
 	private String registerDate;
@@ -15,6 +16,14 @@ public class ItemBoardDTO {
 	
 	public String getNickname() {
 		return nickname;
+	}
+
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public void setNickname(String nickname) {
@@ -128,7 +137,7 @@ public class ItemBoardDTO {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (getClass() != obj.getClass())	
 			return false;
 		ItemBoardDTO other = (ItemBoardDTO) obj;
 		if (id == null) {

@@ -29,6 +29,7 @@ public class ListIOkController implements Action{
 		req.setAttribute("boards", jsonArray.toString());
 		
 		
+		
 		result.setPath("/templates/search/searchsouvenir.jsp");
 		return result;
 	}
