@@ -33,7 +33,6 @@ public class AnnouncementController implements Action {
 		List<NoticeBoardDTO> noticeBoardList = new ArrayList<>();
 		noticeBoardList=noticeBoardDAO.selectAllNoticeBoardLimitTen(criteria);
 		
-		noticeBoardList.stream().forEach(i -> i.setContent(""));		
 		JSONArray jsonNoticeBoardList = new JSONArray();
 		noticeBoardList.stream().map(i->new JSONObject(i)).forEach(jsonNoticeBoardList::put);
 		req.setAttribute("criteria", criteria);

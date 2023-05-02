@@ -1,119 +1,25 @@
-let page = 1;
-showCommentListAjax();
-
-
-
-//전체 댓글 갯수 가져오는곳
-function getTotal(){
-let $count = document.querySelector(".count")
-$.ajax({
-	type : 'get',
-		url : contextPath + "/noticeBoardCommentGetTotal.noticeBoard",
-	
-		success : function(result){
-			$count.innerHTML = result;
-		}
-})
-	
-}
-getTotal();
-
-
-//새로고침 -> ajax
-let $reload = document.querySelector(".reload");
-$reload.addEventListener("click",e=>{
-	$.ajax({
-		url : contextPath + "/noticeBoardCommentSelect.noticeBoard",
-		dataType : 'json',
-		success : function(result){
-			showCommentList(result);
-			page++;
-		}
-	})
-})
-
-
-//댓글 글자수 제한
-let limitComment = document.querySelector(".limitComment");
-let comment = document.querySelector(".comment");
-comment.addEventListener("input",e =>{
-	limitComment.innerHTML = e.target.value.length + " / 500";
-})
-
-
-
 					
-/*시간 계산*/
-function elapsedTime(date) {
-  const start = new Date(date);
-  const end = new Date();
+noticeBoard = JSON.parse(noticeBoard);
+console.log(noticeBoard);
+						
+const title = document.querySelector(".tit_wrap");
 
-  const diff = (end - start) / 1000;
-  
-  const times = [
-    { name: '년', milliSeconds: 60 * 60 * 24 * 365 },
-    { name: '개월', milliSeconds: 60 * 60 * 24 * 30 },
-    { name: '일', milliSeconds: 60 * 60 * 24 },
-    { name: '시간', milliSeconds: 60 * 60 },
-    { name: '분', milliSeconds: 60 },
-  ];
+title.innerHTML += `<div>
+						<p  class="tit">${noticeBoard.title}</p>
+					</div>
+					<div>
+						<span  class="date"> ${noticeBoard.registerDate} </span>
+					</div>` ;
 
-  for (const value of times) {
-    const betweenTime = Math.floor(diff / value.milliSeconds);
+let codex_editor_redactor = document.querySelector(".codex-editor__redactor");
 
-    if (betweenTime > 0) {
-      return `${betweenTime}${value.name} 전`;
-    }
-  }
-  return '방금 전';
-}	
-
-//ajax 로 10개씩 가져오와 뿌리기
-function showCommentListAjax(){
-	$.ajax({
-		type : 'post',
-		url : contextPath + "/noticeBoardCommentSelect.noticeBoard",
-		dataType : 'json',
-		data : {page : page},
-		success : function(result){
-			showCommentList(result);
-			page++;
-		}
-	})
-}
+let content = `${noticeBoard.content}`;
 
 
 
 
 
-//댓글 등록 버튼
-let btn_register = document.querySelector(".btn_register");
-btn_register.addEventListener("click", e =>{
-	let commentInput = document.querySelector(".comment");
-	let comment = commentInput.value;
-	if(!comment){
-		return;
-	}
-	
-	$.ajax({
-		type : 'post',          
-   		 url : contextPath + "/noticeBoardCommentOk.noticeBoard",           
-    dataType : 'json',      
-    data : {content :comment,
-			boardId :boardId},
-    success : function(result) { 
-let comment_list = document.querySelector(".comment_list");
-comment_list.innerHTML ="";
-page = 1;
-		showCommentList(result);
-		getTotal();
-		limitComment.innerHTML = "0 / 500";
-	commentInput.value ="";
 
-    }
-  
-	})
-})
 
 
 
@@ -171,6 +77,7 @@ $(window).scroll(function(){
 		
 	}
 });
+codex_editor_redactor.innerHTML += content;
 
 
 
@@ -178,4 +85,5 @@ $(window).scroll(function(){
 
 
 
-	
+
+						

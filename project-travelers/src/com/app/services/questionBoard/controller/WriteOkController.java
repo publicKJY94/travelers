@@ -1,4 +1,4 @@
-package com.app.services.mypage.controller;
+package com.app.services.questionBoard.controller;
 
 import java.io.IOException;
 
@@ -8,19 +8,16 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.app.Action;
 import com.app.Result;
-import com.app.domain.DAO.user.UserDAO;
-import com.app.domain.VO.user.UserVO;
+import com.app.domain.DAO.board.QuestionBoardDAO;
+import com.app.domain.VO.board.QuestionBoardVO;
 
-public class UpdateMemberInfoController implements Action {
+public class WriteOkController implements Action{
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
-
-	
 		
 		return null;
-
 	}
-
+	
 }

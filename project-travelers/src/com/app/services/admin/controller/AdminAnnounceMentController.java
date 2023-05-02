@@ -15,9 +15,7 @@ import com.app.Action;
 import com.app.Result;
 import com.app.domain.Criteria;
 import com.app.domain.DAO.board.NoticeBoardDAO;
-import com.app.domain.DAO.user.UserDAO;
 import com.app.domain.DTO.board.NoticeBoardDTO;
-import com.app.domain.VO.user.UserVO;
 
 public class AdminAnnounceMentController implements Action {
 
@@ -37,7 +35,6 @@ public class AdminAnnounceMentController implements Action {
 
 		Criteria criteria = new Criteria(page,total,type,keyword);
 		noticeBoardList = noticeBoardDAO.selectAllNoticeBoardLimitTen(criteria);
-		noticeBoardList.stream().forEach(noticeBoard -> noticeBoard.setContent(""));
 
 		JSONArray jsonNoticeBoardList = new JSONArray();
 		noticeBoardList.stream().map(noticeBoard -> new JSONObject(noticeBoard)).forEach(jsonNoticeBoardList::put);

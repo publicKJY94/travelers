@@ -68,9 +68,10 @@
 					<div class="list_btn di_flex">
 							
 						<div class="ta_right">
-							<a class="btn_st0" href="/customer-center/qna">목록</a><a
+							<a class="btn_st0" href="/customer-center/qna">목록</a>
+							<button><a
 								class="btn_st0 active" href="/customer-center/qna/write">
-								작성 </a>
+								작성 </a></button>
 						</div>
 					</div>
 				</section>
