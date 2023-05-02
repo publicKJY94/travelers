@@ -5,9 +5,8 @@
 		insert into tbl_user
 		(identification, password, name,
 		email, phone_number, nickname, birthday, gender, introducing_message,
-		status, created_date, updated_date, `role`, profil_image_name,
-		profil_image_original_name, profil_image_size)
-		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{status},#{createdDate},#{updatedDate},#{role},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
+		profil_image_name,profil_image_original_name, profil_image_size)
+		values(#{identification},#{password},#{name},#{email},#{phoneNumber},#{nickname},#{birthday},#{gender},#{introducingMessage},#{profilImageName},#{profilImageOriginalName},#{profilImageSize})
 	</insert>
 	
 	<!-- 아이디 패스워드로 조회하고 userVO에 담아 리턴 -->

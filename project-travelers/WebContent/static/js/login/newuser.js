@@ -1,4 +1,4 @@
-const inputEmail = document.getElementById('email');
+ const inputEmail = document.getElementById('email');
 const error = document.getElementById('error');
 const span = document.querySelector('span');
 const button = document.getElementById('wb_btn');
