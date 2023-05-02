@@ -21,17 +21,19 @@ public class QuestionBoardFrontController extends HttpServlet{
 		
 		
 		//target에 따른 if문 분기처리 구간
+
 		if(target.equals("writeOk")) {
 			result = new WriteOkController().execute(req, resp);
 			
 		}else if(target.equals("questionListOk")) {
 			result = new QuestionListOkController().execute(req,resp);
-		}else if(target.equals("questionListOk")) {
-			result = new QuestionListOkController().execute(req,resp);
+		}else if(target.equals("write")) {
+			result = new Result();
+			result.setPath("templates/costomer-center/qna.jsp");
+		}
 		
-		
-		
-		
+	
+
 		
 		
 		

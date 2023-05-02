@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.main.controller.mainBoardController;
 
 public class MainFrontController extends HttpServlet{
 	@Override
@@ -25,6 +26,9 @@ public class MainFrontController extends HttpServlet{
 		
 		if(target.equals("user")) {
 			result.setPath("templates/main/main.jsp");
+		}
+		else if(target.equals("mainBoard")) {
+			result = new mainBoardController().execute(req, resp);
 		}
 		
 		

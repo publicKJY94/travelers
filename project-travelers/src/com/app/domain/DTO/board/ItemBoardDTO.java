@@ -1,12 +1,15 @@
 package com.app.domain.DTO.board;
 
-public class QuestionBoardDTO {
+public class ItemBoardDTO {
 	private Long id;
 	private String title;
 	private String content;
+	private String itemName;
+	private String startDate;
+	private String endDate;
 	private String registerDate;
 	private String updatedDate;
-	private String responsedStatus;
+	private String viewedCount;
 	private Long userId;
 	private String nickname;
 	public Long getId() {
@@ -27,6 +30,24 @@ public class QuestionBoardDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getItemName() {
+		return itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	public String getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	public String getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
 	public String getRegisterDate() {
 		return registerDate;
 	}
@@ -39,11 +60,11 @@ public class QuestionBoardDTO {
 	public void setUpdatedDate(String updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-	public String getResponsedStatus() {
-		return responsedStatus;
+	public String getViewedCount() {
+		return viewedCount;
 	}
-	public void setResponsedStatus(String responsedStatus) {
-		this.responsedStatus = responsedStatus;
+	public void setViewedCount(String viewedCount) {
+		this.viewedCount = viewedCount;
 	}
 	public Long getUserId() {
 		return userId;
@@ -59,9 +80,10 @@ public class QuestionBoardDTO {
 	}
 	@Override
 	public String toString() {
-		return "QuestionBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", registerDate="
-				+ registerDate + ", updatedDate=" + updatedDate + ", responsedStatus=" + responsedStatus + ", userId="
-				+ userId + ", nickname=" + nickname + "]";
+		return "ItemBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", itemName=" + itemName
+				+ ", startDate=" + startDate + ", endDate=" + endDate + ", registerDate=" + registerDate
+				+ ", updatedDate=" + updatedDate + ", viewedCount=" + viewedCount + ", userId=" + userId + ", nickname="
+				+ nickname + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -78,7 +100,7 @@ public class QuestionBoardDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		QuestionBoardDTO other = (QuestionBoardDTO) obj;
+		ItemBoardDTO other = (ItemBoardDTO) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -86,10 +108,6 @@ public class QuestionBoardDTO {
 			return false;
 		return true;
 	}
-	public QuestionBoardDTO() {
-		
-	}
-	
 	
 	
 	

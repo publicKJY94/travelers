@@ -62,12 +62,7 @@
 					
 					
 						<div class="board_tr noti ng-star-inserted">
-							<div class="no">1</div>
-							<div class="tit">
-								<a href="/customer-center/notice/299">제목</a>
-							</div>
-							<div class="date">yyyy.mm.dd</div>
-							<div class="state c_st04">대기중</div>						
+													
 						</div>
 					
 						
@@ -76,7 +71,7 @@
 					</div>
 					<div class="list_btn pc">
 						<div class="ta_right">
-							<a class="btn_st1" href="./qna-form.jsp">글쓰기</a>
+							<a class="btn_st1" href=${pageContext.request.contextPath}/templates/costomer-center/qna-form.jsp>글쓰기</a>
 						</div>
 					</div>
 					<ul class="pagination pc">
@@ -99,9 +94,10 @@
 	</app-root>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script> let questionboards = "${questionboards}"";</script>
-<script src="${pageContext.request.contextPath}/static/js/costomer-center/list.js"></script>
+<script> let questionboards = `${questionboards}`;</script>
+<script>console.log(`${questionboards}`);</script>
 <script src="${pageContext.request.contextPath}/static/js/costomer-center/board.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/costomer-center/list.js"></script>
 <script>
 </script>
 </html>

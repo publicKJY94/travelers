@@ -15,29 +15,12 @@ public class UpdateMemberInfoController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-<<<<<<< HEAD
-		UserDAO userDAO = new UserDAO();
-		UserVO userVO = new UserVO();
-		Result result = new Result();
-		
-		String MemberEmail = req.getParameter("userEmail");
-		String newPassword= req.getParameter("newPassword");
-		UserDAO userDAO = new UserDAO();
-		userDAO.updateAdminPassword(newPassword, (long)req.getSession().getAttribute("adminId"));
-		
-		req.getSession().invalidate();
-		
-		Result result = new Result();
-		
-		result.setRedirect(true);
-		result.setPath(req.getContextPath()+ "/admin.main");
-		
-		return result;
-=======
+
+
 	
->>>>>>> admin
 		
 		return null;
+
 	}
 
 }

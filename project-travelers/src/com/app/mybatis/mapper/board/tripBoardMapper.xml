@@ -6,7 +6,7 @@
 	<select id="selectTripBoardList" resultType="tripBoardDTO">
 		select tb.id, title,
 		content, start_date, end_date, register_date, tb.updated_date,
-		viewed_count, user_id,tu.name
+		viewed_count, user_id,tu.name, tu.nickname
 		FROM trip_board tb join tbl_user tu
 		on tb.user_id = tu.id
 		order by tb.id desc
