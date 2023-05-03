@@ -30,5 +30,5 @@ tripBoardList.forEach((board, i) => {
 				</ul>
 			</li>`
 	}
-})
+});
 boardTable.innerHTML = boardTable.innerHTML + boardText;

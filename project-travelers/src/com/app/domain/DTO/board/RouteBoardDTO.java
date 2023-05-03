@@ -1,12 +1,14 @@
 package com.app.domain.DTO.board;
 
-public class QuestionBoardDTO {
+public class RouteBoardDTO{
 	private Long id;
 	private String title;
 	private String content;
+	private String minSchedule;
+	private String maxSchedule;
 	private String registerDate;
 	private String updatedDate;
-	private String responsedStatus;
+	private String viewedCount;
 	private Long userId;
 	private String nickname;
 	public Long getId() {
@@ -27,6 +29,18 @@ public class QuestionBoardDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getMinSchedule() {
+		return minSchedule;
+	}
+	public void setMinSchedule(String minSchedule) {
+		this.minSchedule = minSchedule;
+	}
+	public String getMaxSchedule() {
+		return maxSchedule;
+	}
+	public void setMaxSchedule(String maxSchedule) {
+		this.maxSchedule = maxSchedule;
+	}
 	public String getRegisterDate() {
 		return registerDate;
 	}
@@ -39,11 +53,11 @@ public class QuestionBoardDTO {
 	public void setUpdatedDate(String updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-	public String getResponsedStatus() {
-		return responsedStatus;
+	public String getViewedCount() {
+		return viewedCount;
 	}
-	public void setResponsedStatus(String responsedStatus) {
-		this.responsedStatus = responsedStatus;
+	public void setViewedCount(String viewedCount) {
+		this.viewedCount = viewedCount;
 	}
 	public Long getUserId() {
 		return userId;
@@ -59,9 +73,9 @@ public class QuestionBoardDTO {
 	}
 	@Override
 	public String toString() {
-		return "QuestionBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", registerDate="
-				+ registerDate + ", updatedDate=" + updatedDate + ", responsedStatus=" + responsedStatus + ", userId="
-				+ userId + ", nickname=" + nickname + "]";
+		return "RouteBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", minSchedule=" + minSchedule
+				+ ", maxSchedule=" + maxSchedule + ", registerDate=" + registerDate + ", updatedDate=" + updatedDate
+				+ ", viewedCount=" + viewedCount + ", userId=" + userId + ", nickname=" + nickname + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -78,7 +92,7 @@ public class QuestionBoardDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		QuestionBoardDTO other = (QuestionBoardDTO) obj;
+		RouteBoardDTO other = (RouteBoardDTO) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -86,12 +100,6 @@ public class QuestionBoardDTO {
 			return false;
 		return true;
 	}
-	public QuestionBoardDTO() {
-		
-	}
-	
-	
-	
 	
 	
 }

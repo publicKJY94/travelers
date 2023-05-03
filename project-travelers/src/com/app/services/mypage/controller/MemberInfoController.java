@@ -29,7 +29,7 @@ public class MemberInfoController implements Action {
 		System.out.println(jsonArray.toString());
 		out.print(jsonArray.toString());
 		out.close();
-	
+		return null;
 	}
 
 }

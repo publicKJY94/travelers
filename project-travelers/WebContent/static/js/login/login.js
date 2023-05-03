@@ -60,3 +60,8 @@ function passwordChange() {
 		return true;
 	}
 }
+
+function checkPassword(password) {
+	var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	return pattern.test(password);
+}

@@ -6,7 +6,7 @@
 	<select id="selectTripBoardList" resultType="tripBoardDTO">
 		select tb.id, title,
 		content, start_date, end_date, register_date, tb.updated_date,
-		viewed_count, user_id,tu.name
+		viewed_count, user_id,tu.name, tu.nickname
 		FROM trip_board tb join tbl_user tu
 		on
 		tb.user_id = tu.id
@@ -85,7 +85,16 @@
 		<where>
 			tb.user_id = #{id}
 		</where>
-		order by tb.id desc
+		order by
+		<choose>
+			<when test="sort=='createdatdesc'.toString()">
+				register_date
+			</when>
+			<when test="sort=='popularitydesc'.toString()">
+				viewed_count
+			</when>
+		</choose>
+		desc
 		limit #{offset},#{rowCount};
 	</select>
 	
@@ -100,5 +109,56 @@
 			</foreach>
 		</where>
 	</delete>
-
+	
+	<select id="selectAll" resultType="tripBoardDTO">
+		select tb.id, title,
+		content, start_date, end_date, register_date, tb.updated_date,
+		viewed_count, user_id,tu.name
+		FROM trip_board tb join tbl_user tu
+		on tb.user_id = tu.id
+			<choose>
+				<when test="month!=0">
+					where
+						month(start_date) = #{month}
+				</when>
+			</choose>
+		order by
+			<choose>
+				<when test="sort=='during_start__desc'.toString()">	
+					start_date
+				</when>
+				<when test="sort=='createdatdesc'.toString()">		
+					register_date
+				</when>
+				<when test="sort=='popularitydesc'.toString()">		
+					viewed_count
+				</when>
+				<otherwise>
+						start_date
+				</otherwise>
+			</choose>
+		 desc
+		limit #{offset}, #{rowCount}
+	</select>
+	
+	<select id="selectOne" resultType="tripBoardDTO">
+		select tb.id, title,
+		content, start_date, end_date, register_date, tb.updated_date,
+		viewed_count, user_id,tu.name
+		FROM trip_board tb join tbl_user tu
+		on tb.user_id = tu.id
+		where tb.id = #{tripboard_id}
+	</select>
+	
+	<update id="updateReadCount">
+		update trip_board
+		set viewed_count= viewed_count+1
+		where id = #{tripboard_id}
+	</update>
+	
+	<insert id="insert">
+		insert into trip_board
+		(id,title,content,user_id)
+		values(#{id},#{title},#{content},#{userId})
+	</insert>
 </mapper>

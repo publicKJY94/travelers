@@ -30,4 +30,9 @@
 			</foreach>
 		</where>
 	</delete>
+	<insert id="insert">
+		insert into question_board
+		(title,content,user_id)
+		values(#{title},#{content},#{userId})
+	</insert>
 </mapper>

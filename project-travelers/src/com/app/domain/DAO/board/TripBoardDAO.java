@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import com.app.domain.Criteria;
 import com.app.domain.DTO.board.TripBoardDTO;
+import com.app.domain.VO.board.TripBoardVO;
 import com.app.mybatis.config.MyBatisConfig;
 
 public class TripBoardDAO {
@@ -38,12 +39,15 @@ public SqlSession sqlSession;
 		return sqlSession.selectList("tripBoard.selectAllTripBoardLimitTen",criteria);
 	}
 	
+<<<<<<< HEAD
 	//마이페이지 10개씩 페이징처리 최신순
 	public List<TripBoardDTO> selectAllMyTripBoard(Long userId){
 		return sqlSession.selectList("tripBoard.selectAllMyTripBoardLimitTen", criteria);
 	}
 	
 	
+=======
+>>>>>>> 33630eae2f882c32e101df49d7d5cfd0b02fffb2
 	//여러개 삭제
 	public void deleteAllTripBoardSelected(String[] deleteIds) {
 		List<Integer> ids = new ArrayList<>();
@@ -52,5 +56,25 @@ public SqlSession sqlSession;
 		Map<String,List<Integer>> map = new HashMap<String, List<Integer>>();
 		map.put("ids", ids);
 		sqlSession.delete("tripBoard.deleteAllTripBoardSelected",map);
+	}
+	
+	//목록 전체 불러오기
+	public List<TripBoardDTO> selectAll(HashMap<String, Object> pagable) {
+		return sqlSession.selectList("tripBoard.selectAll", pagable);
+	}
+	
+	//게시글 하나 불러오기(상세보기
+	public TripBoardDTO selectOne(Long tripboardId) {
+		return sqlSession.selectOne("tripBoard.selectOne", tripboardId);
+	}
+	
+	//조회수 증가
+	public void updateReadCount(Long tripboardId) {
+		sqlSession.update("tripBoard.updateReadCount",tripboardId);
+	}
+	
+	//게시글 추가
+	public void insert(TripBoardVO tripboardVO) {
+		sqlSession.insert("tripBoard.insert",tripboardVO);
 	}
 }

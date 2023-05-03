@@ -32,6 +32,7 @@ public class UserUpdateController implements Action {
 		result.setPath("/templates/mypage/member-infomation.jsp");
 		
 		return result;
+
 	}
 
 }
