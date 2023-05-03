@@ -46,7 +46,7 @@
 	</select>
 
 	<!-- 사용자 정보 조회 / 은행 및 계좌정보 테이블 물어봐야할듯 -->
-	<select id="selectUserInfoByUserId" resultType="MyPageInfoDTO">
+	<select id="selectUserInfoByUserId" resultType="UserVO">
 		id, identification, name, email, phone_number, nickname, introducing_message
 		from tbl_user
 		where id = #{userId}
