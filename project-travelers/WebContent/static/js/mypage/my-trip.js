@@ -2,7 +2,7 @@
  * 
  */
 //게시판 뿌리기
-const boardTable = document.querySelector("mytrip");
+const boardTable = document.querySelector(".mytrip");
 let boardText = '';
 tripBoardList = JSON.parse(tripBoardList);
 tripBoardList.forEach((board, i) => {

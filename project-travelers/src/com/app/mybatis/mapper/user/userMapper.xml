@@ -66,8 +66,7 @@
 		set name = #{name}, nickname =
 		#{nickname}, introducing_Message = #{introducingMessage}
 		, phone_number = #{phoneNumber}, email = #{email}
-		where id =
-		#{userId}
+		where id = #{userId}
 	</update>
 
 	<!-- 회원탈퇴 -->

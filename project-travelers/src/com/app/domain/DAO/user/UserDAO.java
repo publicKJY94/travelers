@@ -88,6 +88,11 @@ public SqlSession sqlSession;
 		return sqlSession.selectOne("user.selectUserInfoByUserId", userId);
 	}
 	
+	// 사용자 회원탈퇴
+	public void deleteUserInfo(Long userId) {
+		sqlSession.delete("user.deleteUserInfo", userId);
+	}
+	
 	// 사용자 정보 변경
 	public void updateUserInfo(Long userId, UserVO userVO) {
 		sqlSession.update("updateUserInfo", userVO);
