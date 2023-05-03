@@ -17,10 +17,12 @@ $(document).ready(function() {
 			e.target.remove();
 			}
 		}
-		
 	})
-
-
+		
+	$(document).on('click','.submit-btn',function(){
+		var summernoteContent = $('#summernote').summernote('code');
+		console.log(summernoteContent);
+	});
 
 });
 
