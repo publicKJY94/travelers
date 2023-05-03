@@ -2,16 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="itemBoard">
 
-<select id="selectItemBoardList" resultType="itemBoardDTO">
-		select tib.id, title, tib.item_name,
+	
+	<!-- 작성자와 보드 전부 가져오기 내림차순 -->
+	<select id="selectItemBoardList" resultType="itemBoardDTO">
+		select tib.id, title, item_name,
 		content, register_date, tib.updated_date,
-		viewed_count, user_id,tu.name
+		user_id,tu.name, tu.nickname
 		FROM trip_item_board tib join tbl_user tu
 		on tib.user_id = tu.id
 		order by tib.id desc
 	</select>
 	
-	
+
 	
 	
 	<select id="getTotal" resultType="_int">

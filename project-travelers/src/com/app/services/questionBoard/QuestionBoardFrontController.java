@@ -21,6 +21,7 @@ public class QuestionBoardFrontController extends HttpServlet{
 		
 		
 		//target에 따른 if문 분기처리 구간
+
 		if(target.equals("writeOk")) {
 			result = new WriteOkController().execute(req, resp);
 			
@@ -36,7 +37,7 @@ public class QuestionBoardFrontController extends HttpServlet{
 		
 		
 	
-		
+
 		
 		
 		

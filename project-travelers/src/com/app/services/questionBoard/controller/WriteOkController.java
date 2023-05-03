@@ -18,11 +18,9 @@ public class WriteOkController implements Action{
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		QuestionBoardVO questionBoardVO = new QuestionBoardVO();
-		QuestionBoardDAO questionBoardDAO = new QuestionBoardDAO();
+
+		
 		Result result = new Result();
-		
-		
 //		HttpSeession session =req.getSession();
 		
 //		questionBoardVO.setBoardTitle(req.getParameter("title"));
@@ -44,6 +42,7 @@ public class WriteOkController implements Action{
 //		req.setAttribute("questionboards", jsonArray.toString());
 //		result.setPath("templates/costomer-center/qna-form.jsp");
 //		return result;
+
 	}
 	
 }

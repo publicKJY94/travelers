@@ -1,5 +1,6 @@
 package com.app.domain.DAO.board;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -49,6 +50,6 @@ public class ItemBoardDAO {
 		sqlSession.delete("itemBoard.deleteAllItemBoardSelected",map);
 	}
 	
-	
+
 	
 }

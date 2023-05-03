@@ -2,4 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="routeBoard">
 
+	<!-- 작성자와 보드 전부 가져오기 내림차순 -->
+	<select id="selectRouteBoardList" resultType="routeBoardDTO">
+		select trb.id, title,
+		content, min_schedule, max_schedule, register_date, trb.updated_date,
+		viewed_count, user_id,tu.name, tu.nickname
+		FROM trip_route_board trb join tbl_user tu
+		on trb.user_id = tu.id
+		order by trb.id desc
+	</select>
+	
 </mapper>

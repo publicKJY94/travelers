@@ -17,8 +17,10 @@ public class UpdateMemberInfoController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 
 
-
+	
+		
 		return null;
+
 	}
 
 }

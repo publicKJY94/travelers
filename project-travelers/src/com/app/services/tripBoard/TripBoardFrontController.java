@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
+import com.app.services.tripBoard.controller.DetailOkController;
+import com.app.services.tripBoard.controller.ListOkController;
 
 public class TripBoardFrontController extends HttpServlet{
 	@Override
@@ -23,7 +25,13 @@ public class TripBoardFrontController extends HttpServlet{
 		//target에 따른 if문 분기처리 구간
 	
 		if(target.equals("listOk")) {
-			result = new ListOkOController().execute(req, resp);
+			result = new ListOkController().execute(req, resp);
+		}
+		else if(target.equals("detailOk")) {
+			result = new DetailOkController().execute(req, resp);
+		}
+		else if(target.equals("writeOk")) {
+			result = new DetailOkController().execute(req, resp);
 		}
 		
 		

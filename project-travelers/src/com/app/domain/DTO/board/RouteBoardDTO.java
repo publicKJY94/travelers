@@ -1,12 +1,11 @@
 package com.app.domain.DTO.board;
 
-public class ItemBoardDTO {
+public class RouteBoardDTO{
 	private Long id;
 	private String title;
 	private String content;
-	private String itemName;
-	private String startDate;
-	private String endDate;
+	private String minSchedule;
+	private String maxSchedule;
 	private String registerDate;
 	private String updatedDate;
 	private String viewedCount;
@@ -30,23 +29,17 @@ public class ItemBoardDTO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getItemName() {
-		return itemName;
+	public String getMinSchedule() {
+		return minSchedule;
 	}
-	public void setItemName(String itemName) {
-		this.itemName = itemName;
+	public void setMinSchedule(String minSchedule) {
+		this.minSchedule = minSchedule;
 	}
-	public String getStartDate() {
-		return startDate;
+	public String getMaxSchedule() {
+		return maxSchedule;
 	}
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;
-	}
-	public String getEndDate() {
-		return endDate;
-	}
-	public void setEndDate(String endDate) {
-		this.endDate = endDate;
+	public void setMaxSchedule(String maxSchedule) {
+		this.maxSchedule = maxSchedule;
 	}
 	public String getRegisterDate() {
 		return registerDate;
@@ -80,10 +73,9 @@ public class ItemBoardDTO {
 	}
 	@Override
 	public String toString() {
-		return "ItemBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", itemName=" + itemName
-				+ ", startDate=" + startDate + ", endDate=" + endDate + ", registerDate=" + registerDate
-				+ ", updatedDate=" + updatedDate + ", viewedCount=" + viewedCount + ", userId=" + userId + ", nickname="
-				+ nickname + "]";
+		return "RouteBoardDTO [id=" + id + ", title=" + title + ", content=" + content + ", minSchedule=" + minSchedule
+				+ ", maxSchedule=" + maxSchedule + ", registerDate=" + registerDate + ", updatedDate=" + updatedDate
+				+ ", viewedCount=" + viewedCount + ", userId=" + userId + ", nickname=" + nickname + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -100,7 +92,7 @@ public class ItemBoardDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		ItemBoardDTO other = (ItemBoardDTO) obj;
+		RouteBoardDTO other = (RouteBoardDTO) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -108,8 +100,6 @@ public class ItemBoardDTO {
 			return false;
 		return true;
 	}
-	
-	
 	
 	
 }
