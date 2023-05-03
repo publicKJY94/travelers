@@ -19,15 +19,18 @@
 	height: 150px;
 }
 
-.vjs-fluid:not(.vjs-audio-only-mode) {
-	padding-top: 56.25%
-}
-</style>
-<style type="text/css">
-a {
-	color: inherit;
-	text-decoration: inherit;
-}
+
+   .vjs-fluid:not(.vjs-audio-only-mode) {
+     padding-top: 56.25%
+     
+   }
+ </style>
+ <style type="text/css">
+    a {
+   color: inherit;
+   text-decoration: inherit;
+ }
+
 </style>
 <script src="${pageContext.request.contextPath}/static/js/main/main.js"
 	type="text/javascript"></script>
