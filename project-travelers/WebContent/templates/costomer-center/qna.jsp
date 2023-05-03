@@ -71,7 +71,8 @@
 					</div>
 					<div class="list_btn pc">
 						<div class="ta_right">
-							<a class="btn_st1" href=${pageContext.request.contextPath}/templates/costomer-center/qna-form.jsp>글쓰기</a>
+							<a class="btn_st1" href=${pageContext.request.contextPath}/project-travelers/write.questionBoard>글쓰기</a>
+							
 						</div>
 					</div>
 					<ul class="pagination pc">

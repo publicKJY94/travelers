@@ -17,6 +17,7 @@
 
    .vjs-fluid:not(.vjs-audio-only-mode) {
      padding-top: 56.25%
+     
    }
  </style>
  <style type="text/css">

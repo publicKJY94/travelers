@@ -42,6 +42,7 @@ public class Criteria {
 	public void setRealEndPage(int realEndPage) {
 		this.realEndPage = realEndPage;
 	}
+	
 	public String getType() {
 		return type;
 	}
