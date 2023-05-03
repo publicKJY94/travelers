@@ -10,26 +10,6 @@
 		order by qb.id desc
 	</select>
 	
-	<!-- 나의 문의사항 조회 -->
-	<select id="selectQuestionBoardList"
-		resultType="questionBoardDTO">
-		SELECT qb.id, title, content, register_date, qb.updated_date,
-		responsed_status, user_id,tu.nickname
-		FROM question_board qb join tbl_user tu
-		on qb.user_id = tu.id
-		where tu.id = #{id}
-		order by qb.id desc
-	</select>
-	
-	<!-- 나의 문의사항 삭제 -->
-	<delete id="deleteAllTripBoardSelected">
-		delete from trip_board
-		<where>
-			<foreach collection ="ids" item = "questionId" separator="or">
-				id =#{questionId}
-			</foreach>
-		</where>
-	</delete>
 	<insert id="insert">
 		insert into question_board
 		(title,content,user_id)

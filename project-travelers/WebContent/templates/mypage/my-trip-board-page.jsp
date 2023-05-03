@@ -1,8 +1,5 @@
-
-<%@page import="org.json.JSONArray"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +10,7 @@
 <link href="${pageContext.request.contextPath}/static/css/mypage/my-trip-board-page.css"
 	rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
+
 </head>
 <body>
 	<app-root  ng-version="13.3.12"> <jsp:include page="/templates/header-footer/header.jsp"></jsp:include> <app-travel-note-management _nghost-dcs-c83=""
@@ -61,8 +59,7 @@
 								src="https://www.wishbeen.co.kr/assets/images/img_default.jpg">
 						</div>
 						<div class="txt_wrap">
-						<c:set var= "boards" value="${boards}"/>
-							<ul class="mytrip">
+							<ul>
 								<li class="geo txt_hide"><span
 									 class="ico_geo"></span> 여행지역 </li>
 								<li class="tit">여행기 제목</li>
@@ -71,8 +68,7 @@
 										#여행 관련 태그 </span> <!----></li>
 								<li class="date">
 									TRAVEL·2022.12.22~2022.12.27</li>
-								<li>
-									<ul
+								<li><ul
 										class="ico_wrap">
 										<li><span
 											class="ico_spot"></span> 5</li>
@@ -82,8 +78,7 @@
 											class="ico_like"></span> 0</li>
 										<li><span
 											class="ico_share"></span> 0</li>
-									</ul>
-								</li>
+									</ul></li>
 							</ul>
 							<!---->
 							<!---->
