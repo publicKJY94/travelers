@@ -39,6 +39,15 @@ public SqlSession sqlSession;
 		return sqlSession.selectList("tripBoard.selectAllTripBoardLimitTen",criteria);
 	}
 	
+<<<<<<< HEAD
+	//마이페이지 10개씩 페이징처리 최신순
+	public List<TripBoardDTO> selectAllMyTripBoard(Long userId){
+		return sqlSession.selectList("tripBoard.selectAllMyTripBoardLimitTen", criteria);
+	}
+	
+	
+=======
+>>>>>>> 33630eae2f882c32e101df49d7d5cfd0b02fffb2
 	//여러개 삭제
 	public void deleteAllTripBoardSelected(String[] deleteIds) {
 		List<Integer> ids = new ArrayList<>();
