@@ -26,7 +26,7 @@ public class UserUpdateController implements Action {
 		userVO.setPhoneNumber(req.getParameter("newphoneNumber"));
 		userVO.setEmail(req.getParameter("newemail"));
 		
-		userDAO.updateUserInfo(userId, userVO);
+		userDAO.updateUserInfo(userVO);
 
 		result.setRedirect(true);
 		result.setPath("/templates/mypage/member-infomation.jsp");
