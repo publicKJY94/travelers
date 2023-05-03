@@ -21,9 +21,12 @@ public SqlSession sqlSession;
 		
 	}
 	
+	//게시글 전체 조회
 	public List<QuestionBoardDTO> selectQuestionBoardList(){
 		return sqlSession.selectList("questionBoard.selectQuestionBoardList");
 	}
+	
+	
 	public int getTotal(String type, String keyword) {
 		Map<String,String> map = new HashMap<String, String>();
 		map.put("type", type);
@@ -31,26 +34,6 @@ public SqlSession sqlSession;
 		return sqlSession.selectOne("questionBoard.getTotal",map);
 	}
 	
-	
-	//10개씩 페이징처리 최신순
-	public List<QuestionBoardDTO> selectAllQuestionBoardLimitTen(Criteria criteria){
-		return sqlSession.selectList("questionBoard.selectAllQuestionBoardLimitTen",criteria);
-	}
-	
-	
-	//여러개 삭제
-	public void deleteAllQuestionBoardSelected(String[] deleteIds) {
-		List<Integer> ids = new ArrayList<>();
-		Arrays.stream(deleteIds).map(Integer::parseInt).forEach(ids::add);
-		
-		Map<String,List<Integer>> map = new HashMap<String, List<Integer>>();
-		map.put("ids", ids);
-		sqlSession.delete("questionBoard.deleteAllQuestionBoardSelected",map);
-	}
-	
-	public QuestionBoardDTO selectOneQuestionBoard(long boardId) {
-		return sqlSession.selectOne("questionBoard.selectOneQuestionBoard",boardId);
-	}
 	
 	
 	

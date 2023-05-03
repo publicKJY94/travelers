@@ -1,5 +1,8 @@
+<%@page import="com.app.domain.VO.user.UserVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<% UserVO userVO = (UserVO)request.getAttribute("userVO"); %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +44,7 @@
 			<router-outlet ></router-outlet>
 			<app-membership-withdrawal 
 				class="ng-star-inserted">
-			<form novalidate=""
+			<form novalidate="" action=""
 				class="ng-untouched ng-pristine ng-invalid">
 				<section class="my_wrap">
 					<div class="noti_box">
@@ -58,10 +61,11 @@
 							<ul class="box_wrap">
 								<li ><div 
 										class="th">아이디</div>
-									<div>max021159@naver.com</div></li>
+									<div><input type="text" class="memberInfo" name="identification" value="${userVO.identification}"></div></li>
 								<li ><div 
-										class="th">이름</div>
-									<div >이민형</div></li>
+										class="th">
+										</div>
+									<div > <input type="text" class="memberInfo" name="name" value="${userVO.name}"></div></li>
 								<li ><div 
 										class="th">비밀번호</div>
 									<div >
@@ -117,7 +121,7 @@
 					<div class="list_btn wid02">
 						<a href="javascript:history.back();"
 							class="btn_st0">취소</a><a 
-							class="btn_st0 active">회원 탈퇴 신청</a>
+							class="btn_st0 active">회원 탈퇴</a>
 					</div>
 				</section>
 			</form>

@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.app.domain.DTO.comment.NoticeBoardCommentDTO;
 import com.app.domain.VO.comment.NoticeBoardCommentVO;
 import com.app.mybatis.config.MyBatisConfig;
 

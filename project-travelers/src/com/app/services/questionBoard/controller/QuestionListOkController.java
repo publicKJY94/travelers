@@ -21,6 +21,8 @@ public class QuestionListOkController implements Action{
 		QuestionBoardDAO questionBoardDAO = new QuestionBoardDAO();
 		Result result = new Result();
 		JSONArray jsonArray = new JSONArray();
+		
+		
 //		String temp = req.getParameter("page");
 //		int page = temp == null ? 1 : Integer.parseInt(temp);
 //		String sort = req.getParameter("sort");
@@ -50,6 +52,8 @@ public class QuestionListOkController implements Action{
 //		req.setAttribute("sort", sort);
 //		req.setAttribute("type", type);
 //		req.setAttribute("keyword", keyword);
+		
+		
 		
 		QuestionBoardDTO questionBoardDTO = new QuestionBoardDTO();
 		questionBoardDAO.selectQuestionBoardList().stream().map(questionboard-> new JSONObject(questionboard)).forEach(jsonArray::put);
