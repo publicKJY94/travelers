@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="routeBoard">
-	<!-- 나의 경로 조회 -->
-	<select id="selectQuestionBoardList"
-		resultType="questionBoardDTO">
-		SELECT rb.id, title, content, register_date, rb.updated_date,
-		responsed_status, user_id,tu.nickname
-		FROM route_board rb join tbl_user tu
-		on rb.user_id = tu.id
-		where tu.id = #{id}
-		order by rb.id desc
-	</select>
-	
-	<!-- 나의 선택한 경로 삭제 -->
-	<delete id="deleteAllTripBoardSelected">
-		delete from trip_board
-		<where>
-			<foreach collection ="ids" item = "routeId" separator="or">
-				id = #{boardId}
-			</foreach>
-		</where>
-	</delete>
 
 	<!-- 작성자와 보드 전부 가져오기 내림차순 -->
 	<select id="selectRouteBoardList" resultType="routeBoardDTO">
