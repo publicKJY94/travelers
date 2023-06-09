@@ -23,6 +23,7 @@ public class AnnouncementController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
+		System.out.println(req.getSession().getAttribute("userId"));
 		
 		NoticeBoardDTO noticeBoardDTO = new NoticeBoardDTO();
 		NoticeBoardDAO noticeBoardDAO = new NoticeBoardDAO();
@@ -33,6 +34,7 @@ public class AnnouncementController implements Action {
 		List<NoticeBoardDTO> noticeBoardList = new ArrayList<>();
 		noticeBoardList=noticeBoardDAO.selectAllNoticeBoardLimitTen(criteria);
 		
+		noticeBoardList.stream().forEach(i -> i.setContent(""));		
 		JSONArray jsonNoticeBoardList = new JSONArray();
 		noticeBoardList.stream().map(i->new JSONObject(i)).forEach(jsonNoticeBoardList::put);
 		req.setAttribute("criteria", criteria);

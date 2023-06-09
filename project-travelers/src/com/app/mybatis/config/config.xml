@@ -35,6 +35,7 @@
       <typeAlias type="com.app.domain.DTO.board.ItemBoardDTO" alias="itemBoardDTO"/>
       <typeAlias type="com.app.domain.DTO.user.MyPageInfoDTO" alias="mypageinfoDTO"/>
       <typeAlias type="com.app.domain.DTO.board.ItemBoardDTO" alias="itemBoardDTO"/>
+      <typeAlias type="com.app.domain.DTO.comment.NoticeBoardCommentDTO" alias="noticeBoardCommentDTO"/>
       
       
       

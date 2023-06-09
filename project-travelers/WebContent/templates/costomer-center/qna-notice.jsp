@@ -16,7 +16,7 @@
 	<div>
 
 	<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-customer-center class="ng-star-inserted">
 		<section id="content" class="withTopBanner" style="padding: 11rem 0 0">

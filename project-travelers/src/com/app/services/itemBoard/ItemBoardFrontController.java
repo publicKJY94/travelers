@@ -1,6 +1,7 @@
 package com.app.services.itemBoard;
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
-import com.app.services.itemBoard.controller.ListIOkController;
+import com.app.services.itemBoard.controller.ListOkController;
 
 public class ItemBoardFrontController extends HttpServlet{
 	@Override
@@ -22,7 +23,7 @@ public class ItemBoardFrontController extends HttpServlet{
 		
 		//target에 따른 if문 분기처리 구간
 		if(target.equals("listOk")) {
-			
+			result = new ListOkController().execute(req, resp);
 		}
 		
 

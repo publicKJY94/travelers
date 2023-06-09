@@ -15,7 +15,7 @@
 	<app-root _nghost-phe-c68 ng-version="13.3.12">
 	<div _ngcontent-phe-c68 id="wrap">
 	<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-travel-note-detail _nghost-phe-c90="" class="ng-star-inserted">
 		<div _ngcontent-phe-c90="" id="content">

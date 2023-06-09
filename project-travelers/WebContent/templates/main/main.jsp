@@ -58,7 +58,7 @@ a {
 </head>
 <body>
 	<app-root _nghost-fmk-c68 ng-version="13.3.12"> <jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include> <app-top-search
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include> <app-top-search
 		 _nghost-fmk-c53>
 	<div 
              id="search-dim" class="dim"
@@ -1241,8 +1241,9 @@ a {
 	</nav>
 	<app-bottom-mobile-create-menu 
              _nghost-fmk-c63>
-	<div  class="dim"></div>
+	
 	<div 
+	
                id="create-menu" class="btm_pop_menu write"
 		style="z-index: -1; display: none">
 		<ul>
@@ -1260,7 +1261,7 @@ a {
 				<div  class="txt_wrap">
 					<p  class="txt">
 						<span  class="d_block st1"> 세상의 모든 여행</span> <span
-							 class="d_block st2"> <span> 위시빈</span>
+							 class="d_block st2"> <span> Travelers</span>
 						</span>
 					</p>
 					<p  class="sch">
@@ -1300,7 +1301,7 @@ a {
 		<div  class="renew2023">
 			<div  class="section01">
 				<div  class="inner">
-					<h2  class="title">위시빈이 뽑았어요🤞</h2>
+					<h2  class="title">최고의여행 뽑았어요🤞</h2>
 					<div  class="box">
 						<div  class="mainThumb">
 							<a  href="/community/595"> <span  class="thumb">
@@ -1428,16 +1429,10 @@ a {
 					</ul>
 				</div>
 			</section>
-			<section  class="section02">
-				<h2  class="title">추천 루트</h2>
-				<div  class="thumbList">
-					<ul id="route_board">
-					</ul>
-				</div>
-			</section>
+			
 			<section  class="section03 ng-star-inserted">
 				<div  class="inner">
-					<h2  class="hide">위시빈 앱다운로드</h2>
+					<h2  class="hide">Travelers 앱다운로드</h2>
 					<div  class="app_pc">
 						<img
 							
@@ -1513,7 +1508,7 @@ a {
 			</ul>
 		</div>
 	</aside>
-	<div  class="dim" style="display: none"></div>
+	
 	</app-root>
 </body>
 <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>

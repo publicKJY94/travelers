@@ -13,7 +13,7 @@ import com.app.Action;
 import com.app.Result;
 import com.app.domain.DAO.board.ItemBoardDAO;
 
-public class ListIOkController implements Action{
+public class ListOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		ItemBoardDAO itemboardDAO = new ItemBoardDAO();

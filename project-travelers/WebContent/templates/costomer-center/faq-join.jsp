@@ -16,7 +16,7 @@
 	<div>
 
 		<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-customer-center class="ng-star-inserted">
 		<section id="content" class="withTopBanner" style="padding: 11rem 0 0">
@@ -28,13 +28,13 @@
 			</div>
 			<div class="in_wrap">
 				<div class="tab_sub_wrap withTopBanner">
-					<ul class="tab_nav">
+						<ul class="tab_nav">
 						<li><a routerlink="notice" routerlinkactive="active"
-							href="/customer-center/notice">공지사항</a></li>
-						<li><a class="active" routerlink="faq"
-							routerlinkactive="active" href="/customer-center/faq">자주묻는질문</a></li>
+							href="announcement.noticeBoard" >공지사항</a></li>
+						<li><a routerlink="faq" routerlinkactive="active"
+							href="faq.noticeBoard" class="active">자주묻는질문</a></li>
 						<li><a routerlink="qna" routerlinkactive="active"
-							href="/customer-center/qna">문의하기</a></li>
+							href="questionListOk.questionBoard" >문의하기</a></li>
 					</ul>
 				</div>
 				<router-outlet></router-outlet>

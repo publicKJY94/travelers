@@ -404,8 +404,8 @@ input.chbox+label:before {
 }
 
 .wb_btn.outline {
-    color: var(--key-color);
-    border: 1px solid var(--key-color);
+    color: #ff8000;
+    border: 1px solid #ff8000;
     background: transparent;
 }
 

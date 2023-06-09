@@ -21,7 +21,7 @@ input.memberInfo {
 a.btn_st0 {
 	position: absolute;
 	right: 10px;
-	width: 40px;`
+	width: 40px;
 	height: 30px;
 	text-align: center;
 	vertical-align: middle;
@@ -37,7 +37,7 @@ input[type=submit] {
 <body>
 	<app-root ng-version="13.3.12">
 	<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include> 
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 		<app-account-management
 			class="ng-star-inserted">
 			<div id="content">
@@ -73,19 +73,19 @@ input[type=submit] {
 								<li>
 									<div class="th">이름</div>
 									<div>
-										<input type="text" class="memberInfo" name="name" value="${userVO.name}">
+										<input type="text" class="memberInfo" name="name" value="${name}">
 									</div>
 								</li>
 								<li>
 									<div class="th">닉네임</div>
 									<div>
-										<input type="text" class="memberInfo" name="nickname" value="${userVO.nickname}">
+										<input type="text" class="memberInfo" name="nickname" value="${nickname}">
 									</div>
 								</li>
 								<li>
 									<div class="th">한줄 소개</div>
 									<div class="txt">
-										<input type="text" class="memberInfo" name="introducingMessage" value="${userVO.introducingMessage}">
+										<input type="text" class="memberInfo" name="introducingMessage" value="${introducingMessage}">
 									</div>
 								</li>
 							</ul>
@@ -96,13 +96,13 @@ input[type=submit] {
 								<li>
 									<div class="th">연락처</div>
 									<div>
-										<input type="text" class="memberInfo" name="phoneNumber" value="${userVO.phoneNumber}">
+										<input type="text" class="memberInfo" name="phoneNumber" value="${phoneNumber}">
 									</div>
 								</li>
 								<li>
 									<div class="th">이메일</div>
 									<div>
-										<input type="text" class="memberInfo" name="email" value="${userVO.email}">
+										<input type="text" class="memberInfo" name="email" value="${email}">
 									</div>
 								</li>
 							</ul>
@@ -127,6 +127,7 @@ input[type=submit] {
 				</dl>
 			</section>
 			</app-my-info>
+		
 			<!---->
 		</div>
 	</div>

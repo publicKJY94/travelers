@@ -14,7 +14,7 @@
 	<app-root _nghost-akd-c67 ng-version="13.3.12">
 	<div _ngcontent-akd-c67 id="wrap">
 		
-		<jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
+		<jsp:include page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 		
 		<router-outlet _ngcontent-xjb-c68></router-outlet>
 		<app-city-main _nghost-akd-c123 class="ng-star-inserted">
@@ -25,7 +25,7 @@
 						<p _ngcontent-ktr-c79="" class="txt">
 							<span _ngcontent-ktr-c79="" class="d_block st1">세상의 모든 여행</span><span
 								_ngcontent-ktr-c79="" class="d_block st2"><span
-								_ngcontent-ktr-c79="">위시빈</span></span>
+								_ngcontent-ktr-c79="">Travelers</span></span>
 						</p>
 						<p _ngcontent-ktr-c79="" class="sch">
 							<input _ngcontent-ktr-c79="" type="text"
@@ -39,39 +39,21 @@
 					</div>
 				</div>
 			</section>
-			<div _ngcontent-akd-c123 class="sub_header st7">
-				<div _ngcontent-akd-c123 class="in_wrap">
-					<div _ngcontent-akd-c123 class="ng-star-inserted">
-						<h1 _ngcontent-akd-c123 class="dth2">
-							<a _ngcontent-akd-c123 routerlink="home" href="/city/35778/home">
-								검색된 도시 <span _ngcontent-akd-c123 class="hide">여행</span>
-							</a>
-						</h1>
-						<p _ngcontent-akd-c123 class="dth1">
-							<span _ngcontent-akd-c123> 대륙이름 </span> 대륙 다음에올 소대륙
-						</p>
-					</div>
-				</div>
-			</div>
-
+			
 			<div _ngcontent-akd-c123 class="in_wrap reposition">
 				<aside class="side_bar">
 								<span _ngcontent-oma-c66="" class="btn_top_scroll"></span>
 							</aside>
-				<nav _ngcontent-akd-c123 class="tab_sub_wrap withTopBanner">
-					<ul _ngcontent-akd-c123 class="tab_nav">
-						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
-							routerlink="home" routerlinkactive="active"
-							href="/city/35778/home" class="active"> 홈 </a></li>
-						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
-							routerlink="travelogues" routerlinkactive="active"
-							href="/city/35778/travelogues" class> 여행기 </a></li>
-						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
-							routerlink="schedules" routerlinkactive="active"
-							href="/city/35778/schedules"> 추천루트 </a></li>
-						<li _ngcontent-akd-c123><a _ngcontent-akd-c123
-							routerlink="places" routerlinkactive="active"
-							href="/city/35778/places"> 여행품 교환 </a></li>
+				<nav class="tab_sub_wrap withTopBanner">
+					<ul class="tab_nav">
+						<li><a routerlink="home" class="active" routerlinkactive="active"
+							href="/templates/search/home.jsp"> 홈 </a></li>
+						<li><a routerlink="travelogues" routerlinkactive="active"
+							href="/listOk.tripBoard" > 여행기 </a></li>
+						<li><a routerlink="schedules" routerlinkactive="active"
+							href="#"> 추천루트 </a></li>
+						<li><a routerlink="places" routerlinkactive="active"
+							href="/listOk.itemBoard"> 기념품 목록 </a></li>
 					</ul>
 				</nav>
 

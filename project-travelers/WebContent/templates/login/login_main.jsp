@@ -16,7 +16,7 @@
 		<section class="login_wrap">
 			<div class="in_wrap">
 				<h1 class="logo">
-					<a href="/"><img
+					<a href="/mainBoard.main"><img
 						src="${pageContext.request.contextPath}/static/image/logo.png"
 						alt="WishBeen"></a>
 				</h1>
@@ -44,9 +44,9 @@
 							</ul>
 						</form>
 						<div class="link">
-							<a href="/project-travelers/joinEmail.user">회원가입</a><a
-								href="/project-travelers/findId.user">계정 찾기</a><a
-								href="/project-travelers/resetPwd.user">비밀번호
+							<a href="/joinEmail.user">회원가입</a><a
+								href="/findId.user">계정 찾기</a><a
+								href="/resetPwd.user">비밀번호
 								재설정</a>
 						</div>
 					</div>

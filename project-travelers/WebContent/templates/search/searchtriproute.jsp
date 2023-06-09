@@ -17,7 +17,7 @@
 	<app-root>
 	<div id="wrap">
 
-		<jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
+		<jsp:include page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-city-main class="ng-star-inserted">
 		<main id="content">
@@ -26,7 +26,7 @@
 					<div class="txt_wrap">
 						<p class="txt">
 							<span class="d_block st1">세상의 모든 여행</span><span
-								class="d_block st2"><span>위시빈</span></span>
+								class="d_block st2"><span>Travelers</span></span>
 						</p>
 						<p class="sch">
 							<input type="text" placeholder="도시나 키워드를 검색해보세요.">

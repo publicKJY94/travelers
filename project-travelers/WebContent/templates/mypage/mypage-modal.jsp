@@ -9,10 +9,11 @@
 <link href="${pageContext.request.contextPath}/static/css/mypage/mypage-modal.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
-<body>
+<body >
 	<app-root _nghost-nsf-c68 ng-version="13.3.12">
 	<div _ngcontent-nsf-c68 id="wrap">
-		
+		<jsp:include
+		page="/templates/header-footer/header.jsp"></jsp:include> 
 		<aside _ngcontent-nsf-c68="" class="my_menu_wrap"
 			style="z-index: 501; display: block;">
 			<div _ngcontent-nsf-c68="" class="my_menu_header">
@@ -27,8 +28,8 @@
 						_ngcontent-nsf-c68="" alt="프로필사진"
 						src="https://www.wishbeen.co.kr/assets/images/svg/wb_symbol.svg"></span>
 					<div _ngcontent-nsf-c68="" class="user_info">
-						<span _ngcontent-nsf-c68="" class="name">화려한 조명이 감싸는 강아지</span>
-						<form action="/project-travelers/logout.user">
+						<span _ngcontent-nsf-c68="" class="name">${sessionScope.userNickname}</span>
+						<form action="/logout.user">
 						<button _ngcontent-nsf-c68="" type="submit" class="btn_logout">
 							로그아웃</button>
 						</form>

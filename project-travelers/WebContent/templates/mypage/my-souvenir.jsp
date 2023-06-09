@@ -12,7 +12,7 @@
 </head>
 <body>
 <app-root ng-version="13.3.12">
-<jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
+<jsp:include page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 			
 	<app-travel-note-management class="ng-star-inserted">
 	<div id="content">

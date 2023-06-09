@@ -32,7 +32,7 @@
 	<app-root>
 	<div id="wrap">
 		<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 		<app-write-travel-note>
 		<div id="content">
 			<div class="in_wrap">
