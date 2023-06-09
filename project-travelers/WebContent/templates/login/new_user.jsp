@@ -27,7 +27,7 @@
 					위시빈 서비스는 사용중인 메일로 <br> 인증 후 회원가입을 실시할 수 있습니다.
 				</p>
 				<div>
-					<form action="/project-travelers/join.user">
+					<form action="/join.user">
 						<div class="email_auth">
 							<div class="validation">
 								<div class="form">

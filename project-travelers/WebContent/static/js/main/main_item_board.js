@@ -34,7 +34,7 @@ function showListitem() {
 	itemboards.forEach(board => {
 		text_item += `
 			<li>
-			<a  href="javascript:location.href='${contextPath}/services/itemBoard/ListOk.itemBoard?id=${board.id}'"> 
+			<a  href="#"> 
 			<span class="thumb"> 
 			<img src="https://www.wishbeen.co.kr/assets/images/main/main_spot_mid.jpg" width="100%" alt />
 			</span>
@@ -45,7 +45,7 @@ function showListitem() {
 			<span class="writer"> 
 			<span> ${board.nickname}</span>
 			</span>
-			`+ elapsedTime(board.boardRegisterDate) + `</span>
+			 ${elapsedTime(board.registerDate)} </span>
 		                  </p></a ></li > `;
 	});
 

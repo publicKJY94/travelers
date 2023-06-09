@@ -34,7 +34,7 @@
 	<app-root>
 	<div id="wrap">
 		<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 		<app-write-travel-note>
 		<div class="ce-toolbar__plus">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

@@ -33,7 +33,7 @@
 	<div>
 
 	<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-customer-center class="ng-star-inserted">
 		<section id="content" class="withTopBanner" style="padding: 11rem 0 0">
@@ -46,15 +46,15 @@
 
 			<div class="in_wrap">
 				<div class="tab_sub_wrap withTopBanner">
-					<ul class="tab_nav">
-						<li><a routerlink="notice" routerlinkactive="active"
-							href="/customer-center/notice">공지사항</a></li>
-						<li><a routerlink="faq" routerlinkactive="active"
-							href="/customer-center/faq">자주묻는질문</a></li>
-						<li><a routerlink="qna" routerlinkactive="active"
-							href="/customer-center/qna" class="active">문의하기</a></li>
-					</ul>
+				
+				
+					
+			
+			
+			
 				</div>
+				
+				
 				<router-outlet></router-outlet>
 				<app-customer-center-qna-detail class="ng-star-inserted">
 				<section class="board_wrap">
@@ -70,7 +70,7 @@
 						<div class="ta_right">
 							<a class="btn_st0" href="/customer-center/qna">목록</a>
 							<button><a
-								class="btn_st0 active" href="/customer-center/qna/write">
+								class="btn_st0 active" href="/writeOk.questionBoard">
 								작성 </a></button>
 						</div>
 					</div>

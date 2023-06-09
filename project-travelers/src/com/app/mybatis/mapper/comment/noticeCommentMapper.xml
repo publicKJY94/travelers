@@ -14,7 +14,7 @@
 		nbc.updated_date, nbc.user_id, board_id, tu.nickname
 		FROM notice_board_comment nbc join tbl_user tu
 		on tu.id = nbc.user_id join notice_board nb
-		on nb.id = nbc.board_id
+		on nb.id = board_id
 		order by nbc.id desc
 		limit #{offset},10
 	</select>

@@ -37,6 +37,7 @@ public class LoginOkController implements Action {
 			result.setRedirect(true);
 			result.setPath(req.getContextPath()+"/mainBoard.main"); 
 			session.setAttribute("userId", userVO.getId());
+			session.setAttribute("userNickname", userVO.getNickname());
 		}
 		
 		

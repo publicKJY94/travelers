@@ -21,6 +21,7 @@ public class UserInfoController implements Action {
 		Result result = new Result();
 		
 		Long userId = ((Long)req.getSession().getAttribute("userId"));
+		System.out.println(userId);
 		userVO = userDAO.selectUserInfoByUserId(userId);
 		
 		req.setAttribute("name", userVO.getName());

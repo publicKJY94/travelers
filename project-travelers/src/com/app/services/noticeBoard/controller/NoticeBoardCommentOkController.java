@@ -1,6 +1,5 @@
 package com.app.services.noticeBoard.controller;
 
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -36,4 +35,3 @@ public class NoticeBoardCommentOkController implements Action {
 	}
 
 }
-

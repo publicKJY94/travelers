@@ -11,7 +11,7 @@
 <link href="${pageContext.request.contextPath}/static/css/font/font.css" rel="stylesheet">
 </head>
 <body>
-	<app-root ng-version="13.3.12"> <jsp:include page="/templates/header-footer/header.jsp"></jsp:include>
+	<app-root ng-version="13.3.12"> <jsp:include page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 	<app-reply-management _nghost-kyu-c94="" class="ng-star-inserted">
 	<div id="content">
 		<header class="sub_header st1">

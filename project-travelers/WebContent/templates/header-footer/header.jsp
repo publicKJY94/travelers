@@ -16,7 +16,7 @@
 	<div  class="bandBanner ">
 		<div  class="inner ">
 			<div  class="text">
-				<a  class="link" href="/join.user">
+				<a  class="link" href="/joinEmail.user">
 					✨지금 바로 가입하면 <span  class="point">&nbsp;5,OOOP&nbsp;</span>
 					 적립!<span  class="arrow"></span>
 				</a>
@@ -27,20 +27,20 @@
 		<div  class="in_wrap">
 			<h1  class="logo">
 				<a  title="WishBeen"
-					 href="/main.main"> <span
+					 href="/mainBoard.main"> <span
 					>WishBeen</span>
 				</a>
 			</h1>
 			<nav  class="gnb_wrap">
 				<ul >
 					<li  class="pc"><a 
-						href="${pageContext.request.contextPath}/write-note"> <span >여행기 목록</span>
+						href="${pageContext.request.contextPath}/listOk.tripBoard"> <span >여행기 목록</span>
 					</a></li>
 					<li  class="pc"><a 
-						href="${pageContext.request.contextPath}/write-note"> <span >추천루트 목록</span>
+						href="#"> <span >추천루트 목록</span>
 					</a></li>
 					<li  class="pc"><a 
-						href="${pageContext.request.contextPath}/write-note"> <span >여행품 교환</span>
+						href="${pageContext.request.contextPath}/listOk.itemBoard"> <span >여행품 교환</span>
 					</a></li>
 					<li  class="pc"><a 
 						href="${pageContext.request.contextPath}/announcement.noticeBoard"> <span >공지사항</span>
@@ -51,27 +51,22 @@
 				<c:when test="${empty sessionScope.userId}">
 								<ul  class="side_wrap">
 
-<<<<<<< HEAD
-					<li _ngcontent-qlk-c65 class="pc"><a _ngcontent-qlk-c65
-						class="btn_login ng-star-inserted" href="${pageContext.request.contextPath}/login.user"> <span
-							_ngcontent-qlk-c65></span> 로그인
-=======
+
 					<li  class="pc"><a 
 						class="btn_login " href="${pageContext.request.contextPath}/login.user"> <span
 							></span> 로그인	
->>>>>>> admin
 					</a></li>
 				</ul>
 				
 				</c:when>
 				
 				
-				<c:otherwise>
+				<c:otherwise>	
 					
 				<ul  class="side_wrap">
 
 					<li  class="pc"><a 
-						class="btn_login " href="${pageContext.request.contextPath}/login.user"> <span style ="background-image : url('https://www.wishbeen.co.kr/person_on.ea4494bc65b5053d.svg')"></span> 마이페이지	
+						class="btn_my" > <span style ="background-image : url('https://www.wishbeen.co.kr/person_on.ea4494bc65b5053d.svg')"></span> 마이페이지	
 					</a></li>
 				</ul>
 				</c:otherwise>

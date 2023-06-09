@@ -16,7 +16,7 @@
 	<app-root _nghost-phe-c68 ng-version="13.3.12">
 	<div _ngcontent-phe-c68 id="wrap">
 		<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-travel-note-detail _nghost-phe-c90="" class="ng-star-inserted">
 		<div _ngcontent-phe-c90="" id="content">
@@ -54,7 +54,7 @@
 						<div _ngcontent-phe-c90="" class="cont_wrap">
 							<aside class="side_bar">
 								<span _ngcontent-oma-c66="" class="btn_top_scroll"></span>
-								<span _ngcontent-oma-c66="" class="btn_write_board"></span>
+								<span _ngcontent-oma-c66="" class="btn_write_board"><a style ="height : 100% ;width : 100%; display : block" href ="/templates/board-form/trip-board-form.jsp"></a></span>
 								<span _ngcontent-oma-c66="" class="btn_heart">
 										<span>
 											

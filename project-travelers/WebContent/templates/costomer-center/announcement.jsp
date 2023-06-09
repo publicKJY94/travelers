@@ -16,7 +16,7 @@
 	<div id="wrap" style="word-break: break-all;">
 
 		<jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include>
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include>
 
 		<app-customer-center class="">
 		<section id="content" class="withTopBanner" style="padding: 11rem 0 0">
@@ -25,16 +25,16 @@
 					<h2 class="dth1" style="position: relative">고객지원</h2>
 					<h3 class="dth2" style="padding-top: 0px">공지사항</h3>
 				</div>
-			</div>
+			</div>	
 			<div class="in_wrap">
 				<div class="tab_sub_wrap withTopBanner">
 					<ul class="tab_nav">
 						<li><a routerlink="notice" routerlinkactive="active"
 							href="announcement.noticeBoard" class="active">공지사항</a></li>
 						<li><a routerlink="faq" routerlinkactive="active"
-							href="questionBoard.questionBoard">자주묻는질문</a></li>
+							href="faq.noticeBoard">자주묻는질문</a></li>
 						<li><a routerlink="qna" routerlinkactive="active"
-							href="/customer-center/qna">문의하기</a></li>
+							href="questionListOk.questionBoard" >문의하기</a></li>
 					</ul>
 				</div>
 				<router-outlet></router-outlet>

@@ -11,7 +11,16 @@ public class Criteria {
 	private int page;
 	private String type;
 	private String keyword;
+	public String getSort() {
+		return sort;
+	}
+
+	public void setSort(String sort) {
+		this.sort = sort;
+	}
+
 	private int realEndPage;
+	private String sort;
 	
 
 	public Criteria(int page, int total, String type, String keyword) {

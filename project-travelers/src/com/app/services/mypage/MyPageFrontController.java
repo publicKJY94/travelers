@@ -8,7 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.app.Result;
-import com.app.services.user.controller.LoginOkController;
+import com.app.services.mypage.controller.UserInfoController;
+import com.app.services.mypage.controller.UserUpdateController;
 
 public class MyPageFrontController extends HttpServlet {
 	@Override
@@ -40,6 +41,8 @@ public class MyPageFrontController extends HttpServlet {
 			result.setPath("/templates/mypage/my-comment.jsp");
 		}else if (target.equals("myregisteredcommit")) {
 			result.setPath("/templates/mypage/my-registered-commit.jsp");
+		}else if (target.equals("userUpdate")) {
+			result.setPath("/templates/mypage/member-information.jsp");
 		}
 
 		// 모든 분기처리는 이부분 위에까지만

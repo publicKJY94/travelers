@@ -35,7 +35,7 @@ function showList() {
 	tripboards.forEach(board => {
 		text += `
 			<li> 
-			<a href = "javascript:location.href='${contextPath}/services/tripBoard/ListOk.tripBoard?id=${board.id}'" > 
+			<a href = "/detailOk.tripBoard?tripboardId=${board.id}" > 
 			<span class="thumb" > 
 			<img src = "https://www.wishbeen.co.kr/assets/images/main/main_two_01.png" width = "100%" alt />
 		</span >
@@ -45,7 +45,8 @@ function showList() {
 			<span class="txt" > ${board.content}</span > 
 			<span class="writer" >
 			<span> ${board.nickname}</span >
-			`+ elapsedTime(board.boardRegisterDate) + `</span>
+			 ${elapsedTime(board.registerDate)} 
+				</span>
 		                  </p></a ></li > `;
 	});
 

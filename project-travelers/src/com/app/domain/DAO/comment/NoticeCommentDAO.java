@@ -24,6 +24,8 @@ public SqlSession sqlSession;
 	}
 	
 	public List<NoticeBoardCommentDTO> selectNoticeBoardCommentLimitTen(int offset) {
+		
+		
 		return sqlSession.selectList("noticeComment.selectNoticeBoardCommentLimitTen",offset);
 	}
 	

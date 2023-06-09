@@ -17,7 +17,7 @@
 </head>
 <body>
 	<app-root ng-version="13.3.12"> <jsp:include
-		page="/templates/header-footer/header.jsp"></jsp:include> <app-community-management
+		page="/templates/mypage/mypage-modal.jsp"></jsp:include> <app-community-management
 		class="ng-star-inserted">
 	<div id="content">
 		<header class="sub_header st1">

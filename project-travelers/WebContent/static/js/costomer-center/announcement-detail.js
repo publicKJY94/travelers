@@ -54,26 +54,32 @@ comment.addEventListener("input",e =>{
 
 
 
-
 					
-noticeBoard = JSON.parse(noticeBoard);
-console.log(noticeBoard);
-						
-const title = document.querySelector(".tit_wrap");
+/*시간 계산*/
+function elapsedTime(date) {
+  const start = new Date(date);
+  const end = new Date();
 
-title.innerHTML += `<div>
-						<p  class="tit">${noticeBoard.title}</p>
-					</div>
-					<div>
-						<span  class="date"> ${noticeBoard.registerDate} </span>
-					</div>` ;
+  const diff = (end - start) / 1000;
+  
+  const times = [
+    { name: '년', milliSeconds: 60 * 60 * 24 * 365 },
+    { name: '개월', milliSeconds: 60 * 60 * 24 * 30 },
+    { name: '일', milliSeconds: 60 * 60 * 24 },
+    { name: '시간', milliSeconds: 60 * 60 },
+    { name: '분', milliSeconds: 60 },
+  ];
 
-let codex_editor_redactor = document.querySelector(".codex-editor__redactor");
+  for (const value of times) {
+    const betweenTime = Math.floor(diff / value.milliSeconds);
 
+    if (betweenTime > 0) {
+      return `${betweenTime}${value.name} 전`;
+    }
+  }
+  return '방금 전';
+}	
 
-let content = `${noticeBoard.content}`;
-
-   
 //ajax 로 10개씩 가져오와 뿌리기
 function showCommentListAjax(){
 	$(".logo-area").show();
@@ -81,7 +87,8 @@ function showCommentListAjax(){
 		type : 'post',
 		url : contextPath + "/noticeBoardCommentSelect.noticeBoard",
 		dataType : 'json',
-		data : {count : count},
+		data : {count : count,
+		},
 		success : function(result){
 			$(".logo-area").hide();
 			if(result.length==0){
@@ -92,8 +99,6 @@ function showCommentListAjax(){
 		}
 	})
 }
-
-
 
 
 
@@ -131,7 +136,6 @@ comment_list.innerHTML ="";
   
 	})
 })
-
 
 
 
@@ -333,6 +337,7 @@ let logoArea = document.querySelector(".logo-area");
 	}
 	
 	}
+
 
 
 

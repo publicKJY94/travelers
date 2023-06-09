@@ -14,7 +14,6 @@
     --key-color: #ff8000;
     --key-color-disabled: #dfe1e6;
     --kakao-background-color: #fee500;
-    --naver-background-color: #03c75a;
     --facebook-background-color: #1877f2;
     --apple-background-color: #000000;
 }
@@ -176,12 +175,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     box-sizing: border-box;
 }
 
-#header .logo {
-    position: absolute;
-    left: 0;
-    top: 1.5rem;
-    z-index: 1;
-}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-weight: 400;
@@ -192,16 +186,6 @@ a:link, a:active, a:visited, a:hover {
     text-decoration: none;
 }
 
-#header .logo a span {
-    width: 11.5rem;
-    height: 3.9rem;
-    display: inline-block;
-    overflow: hidden;
-    background: url('../../image/main_logo/travelers.png') 0 0 no-repeat;
-    background-size: cover;
-    font-size: 0;
-    color: transparent;
-}
 
 #header .gnb_wrap {
     width: 100%;

@@ -25,8 +25,12 @@ public class NoticeBoardCommentSelectController implements Action {
 		NoticeCommentDAO noticeCommentdDAO = new NoticeCommentDAO();
 		int offset = Integer.parseInt(req.getParameter("count")==null ? "0" : req.getParameter("count"));
 		
+		System.out.println(req.getParameter("boardId"));
+		
+		
 		List<NoticeBoardCommentDTO> noticeBoardCommentList = new ArrayList();
 		noticeBoardCommentList = noticeCommentdDAO.selectNoticeBoardCommentLimitTen(offset);
+		
 		noticeBoardCommentList.stream().forEach(comment -> comment.setContent(comment.getContent().replace("\r\n", "<br>")));
 		
 		JSONArray jsonNoticeBoardCommentList = new JSONArray();
